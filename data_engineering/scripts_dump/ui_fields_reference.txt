@@ -1,0 +1,206 @@
+================================================================================
+  UI + BACKEND FIELDS REFERENCE — ALL 5 ACTIVITY FINDER SECTIONS
+  Card View + Detail View + Backend fields for each section
+  Generated: April 2026 (verified against actual extracted JSONs)
+================================================================================
+
+
+================================================================================
+  1) OLYMPIADS  (36 total fields — 9 card + 6 detail + 21 backend)
+================================================================================
+
+  CARD VIEW (9):
+    1. activity_name             — e.g. "Indian National Mathematical Olympiad"
+    2. organizer                 — e.g. "HBCSE - Govt of India"
+    3. level                     — "International" / "National" / "School"
+    4. subject                   — "Mathematics" / "Physics" / "Astronomy" etc.
+    5. modality                  — "Online" / "Offline" / "Hybrid"
+    6. cost_chip                 — "Free" / "Paid"
+    7. entry_route               — "Independent" / "Via School"
+    8. deadline_status           — "registration_opens_aug_sep_2026" /
+                                   "register_via_national_olympiad" /
+                                   "registration_open_ongoing" /
+                                   "yet_to_be_announced" /
+                                   "no_2026_event"
+    9. registration_close_date   — ISO date "YYYY-MM-DD"
+
+  DETAIL VIEW (6):
+    10. about_description        — 2-4 sentence summary
+    11. eligibility_text         — Grade/class, age, country, board
+    12. structure_format         — Rounds, stages, exam format
+    13. how_to_apply             — Application steps
+    14. rewards_outcomes         — Medals, certificates, scholarships
+    15. official_website         — URL of official olympiad page
+
+  BACKEND (21):
+    16. olympiad_id              — Unique ID (e.g. "INMO")
+    17. short_code               — Abbreviation (e.g. "INMO")
+    18. parent_olympiad          — Parent event (e.g. "IMOTC")
+    19. parent_organization      — Parent org (e.g. "TIFR")
+    20. age_limit                — "Under 20 years"
+    21. grade_levels             — Array [8, 9, 10, 11, 12]
+    22. countries_eligible       — "India only" / "Global"
+    23. team_size                — 1 (integer)
+    24. registration_open_date   — ISO date
+    25. exam_date                — ISO date
+    26. result_date              — ISO date
+    27. rounds                   — Integer (number of rounds)
+    28. cost                     — "INR 300" / "Free"
+    29. outcome                  — "Medal" / "Certificate" / "Both"
+    30. certificate_type         — "Merit" / "Participation"
+    31. registration_url         — URL
+    32. syllabus_url             — URL
+    33. past_papers_url          — URL
+    34. language                 — "English" / "Hindi" / "English, Hindi"
+    35. international_recognition — Text describing recognition
+    36. num_participants_last_year — Integer
+
+
+================================================================================
+  2) COMPETITIONS  (26 total fields — 10 card + 10 detail + 6 backend)
+================================================================================
+
+  CARD VIEW (10):
+    1. activity_name             — e.g. "Conrad Challenge - Innovation Competition"
+    2. organizer                 — e.g. "Conrad Foundation - USA"
+    3. organizer_logo            — Image URL (intentionally null for now)
+    4. mode                      — "Online" / "Offline" / "Hybrid"
+    5. deadline                  — ISO date "YYYY-MM-DD"
+    6. cost_chip                 — "Free" / "Paid"
+    7. cost                      — "Free" / "INR 500" / "$25"
+    8. domain                    — "STEM" / "Business & Entrepreneurship" /
+                                   "Coding & Technology" / "Writing & Literature" /
+                                   "Arts & Design" / "Environment & Sustainability" /
+                                   "Social Impact"
+    9. team_size                 — "Individual" / "2-4 members" / "1-5 members"
+    10. is_verified              — true / false
+
+  DETAIL VIEW (10):
+    11. about_description        — 2-4 sentence summary
+    12. eligibility_text         — Age, grade, country, school type
+    13. how_to_apply             — Steps to register/apply
+    14. prizes_detail            — Full prize breakdown (cash + non-cash)
+    15. prize_amount             — Top prize summary (cash or non-cash)
+    16. structure_format         — Rounds, stages, timeline
+    17. judging_criteria         — How submissions are evaluated
+    18. submission_format        — What to submit (video/code/essay)
+    19. official_website         — Competition's own URL
+    20. registration_url         — Direct apply/register link
+
+  BACKEND (6):
+    21. competition_id           — Unique ID (e.g. "conrad-challenge")
+    22. source_url               — Where we found it (devpost/studentcomp/etc)
+    23. registration_open_date   — ISO date
+    24. country                  — "USA" / "India" / "Global"
+    25. grade_levels             — Array [8, 9, 10, 11, 12]
+    26. age_limit                — "13-18" / "No age limit"
+
+
+================================================================================
+  3) SUMMER SCHOOLS  (20 fields — 8 card + 12 detail, no separate backend fields)
+================================================================================
+
+  CARD VIEW (8):
+    1. program_name              — e.g. "Young Scholars Programme (YSP)"
+    2. institution_name          — e.g. "Ashoka University - India"
+    3. institution_logo          — Image URL (intentionally null for now)
+    4. funding_status            — "Free" / "Fully funded" / "Partially funded" /
+                                   "Self-funded"
+    5. mode                      — "Online" / "Offline" / "Hybrid"
+    6. location_tag              — "India" / "Abroad" / "Online"
+    7. duration                  — "2 weeks" / "12 days" / "6 weeks"
+    8. is_verified               — true / false
+
+  DETAIL VIEW (12):
+    9. about_description         — 2-4 sentence summary
+    10. eligibility_text         — Grade, age, country, school type
+    11. curriculum               — What students learn / subjects covered
+    12. how_to_apply             — Application steps and requirements
+    13. application_url          — Direct apply link
+    14. cost_range               — "Free" / "INR 50,000" / "$3,000-$5,000"
+    15. college_credit           — "Yes" / "No"
+    16. residential_or_online    — "Residential" / "Online" / "Day program"
+    17. certificate_provided     — "Yes" / "No"
+    18. deadline                 — ISO date "YYYY-MM-DD"
+    19. program_dates            — "June 15 - July 28, 2026"
+    20. subjects_offered         — Array: ["STEM", "Humanities", "Business"]
+
+  BACKEND: program_id is stored in the input JSON (used as filename).
+            No separate backend fields in extracted output.
+
+
+================================================================================
+  4) INTERNSHIPS  (17 total fields — 9 card + 7 detail + 1 backend)
+================================================================================
+
+  CARD VIEW (9):
+    1. internship_title          — e.g. "Product Management Intern - EdTech"
+    2. company_name              — e.g. "Google - USA"
+    3. company_logo              — Image URL (intentionally null for now)
+    4. mode                      — "Online" / "Offline" / "Hybrid"
+    5. stipend                   — "Unpaid" / "Paid" / "INR 5,000/month"
+    6. posted_date               — ISO date "YYYY-MM-DD"
+    7. source_badge              — "Ambitio Partner" / null
+    8. domain                    — "Technology" / "Business & Marketing" /
+                                   "Design & Creative" / "Research & Science" /
+                                   "Writing & Journalism" / "Social Impact & NGO"
+    9. team_size                 — "Solo" (default)
+
+  DETAIL VIEW (7):
+    10. about_description        — 2-4 sentence summary
+    11. eligibility_text         — Class/grade, age, skills, location
+    12. duration                 — "4 weeks" / "2 months" / "Ongoing"
+    13. responsibilities         — What the intern will do (2-5 tasks)
+    14. skills_required          — Array: ["Python", "Content Writing"]
+    15. how_to_apply             — Application steps
+    16. application_url          — Direct apply link
+
+  BACKEND (1):
+    17. internship_id            — Unique ID (slug of title)
+
+
+================================================================================
+  5) VOLUNTEERING  (15 total fields — 6 card + 8 detail + 1 backend)
+================================================================================
+
+  CARD VIEW (6):
+    1. program_name              — e.g. "Teach For India Summer Fellowship"
+    2. organization_name         — e.g. "Teach For India - NGO"
+    3. organization_logo         — Image URL (intentionally null for now)
+    4. mode                      — "Online" / "Offline" / "Hybrid"
+    5. cause_area                — "Education" / "Environment & Sustainability" /
+                                   "Health & Wellbeing" / "Disaster Relief & Community" /
+                                   "Animals & Wildlife" / "Arts & Culture" /
+                                   "Social Impact"
+    6. is_verified               — true / false
+
+  DETAIL VIEW (8):
+    7. about_description         — 2-4 sentence summary
+    8. eligibility_text          — Age, location, background
+    9. minimum_hours             — "40 hours total" / "5 hours/week" / "Flexible"
+    10. commitment_type          — "One-time" / "Ongoing" / "Weekend only" / "Flexible"
+    11. certificate_provided     — "Yes" / "No"
+    12. responsibilities         — What the volunteer will do
+    13. how_to_apply             — Application/signup steps
+    14. application_url          — Direct volunteer signup link
+
+  BACKEND (1):
+    15. opportunity_id           — Unique ID (slug of program name)
+
+
+================================================================================
+  SUMMARY TABLE
+================================================================================
+
+  Section          Card   Detail   Backend   Total
+  ---------------  -----  ------   -------   -----
+  Olympiads        9      6        21        36
+  Competitions     10     10       6         26
+  Summer Schools   8      12       0         20
+  Internships      9      7        1         17
+  Volunteering     6      8        1         15
+
+
+================================================================================
+  END OF REFERENCE
+================================================================================

@@ -1,0 +1,397 @@
+[
+  {
+    "university": "The University of Auckland",
+    "course": "Bachelor of Arts Education",
+    "expected_file": "The_University_of_Auckland_Bachelor_of_Arts_Education.md"
+  },
+  {
+    "university": "The University of Auckland",
+    "course": "BEd(TESOL) Education (Teaching English to Speakers of Other Languages)",
+    "expected_file": "The_University_of_Auckland_BEd_TESOL_Education_Teaching_English_to_Speakers_of_Other_Languages.md"
+  },
+  {
+    "university": "The University of Auckland",
+    "course": "BSc Biological Sciences",
+    "expected_file": "The_University_of_Auckland_BSc_Biological_Sciences.md"
+  },
+  {
+    "university": "The University of Auckland",
+    "course": "BOptom Optometry",
+    "expected_file": "The_University_of_Auckland_BOptom_Optometry.md"
+  },
+  {
+    "university": "The University of Auckland",
+    "course": "BUrbPlan(Hons) Urban Planning",
+    "expected_file": "The_University_of_Auckland_BUrbPlan_Hons_Urban_Planning.md"
+  },
+  {
+    "university": "The University of Auckland",
+    "course": "Bachelor of Arts Anthropology",
+    "expected_file": "The_University_of_Auckland_Bachelor_of_Arts_Anthropology.md"
+  },
+  {
+    "university": "The University of Auckland",
+    "course": "BCom Innovation and Entrepreneurship",
+    "expected_file": "The_University_of_Auckland_BCom_Innovation_and_Entrepreneurship.md"
+  },
+  {
+    "university": "The University of Auckland",
+    "course": "BE (Hons) Engineering",
+    "expected_file": "The_University_of_Auckland_BE_Hons_Engineering.md"
+  },
+  {
+    "university": "Durham College Oshawa",
+    "course": "Certificate General Arts and Science – Liberal Arts Ontario Tech University Transfer – Forensics",
+    "expected_file": "Durham_College_Oshawa_Certificate_General_Arts_and_Science_Liberal_Arts_Ontario_Tech_University_Transfer_Forensics.md"
+  },
+  {
+    "university": "Aarhus University",
+    "course": "Bachelor of Arts Information Science",
+    "expected_file": "Aarhus_University_Bachelor_of_Arts_Information_Science.md"
+  },
+  {
+    "university": "University of Calgary",
+    "course": "Bachelor of Arts Political Science",
+    "expected_file": "University_of_Calgary_Bachelor_of_Arts_Political_Science.md"
+  },
+  {
+    "university": "University of Waikato",
+    "course": "Certificate Environmental Planning",
+    "expected_file": "University_of_Waikato_Certificate_Environmental_Planning.md"
+  },
+  {
+    "university": "Massey University",
+    "course": "BSW Social Work",
+    "expected_file": "Massey_University_BSW_Social_Work.md"
+  },
+  {
+    "university": "Massey University",
+    "course": "BConst Construction",
+    "expected_file": "Massey_University_BConst_Construction.md"
+  },
+  {
+    "university": "Massey University",
+    "course": "BN Nursing",
+    "expected_file": "Massey_University_BN_Nursing.md"
+  },
+  {
+    "university": "Victoria University of Wellington",
+    "course": "LLB(Hons) Laws",
+    "expected_file": "Victoria_University_of_Wellington_LLB_Hons_Laws.md"
+  },
+  {
+    "university": "Victoria University of Wellington",
+    "course": "BC Communication",
+    "expected_file": "Victoria_University_of_Wellington_BC_Communication.md"
+  },
+  {
+    "university": "Victoria University of Wellington",
+    "course": "BBSc Building Science",
+    "expected_file": "Victoria_University_of_Wellington_BBSc_Building_Science.md"
+  },
+  {
+    "university": "University of Canterbury",
+    "course": "Bachelor of Arts International Affairs",
+    "expected_file": "University_of_Canterbury_Bachelor_of_Arts_International_Affairs.md"
+  },
+  {
+    "university": "University of Canterbury",
+    "course": "BSc Economics",
+    "expected_file": "University_of_Canterbury_BSc_Economics.md"
+  },
+  {
+    "university": "University of Canterbury",
+    "course": "BSc Environmental Science",
+    "expected_file": "University_of_Canterbury_BSc_Environmental_Science.md"
+  },
+  {
+    "university": "University of Canterbury",
+    "course": "BHSc Health Sciences",
+    "expected_file": "University_of_Canterbury_BHSc_Health_Sciences.md"
+  },
+  {
+    "university": "University of Canterbury",
+    "course": "Bachelor of Arts Health Education",
+    "expected_file": "University_of_Canterbury_Bachelor_of_Arts_Health_Education.md"
+  },
+  {
+    "university": "University of Canterbury",
+    "course": "LLB Laws",
+    "expected_file": "University_of_Canterbury_LLB_Laws.md"
+  },
+  {
+    "university": "University of Canterbury",
+    "course": "BCom Sociology",
+    "expected_file": "University_of_Canterbury_BCom_Sociology.md"
+  },
+  {
+    "university": "University of Canterbury",
+    "course": "Bachelor of Arts Media And Communication",
+    "expected_file": "University_of_Canterbury_Bachelor_of_Arts_Media_And_Communication.md"
+  },
+  {
+    "university": "University of Canterbury",
+    "course": "BSpC Physical Education",
+    "expected_file": "University_of_Canterbury_BSpC_Physical_Education.md"
+  },
+  {
+    "university": "University of Canterbury",
+    "course": "BSc Linguistics",
+    "expected_file": "University_of_Canterbury_BSc_Linguistics.md"
+  },
+  {
+    "university": "Swansea University",
+    "course": "BEng Aerospace Engineering",
+    "expected_file": "Swansea_University_BEng_Aerospace_Engineering.md"
+  },
+  {
+    "university": "University of Miami",
+    "course": "Bachelor of Science Mechanical Engineering",
+    "expected_file": "University_of_Miami_Bachelor_of_Science_Mechanical_Engineering.md"
+  },
+  {
+    "university": "Miami University",
+    "course": "Bachelor of Science Chemistry",
+    "expected_file": "Miami_University_Bachelor_of_Science_Chemistry.md"
+  },
+  {
+    "university": "Auckland University of Technology",
+    "course": "Bachelor's Health Science (Occupational Therapy)",
+    "expected_file": "Auckland_University_of_Technology_Bachelor_s_Health_Science_Occupational_Therapy.md"
+  },
+  {
+    "university": "Auckland University of Technology",
+    "course": "Bachelor's Health Science (Midwifery)",
+    "expected_file": "Auckland_University_of_Technology_Bachelor_s_Health_Science_Midwifery.md"
+  },
+  {
+    "university": "Auckland University of Technology",
+    "course": "Bachelor's Arts",
+    "expected_file": "Auckland_University_of_Technology_Bachelor_s_Arts.md"
+  },
+  {
+    "university": "The University of Kansas",
+    "course": "Bachelor of Science Sports Management",
+    "expected_file": "The_University_of_Kansas_Bachelor_of_Science_Sports_Management.md"
+  },
+  {
+    "university": "University of Tennessee at Knoxville",
+    "course": "Bachelor of Science Environmental and Soil Sciences – Conservation Agriculture and Environmental Sustainability Concentration",
+    "expected_file": "University_of_Tennessee_at_Knoxville_Bachelor_of_Science_Environmental_and_Soil_Sciences_Conservation_Agriculture_and_Environmental_Sustainability_Concentration.md"
+  },
+  {
+    "university": "University of Tennessee at Knoxville",
+    "course": "Bachelor of Science Agricultural Leadership, Education, and Communications -Community Engagement and Leadership Development Concentration",
+    "expected_file": "University_of_Tennessee_at_Knoxville_Bachelor_of_Science_Agricultural_Leadership_Education_and_Communications_-Community_Engagement_and_Leadership_Development_Concentration.md"
+  },
+  {
+    "university": "York University Toronto",
+    "course": "BSc Applied Mathematics",
+    "expected_file": "York_University_Toronto_BSc_Applied_Mathematics.md"
+  },
+  {
+    "university": "Concordia University Montreal",
+    "course": "Bachelor of Arts Mathematical and Computational Finance",
+    "expected_file": "Concordia_University_Montreal_Bachelor_of_Arts_Mathematical_and_Computational_Finance.md"
+  },
+  {
+    "university": "Ulster University",
+    "course": "BSc(hons) Sport, Physical Activity and Health",
+    "expected_file": "Ulster_University_BSc_hons_Sport_Physical_Activity_and_Health.md"
+  },
+  {
+    "university": "University of Connecticut",
+    "course": "Bachelor of Science Mathematics-Actuarial Science",
+    "expected_file": "University_of_Connecticut_Bachelor_of_Science_Mathematics-Actuarial_Science.md"
+  },
+  {
+    "university": "Carleton University Ottawa",
+    "course": "Bachelor of Arts Geography",
+    "expected_file": "Carleton_University_Ottawa_Bachelor_of_Arts_Geography.md"
+  },
+  {
+    "university": "Carleton University Ottawa",
+    "course": "BSc Neuroscience and Mental Health",
+    "expected_file": "Carleton_University_Ottawa_BSc_Neuroscience_and_Mental_Health.md"
+  },
+  {
+    "university": "Carleton University Ottawa",
+    "course": "BSc Food Science",
+    "expected_file": "Carleton_University_Ottawa_BSc_Food_Science.md"
+  },
+  {
+    "university": "Carleton University Ottawa",
+    "course": "Bachelor of Arts Criminology And Criminal Justice",
+    "expected_file": "Carleton_University_Ottawa_Bachelor_of_Arts_Criminology_And_Criminal_Justice.md"
+  },
+  {
+    "university": "University of Houston",
+    "course": "Bachelor's Supply Chain Management",
+    "expected_file": "University_of_Houston_Bachelor_s_Supply_Chain_Management.md"
+  },
+  {
+    "university": "Saint Louis University",
+    "course": "Bachelor of Arts American Studies",
+    "expected_file": "Saint_Louis_University_Bachelor_of_Arts_American_Studies.md"
+  },
+  {
+    "university": "University of the Fraser Valley",
+    "course": "BFA Creative Writing",
+    "expected_file": "University_of_the_Fraser_Valley_BFA_Creative_Writing.md"
+  },
+  {
+    "university": "Rowan University",
+    "course": "Bachelor of Arts Inclusive Education",
+    "expected_file": "Rowan_University_Bachelor_of_Arts_Inclusive_Education.md"
+  },
+  {
+    "university": "University of Tampa",
+    "course": "Bachelor of Music Music in Performance - Instrumentalist track",
+    "expected_file": "University_of_Tampa_Bachelor_of_Music_Music_in_Performance_-_Instrumentalist_track.md"
+  },
+  {
+    "university": "Seattle Pacific University",
+    "course": "Bachelor of Science Mechanical Engineering",
+    "expected_file": "Seattle_Pacific_University_Bachelor_of_Science_Mechanical_Engineering.md"
+  },
+  {
+    "university": "Rowan University",
+    "course": "Bachelor of Arts English",
+    "expected_file": "Rowan_University_Bachelor_of_Arts_English.md"
+  },
+  {
+    "university": "British Columbia Institute of Technology",
+    "course": "Bachelor's Architectural Science",
+    "expected_file": "British_Columbia_Institute_of_Technology_Bachelor_s_Architectural_Science.md"
+  },
+  {
+    "university": "Jacksonville University",
+    "course": "Bachelor's Business Administration",
+    "expected_file": "Jacksonville_University_Bachelor_s_Business_Administration.md"
+  },
+  {
+    "university": "University of Central Florida",
+    "course": "Bachelor of Science Actuarial Science",
+    "expected_file": "University_of_Central_Florida_Bachelor_of_Science_Actuarial_Science.md"
+  },
+  {
+    "university": "Southern Institute of Technology",
+    "course": "Bachelor's Architectural Technology",
+    "expected_file": "Southern_Institute_of_Technology_Bachelor_s_Architectural_Technology.md"
+  },
+  {
+    "university": "OSullivan College",
+    "course": "Diploma (DCS) Paralegal Technology",
+    "expected_file": "OSullivan_College_Diploma_DCS_Paralegal_Technology.md"
+  },
+  {
+    "university": "Massachusetts College of Pharmacy and Health Science Boston Campus",
+    "course": "Bachelor of Science Health Psychology — Physical Therapy Pathway",
+    "expected_file": "Massachusetts_College_of_Pharmacy_and_Health_Science_Boston_Campus_Bachelor_of_Science_Health_Psychology_Physical_Therapy_Pathway.md"
+  },
+  {
+    "university": "Sheridan College Mississauga",
+    "course": "Diploma Office Administration – Executive",
+    "expected_file": "Sheridan_College_Mississauga_Diploma_Office_Administration_Executive.md"
+  },
+  {
+    "university": "University of the Fraser Valley",
+    "course": "Bachelor of Arts Child Care",
+    "expected_file": "University_of_the_Fraser_Valley_Bachelor_of_Arts_Child_Care.md"
+  },
+  {
+    "university": "Anglia Ruskin University",
+    "course": "Bsc(hons) Business With Entrepreneurship",
+    "expected_file": "Anglia_Ruskin_University_Bsc_hons_Business_With_Entrepreneurship.md"
+  },
+  {
+    "university": "Massachusetts College of Pharmacy and Health Science Boston Campus",
+    "course": "Bachelor of Science Health Sciences — Occupational Therapy Pathway",
+    "expected_file": "Massachusetts_College_of_Pharmacy_and_Health_Science_Boston_Campus_Bachelor_of_Science_Health_Sciences_Occupational_Therapy_Pathway.md"
+  },
+  {
+    "university": "Webster University",
+    "course": "Bachelor of Science Biological Sciences - Chemistry",
+    "expected_file": "Webster_University_Bachelor_of_Science_Biological_Sciences_-_Chemistry.md"
+  },
+  {
+    "university": "Massachusetts College of Pharmacy and Health Science Boston Campus",
+    "course": "Bachelor of Science Health Psychology — Occupational Therapy Pathway",
+    "expected_file": "Massachusetts_College_of_Pharmacy_and_Health_Science_Boston_Campus_Bachelor_of_Science_Health_Psychology_Occupational_Therapy_Pathway.md"
+  },
+  {
+    "university": "Full Sail University",
+    "course": "Bachelor of Science Computer Animation",
+    "expected_file": "Full_Sail_University_Bachelor_of_Science_Computer_Animation.md"
+  },
+  {
+    "university": "University of Michigan Flint",
+    "course": "Bachelor of Science Physics",
+    "expected_file": "University_of_Michigan_Flint_Bachelor_of_Science_Physics.md"
+  },
+  {
+    "university": "Rowan University",
+    "course": "Bachelor of Science Translational Biomedical Sciences",
+    "expected_file": "Rowan_University_Bachelor_of_Science_Translational_Biomedical_Sciences.md"
+  },
+  {
+    "university": "University of Central Florida",
+    "course": "Bachelor of Science Chemistry",
+    "expected_file": "University_of_Central_Florida_Bachelor_of_Science_Chemistry.md"
+  },
+  {
+    "university": "California State University San Bernardino",
+    "course": "Bachelor of Arts Music",
+    "expected_file": "California_State_University_San_Bernardino_Bachelor_of_Arts_Music.md"
+  },
+  {
+    "university": "Anglia Ruskin University",
+    "course": "Bsc(hons) Sport and Exercise Therapy",
+    "expected_file": "Anglia_Ruskin_University_Bsc_hons_Sport_and_Exercise_Therapy.md"
+  },
+  {
+    "university": "Western Kentucky University",
+    "course": "Bachelor of Arts Economics",
+    "expected_file": "Western_Kentucky_University_Bachelor_of_Arts_Economics.md"
+  },
+  {
+    "university": "Webster University",
+    "course": "Bachelor of Arts Legal Studies",
+    "expected_file": "Webster_University_Bachelor_of_Arts_Legal_Studies.md"
+  },
+  {
+    "university": "Anglia Ruskin University",
+    "course": "Bsc(hons) Business With Finance",
+    "expected_file": "Anglia_Ruskin_University_Bsc_hons_Business_With_Finance.md"
+  },
+  {
+    "university": "San Jose State University",
+    "course": "Bachelor of Arts English",
+    "expected_file": "San_Jose_State_University_Bachelor_of_Arts_English.md"
+  },
+  {
+    "university": "University of Nevada Reno",
+    "course": "Bachelor of Arts International affairs",
+    "expected_file": "University_of_Nevada_Reno_Bachelor_of_Arts_International_affairs.md"
+  },
+  {
+    "university": "Massachusetts College of Pharmacy and Health Science Boston Campus",
+    "course": "Bachelor of Science Diagnostic Medical Sonography — General Fast Track",
+    "expected_file": "Massachusetts_College_of_Pharmacy_and_Health_Science_Boston_Campus_Bachelor_of_Science_Diagnostic_Medical_Sonography_General_Fast_Track.md"
+  },
+  {
+    "university": "Colgate University",
+    "course": "Bachelor's Political Science",
+    "expected_file": "Colgate_University_Bachelor_s_Political_Science.md"
+  },
+  {
+    "university": "Capilano University",
+    "course": "Bachelor's Legal Studies (Paralegal)",
+    "expected_file": "Capilano_University_Bachelor_s_Legal_Studies_Paralegal.md"
+  },
+  {
+    "university": "Rowan University",
+    "course": "Bachelor of Arts Education",
+    "expected_file": "Rowan_University_Bachelor_of_Arts_Education.md"
+  }
+]

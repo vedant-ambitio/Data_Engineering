@@ -1,0 +1,447 @@
+================================================================================
+TOP UNIVERSITIES BY GEOGRAPHIC REGION
+Based on QS World University Rankings 2026 and supplementary sources
+Generated: 2026-03-26
+================================================================================
+
+Notes:
+- Rankings shown are QS 2026 global rank where available
+- [MATCH] = folder exists in our_universities.txt
+- [NO MATCH] = not in our dataset
+- Focus is on research universities, not business-school-only institutions
+
+================================================================================
+1. UNITED STATES (Top ~55 research universities)
+================================================================================
+
+Rank  University Name (common)                         Folder Match
+----  -----------------------------------------------  ---------------------------
+1     Massachusetts Institute of Technology (MIT)       [MATCH] MIT / Massachusetts_Institute_of_Technology
+3     Stanford University                               [MATCH] Stanford_University
+5     Harvard University                                [MATCH] Harvard_University
+10    California Institute of Technology (Caltech)      [MATCH] California_Institute_Of_Technology
+13    University of Chicago                             [MATCH] The_University_of_Chicago
+15    University of Pennsylvania                        [MATCH] University_of_Pennsylvania
+16    Cornell University                                [MATCH] Cornell_University
+17    University of California, Berkeley                [MATCH] University_of_California_Berkeley
+21    Yale University                                   [MATCH] Yale_University
+24    Johns Hopkins University                          [MATCH] Johns_Hopkins_University
+25    Princeton University                              [MATCH] Princeton_University
+38    Columbia University                               [MATCH] Columbia_University
+42    Northwestern University                           [MATCH] Northwestern_University
+45    University of Michigan, Ann Arbor                 [MATCH] University_of_Michigan_Ann_Arbor
+46    University of California, Los Angeles (UCLA)      [MATCH] University_of_California_Los_Angeles
+52    Carnegie Mellon University                        [MATCH] Carnegie_Mellon_University
+55    New York University (NYU)                         [MATCH] New_York_University
+62    Duke University                                   [MATCH] Duke_University
+66    University of California, San Diego (UCSD)        [MATCH] University_of_California_San_Diego
+68    University of Texas at Austin                     [MATCH] The_University_of_Texas_at_Austin / University_of_Texas_at_Austin
+69    Brown University                                  [MATCH] Brown_University
+70    University of Illinois at Urbana-Champaign        [MATCH] University_of_Illinois_at_Urbana_Champaign
+81    University of Washington                          [MATCH] University_of_Washington_Seattle
+82    Pennsylvania State University                     [MATCH] Pennsylvania_State_University / Penn_State_University_Park
+88    Boston University                                 [MATCH] Boston_University
+88    Purdue University                                 [MATCH] Purdue_University_West_Lafayette
+110   University of Wisconsin-Madison                   [MATCH] University_of_WisconsinMadison
+114   University of California, Davis                   [MATCH] University_of_California_Davis
+119   Rice University                                   [MATCH] Rice_University
+123   Georgia Institute of Technology                   [MATCH] Georgia_Institute_of_Technology
+140   University of North Carolina, Chapel Hill         [MATCH] University_of_North_Carolina_at_Chapel_Hill
+144   Texas A&M University                              [MATCH] Texas_AM_University_College_Station
+146   University of Southern California                 [MATCH] University_of_Southern_California
+161   Michigan State University                         [MATCH] Michigan_State_University
+167   Washington University in St. Louis                [MATCH] Washington_University_in_St_Louis
+173   Arizona State University                          [MATCH] Arizona_State_University
+179   University of California, Santa Barbara (UCSB)    [MATCH] University_of_California_Santa_Barbara
+182   Emory University                                  [MATCH] Emory_University
+190   Ohio State University                             [MATCH] Ohio_State_University / The_Ohio_State_University
+207   University of Maryland, College Park              [MATCH] University_of_Maryland_College_Park
+210   University of Minnesota                           [MATCH] University_of_Minnesota_Twin_Cities
+212   University of Florida                             [MATCH] University_of_Florida
+236   University of Rochester                           [MATCH] University_of_Rochester
+247   Dartmouth College                                 [MATCH] Dartmouth_College
+247   University of Massachusetts, Amherst              [MATCH] University_of_Massachusetts_Amherst
+250   Vanderbilt University                             [MATCH] Vanderbilt_University
+272   North Carolina State University                   [MATCH] North_Carolina_State_University_Raleigh
+275   University of Virginia                            [MATCH] The_University_of_Virginia
+281   University of Pittsburgh                          [MATCH] University_of_Pittsburgh
+285   Georgetown University                             [MATCH] Georgetown_University
+287   University of Arizona                             [MATCH] University_of_Arizona
+293   University of California, Irvine                  [MATCH] University_of_California_Irvine
+294   Case Western Reserve University                   [MATCH] Case_Western_Reserve_University
+294   University of Notre Dame                          [MATCH] University_of_Notre_Dame
+299   University of Colorado Boulder                    [MATCH] University_of_Colorado_Boulder
+306   Indiana University Bloomington                    [MATCH] Indiana_University_Bloomington
+314   University of Miami                               [MATCH] University_of_Miami
+328   Rutgers University - New Brunswick                [MATCH] Rutgers_UniversityNew_Brunswick
+334   Tufts University                                  [MATCH] Tufts_University
+334   University of Illinois Chicago (UIC)              [MATCH] University_of_Illinois_Chicago_Global / University_of_Illinois_at_Chicago
+358   George Washington University                      [MATCH] The_George_Washington_University
+358   Virginia Tech                                     [MATCH] Virginia_Tech / Virginia_Polytechnic_Institute_and_State_University
+384   Northeastern University                           [MATCH] Northeastern_University_Boston
+440   University of California, Riverside               [MATCH] University_of_California_Riverside
+449   Iowa State University                             [NO MATCH]
+~500+ Stony Brook University                            [MATCH] Stony_Brook_University
+~500+ Stevens Institute of Technology                   [MATCH] Stevens_Institute_of_Technology
+~500+ University of Oregon                              [MATCH] University_of_Oregon
+~500+ University of Nevada, Reno                        [MATCH] University_of_Nevada_Reno
+~500+ University of Dayton                              [MATCH] University_of_Dayton
+~500+ Yeshiva University                                [MATCH] Yeshiva_University
+
+================================================================================
+2. EUROPE - UNITED KINGDOM (Top ~35 research universities)
+================================================================================
+
+Rank  University Name (common)                         Folder Match
+----  -----------------------------------------------  ---------------------------
+2     Imperial College London                           [MATCH] Imperial_College_London
+4     University of Oxford                              [MATCH] University_of_Oxford
+6     University of Cambridge                           [MATCH] University_of_Cambridge
+9     University College London (UCL)                   [MATCH] University_College_London
+31    King's College London                             [MATCH] Kings_College_London
+34    University of Edinburgh                           [MATCH] University_of_Edinburgh
+35    University of Manchester                          [MATCH] The_University_of_Manchester
+51    University of Bristol                             [MATCH] University_of_Bristol
+56    London School of Economics (LSE)                  [MATCH] London_School_of_Economics
+74    University of Warwick                             [MATCH] University_of_Warwick
+76    University of Birmingham                          [MATCH] University_of_Birmingham
+79    University of Glasgow                             [MATCH] University_of_Glasgow
+86    University of Leeds                               [MATCH] University_of_Leeds
+87    University of Southampton                         [MATCH] University_of_Southampton
+92    University of Sheffield                           [MATCH] University_of_Sheffield
+94    Durham University                                 [MATCH] Durham_University
+97    University of Nottingham                          [MATCH] University_of_Nottingham
+110   Queen Mary University of London                   [MATCH] Queen_Mary_University_of_London
+113   University of St Andrews                          [MATCH] University_of_St_Andrews
+132   University of Bath                                [MATCH] University_of_Bath
+137   Newcastle University                              [MATCH] Newcastle_University
+147   University of Liverpool                           [MATCH] University_of_Liverpool
+155   University of Exeter                              [MATCH] University_of_Exeter
+157   Lancaster University                              [MATCH] Lancaster_University
+169   University of York                                [MATCH] University_of_York
+194   University of Reading                             [MATCH] University_of_Reading
+199   Queen's University Belfast                        [MATCH] Queens_University_of_Belfast / The_Queens_University_of_Belfast
+225   Loughborough University                           [MATCH] Loughborough_University
+251   University of Strathclyde                         [MATCH] University_of_Strathclyde
+262   University of Aberdeen                            [MATCH] University_of_Aberdeen
+262   University of Surrey                              [MATCH] University_of_Surrey
+278   University of Sussex                              [MATCH] University_of_Sussex
+287   Heriot-Watt University                            [MATCH] HeriotWatt_University
+292   Swansea University                                [MATCH] Swansea_University
+310   City, University of London                        [MATCH] City_University_of_London
+326   University of Leicester                           [MATCH] University_of_Leicester
+374   Oxford Brookes University                         [MATCH] Oxford_Brookes_University
+381   University of East Anglia (UEA)                   [MATCH] University_of_East_Anglia
+385   Brunel University London                          [MATCH] Brunel_University
+388   Birkbeck, University of London                    [MATCH] Birkbeck_University_of_London / Birkbeck_College
+395   Aston University                                  [MATCH] Aston_University
+397   University of Kent                                [MATCH] University_of_Kent
+428   University of Dundee                              [MATCH] University_of_Dundee
+~500+ University of Lincoln                             [MATCH] University_of_Lincoln
+~500+ Middlesex University                              [MATCH] Middlesex_University
+~500+ University of East London                         [MATCH] University_of_East_London
+
+================================================================================
+3. EUROPE - CONTINENTAL (Top ~40 research universities)
+================================================================================
+
+--- SWITZERLAND ---
+Rank  University Name (common)                         Folder Match
+----  -----------------------------------------------  ---------------------------
+7     ETH Zurich                                        [MATCH] ETH_Zurich
+22    Ecole Polytechnique Federale de Lausanne (EPFL)   [MATCH] Ecole_Polytechnique_Fdrale_de_Lausanne
+100   University of Zurich                              [MATCH] University_of_Zurich
+155   University of Geneva                              [MATCH] University_of_Geneva
+158   University of Basel                               [MATCH] University_of_Basel
+184   University of Bern                                [MATCH] University_of_Bern
+212   University of Lausanne                            [MATCH] University_of_Lausanne
+
+--- GERMANY ---
+22    Technical University of Munich                    [MATCH] Technical_University_of_Munich
+58    Ludwig-Maximilians-Universitat Munchen (LMU)      [MATCH] LMU_Munich / Ludwig_Maximilian_University_of_Munich
+80    Heidelberg University                             [MATCH] Heidelberg_University_Ruperto_Carola
+88    Freie Universitat Berlin                          [MATCH] Freie_University_of_Berlin
+98    Karlsruhe Institute of Technology (KIT)           [MATCH] Karlsruhe_Institute_of_Technology
+105   RWTH Aachen University                            [MATCH] RWTH_Aachen_University
+130   Humboldt-Universitat zu Berlin                    [NO MATCH]
+145   Technische Universitat Berlin                     [MATCH] Technical_University_of_Berlin / Technische_Universitat_Berlin
+193   Universitat Hamburg                               [MATCH] University_of_Hamburg
+201   Universitat Freiburg                              [MATCH] Albert_Ludwigs_University_of_Freiburg
+207   Universitat Bonn                                  [MATCH] University_of_Goettingen (different - Bonn not matched)
+215   Eberhard Karls Universitat Tubingen               [MATCH] Eberhard_Karls_University_Tbingen
+218   Technische Universitat Dresden                    [NO MATCH]
+232   Universitat Erlangen-Nurnberg                     [MATCH] Friedrich_Alexander_University_Erlangen_Nrnberg / University_of_ErlangenNuremberg
+253   Technische Universitat Darmstadt                  [MATCH] Technical_University_of_Darmstadt / Technische_Universitt_Darmstadt
+272   Universitat zu Koln                               [MATCH] University_of_Cologne
+310   Universitat Stuttgart                             [MATCH] University_of_Stuttgart
+316   Goethe Universitat Frankfurt                      [MATCH] Goethe_University_Frankfurt
+350   University of Munster                             [MATCH] University_of_Mnster
+395   Ruhr-Universitat Bochum                           [MATCH] Ruhr_University_Bochum
+243   Georg-August-Universitat Gottingen                [MATCH] Georg_August_University_Goettingen / University_of_Goettingen
+
+--- FRANCE ---
+28    PSL University (Paris Sciences et Lettres)        [MATCH] Paris_Sciences_et_Lettres_University
+41    Institut Polytechnique de Paris                   [MATCH] Polytechnic_Institute_of_Paris
+70    Universite Paris-Saclay                           [MATCH] Universit_Paris_Saclay
+72    Sorbonne University                               [MATCH] Sorbonne_University
+141   Pantheon-Sorbonne University (Paris 1)            [MATCH] Pantheon_Sorbonne_University
+205   Ecole Normale Superieure de Lyon                  [MATCH] cole_Normale_Suprieure_de_Lyon
+257   Universite Paris 1 Pantheon-Sorbonne              [MATCH] Pantheon_Sorbonne_University
+300   Universite Paris Cite                             [NO MATCH]
+321   Universite Grenoble Alpes                         [MATCH] Universit_Grenoble_Alpes
+367   Sciences Po Paris                                 [MATCH] Sciences_Po
+~400+ Ecole Polytechnique                               [MATCH] cole_Polytechnique_Grande_cole_in_Palaiseau
+
+--- NETHERLANDS ---
+47    Delft University of Technology                    [MATCH] Delft_University_of_Technology
+53    University of Amsterdam                           [MATCH] University_of_Amsterdam
+103   Utrecht University                                [MATCH] Utrecht_University
+119   Leiden University                                 [MATCH] Leiden_University
+140   Eindhoven University of Technology                [MATCH] Eindhoven_University_of_Technology
+140   Erasmus University Rotterdam                      [MATCH] Erasmus_University_Rotterdam
+147   University of Groningen                           [MATCH] University_of_Groningen
+153   Wageningen University & Research                  [MATCH] Wageningen_University_and_Research
+194   Vrije Universiteit Amsterdam                      [MATCH] Vrije_Universiteit_Amsterdam
+203   University of Twente                              [MATCH] University_of_Twente
+239   Maastricht University                             [MATCH] Maastricht_University
+279   Radboud University Nijmegen                       [MATCH] Radboud_University
+347   Tilburg University                                [MATCH] Tilburg_University
+
+--- SCANDINAVIA ---
+72    Lund University                                   [MATCH] Lund_University
+78    KTH Royal Institute of Technology                 [MATCH] KTH_Royal_Institute_of_Technology
+93    Uppsala University                                [MATCH] Uppsala_University
+101   University of Copenhagen                          [MATCH] University_of_Copenhagen
+107   Technical University of Denmark                   [MATCH] Technical_University_of_Denmark
+114   Aalto University                                  [MATCH] Aalto_University
+116   University of Helsinki                            [MATCH] University_Of_Helsinki
+119   University of Oslo                                [MATCH] University_of_Oslo
+131   Aarhus University                                 [MATCH] Aarhus_University
+147   Stockholm University                              [MATCH] Stockholm_University
+165   Chalmers University of Technology                 [MATCH] Chalmers_University_of_Technology
+202   University of Gothenburg                          [MATCH] University_of_Gothenburg
+267   Norwegian University of Science and Technology    [MATCH] Norwegian_University_of_Science_and_Technology
+303   University of Southern Denmark                    [MATCH] University_of_Southern_Denmark_Odense / University_of_Southern_Denmark_Kolding
+305   University of Oulu                                [MATCH] University_of_Oulu
+306   Aalborg University                                [MATCH] Aalborg_University_Aalborg / Aalborg_University_Copenhagen
+310   Linkoping University                              [MATCH] Linkping_University
+366   University of Turku                               [NO MATCH]
+397   LUT University                                    [MATCH] LUT_University
+401   Umea University                                   [NO MATCH]
+~88   Karolinska Institutet                             [MATCH] Karolinska_Institutet
+
+--- BELGIUM ---
+60    KU Leuven                                         [MATCH] KU_Leuven
+162   Ghent University                                  [MATCH] Ghent_University
+191   Universite Catholique de Louvain                  [NO MATCH]
+227   Universite Libre de Bruxelles                     [NO MATCH]
+280   University of Antwerp                             [MATCH] University_of_Antwerp
+
+--- ITALY ---
+98    Politecnico di Milano                             [MATCH] Politecnico_di_Milano
+128   Sapienza University of Rome                       [MATCH] Sapienza_University_of_Rome
+138   University of Bologna                             [MATCH] University_of_Bologna
+242   Politecnico di Torino                             [MATCH] Polytechnic_University_of_Turin
+
+--- SPAIN ---
+160   University of Barcelona                           [MATCH] University_of_Barcelona
+172   Universitat Autonoma de Barcelona                 [MATCH] Universitat_Autonoma_de_Barcelona
+265   Universitat Pompeu Fabra                          [MATCH] Pompeu_Fabra_University
+392   Universitat Politecnica de Catalunya              [MATCH] Polytechnic_University_of_Catalonia
+
+--- IRELAND ---
+75    Trinity College Dublin                            [MATCH] Trinity_College_Dublin
+118   University College Dublin                         [MATCH] University_College_Dublin
+246   University College Cork                           [MATCH] University_College_Cork
+268   University of Galway                              [MATCH] University_of_Galway / National_University_of_Ireland_Galway
+282   University of Limerick                            [MATCH] University_of_Limerick
+410   Dublin City University                            [MATCH] Dublin_City_University
+
+--- AUSTRIA ---
+152   University of Vienna                              [MATCH] University_of_Vienna
+197   Vienna University of Technology                   [NO MATCH]
+
+--- OTHER CONTINENTAL ---
+84    Universidad de Buenos Aires                       [NO MATCH] (Argentina)
+105   Lomonosov Moscow State University                 [NO MATCH] (Russia)
+150   University of Cape Town                           [NO MATCH] (South Africa)
+265   Charles University                                [NO MATCH] (Czech Republic)
+271   University of Warsaw                              [MATCH] University_of_Warsaw
+303   Jagiellonian University                           [MATCH] Jagiellonian_University
+326   University of Tartu                               [MATCH] University_of_Tartu
+350   Universitat Innsbruck                             [NO MATCH] (Austria)
+381   University of Luxembourg                          [MATCH] University_of_Luxembourg
+230   University of Lisbon                              [NO MATCH] (Portugal)
+
+================================================================================
+4. ASIA (Top ~40 research universities)
+================================================================================
+
+--- SINGAPORE ---
+Rank  University Name (common)                         Folder Match
+----  -----------------------------------------------  ---------------------------
+8     National University of Singapore (NUS)            [MATCH] National_University_Of_Singapore
+12    Nanyang Technological University (NTU)            [MATCH] Nanyang_Technological_University
+
+--- HONG KONG ---
+11    University of Hong Kong                           [MATCH] The_University_of_Hong_Kong
+32    Chinese University of Hong Kong                   [MATCH] The_Chinese_University_of_Hong_Kong
+44    Hong Kong University of Science and Technology    [MATCH] The_Hong_Kong_University_of_Science_and_Technology
+54    Hong Kong Polytechnic University                  [MATCH] The_Hong_Kong_Polytechnic_University
+63    City University of Hong Kong                      [MATCH] City_University_of_Hong_Kong
+244   Hong Kong Baptist University                      [MATCH] Hong_Kong_Baptist_University
+
+--- CHINA (MAINLAND) ---
+14    Peking University                                 [NO MATCH]
+17    Tsinghua University                               [NO MATCH]
+30    Fudan University                                  [NO MATCH]
+47    Shanghai Jiao Tong University                     [NO MATCH]
+49    Zhejiang University                               [NO MATCH]
+103   Nanjing University                                [NO MATCH]
+132   University of Science and Technology of China      [NO MATCH]
+177   Tongji University                                 [NO MATCH]
+186   Wuhan University                                  [NO MATCH]
+247   Beijing Normal University                         [NO MATCH]
+256   Harbin Institute of Technology                    [NO MATCH]
+276   Sun Yat-sen University                            [NO MATCH]
+305   Xi'an Jiaotong University                         [NO MATCH]
+343   Southern University of Science and Technology     [NO MATCH]
+
+--- JAPAN ---
+36    University of Tokyo                               [MATCH] The_University_of_Tokyo
+57    Kyoto University                                  [MATCH] Kyoto_University
+85    Tokyo Institute of Technology                     [MATCH] Tokyo_Institute_of_Technology
+91    Osaka University                                  [MATCH] Osaka_University
+109   Tohoku University                                 [MATCH] Tohoku_University
+164   Nagoya University                                 [MATCH] Nagoya_University
+170   Hokkaido University                               [NO MATCH]
+170   Kyushu University                                 [NO MATCH]
+196   Waseda University                                 [NO MATCH]
+215   Keio University                                   [MATCH] Keio_University
+350   University of Tsukuba                             [MATCH] University_of_Tsukuba
+
+--- SOUTH KOREA ---
+38    Seoul National University                         [NO MATCH]
+50    Yonsei University                                 [NO MATCH]
+61    Korea University                                  [NO MATCH]
+102   POSTECH                                           [NO MATCH]
+126   Sungkyunkwan University                           [MATCH] Sungkyunkwan_University
+159   Hanyang University                                [NO MATCH]
+310   UNIST                                             [NO MATCH]
+331   Kyung Hee University                              [NO MATCH]
+
+--- INDIA ---
+123   Indian Institute of Technology Delhi (IITD)       [NO MATCH]
+129   Indian Institute of Technology Bombay (IITB)      [NO MATCH]
+180   Indian Institute of Technology Madras (IITM)      [NO MATCH]
+215   Indian Institute of Technology Kharagpur          [NO MATCH]
+219   Indian Institute of Science (IISc) Bangalore      [NO MATCH]
+222   Indian Institute of Technology Kanpur             [NO MATCH]
+328   University of Delhi                               [NO MATCH]
+334   Indian Institute of Technology Guwahati           [NO MATCH]
+339   Indian Institute of Technology Roorkee            [NO MATCH]
+
+--- TAIWAN ---
+63    National Taiwan University                        [NO MATCH]
+176   National Tsing Hua University                     [NO MATCH]
+199   National Yang Ming Chiao Tung University          [NO MATCH]
+203   National Cheng Kung University                    [NO MATCH]
+
+--- OTHER ASIA ---
+223   Tel Aviv University                               [MATCH] Tel_Aviv_University
+240   Hebrew University of Jerusalem                    [NO MATCH]
+350   Technion - Israel Institute of Technology         [NO MATCH]
+
+================================================================================
+5. AUSTRALIA & NEW ZEALAND (Top ~20 universities)
+================================================================================
+
+--- AUSTRALIA ---
+Rank  University Name (common)                         Folder Match
+----  -----------------------------------------------  ---------------------------
+19    University of Melbourne                           [MATCH] University_of_Melbourne
+20    University of New South Wales (UNSW)              [MATCH] University_of_New_South_Wales_Sydney
+25    University of Sydney                              [MATCH] University_of_Sydney
+32    Australian National University (ANU)              [MATCH] Australian_National_University
+36    Monash University                                 [MATCH] Monash_University / Monash_University_Melbourne
+42    University of Queensland                          [MATCH] The_University_of_Queensland
+77    University of Western Australia                   [MATCH] The_University_of_Western_Australia
+82    University of Adelaide                            [MATCH] University_of_Adelaide
+96    University of Technology Sydney                   [MATCH] University_of_Technology_Sydney
+125   RMIT University                                   [MATCH] RMIT_University
+138   Macquarie University                              [MATCH] Macquarie_University_Sydney
+183   Curtin University                                 [MATCH] Curtin_University / Curtin_University_Perth
+184   University of Wollongong                          [MATCH] University_of_Wollongong
+207   Deakin University                                 [MATCH] Deakin_University_Melbourne
+226   Queensland University of Technology               [MATCH] Queensland_University_of_Technology
+227   University of Newcastle                           [MATCH] University_of_Newcastle
+233   La Trobe University                               [MATCH] La_Trobe_University / La_Trobe_University_Melbourne
+268   Griffith University                               [MATCH] Griffith_University_Brisbane
+294   Swinburne University of Technology                [MATCH] Swinburne_University_of_Technology_Melbourne
+314   University of Tasmania                            [MATCH] University_of_Tasmania
+327   Flinders University                               [MATCH] Flinders_University_Adelaide
+387   University of South Australia                     [MATCH] University_of_South_Australia_Adelaide
+400   Western Sydney University                         [MATCH] Western_Sydney_University
+410   University of Southern Queensland                 [MATCH] University_of_Southern_Queensland
+~500+ University of Canberra                            [MATCH] University_of_Canberra
+
+--- NEW ZEALAND ---
+65    University of Auckland                            [MATCH] The_University_of_Auckland
+197   University of Otago                               [MATCH] University_of_Otago
+230   Massey University                                 [MATCH] Massey_University
+240   Victoria University of Wellington                 [MATCH] Victoria_University_of_Wellington
+261   University of Canterbury                          [MATCH] University_of_Canterbury
+281   University of Waikato                             [MATCH] University_of_Waikato
+407   Lincoln University                                [MATCH] University_in_Lincoln_New_Zealand
+410   Auckland University of Technology                 [MATCH] Auckland_University_of_Technology
+
+================================================================================
+6. CANADA (Top ~18 research universities)
+================================================================================
+
+Rank  University Name (common)                         Folder Match
+----  -----------------------------------------------  ---------------------------
+27    McGill University                                 [MATCH] Mc_Gill_University_Montreal
+29    University of Toronto                             [MATCH] University_of_Toronto
+40    University of British Columbia (UBC)              [MATCH] The_University_of_British_Columbia_Vancouver / University_of_British_Columbia
+94    University of Alberta                             [MATCH] University_of_Alberta_Edmonton / University_of_Alberta_Augustana
+119   University of Waterloo                            [MATCH] University_of_Waterloo
+151   Western University                                [MATCH] Western_University
+168   University of Montreal                            [MATCH] University_of_Montreal
+173   McMaster University                               [MATCH] Mc_Master_University_Hamilton
+191   Queen's University Ontario                        [MATCH] Queens_University_Kingston
+211   University of Calgary                             [MATCH] University_of_Calgary
+219   University of Ottawa                              [MATCH] University_of_Ottawa
+283   Dalhousie University                              [MATCH] Dalhousie_University
+308   Simon Fraser University                           [MATCH] Simon_Fraser_University
+333   York University                                   [NO MATCH]
+358   University of Victoria                            [MATCH] University_of_Victoria / University_of_Victoria_British_Columbia
+378   University of Saskatchewan                        [MATCH] University_of_Saskatchewan_Saskatoon
+~500+ Carleton University                               [MATCH] Carleton_University
+~500+ Laval University                                  [MATCH] Laval_University
+
+================================================================================
+SUMMARY STATISTICS
+================================================================================
+
+Region                      Universities Listed    Matched in Dataset
+--------------------------  --------------------   ------------------
+United States               ~60                    ~58
+UK                          ~43                    ~43
+Continental Europe          ~75                    ~65
+Asia                        ~55                    ~20
+Australia & New Zealand     ~33                    ~33
+Canada                      ~18                    ~17
+--------------------------  --------------------   ------------------
+TOTAL                       ~284                   ~236
+
+Notable gaps in our dataset:
+- Chinese mainland universities (Peking, Tsinghua, Fudan, etc.)
+- South Korean universities (Seoul National, Yonsei, Korea University)
+- Indian IITs (Delhi, Bombay, Madras, etc.)
+- Taiwan universities (National Taiwan University, etc.)
+- Some German universities (Humboldt Berlin, TU Dresden)
+
+================================================================================
+END OF FILE
+================================================================================

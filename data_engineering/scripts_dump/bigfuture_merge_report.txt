@@ -1,0 +1,341 @@
+================================================================================
+  BIGFUTURE MERGE REPORT — UG DATA ENRICHMENT PLAN
+  Generated: April 2026
+================================================================================
+
+MATCHING SUMMARY
+  Classified UG universities:    763
+  Matched to BigFuture:          530 (69.5%)
+  Unmatched (non-US):            233 (30.5%)
+
+  Total classified courses:      8,697
+  Courses enrichable:            6,515 (74.9%)
+  Courses not enrichable:        2,182 (25.1%)
+
+================================================================================
+  1) UG MARKDOWN FILE — DATA FIELDS (per course)
+================================================================================
+
+Section                    Field                                    Example Value
+-------------------------  ---------------------------------------- ----------------------------------------
+University Overview        QS World Ranking                         64
+                           THE World Ranking                        1001
+                           Campus description                       Public research university in Champaign, IL
+
+Program Overview           Duration                                 3 years / 4 years
+                           Total Credits                            120 credits
+                           Degree Awarded                           Bachelor of Science
+                           Department/School                        Department of Mathematics
+                           Delivery Mode                            On-campus / Online
+
+Curriculum                 Core courses                             List of specific course codes and names
+                           Electives                                Available elective tracks
+                           Graduation requirements                  Minimum credits, GPA requirements
+                           Specializations                          Available concentrations
+                           Internship                               8-week internship (270 hours)
+
+Admission Requirements     Educational background                   High school diploma, Standard XII
+                           GPA requirements                         Minimum GPA or %
+                           SAT/ACT scores                           SAT: 1390-1510, ACT: 30-34
+                           TOEFL score                              Minimum 80-100
+                           IELTS score                              Minimum 6.0-7.0
+                           Test policy                              Required / Test-optional
+                           Indian student requirements              ICSE/CBSE, Standard XII marks
+                           Required documents                       Transcripts, passport, SOP
+                           Application platform                     Common App / Direct
+                           Application fee                          $50 / CAD 100
+
+Tuition & Fees             Annual tuition (in-state)                $12,992
+                           Annual tuition (out-of-state)            $33,344
+                           Annual tuition (international)           Varies
+                           Registration fee                         $200
+                           Student services fee                     $60/semester
+                           Total estimated cost                     Calculated total
+
+Application Deadlines      Early Action deadline                    November 1
+                           Regular deadline                         January 5
+                           Priority deadline                        March 1
+                           Application opens                        September 1
+                           Intake periods                           Fall / Spring / May
+
+Scholarships & Aid         Scholarship details                      Merit-based, need-based descriptions
+                           Aid percentage                           68% receive aid
+                           Average aid amount                       $11,962
+
+Career Outcomes            Average earnings/salary                  $42,863 median
+                           Graduation rate                          Often "not available"
+                           Job placement rate                       Often "not available"
+                           Top recruiters                           Often "not available"
+
+Course Insights            Students admitted per year                25 degrees awarded
+                           International student %                  1,054 out of 26,814
+                           Student-Faculty ratio                    15:1
+
+Notable Faculty            Faculty names and titles                  Professor names, designations
+
+Important Links            Program page URL                         Direct link
+                           Apply Now link                           Application portal
+                           Faculty directory                        Department faculty page
+
+Contact Information        Department name                          Department of Mathematics
+                           Address                                  Full postal address
+                           Phone                                    +1 (217) 333-3350
+                           Email                                    advising@illinois.edu
+
+Sources                    Grounding URLs                           List of cited sources
+Grounding Data             Raw JSON grounding chunks                 Gemini search grounding metadata
+
+
+================================================================================
+  2) BIGFUTURE RAW FILE — DATA FIELDS (per college)
+================================================================================
+
+Category                   Field                                    Example Value
+-------------------------  ---------------------------------------- ----------------------------------------
+Identity                   name                                     University Of Illinois Urbana Champaign
+                           orgId                                    1192
+                           vanityUri (slug)                         university-of-illinois-at-urbana-champaign
+                           ipedsId                                  145637
+                           diCode (CB Code)                         1836
+                           description                              Founded with goals of true impact...
+
+Location                   city, state, zipCode                     Champaign, IL, 61820
+                           country, countryName                     US, United States of America
+                           streetAddress                            601 E John St
+                           schoolSetting                            urban / suburban / rural
+                           lat, lon                                 40.09, -88.22
+
+Type & Size                schoolTypeByDesignation                  public / private
+                           schoolTypeByYears                        4 (4-year)
+                           schoolSize                               very large
+                           genderCode                               C (coed)
+                           vocationalSchool                         false
+
+SAT Scores                 satCompositeScore 25th/75th              1390-1510
+                           rsatMathScore 25th/75th                  700-790
+                           rsatEbrwScore 25th/75th                  680-740
+
+ACT Scores                 actCompositeScore 25th/75th              30-34
+
+Admission Policy           satOrAct                                 Consider if Submitted / Require / Not Used
+                           highSchoolGpa                            Require / Consider / Not Used
+                           highSchoolRank                           Not Used
+                           prepCourses                              Not Used
+                           recommendations                          Not Used
+
+Acceptance                 acceptanceRate                           42.37%
+                           totalApplicants                          73,742
+                           admittedApplicants                       31,247
+                           enrolledApplicants                       9,008
+
+GPA Distribution           gpa400 through gpaBelow100               % of students in each bracket
+
+Application                applicationFeeAmount                     $50
+                           feeWaiverIndicator                       Y
+                           applicationSiteUrl                       https://admissions.illinois.edu/apply/
+                           commonApplicationUrl                     https://apply.commonapp.org/...
+                           applicationsAccepted                     Common Application
+
+Deadlines                  regularDecisionDate                      01/05/9999 (= Jan 5 recurring)
+                           earlyActionDate                          11/01/9999 (= Nov 1 recurring)
+                           earlyDecisionDate                        null
+                           financialAidApplicationRegularDeadline   03/15/9999
+                           notificationDate                         02/15/9999
+
+Tuition                    inStateTuition                           $12,992
+                           outOfStateTuition                        $33,344
+                           privateTuition                           null (only for private schools)
+
+Costs                      averageHousingCost                       $15,184
+                           booksAndSuppliesCost                     $1,200
+                           estimatedPersonalExpenses                $2,000
+                           transportationCosts                      $500
+
+Net Price by Income        averageNetPrice                          $14,272
+                           averageNetPriceBelow30K                  $3,883
+                           averageNetPrice30To48K                   $5,955
+                           averageNetPrice48To75K                   $10,065
+                           averageNetPrice75To110K                  $20,205
+                           averageNetPriceAbove110K                 $28,358
+
+Financial Aid              studentsReceivingAidPercent              43.33%
+                           freshmenWithNeedAidPercent               88.53%
+                           financialNeedMet / financialAidMetPercent 77%
+                           averageAidAwarded                        $23,526
+                           needBasedAward                           $21,943
+                           needBasedLoanAmount                      $4,272
+                           nonNeedBasedAid                          $6,348
+                           graduationDebt                           $22,395
+                           needBasedFinAidForIntlStudentsInd        false
+                           nonNeedBasedFinAidForIntlStudentsInd     true
+
+Academics                  collegeMajors                            [203 items] - name, cipCode, cipDefinition
+                           cipMajors                                [203 items] - CIP classification
+                           degreesOffered                           Bachelor's, Master's, Doctoral, etc.
+                           studyOptions                             Double Major, Study Abroad, ROTC, etc.
+                           graduationRatePercent                    85%
+                           sophomoreYearReturnPercent               94.8%
+                           studentFacultyRatio                      20:1
+
+AP Credit Policy           apCreditAwarded                          true
+                           apPlacementAwarded                       true
+                           apInstPolicyUrl                          URL to credit policy page
+                           apInstPolicyDescription                  Full text of AP policy
+                           apExamTypes                              [40 items] - exam, minScore, credits, equiv
+
+Campus Life                totalUndergraduates                      36,258
+                           totalGraduates                           22,098
+                           fullTimeEnrolled / partTimeEnrolled      36,104 / 1,036
+                           commuterOrResidential                    commuter / residential
+                           firstYearCollegeHousingPercent           99%
+                           housingOptions                           Coed, Apartments, Theme Housing, etc.
+                           studentSports                            [42 items]
+                           studentActivities                        [23 items]
+
+Demographics               whitePercent                             37.53%
+                           asianPercent                             23.1%
+                           hispanicPercent                          14.41%
+                           africanAmericanPercent                   5.3%
+                           internationalPercent                     13.91%
+                           outOfStatePercent                        17%
+                           multiracialPercent                       4.11%
+                           nativeAmericanPercent                    0.03%
+                           pacificIslanderPercent                   0.03%
+
+Special Designations       specializedSchoolHistoricallyBlackInd    N
+                           specializedSchoolHispanicServingInd      N
+                           specializedSchoolWomensCollegeInd        N
+                           religiousAffiliation                     null
+
+Contact                    contactPhoneFormatted                    (217) 333-0302
+                           financialAidOfficePhoneNumber            217-333-0100
+                           schoolUrl                                https://illinois.edu
+                           netPriceCalculatorUrl                    https://secure.osfa.illinois.edu/NPC/
+
+Social Media               youtube, twitter, facebook               Full URLs for each platform
+                           instagram, linkedin                      Full URLs
+
+
+================================================================================
+  3) FIELDS NOT IN MARKDOWN — CAN ADD FROM BIGFUTURE
+================================================================================
+
+Field                                    BigFuture Example              Currently in Markdown?
+---------------------------------------- ------------------------------- ----------------------
+
+--- ADMISSIONS & SELECTIVITY ---
+Acceptance rate                          42.37%                          No
+Total applicants / admitted / enrolled   73,742 / 31,247 / 9,008        No
+SAT Math 25th/75th percentile            700-790                         No (only composite)
+SAT Reading 25th/75th percentile         680-740                         No
+GPA distribution by bracket              16% have 4.0, 17% 3.75-3.99    No
+Admission policy details                 GPA: Require, Rank: Not Used    No (only scores listed)
+Notification date                        Feb 15                          No
+Early decision date                      null / Nov 15                   No
+Financial aid application deadline       Mar 15                          No
+Fee waiver availability                  Yes                             No
+Common App URL                           Direct link                     Sometimes
+Application site URL                     Direct admissions portal link   Sometimes
+Applications accepted types              Common App, Coalition, etc.     No
+
+--- COSTS & FINANCIAL AID ---
+Net price by income bracket (5 brackets) $3,883 (<30K) to $28,358(>110K)No
+Average net price                        $14,272                         No
+Average aid awarded                      $23,526                         Sometimes vague
+% students receiving aid                 43.33%                          Sometimes vague
+% freshmen need met                      88.53%                          No
+Need-based award amount                  $21,943                         No
+Need-based loan amount                   $4,272                          No
+Non-need-based aid amount                $6,348                          No
+Average graduation debt                  $22,395                         No
+Housing cost                             $15,184                         Sometimes
+Books & supplies cost                    $1,200                          Sometimes
+Transportation costs                     $500                            No
+Estimated personal expenses              $2,000                          No
+Net price calculator URL                 Direct link                     No
+Financial aid for intl students (need)   No                              No
+Financial aid for intl students (merit)  Yes                             No
+Financial aid office phone               217-333-0100                    No
+
+--- ACADEMICS ---
+Graduation rate                          85%                             Often "not available"
+Retention rate (sophomore return)        94.8%                           No
+Student-faculty ratio                    20:1                            Sometimes differs
+AP credit policy (per-exam table)        40 exams with scores/credits    No (totally new section)
+AP placement policy                      true/false                      No
+AP policy URL                            Direct link to credit page      No
+Study options                            Double Major, Study Abroad, etc No
+Degrees offered list                     Bachelor's, Master's, Doctoral  No (only per-course)
+Complete majors list with CIP codes      203 majors with CIP codes       No
+CIP code definitions                     Full classification text        No
+
+--- DEMOGRAPHICS & ENROLLMENT ---
+Demographics: White %                    37.53%                          Sometimes partial
+Demographics: Asian %                    23.1%                           Sometimes partial
+Demographics: Hispanic %                 14.41%                          Sometimes partial
+Demographics: African American %         5.3%                            Sometimes partial
+Demographics: International %            13.91%                          Sometimes partial
+Demographics: Out-of-state %             17%                             No
+Demographics: Multiracial %              4.11%                           No
+Demographics: Native American %          0.03%                           No
+Demographics: Pacific Islander %         0.03%                           No
+Total undergrad enrollment               36,258                          Sometimes
+Total graduate enrollment                22,098                          No
+Full-time enrolled                       36,104                          No
+Part-time enrolled                       1,036                           No
+
+--- CAMPUS LIFE ---
+School setting                           urban / suburban / rural        No
+School size category                     very large / large / medium     No
+Commuter or residential                  residential                     No
+First-year housing %                     99%                             No
+Housing options                          Coed, Apartments, Theme, etc.   No
+Sports list (with gender)                42 sports (M/W breakdown)       No
+Student activities list                  23 activities                   No
+
+--- LOCATION & GEOGRAPHY ---
+Latitude                                 40.09                           No
+Longitude                                -88.22                          No
+Street address                           601 E John St                   Sometimes partial
+City / State / Zip                       Champaign, IL, 61820            Yes (in description)
+Country                                  US                              Yes
+
+--- IDENTITY & IDENTIFIERS ---
+College Board code (diCode)              1836                            No
+IPEDS ID                                 145637                          No
+CollegeBoard orgId                       1192                            No
+Vanity URI (slug)                        university-of-illinois-at-...   No
+College description (long text)          Founded with goals of...        Sometimes shorter
+School type (public/private)             public                          Yes (in description)
+School type by years                     4-year                          Yes (implied)
+Gender code                              C (coed) / M / W                No
+Vocational school flag                   false                           No
+Special designations (HBCU, HSI, etc.)   N / Y                           No
+Women's college designation              N / Y                           No
+Religious affiliation                    null / Church name              No
+
+--- CONTACT & SOCIAL MEDIA ---
+School website URL                       https://illinois.edu            Sometimes
+Contact phone (formatted)                (217) 333-0302                  Sometimes
+YouTube URL                              Full link                       No
+Twitter/X URL                            Full link                       No
+Facebook URL                             Full link                       No
+Instagram URL                            Full link                       No
+LinkedIn URL                             Full link                       No
+
+--- TOTAL: 80 enrichable fields across 8 categories ---
+
+
+================================================================================
+  NOTES
+================================================================================
+
+- BigFuture is US-only (CollegeBoard). Non-US universities cannot be enriched.
+- BigFuture data is per-college, not per-course. All courses at same university
+  get the same enrichment data.
+- BigFuture does NOT have: TOEFL/IELTS scores, Indian student requirements,
+  per-course curriculum, per-course tuition differences.
+- SAT/ACT data from BigFuture can significantly improve our admission
+  verification accuracy (currently 35.1% SAT, 42.4% ACT).
+
+================================================================================

@@ -1,0 +1,2510 @@
+{
+  "Degree Type": {
+    "has_value": 12712,
+    "empty": 7
+  },
+  "Delivery Mode": {
+    "has_value": 10590,
+    "empty": 916
+  },
+  "Duration": {
+    "has_value": 10132,
+    "empty": 928
+  },
+  "TOEFL iBT": {
+    "has_value": 10092,
+    "empty": 258
+  },
+  "Program page URL": {
+    "has_value": 9898,
+    "empty": 311
+  },
+  "Department/school contact page": {
+    "has_value": 4620,
+    "empty": 5472
+  },
+  "Faculty directory page for the department": {
+    "has_value": 3617,
+    "empty": 6467
+  },
+  "Direct application portal / \"Apply Now\" link": {
+    "has_value": 4992,
+    "empty": 5040
+  },
+  "Credits": {
+    "has_value": 8051,
+    "empty": 953
+  },
+  "Phone": {
+    "has_value": 6683,
+    "empty": 2025
+  },
+  "PTE Academic": {
+    "has_value": 7778,
+    "empty": 513
+  },
+  "Admissions Email": {
+    "has_value": 5691,
+    "empty": 2058
+  },
+  "STEM Designation": {
+    "has_value": 1724,
+    "empty": 5712
+  },
+  "Physical Address": {
+    "has_value": 5197,
+    "empty": 1408
+  },
+  "Department/School Name": {
+    "has_value": 6063,
+    "empty": 98
+  },
+  "IELTS": {
+    "has_value": 5568,
+    "empty": 169
+  },
+  "IELTS Academic": {
+    "has_value": 5345,
+    "empty": 18
+  },
+  "Application Fee": {
+    "has_value": 4097,
+    "empty": 1212
+  },
+  "Work Experience": {
+    "has_value": 4110,
+    "empty": 1194
+  },
+  "Department": {
+    "has_value": 5166,
+    "empty": 51
+  },
+  "Key Highlights": {
+    "has_value": 4939,
+    "empty": 123
+  },
+  "Duolingo English Test (DET)": {
+    "has_value": 4566,
+    "empty": 176
+  },
+  "TEST WAIVERS": {
+    "has_value": 1345,
+    "empty": 3351
+  },
+  "University": {
+    "has_value": 4390,
+    "empty": 0
+  },
+  "English Proficiency": {
+    "has_value": 4332,
+    "empty": 39
+  },
+  "GPA Requirements": {
+    "has_value": 3534,
+    "empty": 746
+  },
+  "Credential Evaluation for International Students": {
+    "has_value": 2162,
+    "empty": 2111
+  },
+  "Work experience": {
+    "has_value": 3379,
+    "empty": 771
+  },
+  "Program Name": {
+    "has_value": 4144,
+    "empty": 1
+  },
+  "GRE": {
+    "has_value": 3740,
+    "empty": 327
+  },
+  "English Proficiency Waiver Conditions": {
+    "has_value": 2611,
+    "empty": 1455
+  },
+  "Employment Rate": {
+    "has_value": 3092,
+    "empty": 953
+  },
+  "Educational Background and Prerequisites": {
+    "has_value": 3984,
+    "empty": 15
+  },
+  "Application fee": {
+    "has_value": 2831,
+    "empty": 1112
+  },
+  "Credential evaluation for international students": {
+    "has_value": 1958,
+    "empty": 1888
+  },
+  "Program Page URL": {
+    "has_value": 3539,
+    "empty": 91
+  },
+  "English proficiency waiver conditions": {
+    "has_value": 2215,
+    "empty": 1409
+  },
+  "Test Waivers": {
+    "has_value": 1034,
+    "empty": 2567
+  },
+  "Department/School Contact Page": {
+    "has_value": 2076,
+    "empty": 1419
+  },
+  "GPA requirements": {
+    "has_value": 2878,
+    "empty": 600
+  },
+  "English proficiency": {
+    "has_value": 3402,
+    "empty": 54
+  },
+  "Acceptance Rate": {
+    "has_value": 2233,
+    "empty": 1217
+  },
+  "GRE/GMAT": {
+    "has_value": 2492,
+    "empty": 929
+  },
+  "Department Name": {
+    "has_value": 3339,
+    "empty": 0
+  },
+  "International Students": {
+    "has_value": 3246,
+    "empty": 46
+  },
+  "GMAT": {
+    "has_value": 2239,
+    "empty": 1007
+  },
+  "Educational background and prerequisites": {
+    "has_value": 3206,
+    "empty": 17
+  },
+  "Faculty Directory Page for the Department": {
+    "has_value": 1556,
+    "empty": 1639
+  },
+  "Rolling Admissions": {
+    "has_value": 1464,
+    "empty": 1644
+  },
+  "Average Work Experience": {
+    "has_value": 495,
+    "empty": 2222
+  },
+  "Average GPA of Admitted Class": {
+    "has_value": 471,
+    "empty": 2060
+  },
+  "International Student %": {
+    "has_value": 987,
+    "empty": 1537
+  },
+  "Gender Ratio": {
+    "has_value": 686,
+    "empty": 1832
+  },
+  "Class Size": {
+    "has_value": 898,
+    "empty": 1578
+  },
+  "Average GRE/GMAT Scores": {
+    "has_value": 1413,
+    "empty": 978
+  },
+  "Application Deadline": {
+    "has_value": 1767,
+    "empty": 176
+  },
+  "Direct Application Portal / \"Apply Now\" Link": {
+    "has_value": 1188,
+    "empty": 648
+  },
+  "Assistantships": {
+    "has_value": 1030,
+    "empty": 749
+  },
+  "Additional Fees": {
+    "has_value": 518,
+    "empty": 1151
+  },
+  "Top Employers": {
+    "has_value": 1091,
+    "empty": 567
+  },
+  "Spring 2027 Intake": {
+    "has_value": 171,
+    "empty": 1447
+  },
+  "School/Department": {
+    "has_value": 1541,
+    "empty": 34
+  },
+  "Accreditation": {
+    "has_value": 1516,
+    "empty": 6
+  },
+  "Median/Average Salary": {
+    "has_value": 504,
+    "empty": 979
+  },
+  "Fall 2027 Intake": {
+    "has_value": 213,
+    "empty": 1233
+  },
+  "Direct Application Portal / \"Apply Now\" link": {
+    "has_value": 760,
+    "empty": 670
+  },
+  "Early Decision/Early Action": {
+    "has_value": 133,
+    "empty": 1283
+  },
+  "Fellowships": {
+    "has_value": 592,
+    "empty": 766
+  },
+  "Delivery": {
+    "has_value": 1135,
+    "empty": 217
+  },
+  "Duolingo English Test": {
+    "has_value": 1329,
+    "empty": 21
+  },
+  "Focus": {
+    "has_value": 1346,
+    "empty": 0
+  },
+  "IELTS (Academic)": {
+    "has_value": 1324,
+    "empty": 1
+  },
+  "Transcripts": {
+    "has_value": 1203,
+    "empty": 104
+  },
+  "Top Industries": {
+    "has_value": 871,
+    "empty": 429
+  },
+  "Academic Year": {
+    "has_value": 1117,
+    "empty": 178
+  },
+  "Standardized tests": {
+    "has_value": 947,
+    "empty": 326
+  },
+  "International Applicants": {
+    "has_value": 1238,
+    "empty": 21
+  },
+  "Average GPA of admitted class": {
+    "has_value": 170,
+    "empty": 1084
+  },
+  "Average GRE/GMAT scores": {
+    "has_value": 695,
+    "empty": 537
+  },
+  "Domestic Students": {
+    "has_value": 820,
+    "empty": 384
+  },
+  "Top Employers/Industries": {
+    "has_value": 729,
+    "empty": 417
+  },
+  "Letters of Recommendation": {
+    "has_value": 1062,
+    "empty": 58
+  },
+  "Field Tags": {
+    "has_value": 1089,
+    "empty": 8
+  },
+  "Department/school name": {
+    "has_value": 975,
+    "empty": 100
+  },
+  "Start Date": {
+    "has_value": 1045,
+    "empty": 2
+  },
+  "GMAT/EA": {
+    "has_value": 495,
+    "empty": 526
+  },
+  "Average work experience": {
+    "has_value": 95,
+    "empty": 912
+  },
+  "Gender ratio": {
+    "has_value": 156,
+    "empty": 829
+  },
+  "Estimated Total Cost of Attendance": {
+    "has_value": 346,
+    "empty": 634
+  },
+  "Country": {
+    "has_value": 973,
+    "empty": 0
+  },
+  "Admissions email": {
+    "has_value": 503,
+    "empty": 461
+  },
+  "Duolingo DET": {
+    "has_value": 507,
+    "empty": 454
+  },
+  "Physical address": {
+    "has_value": 560,
+    "empty": 397
+  },
+  "GRE/GMAT/EA": {
+    "has_value": 707,
+    "empty": 230
+  },
+  "Language of Instruction": {
+    "has_value": 918,
+    "empty": 2
+  },
+  "Class size": {
+    "has_value": 165,
+    "empty": 743
+  },
+  "Acceptance rate": {
+    "has_value": 472,
+    "empty": 435
+  },
+  "International student %": {
+    "has_value": 350,
+    "empty": 553
+  },
+  "Email": {
+    "has_value": 850,
+    "empty": 47
+  },
+  "Full-time": {
+    "has_value": 890,
+    "empty": 3
+  },
+  "Note": {
+    "has_value": 860,
+    "empty": 27
+  },
+  "Part-time": {
+    "has_value": 836,
+    "empty": 6
+  },
+  "Eligibility": {
+    "has_value": 832,
+    "empty": 3
+  },
+  "EA": {
+    "has_value": 174,
+    "empty": 586
+  },
+  "Departmental Awards": {
+    "has_value": 188,
+    "empty": 565
+  },
+  "Average Salary": {
+    "has_value": 680,
+    "empty": 32
+  },
+  "Cambridge English": {
+    "has_value": 538,
+    "empty": 173
+  },
+  "UK Students": {
+    "has_value": 663,
+    "empty": 35
+  },
+  "Thesis/Capstone Requirements": {
+    "has_value": 487,
+    "empty": 205
+  },
+  "Standardized Tests (GRE/GMAT)": {
+    "has_value": 439,
+    "empty": 248
+  },
+  "TOEFL": {
+    "has_value": 616,
+    "empty": 68
+  },
+  "Personal Statement": {
+    "has_value": 673,
+    "empty": 6
+  },
+  "Assistantships (TA/RA/GA)": {
+    "has_value": 121,
+    "empty": 555
+  },
+  "Tuition Waivers": {
+    "has_value": 271,
+    "empty": 392
+  },
+  "Decision Notification Dates": {
+    "has_value": 115,
+    "empty": 547
+  },
+  "Need-based aid": {
+    "has_value": 151,
+    "empty": 488
+  },
+  "Other Scholarships": {
+    "has_value": 572,
+    "empty": 61
+  },
+  "Deposit/Enrollment Confirmation Deadlines": {
+    "has_value": 49,
+    "empty": 564
+  },
+  "Placement Statistics": {
+    "has_value": 237,
+    "empty": 364
+  },
+  "Department/School": {
+    "has_value": 555,
+    "empty": 36
+  },
+  "Standardized Tests (GRE/GMAT/EA)": {
+    "has_value": 413,
+    "empty": 174
+  },
+  "College": {
+    "has_value": 575,
+    "empty": 0
+  },
+  "Scholarships": {
+    "has_value": 431,
+    "empty": 115
+  },
+  "Need-based Aid": {
+    "has_value": 215,
+    "empty": 326
+  },
+  "Career Support": {
+    "has_value": 536,
+    "empty": 0
+  },
+  "Admissions Phone": {
+    "has_value": 513,
+    "empty": 7
+  },
+  "Decision Notification": {
+    "has_value": 457,
+    "empty": 56
+  },
+  "Assistantships/Fellowships": {
+    "has_value": 49,
+    "empty": 461
+  },
+  "Cambridge English Qualifications": {
+    "has_value": 271,
+    "empty": 228
+  },
+  "Merit-based scholarships": {
+    "has_value": 287,
+    "empty": 201
+  },
+  "Total Program Cost": {
+    "has_value": 381,
+    "empty": 93
+  },
+  "Location": {
+    "has_value": 472,
+    "empty": 0
+  },
+  "Alumni Discount": {
+    "has_value": 466,
+    "empty": 4
+  },
+  "Departmental awards": {
+    "has_value": 17,
+    "empty": 449
+  },
+  "Tuition waivers": {
+    "has_value": 71,
+    "empty": 391
+  },
+  "Fall 2027": {
+    "has_value": 168,
+    "empty": 260
+  },
+  "Domestic Applicants": {
+    "has_value": 394,
+    "empty": 33
+  },
+  "Statement of Purpose": {
+    "has_value": 415,
+    "empty": 11
+  },
+  "Standardized Tests": {
+    "has_value": 265,
+    "empty": 158
+  },
+  "Spring 2027": {
+    "has_value": 150,
+    "empty": 273
+  },
+  "Employer sponsorship options": {
+    "has_value": 10,
+    "empty": 411
+  },
+  "GRE/GMAT Waivers": {
+    "has_value": 239,
+    "empty": 181
+  },
+  "GREAT Scholarships": {
+    "has_value": 407,
+    "empty": 10
+  },
+  "LanguageCert Academic": {
+    "has_value": 401,
+    "empty": 10
+  },
+  "Address": {
+    "has_value": 406,
+    "empty": 1
+  },
+  "Cambridge CAE Advanced": {
+    "has_value": 405,
+    "empty": 0
+  },
+  "Resume/CV": {
+    "has_value": 380,
+    "empty": 24
+  },
+  "Merit-based Scholarships": {
+    "has_value": 309,
+    "empty": 89
+  },
+  "Fee Waiver Availability and Conditions": {
+    "has_value": 254,
+    "empty": 142
+  },
+  "Fee Waiver Availability": {
+    "has_value": 307,
+    "empty": 87
+  },
+  "Letters of Recommendation (LOR)": {
+    "has_value": 252,
+    "empty": 138
+  },
+  "Thesis Option": {
+    "has_value": 385,
+    "empty": 4
+  },
+  "Median Salary": {
+    "has_value": 383,
+    "empty": 1
+  },
+  "Final Deadline": {
+    "has_value": 329,
+    "empty": 45
+  },
+  "GRE Waiver": {
+    "has_value": 310,
+    "empty": 61
+  },
+  "Industries": {
+    "has_value": 370,
+    "empty": 0
+  },
+  "Pearson PTE Academic": {
+    "has_value": 368,
+    "empty": 2
+  },
+  "International Student Percentage": {
+    "has_value": 350,
+    "empty": 19
+  },
+  "Health Insurance": {
+    "has_value": 346,
+    "empty": 20
+  },
+  "Curriculum Vitae (CV)": {
+    "has_value": 254,
+    "empty": 109
+  },
+  "Writing Sample": {
+    "has_value": 127,
+    "empty": 236
+  },
+  "Official Transcripts": {
+    "has_value": 361,
+    "empty": 0
+  },
+  "Graduate Assistantships": {
+    "has_value": 346,
+    "empty": 14
+  },
+  "Fee waiver availability and conditions": {
+    "has_value": 269,
+    "empty": 89
+  },
+  "Direct Application Portal": {
+    "has_value": 312,
+    "empty": 46
+  },
+  "Department Email": {
+    "has_value": 348,
+    "empty": 5
+  },
+  "Core Courses": {
+    "has_value": 244,
+    "empty": 106
+  },
+  "Additional fees": {
+    "has_value": 78,
+    "empty": 268
+  },
+  "Employer Sponsorship": {
+    "has_value": 186,
+    "empty": 157
+  },
+  "Statement of Purpose (SOP)": {
+    "has_value": 194,
+    "empty": 148
+  },
+  "Placement Data": {
+    "has_value": 275,
+    "empty": 67
+  },
+  "Official URL": {
+    "has_value": 338,
+    "empty": 3
+  },
+  "Application Fee Waiver": {
+    "has_value": 239,
+    "empty": 95
+  },
+  "Application": {
+    "has_value": 332,
+    "empty": 0
+  },
+  "Department Phone": {
+    "has_value": 322,
+    "empty": 7
+  },
+  "Portfolio": {
+    "has_value": 137,
+    "empty": 182
+  },
+  "CV/Resume": {
+    "has_value": 200,
+    "empty": 116
+  },
+  "Employer Sponsorship Options": {
+    "has_value": 17,
+    "empty": 298
+  },
+  "Duolingo": {
+    "has_value": 301,
+    "empty": 13
+  },
+  "Online Application": {
+    "has_value": 314,
+    "empty": 0
+  },
+  "Rolling Admissions Status": {
+    "has_value": 158,
+    "empty": 155
+  },
+  "Priority Deadline": {
+    "has_value": 282,
+    "empty": 19
+  },
+  "Estimated total cost of attendance": {
+    "has_value": 80,
+    "empty": 214
+  },
+  "Fall 2026": {
+    "has_value": 231,
+    "empty": 62
+  },
+  "References": {
+    "has_value": 287,
+    "empty": 5
+  },
+  "Application Period": {
+    "has_value": 281,
+    "empty": 9
+  },
+  "Career Paths": {
+    "has_value": 284,
+    "empty": 1
+  },
+  "Cambridge": {
+    "has_value": 77,
+    "empty": 207
+  },
+  "Required Documents": {
+    "has_value": 119,
+    "empty": 164
+  },
+  "Early decision/early action availability": {
+    "has_value": 15,
+    "empty": 262
+  },
+  "Required documents with specifics": {
+    "has_value": 79,
+    "empty": 197
+  },
+  "Faculty Directory Page": {
+    "has_value": 189,
+    "empty": 87
+  },
+  "Career Services": {
+    "has_value": 276,
+    "empty": 0
+  },
+  "TOEFL Essentials": {
+    "has_value": 276,
+    "empty": 0
+  },
+  "Key Focus": {
+    "has_value": 272,
+    "empty": 0
+  },
+  "Tuition": {
+    "has_value": 260,
+    "empty": 12
+  },
+  "Specializations/Concentrations": {
+    "has_value": 121,
+    "empty": 149
+  },
+  "Chevening Scholarships": {
+    "has_value": 264,
+    "empty": 0
+  },
+  "School": {
+    "has_value": 263,
+    "empty": 0
+  },
+  "Start Dates": {
+    "has_value": 255,
+    "empty": 0
+  },
+  "TOEFL PBT": {
+    "has_value": 253,
+    "empty": 0
+  },
+  "Deposit": {
+    "has_value": 248,
+    "empty": 1
+  },
+  "Rolling admissions status": {
+    "has_value": 89,
+    "empty": 158
+  },
+  "Potential Roles": {
+    "has_value": 239,
+    "empty": 0
+  },
+  "Potential Career Paths": {
+    "has_value": 238,
+    "empty": 0
+  },
+  "Specializations": {
+    "has_value": 214,
+    "empty": 23
+  },
+  "External Scholarships": {
+    "has_value": 237,
+    "empty": 0
+  },
+  "Average GPA of Admitted Students": {
+    "has_value": 125,
+    "empty": 112
+  },
+  "Elective Areas": {
+    "has_value": 118,
+    "empty": 116
+  },
+  "Need-Based Aid": {
+    "has_value": 178,
+    "empty": 52
+  },
+  "Fax": {
+    "has_value": 230,
+    "empty": 0
+  },
+  "Final Application Deadline": {
+    "has_value": 214,
+    "empty": 15
+  },
+  "Faculty": {
+    "has_value": 224,
+    "empty": 0
+  },
+  "Academic Transcripts": {
+    "has_value": 224,
+    "empty": 0
+  },
+  "Credit Hours": {
+    "has_value": 222,
+    "empty": 1
+  },
+  "Duolingo DET, PTE Academic, Cambridge": {
+    "has_value": 17,
+    "empty": 203
+  },
+  "International students": {
+    "has_value": 215,
+    "empty": 5
+  },
+  "Amount": {
+    "has_value": 217,
+    "empty": 0
+  },
+  "Fall 2026 Intake": {
+    "has_value": 190,
+    "empty": 25
+  },
+  "GRE General Test": {
+    "has_value": 213,
+    "empty": 2
+  },
+  "Home (UK) Students": {
+    "has_value": 200,
+    "empty": 11
+  },
+  "International Application Deadline": {
+    "has_value": 205,
+    "empty": 6
+  },
+  "Average Age": {
+    "has_value": 204,
+    "empty": 2
+  },
+  "Thesis Requirement": {
+    "has_value": 204,
+    "empty": 1
+  },
+  "Full Program Name": {
+    "has_value": 205,
+    "empty": 0
+  },
+  "Pearson Test of English (PTE) Academic": {
+    "has_value": 202,
+    "empty": 2
+  },
+  "Fee Waiver": {
+    "has_value": 152,
+    "empty": 51
+  },
+  "General Enquiries Email": {
+    "has_value": 197,
+    "empty": 6
+  },
+  "TOEFL (iBT)": {
+    "has_value": 201,
+    "empty": 1
+  },
+  "Per-credit cost": {
+    "has_value": 40,
+    "empty": 162
+  },
+  "Estimated Cost of Living": {
+    "has_value": 190,
+    "empty": 6
+  },
+  "Electives": {
+    "has_value": 195,
+    "empty": 1
+  },
+  "CRICOS Code": {
+    "has_value": 193,
+    "empty": 3
+  },
+  "Loans": {
+    "has_value": 194,
+    "empty": 0
+  },
+  "Home Students": {
+    "has_value": 176,
+    "empty": 17
+  },
+  "January 2027 Intake": {
+    "has_value": 149,
+    "empty": 43
+  },
+  "Chevening Scholarship": {
+    "has_value": 191,
+    "empty": 0
+  },
+  "Employment rate": {
+    "has_value": 63,
+    "empty": 127
+  },
+  "Deadline": {
+    "has_value": 179,
+    "empty": 10
+  },
+  "Other Aid": {
+    "has_value": 119,
+    "empty": 69
+  },
+  "Out-of-state": {
+    "has_value": 187,
+    "empty": 1
+  },
+  "Benefits": {
+    "has_value": 187,
+    "empty": 0
+  },
+  "Domestic (UK) Students": {
+    "has_value": 158,
+    "empty": 26
+  },
+  "International Scholarships": {
+    "has_value": 181,
+    "empty": 1
+  },
+  "In-state": {
+    "has_value": 182,
+    "empty": 0
+  },
+  "September 2026 Intake": {
+    "has_value": 168,
+    "empty": 12
+  },
+  "Further Study": {
+    "has_value": 180,
+    "empty": 0
+  },
+  "Other accepted tests": {
+    "has_value": 148,
+    "empty": 32
+  },
+  "Program Structure": {
+    "has_value": 167,
+    "empty": 10
+  },
+  "Median/average salary": {
+    "has_value": 25,
+    "empty": 152
+  },
+  "External Funding": {
+    "has_value": 175,
+    "empty": 1
+  },
+  "Mailing Address": {
+    "has_value": 175,
+    "empty": 1
+  },
+  "Teaching Assistantships (TA)": {
+    "has_value": 169,
+    "empty": 6
+  },
+  "Average Starting Salary": {
+    "has_value": 174,
+    "empty": 0
+  },
+  "Postal Address": {
+    "has_value": 173,
+    "empty": 0
+  },
+  "Thesis": {
+    "has_value": 173,
+    "empty": 0
+  },
+  "Cambridge English: Advanced (CAE)": {
+    "has_value": 173,
+    "empty": 0
+  },
+  "Departmental Scholarships": {
+    "has_value": 170,
+    "empty": 2
+  },
+  "Other Accepted Tests": {
+    "has_value": 137,
+    "empty": 35
+  },
+  "Typical Roles": {
+    "has_value": 171,
+    "empty": 0
+  },
+  "Top employers": {
+    "has_value": 30,
+    "empty": 141
+  },
+  "Merit-Based Scholarships": {
+    "has_value": 166,
+    "empty": 5
+  },
+  "Degree Awarded": {
+    "has_value": 170,
+    "empty": 0
+  },
+  "General Enquiries Phone": {
+    "has_value": 168,
+    "empty": 2
+  },
+  "Value": {
+    "has_value": 169,
+    "empty": 0
+  },
+  "Domestic vs. International": {
+    "has_value": 142,
+    "empty": 24
+  },
+  "Master's Thesis": {
+    "has_value": 163,
+    "empty": 1
+  },
+  "Top industries": {
+    "has_value": 70,
+    "empty": 94
+  },
+  "Non-Thesis Option": {
+    "has_value": 159,
+    "empty": 5
+  },
+  "General University Phone": {
+    "has_value": 163,
+    "empty": 0
+  },
+  "National Applicants": {
+    "has_value": 161,
+    "empty": 2
+  },
+  "Credits Required": {
+    "has_value": 163,
+    "empty": 0
+  },
+  "Round 2": {
+    "has_value": 144,
+    "empty": 15
+  },
+  "Applications Open": {
+    "has_value": 155,
+    "empty": 2
+  },
+  "International Students (Full-time)": {
+    "has_value": 156,
+    "empty": 1
+  },
+  "CV": {
+    "has_value": 108,
+    "empty": 48
+  },
+  "Application Process": {
+    "has_value": 155,
+    "empty": 0
+  },
+  "Research Assistantships (RA)": {
+    "has_value": 148,
+    "empty": 5
+  },
+  "Campus": {
+    "has_value": 152,
+    "empty": 0
+  },
+  "Books and Supplies": {
+    "has_value": 150,
+    "empty": 1
+  },
+  "Round 1": {
+    "has_value": 134,
+    "empty": 17
+  },
+  "Direct application portal": {
+    "has_value": 134,
+    "empty": 16
+  },
+  "GMAT/GRE": {
+    "has_value": 148,
+    "empty": 2
+  },
+  "Specialization": {
+    "has_value": 149,
+    "empty": 0
+  },
+  "Elective Courses": {
+    "has_value": 149,
+    "empty": 0
+  },
+  "Early Decision/Early Action Availability": {
+    "has_value": 10,
+    "empty": 139
+  },
+  "Living Expenses": {
+    "has_value": 147,
+    "empty": 1
+  },
+  "Student Services Fee": {
+    "has_value": 141,
+    "empty": 6
+  },
+  "Acceptance Rate (University-wide)": {
+    "has_value": 145,
+    "empty": 1
+  },
+  "Application Opens": {
+    "has_value": 143,
+    "empty": 3
+  },
+  "Estimated Living Expenses": {
+    "has_value": 143,
+    "empty": 2
+  },
+  "Other Funding": {
+    "has_value": 144,
+    "empty": 1
+  },
+  "Per Credit Hour": {
+    "has_value": 122,
+    "empty": 21
+  },
+  "Michigan English Test (MET)": {
+    "has_value": 142,
+    "empty": 1
+  },
+  "UK Students (Full-time)": {
+    "has_value": 142,
+    "empty": 0
+  },
+  "Total program cost": {
+    "has_value": 76,
+    "empty": 65
+  },
+  "Program Duration": {
+    "has_value": 137,
+    "empty": 4
+  },
+  "Postgraduate Loans": {
+    "has_value": 137,
+    "empty": 2
+  },
+  "TOEIC": {
+    "has_value": 138,
+    "empty": 1
+  },
+  "Alumni Scholarship": {
+    "has_value": 136,
+    "empty": 3
+  },
+  "Trinity ISE": {
+    "has_value": 138,
+    "empty": 1
+  },
+  "Further Education": {
+    "has_value": 138,
+    "empty": 0
+  },
+  "Program Code": {
+    "has_value": 138,
+    "empty": 0
+  },
+  "Options": {
+    "has_value": 136,
+    "empty": 0
+  },
+  "Resume": {
+    "has_value": 134,
+    "empty": 1
+  },
+  "Top Industries/Employers": {
+    "has_value": 96,
+    "empty": 37
+  },
+  "Summer Intake": {
+    "has_value": 77,
+    "empty": 53
+  },
+  "Early Payment Discount": {
+    "has_value": 126,
+    "empty": 4
+  },
+  "Round 3": {
+    "has_value": 121,
+    "empty": 9
+  },
+  "Target Audience": {
+    "has_value": 128,
+    "empty": 0
+  },
+  "Application fee waiver": {
+    "has_value": 79,
+    "empty": 48
+  },
+  "International Tuition": {
+    "has_value": 118,
+    "empty": 8
+  },
+  "Technology Fee": {
+    "has_value": 115,
+    "empty": 11
+  },
+  "Top Industries/Roles": {
+    "has_value": 126,
+    "empty": 0
+  },
+  "EU/EEA Students": {
+    "has_value": 121,
+    "empty": 3
+  },
+  "International": {
+    "has_value": 123,
+    "empty": 1
+  },
+  "Accepted Services": {
+    "has_value": 118,
+    "empty": 5
+  },
+  "International vs. Domestic Deadlines": {
+    "has_value": 103,
+    "empty": 19
+  },
+  "TOEFL iBT (including Home Edition)": {
+    "has_value": 119,
+    "empty": 2
+  },
+  "Academic IELTS": {
+    "has_value": 119,
+    "empty": 1
+  },
+  "Home students": {
+    "has_value": 118,
+    "empty": 2
+  },
+  "Focus Areas": {
+    "has_value": 119,
+    "empty": 0
+  },
+  "Student Services and Amenities Fee (SSAF)": {
+    "has_value": 105,
+    "empty": 14
+  },
+  "Estimated Living Costs": {
+    "has_value": 118,
+    "empty": 1
+  },
+  "UK Applicants": {
+    "has_value": 116,
+    "empty": 2
+  },
+  "Fee Waivers": {
+    "has_value": 117,
+    "empty": 1
+  },
+  "Next Intake": {
+    "has_value": 116,
+    "empty": 1
+  },
+  "International Deadline": {
+    "has_value": 111,
+    "empty": 5
+  },
+  "Average GMAT Score": {
+    "has_value": 114,
+    "empty": 2
+  },
+  "Study Mode": {
+    "has_value": 114,
+    "empty": 0
+  },
+  "Coursework": {
+    "has_value": 113,
+    "empty": 1
+  },
+  "Required documents": {
+    "has_value": 75,
+    "empty": 38
+  },
+  "Domestic Tuition": {
+    "has_value": 33,
+    "empty": 79
+  },
+  "Tuition Fee": {
+    "has_value": 111,
+    "empty": 1
+  },
+  "Spring Semester": {
+    "has_value": 105,
+    "empty": 7
+  },
+  "IELTS (International English Language Testing System)": {
+    "has_value": 111,
+    "empty": 1
+  },
+  "In-State": {
+    "has_value": 112,
+    "empty": 0
+  },
+  "Graduate Admissions Email": {
+    "has_value": 109,
+    "empty": 2
+  },
+  "CRITICAL NOTE": {
+    "has_value": 110,
+    "empty": 0
+  },
+  "Average GPA of admitted students": {
+    "has_value": 54,
+    "empty": 55
+  },
+  "Immigration Health Surcharge (IHS)": {
+    "has_value": 109,
+    "empty": 0
+  },
+  "Placement statistics": {
+    "has_value": 15,
+    "empty": 94
+  },
+  "CAEL": {
+    "has_value": 107,
+    "empty": 2
+  },
+  "MELAB": {
+    "has_value": 104,
+    "empty": 5
+  },
+  "EU Students": {
+    "has_value": 104,
+    "empty": 5
+  },
+  "Federal Financial Aid": {
+    "has_value": 107,
+    "empty": 0
+  },
+  "International applicants": {
+    "has_value": 106,
+    "empty": 1
+  },
+  "Average GRE Scores": {
+    "has_value": 80,
+    "empty": 27
+  },
+  "General Scholarships": {
+    "has_value": 106,
+    "empty": 1
+  },
+  "Overseas Students": {
+    "has_value": 105,
+    "empty": 2
+  },
+  "Transportation": {
+    "has_value": 103,
+    "empty": 3
+  },
+  "Practical Experience": {
+    "has_value": 105,
+    "empty": 0
+  },
+  "Rolling admissions": {
+    "has_value": 45,
+    "empty": 59
+  },
+  "Living Costs": {
+    "has_value": 104,
+    "empty": 0
+  },
+  "Graduate Assistantships (GA)": {
+    "has_value": 99,
+    "empty": 5
+  },
+  "Annual Tuition Fee": {
+    "has_value": 103,
+    "empty": 1
+  },
+  "Language": {
+    "has_value": 103,
+    "empty": 0
+  },
+  "Dissertation": {
+    "has_value": 102,
+    "empty": 1
+  },
+  "PTE": {
+    "has_value": 99,
+    "empty": 4
+  },
+  "Spring Intake": {
+    "has_value": 82,
+    "empty": 21
+  },
+  "Non-Resident": {
+    "has_value": 103,
+    "empty": 0
+  },
+  "Oxford ELLT": {
+    "has_value": 100,
+    "empty": 3
+  },
+  "Course Start Date": {
+    "has_value": 102,
+    "empty": 0
+  },
+  "Internship": {
+    "has_value": 101,
+    "empty": 0
+  },
+  "Employability": {
+    "has_value": 101,
+    "empty": 0
+  },
+  "Fall Semester": {
+    "has_value": 101,
+    "empty": 0
+  },
+  "Copy of Passport": {
+    "has_value": 101,
+    "empty": 0
+  },
+  "Highlights": {
+    "has_value": 100,
+    "empty": 0
+  },
+  "Cambridge C1 Advanced or C2 Proficiency": {
+    "has_value": 94,
+    "empty": 6
+  },
+  "Cambridge C1 Advanced": {
+    "has_value": 93,
+    "empty": 6
+  },
+  "Tuition Fees": {
+    "has_value": 92,
+    "empty": 6
+  },
+  "Elective Areas/Specializations": {
+    "has_value": 69,
+    "empty": 29
+  },
+  "GMAT (Graduate Management Admission Test)": {
+    "has_value": 73,
+    "empty": 25
+  },
+  "Overseas Student Health Cover (OSHC)": {
+    "has_value": 98,
+    "empty": 0
+  },
+  "Round 4": {
+    "has_value": 88,
+    "empty": 10
+  },
+  "Tuition Fee Deposit": {
+    "has_value": 98,
+    "empty": 0
+  },
+  "FAFSA": {
+    "has_value": 97,
+    "empty": 0
+  },
+  "TOEFL Paper-based": {
+    "has_value": 97,
+    "empty": 0
+  },
+  "Internships": {
+    "has_value": 96,
+    "empty": 0
+  },
+  "Early decision/early action": {
+    "has_value": 6,
+    "empty": 89
+  },
+  "GRE (Graduate Record Examination)": {
+    "has_value": 92,
+    "empty": 3
+  },
+  "Per Year": {
+    "has_value": 94,
+    "empty": 0
+  },
+  "UK (Home) Students": {
+    "has_value": 90,
+    "empty": 4
+  },
+  "Global Excellence Scholarship": {
+    "has_value": 92,
+    "empty": 2
+  },
+  "Salary": {
+    "has_value": 86,
+    "empty": 7
+  },
+  "International Student Fee": {
+    "has_value": 92,
+    "empty": 1
+  },
+  "Total Graduate Students": {
+    "has_value": 93,
+    "empty": 0
+  },
+  "Alumni Loyalty Discount": {
+    "has_value": 91,
+    "empty": 2
+  },
+  "Application fee waiver availability and conditions": {
+    "has_value": 52,
+    "empty": 40
+  },
+  "General Application Deadline": {
+    "has_value": 80,
+    "empty": 12
+  },
+  "Teaching Language": {
+    "has_value": 92,
+    "empty": 0
+  },
+  "Oxford Test of English Advanced": {
+    "has_value": 85,
+    "empty": 7
+  },
+  "Semester Fee": {
+    "has_value": 90,
+    "empty": 1
+  },
+  "Stipend": {
+    "has_value": 90,
+    "empty": 1
+  },
+  "GMAT Waiver": {
+    "has_value": 40,
+    "empty": 51
+  },
+  "In-State Tuition": {
+    "has_value": 90,
+    "empty": 1
+  },
+  "Program Start Date": {
+    "has_value": 90,
+    "empty": 0
+  },
+  "International Student Scholarships": {
+    "has_value": 85,
+    "empty": 5
+  },
+  "Semester Contribution": {
+    "has_value": 86,
+    "empty": 4
+  },
+  "Total Credits": {
+    "has_value": 89,
+    "empty": 0
+  },
+  "Curriculum Vitae (CV)/Resume": {
+    "has_value": 72,
+    "empty": 17
+  },
+  "Cambridge English (C1 Advanced or C2 Proficiency)": {
+    "has_value": 85,
+    "empty": 2
+  },
+  "Summer Semester": {
+    "has_value": 75,
+    "empty": 12
+  },
+  "National (UK) Applicants": {
+    "has_value": 87,
+    "empty": 0
+  },
+  "Rankings": {
+    "has_value": 86,
+    "empty": 0
+  },
+  "Teaching Assistantships (TAs)": {
+    "has_value": 85,
+    "empty": 1
+  },
+  "Alumni Bursary": {
+    "has_value": 86,
+    "empty": 0
+  },
+  "Intake Periods": {
+    "has_value": 84,
+    "empty": 0
+  },
+  "Credit Points": {
+    "has_value": 83,
+    "empty": 0
+  },
+  "Cambridge English Scale": {
+    "has_value": 82,
+    "empty": 1
+  },
+  "Per year": {
+    "has_value": 82,
+    "empty": 0
+  },
+  "Intakes": {
+    "has_value": 82,
+    "empty": 0
+  },
+  "Key Features": {
+    "has_value": 82,
+    "empty": 0
+  },
+  "Online Application Form": {
+    "has_value": 82,
+    "empty": 0
+  },
+  "Duolingo DET, Cambridge": {
+    "has_value": 6,
+    "empty": 76
+  },
+  "Cambridge English (B2 First, C1 Advanced, C2 Proficiency)": {
+    "has_value": 80,
+    "empty": 2
+  },
+  "Graduate Admissions Phone": {
+    "has_value": 82,
+    "empty": 0
+  },
+  "TOEFL CBT": {
+    "has_value": 82,
+    "empty": 0
+  },
+  "TOEFL pBT": {
+    "has_value": 81,
+    "empty": 0
+  },
+  "Intake": {
+    "has_value": 81,
+    "empty": 0
+  },
+  "Overseas students": {
+    "has_value": 81,
+    "empty": 0
+  },
+  "Deutschlandstipendium": {
+    "has_value": 80,
+    "empty": 0
+  },
+  "GREAT Scholarships 2026": {
+    "has_value": 80,
+    "empty": 0
+  },
+  "Sports Scholarships": {
+    "has_value": 76,
+    "empty": 4
+  },
+  "Deposit/enrollment confirmation deadlines": {
+    "has_value": 3,
+    "empty": 77
+  },
+  "Cambridge English Qualification": {
+    "has_value": 77,
+    "empty": 2
+  },
+  "Admissions Email (Postgraduate)": {
+    "has_value": 78,
+    "empty": 1
+  },
+  "DAAD Scholarships": {
+    "has_value": 79,
+    "empty": 0
+  },
+  "UNIcert": {
+    "has_value": 78,
+    "empty": 1
+  },
+  "Further Studies": {
+    "has_value": 79,
+    "empty": 0
+  },
+  "Deposit/Enrollment Confirmation": {
+    "has_value": 26,
+    "empty": 52
+  },
+  "Telephone": {
+    "has_value": 77,
+    "empty": 1
+  },
+  "Cambridge C1 Advanced (CAE)": {
+    "has_value": 76,
+    "empty": 2
+  },
+  "Cambridge English Advanced (CAE)": {
+    "has_value": 75,
+    "empty": 2
+  },
+  "July 2026 Intake": {
+    "has_value": 70,
+    "empty": 7
+  },
+  "Non-EU/EEA students": {
+    "has_value": 77,
+    "empty": 0
+  },
+  "Standardized tests (GRE/GMAT)": {
+    "has_value": 54,
+    "empty": 22
+  },
+  "Type of Evaluation": {
+    "has_value": 70,
+    "empty": 6
+  },
+  "Average GPA": {
+    "has_value": 74,
+    "empty": 2
+  },
+  "Other Financial Aid": {
+    "has_value": 52,
+    "empty": 24
+  },
+  "Top Employers (examples)": {
+    "has_value": 76,
+    "empty": 0
+  },
+  "Assistantships/Fellowships/Need-based aid": {
+    "has_value": 5,
+    "empty": 71
+  },
+  "Commonwealth Scholarships": {
+    "has_value": 76,
+    "empty": 0
+  },
+  "Admissions Email (International)": {
+    "has_value": 75,
+    "empty": 0
+  },
+  "Minimum GPA": {
+    "has_value": 71,
+    "empty": 4
+  },
+  "Graduate Teaching Assistantships (GTAs)": {
+    "has_value": 72,
+    "empty": 3
+  },
+  "Research Assistantships (RAs)": {
+    "has_value": 73,
+    "empty": 2
+  },
+  "Estimated Total Program Cost": {
+    "has_value": 62,
+    "empty": 13
+  },
+  "Out-of-State Students": {
+    "has_value": 74,
+    "empty": 0
+  },
+  "Experiential Learning": {
+    "has_value": 74,
+    "empty": 0
+  },
+  "International Merit Scholarship": {
+    "has_value": 72,
+    "empty": 2
+  },
+  "Unofficial Transcripts": {
+    "has_value": 74,
+    "empty": 0
+  },
+  "Student Activity Fee": {
+    "has_value": 72,
+    "empty": 2
+  },
+  "EU/EEA students": {
+    "has_value": 73,
+    "empty": 1
+  },
+  "Standardized tests (GRE/GMAT/EA)": {
+    "has_value": 41,
+    "empty": 32
+  },
+  "Key Focus Areas": {
+    "has_value": 73,
+    "empty": 0
+  },
+  "Priority Application Deadline": {
+    "has_value": 73,
+    "empty": 0
+  },
+  "Financial Aid": {
+    "has_value": 61,
+    "empty": 12
+  },
+  "International/Out-of-State Tuition": {
+    "has_value": 72,
+    "empty": 1
+  },
+  "Research Proposal": {
+    "has_value": 69,
+    "empty": 4
+  },
+  "Fall Intake": {
+    "has_value": 73,
+    "empty": 0
+  },
+  "Chancellor's International Scholarship": {
+    "has_value": 73,
+    "empty": 0
+  },
+  "Total Students": {
+    "has_value": 72,
+    "empty": 0
+  },
+  "Food": {
+    "has_value": 71,
+    "empty": 1
+  },
+  "Program Type": {
+    "has_value": 72,
+    "empty": 0
+  },
+  "Round 5": {
+    "has_value": 68,
+    "empty": 4
+  },
+  "Out-of-State": {
+    "has_value": 71,
+    "empty": 1
+  },
+  "IELTS (Academic Module)": {
+    "has_value": 71,
+    "empty": 1
+  },
+  "Total Program Cost (International)": {
+    "has_value": 71,
+    "empty": 0
+  },
+  "Program Start": {
+    "has_value": 71,
+    "empty": 0
+  },
+  "Personal Expenses": {
+    "has_value": 70,
+    "empty": 1
+  },
+  "Women": {
+    "has_value": 71,
+    "empty": 0
+  },
+  "Letters of Reference": {
+    "has_value": 69,
+    "empty": 2
+  },
+  "Total Program Tuition": {
+    "has_value": 67,
+    "empty": 3
+  },
+  "Career Opportunities": {
+    "has_value": 70,
+    "empty": 0
+  },
+  "Research Focus": {
+    "has_value": 69,
+    "empty": 1
+  },
+  "Pearson Test of English (PTE)": {
+    "has_value": 69,
+    "empty": 1
+  },
+  "Research": {
+    "has_value": 69,
+    "empty": 1
+  },
+  "Application Form": {
+    "has_value": 70,
+    "empty": 0
+  },
+  "Passport Copy": {
+    "has_value": 68,
+    "empty": 1
+  },
+  "International/Out-of-State": {
+    "has_value": 68,
+    "empty": 1
+  },
+  "Domestic Students (UK)": {
+    "has_value": 60,
+    "empty": 9
+  },
+  "Books & Supplies": {
+    "has_value": 67,
+    "empty": 2
+  },
+  "International Student Deadline": {
+    "has_value": 66,
+    "empty": 2
+  },
+  "Other accepted qualifications": {
+    "has_value": 68,
+    "empty": 0
+  },
+  "LanguageCert International ESOL": {
+    "has_value": 65,
+    "empty": 3
+  },
+  "Resident": {
+    "has_value": 68,
+    "empty": 0
+  },
+  "Bursaries": {
+    "has_value": 67,
+    "empty": 1
+  },
+  "University Scholarships": {
+    "has_value": 66,
+    "empty": 2
+  },
+  "CAEL (Canadian Academic English Language Assessment)": {
+    "has_value": 67,
+    "empty": 1
+  },
+  "Project Option": {
+    "has_value": 63,
+    "empty": 5
+  },
+  "Field Tag": {
+    "has_value": 67,
+    "empty": 0
+  },
+  "Duolingo (DET)": {
+    "has_value": 67,
+    "empty": 0
+  },
+  "Trinity College London Integrated Skills in English (ISE)": {
+    "has_value": 67,
+    "empty": 0
+  },
+  "Mathematics": {
+    "has_value": 66,
+    "empty": 0
+  },
+  "Employers": {
+    "has_value": 66,
+    "empty": 0
+  },
+  "Resume or CV": {
+    "has_value": 66,
+    "empty": 0
+  },
+  "Important Note": {
+    "has_value": 66,
+    "empty": 0
+  },
+  "Federal Loans": {
+    "has_value": 66,
+    "empty": 0
+  },
+  "Job Titles": {
+    "has_value": 65,
+    "empty": 0
+  },
+  "Top Industries/Sectors": {
+    "has_value": 65,
+    "empty": 0
+  },
+  "Student Loans": {
+    "has_value": 64,
+    "empty": 1
+  },
+  "UK Students (Part-time)": {
+    "has_value": 65,
+    "empty": 0
+  },
+  "International Postgraduate Scholarship": {
+    "has_value": 65,
+    "empty": 0
+  },
+  "Oxford ELLT Global": {
+    "has_value": 65,
+    "empty": 0
+  },
+  "Cambridge C2 Proficiency (CPE)": {
+    "has_value": 61,
+    "empty": 4
+  },
+  "September 2027 Intake": {
+    "has_value": 37,
+    "empty": 28
+  },
+  "Pearson Test of English Academic (PTE Academic)": {
+    "has_value": 64,
+    "empty": 1
+  },
+  "Campus Location": {
+    "has_value": 65,
+    "empty": 0
+  },
+  "Postgraduate Loan": {
+    "has_value": 58,
+    "empty": 6
+  },
+  "Cambridge English Exam": {
+    "has_value": 63,
+    "empty": 1
+  },
+  "Potential Job Roles": {
+    "has_value": 64,
+    "empty": 0
+  },
+  "Summer 2027 Intake": {
+    "has_value": 30,
+    "empty": 34
+  },
+  "Spring 2027 Admission": {
+    "has_value": 26,
+    "empty": 38
+  },
+  "Proof of English Language Proficiency": {
+    "has_value": 64,
+    "empty": 0
+  },
+  "Cambridge English: C1 Advanced": {
+    "has_value": 64,
+    "empty": 0
+  },
+  "Merit Scholarships": {
+    "has_value": 62,
+    "empty": 2
+  },
+  "Pearson Test of English (PTE Academic)": {
+    "has_value": 64,
+    "empty": 0
+  },
+  "Writing Sample/Portfolio": {
+    "has_value": 9,
+    "empty": 54
+  },
+  "Employment Sectors": {
+    "has_value": 63,
+    "empty": 0
+  },
+  "International Excellence Scholarships": {
+    "has_value": 63,
+    "empty": 0
+  },
+  "Estimated Total Cost of Attendance (International)": {
+    "has_value": 62,
+    "empty": 1
+  },
+  "Graduate Program Director": {
+    "has_value": 63,
+    "empty": 0
+  },
+  "Fall 2027 Admission": {
+    "has_value": 28,
+    "empty": 35
+  },
+  "Cambridge English: Proficiency (CPE)": {
+    "has_value": 62,
+    "empty": 1
+  },
+  "Postgraduate Master's Loan": {
+    "has_value": 63,
+    "empty": 0
+  },
+  "Program Director": {
+    "has_value": 62,
+    "empty": 0
+  },
+  "Sanctuary Scholarships": {
+    "has_value": 62,
+    "empty": 0
+  },
+  "Research Assistantships": {
+    "has_value": 59,
+    "empty": 3
+  },
+  "PTE Academic, Cambridge": {
+    "has_value": 3,
+    "empty": 59
+  },
+  "Housing": {
+    "has_value": 61,
+    "empty": 1
+  },
+  "Other": {
+    "has_value": 52,
+    "empty": 10
+  },
+  "Highly Skilled Employment": {
+    "has_value": 62,
+    "empty": 0
+  },
+  "NL Scholarship": {
+    "has_value": 61,
+    "empty": 1
+  },
+  "Assistantships/Fellowships/Need-based Aid": {
+    "has_value": 11,
+    "empty": 50
+  },
+  "Career Preparation": {
+    "has_value": 61,
+    "empty": 0
+  },
+  "Placement Rate": {
+    "has_value": 60,
+    "empty": 1
+  },
+  "UK students": {
+    "has_value": 61,
+    "empty": 0
+  },
+  "Culminating Experience": {
+    "has_value": 61,
+    "empty": 0
+  },
+  "Concentration": {
+    "has_value": 61,
+    "empty": 0
+  },
+  "Concentrations": {
+    "has_value": 50,
+    "empty": 11
+  },
+  "Median Base Salary": {
+    "has_value": 59,
+    "empty": 2
+  },
+  "Skills Developed": {
+    "has_value": 60,
+    "empty": 0
+  },
+  "Interview": {
+    "has_value": 60,
+    "empty": 0
+  },
+  "International Admissions Email": {
+    "has_value": 60,
+    "empty": 0
+  },
+  "Application Deadlines": {
+    "has_value": 32,
+    "empty": 28
+  },
+  "LanguageCert": {
+    "has_value": 60,
+    "empty": 0
+  },
+  "PTE Academic (Pearson Test of English Academic)": {
+    "has_value": 58,
+    "empty": 2
+  },
+  "International Student Percentage (University-wide)": {
+    "has_value": 59,
+    "empty": 1
+  },
+  "Annual Tuition Fees": {
+    "has_value": 59,
+    "empty": 1
+  },
+  "IELTS Academic Test": {
+    "has_value": 60,
+    "empty": 0
+  },
+  "Overseas (International) Students": {
+    "has_value": 60,
+    "empty": 0
+  },
+  "Statement of Interest": {
+    "has_value": 58,
+    "empty": 2
+  },
+  "PTE Academic (Pearson Test of English)": {
+    "has_value": 58,
+    "empty": 1
+  },
+  "GRE Scores": {
+    "has_value": 59,
+    "empty": 0
+  },
+  "Postgraduate Employment Rate": {
+    "has_value": 59,
+    "empty": 0
+  },
+  "Spring Admission": {
+    "has_value": 50,
+    "empty": 9
+  },
+  "Admissions Email (Postgraduate Taught)": {
+    "has_value": 59,
+    "empty": 0
+  },
+  "Phone (International)": {
+    "has_value": 59,
+    "empty": 0
+  },
+  "General Inquiries Email": {
+    "has_value": 58,
+    "empty": 0
+  },
+  "GREAT Scholarship": {
+    "has_value": 58,
+    "empty": 0
+  },
+  "Racial-Ethnic Minorities": {
+    "has_value": 58,
+    "empty": 0
+  },
+  "Research Project": {
+    "has_value": 57,
+    "empty": 1
+  },
+  "Test Waivers (GRE/GMAT)": {
+    "has_value": 30,
+    "empty": 28
+  },
+  "Graduate Coordinator": {
+    "has_value": 58,
+    "empty": 0
+  },
+  "General Department Email": {
+    "has_value": 53,
+    "empty": 5
+  },
+  "Teaching Assistantships": {
+    "has_value": 57,
+    "empty": 0
+  },
+  "July 2027 Intake": {
+    "has_value": 37,
+    "empty": 20
+  },
+  "Cambridge Certificate of Proficiency in English (CPE)": {
+    "has_value": 57,
+    "empty": 0
+  },
+  "Total Estimated Cost": {
+    "has_value": 56,
+    "empty": 0
+  },
+  "Average Base Salary": {
+    "has_value": 55,
+    "empty": 1
+  },
+  "Degree": {
+    "has_value": 55,
+    "empty": 0
+  },
+  "Program Focus": {
+    "has_value": 55,
+    "empty": 0
+  },
+  "Tracks": {
+    "has_value": 55,
+    "empty": 0
+  },
+  "General Phone": {
+    "has_value": 55,
+    "empty": 0
+  },
+  "All Applicants": {
+    "has_value": 50,
+    "empty": 5
+  },
+  "Deposit Deadline": {
+    "has_value": 52,
+    "empty": 3
+  },
+  "International Students (Part-time)": {
+    "has_value": 52,
+    "empty": 2
+  },
+  "Per Credit": {
+    "has_value": 46,
+    "empty": 8
+  },
+  "February 2027 Intake": {
+    "has_value": 35,
+    "empty": 19
+  },
+  "Passport": {
+    "has_value": 54,
+    "empty": 0
+  },
+  "Duration (Full-time)": {
+    "has_value": 54,
+    "empty": 0
+  },
+  "Thesis/Capstone": {
+    "has_value": 47,
+    "empty": 7
+  },
+  "Cambridge Advanced English (CAE)": {
+    "has_value": 54,
+    "empty": 0
+  },
+  "International Breakout": {
+    "has_value": 54,
+    "empty": 0
+  },
+  "International Scholarship Award": {
+    "has_value": 54,
+    "empty": 0
+  },
+  "International Student Scholarship": {
+    "has_value": 53,
+    "empty": 0
+  },
+  "Proof of English Proficiency": {
+    "has_value": 53,
+    "empty": 0
+  },
+  "Accommodation": {
+    "has_value": 53,
+    "empty": 0
+  },
+  "Median Starting Salary": {
+    "has_value": 51,
+    "empty": 2
+  },
+  "Course Code": {
+    "has_value": 53,
+    "empty": 0
+  },
+  "Total Program Cost (estimated)": {
+    "has_value": 53,
+    "empty": 0
+  },
+  "Matriculation Fee": {
+    "has_value": 52,
+    "empty": 1
+  },
+  "Fees": {
+    "has_value": 51,
+    "empty": 2
+  },
+  "Department Chair": {
+    "has_value": 53,
+    "empty": 0
+  },
+  "Graduate Program Coordinator": {
+    "has_value": 53,
+    "empty": 0
+  },
+  "Bachelor's Degree": {
+    "has_value": 52,
+    "empty": 1
+  },
+  "Pearson Test of English (Academic) (PTE (A))": {
+    "has_value": 53,
+    "empty": 0
+  },
+  "Full Payment Discount": {
+    "has_value": 46,
+    "empty": 6
+  },
+  "International Office Email": {
+    "has_value": 52,
+    "empty": 0
+  },
+  "Letters of Recommendation (LORs)": {
+    "has_value": 45,
+    "empty": 7
+  },
+  "iTEP": {
+    "has_value": 51,
+    "empty": 1
+  },
+  "March 2027 Intake": {
+    "has_value": 40,
+    "empty": 12
+  },
+  "Degree Certificate": {
+    "has_value": 52,
+    "empty": 0
+  },
+  "Summer 2027": {
+    "has_value": 39,
+    "empty": 13
+  },
+  "Roles": {
+    "has_value": 52,
+    "empty": 0
+  },
+  "Fall Admission": {
+    "has_value": 52,
+    "empty": 0
+  },
+  "Non-EU/EEA Students": {
+    "has_value": 52,
+    "empty": 0
+  },
+  "Employment Areas": {
+    "has_value": 51,
+    "empty": 0
+  },
+  "Award": {
+    "has_value": 51,
+    "empty": 0
+  },
+  "ECTS Credits": {
+    "has_value": 51,
+    "empty": 0
+  },
+  "Summer Admission": {
+    "has_value": 26,
+    "empty": 25
+  },
+  "Vice-Chancellor's International Scholarship": {
+    "has_value": 50,
+    "empty": 1
+  },
+  "International Fees": {
+    "has_value": 50,
+    "empty": 1
+  },
+  "Gender Ratio (University-wide)": {
+    "has_value": 51,
+    "empty": 0
+  },
+  "Mandatory Fees": {
+    "has_value": 48,
+    "empty": 3
+  },
+  "Prompt Payment Discount": {
+    "has_value": 49,
+    "empty": 2
+  },
+  "OET": {
+    "has_value": 49,
+    "empty": 2
+  },
+  "Gender Ratio (2019-2020)": {
+    "has_value": 50,
+    "empty": 0
+  },
+  "Research Areas": {
+    "has_value": 50,
+    "empty": 0
+  },
+  "Pearson PTE": {
+    "has_value": 49,
+    "empty": 1
+  },
+  "LanguageCert ESOL SELT (UKVI)": {
+    "has_value": 50,
+    "empty": 0
+  },
+  "Annual Tuition": {
+    "has_value": 50,
+    "empty": 0
+  },
+  "Non-EU Students": {
+    "has_value": 50,
+    "empty": 0
+  },
+  "University-wide Scholarships": {
+    "has_value": 48,
+    "empty": 2
+  },
+  "LanguageCert (Academic)": {
+    "has_value": 50,
+    "empty": 0
+  },
+  "Sydney International Student Award": {
+    "has_value": 47,
+    "empty": 3
+  }
+}

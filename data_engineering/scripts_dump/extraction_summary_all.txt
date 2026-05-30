@@ -1,0 +1,366 @@
+================================================================================
+  COMBINED EXTRACTION SUMMARY
+  Competitions + Summer Schools + Volunteering + Internships
+  Generated: April 2026
+================================================================================
+
+
+================================================================================
+  TOP-LEVEL COMPARISON
+================================================================================
+
+  Section         Input   Good   Avg   Poor   Usable   Success Rate
+  -------------   -----   ----   ---   ----   ------   ------------
+  Competitions    103     43+25  31    29     68       72%
+  Summer Schools  80      46     20    14     66       82%
+  Volunteering    78      27     30    21     57       73%
+  Internships     38      12     17    9      29       76%
+  -------------   -----   ----   ---   ----   ------   ------------
+  TOTAL           299     128    98    73     226      76%
+
+  Note: Competitions total also includes 25 Devpost + studentcomp
+        files separate from the 103 deep research above.
+
+
+================================================================================
+  SECTION 1 — COMPETITIONS
+================================================================================
+
+  Source                     Input    Extracted    Success rate (Good+Avg)
+  ------------------------   ------   ----------   -----------------------
+  Devpost (HS hackathons)       26          26          ~100%
+  StudentCompetitions.com       26          26          ~96%
+  Deep Research (103 URLs)     103         103           72%
+  ------------------------   ------   ----------   -----------------------
+  TOTAL                        155         155           ~79%
+
+  DEEP RESEARCH QUALITY DISTRIBUTION (103 files):
+    Good (>=80%)    43   42%
+    Avg (50-79%)    31   30%
+    Poor (<50%)     29   28%
+    Usable:         74 out of 103
+
+  DEVPOST AFTER PATCH (25 files, 20 UI fields):
+    Field                     Filled   Null     Fill%
+    ------------------------  -------  -------  ------
+    activity_name             25       0        100.0%
+    organizer                 24       1        96.0%
+    organizer_logo            0        25       0.0%
+    mode                      25       0        100.0%
+    deadline                  25       0        100.0%
+    cost_chip                 25       0        100.0%
+    cost                      25       0        100.0%
+    domain                    25       0        100.0%
+    team_size                 24       1        96.0%
+    is_verified               25       0        100.0%
+    about_description         25       0        100.0%
+    eligibility_text          25       0        100.0%
+    how_to_apply              25       0        100.0%
+    prizes_detail             25       0        100.0%
+    prize_amount              24       1        96.0%
+    structure_format          25       0        100.0%
+    judging_criteria          20       5        80.0%
+    submission_format         22       3        88.0%
+    official_website          25       0        100.0%
+    registration_url          25       0        100.0%
+    ------------------------  -------  -------  ------
+    Card view                 223/250          89.2%
+    Detail view               241/250          96.4%
+    OVERALL UI                464/500          92.8%
+
+  GOOD FILES (deep research >=80%) (43 files):
+    Field                     Filled   Null     Fill%
+    ------------------------  -------  -------  ------
+    activity_name             43       0        100.0%
+    organizer                 43       0        100.0%
+    organizer_logo            0        43       0.0%
+    mode                      43       0        100.0%
+    deadline                  32       11       74.4%
+    cost_chip                 43       0        100.0%
+    cost                      42       1        97.7%
+    domain                    42       1        97.7%
+    team_size                 39       4        90.7%
+    is_verified               43       0        100.0%
+    about_description         43       0        100.0%
+    eligibility_text          41       2        95.3%
+    how_to_apply              42       1        97.7%
+    prizes_detail             37       6        86.0%
+    prize_amount              15       28       34.9%
+    structure_format          43       0        100.0%
+    judging_criteria          12       31       27.9%
+    submission_format         40       3        93.0%
+    official_website          43       0        100.0%
+    registration_url          43       0        100.0%
+    ------------------------  -------  -------  ------
+    OVERALL UI                729/860          84.8%
+
+  AVG FILES (deep research 50-79%) (31 files):
+    Field                     Filled   Null     Fill%
+    ------------------------  -------  -------  ------
+    activity_name             30       1        96.8%
+    organizer                 31       0        100.0%
+    organizer_logo            0        31       0.0%
+    mode                      28       3        90.3%
+    deadline                  6        25       19.4%
+    cost_chip                 28       3        90.3%
+    cost                      26       5        83.9%
+    domain                    30       1        96.8%
+    team_size                 16       15       51.6%
+    is_verified               31       0        100.0%
+    about_description         31       0        100.0%
+    eligibility_text          29       2        93.5%
+    how_to_apply              23       8        74.2%
+    prizes_detail             11       20       35.5%
+    prize_amount              2        29       6.5%
+    structure_format          25       6        80.6%
+    judging_criteria          2        29       6.5%
+    submission_format         18       13       58.1%
+    official_website          31       0        100.0%
+    registration_url          31       0        100.0%
+    ------------------------  -------  -------  ------
+    OVERALL UI                429/620          69.2%
+
+
+================================================================================
+  SECTION 2 — SUMMER SCHOOLS
+================================================================================
+
+  Input:       80 files (deep research)
+  Extracted:   80 files
+  Success:     82% (Good + Avg)
+  Usable:      66 out of 80
+
+  QUALITY DISTRIBUTION:
+    Good (>=80%)    46   57%
+    Avg (50-79%)    20   25%
+    Poor (<50%)     14   18%
+
+  GOOD FILES (46 files, 20 UI fields):
+    Field                     Filled   Null     Fill%
+    ------------------------  -------  -------  ------
+    program_name              46       0        100.0%
+    institution_name          46       0        100.0%
+    institution_logo          0        46       0.0%
+    funding_status            45       1        97.8%
+    mode                      46       0        100.0%
+    location_tag              46       0        100.0%
+    duration                  45       1        97.8%
+    is_verified               46       0        100.0%
+    about_description         46       0        100.0%
+    eligibility_text          46       0        100.0%
+    curriculum                46       0        100.0%
+    how_to_apply              46       0        100.0%
+    application_url           46       0        100.0%
+    cost_range                30       16       65.2%
+    college_credit            21       25       45.7%
+    residential_or_online     46       0        100.0%
+    certificate_provided      10       36       21.7%
+    deadline                  24       22       52.2%
+    program_dates             44       2        95.7%
+    subjects_offered          45       1        97.8%
+    ------------------------  -------  -------  ------
+    OVERALL UI                770/920          83.7%
+
+  AVG FILES (20 files):
+    Field                     Filled   Null     Fill%
+    ------------------------  -------  -------  ------
+    program_name              20       0        100.0%
+    institution_name          20       0        100.0%
+    institution_logo          0        20       0.0%
+    funding_status            15       5        75.0%
+    mode                      19       1        95.0%
+    location_tag              19       1        95.0%
+    duration                  14       6        70.0%
+    is_verified               20       0        100.0%
+    about_description         20       0        100.0%
+    eligibility_text          20       0        100.0%
+    curriculum                17       3        85.0%
+    how_to_apply              16       4        80.0%
+    application_url           20       0        100.0%
+    cost_range                0        20       0.0%
+    college_credit            4        16       20.0%
+    residential_or_online     16       4        80.0%
+    certificate_provided      5        15       25.0%
+    deadline                  6        14       30.0%
+    program_dates             10       10       50.0%
+    subjects_offered          17       3        85.0%
+    ------------------------  -------  -------  ------
+    OVERALL UI                278/400          69.5%
+
+
+================================================================================
+  SECTION 3 — VOLUNTEERING
+================================================================================
+
+  Input:       78 files (deep research)
+  Extracted:   78 files
+  Success:     73% (Good + Avg)
+  Usable:      57 out of 78
+
+  QUALITY DISTRIBUTION:
+    Good (>=80%)    27   35%
+    Avg (50-79%)    30   38%
+    Poor (<50%)     21   27%
+
+  GOOD FILES (27 files, 14 UI fields):
+    Field                     Filled   Null     Fill%
+    ------------------------  -------  -------  ------
+    program_name              27       0        100.0%
+    organization_name         27       0        100.0%
+    organization_logo         0        27       0.0%
+    mode                      27       0        100.0%
+    cause_area                27       0        100.0%
+    is_verified               27       0        100.0%
+    about_description         27       0        100.0%
+    eligibility_text          27       0        100.0%
+    minimum_hours             26       1        96.3%
+    commitment_type           27       0        100.0%
+    certificate_provided      4        23       14.8%
+    responsibilities          27       0        100.0%
+    how_to_apply              27       0        100.0%
+    application_url           27       0        100.0%
+    ------------------------  -------  -------  ------
+    OVERALL UI                327/378          86.5%
+
+  AVG FILES (30 files):
+    Field                     Filled   Null     Fill%
+    ------------------------  -------  -------  ------
+    program_name              30       0        100.0%
+    organization_name         30       0        100.0%
+    organization_logo         0        30       0.0%
+    mode                      21       9        70.0%
+    cause_area                30       0        100.0%
+    is_verified               30       0        100.0%
+    about_description         30       0        100.0%
+    eligibility_text          21       9        70.0%
+    minimum_hours             0        30       0.0%
+    commitment_type           7        23       23.3%
+    certificate_provided      1        29       3.3%
+    responsibilities          23       7        76.7%
+    how_to_apply              29       1        96.7%
+    application_url           30       0        100.0%
+    ------------------------  -------  -------  ------
+    OVERALL UI                282/420          67.1%
+
+
+================================================================================
+  SECTION 4 — INTERNSHIPS
+================================================================================
+
+  Input:       38 files (deep research)
+  Extracted:   38 files
+  Success:     76% (Good + Avg)
+  Usable:      29 out of 38
+
+  QUALITY DISTRIBUTION:
+    Good (>=80%)    12   32%
+    Avg (50-79%)    17   45%
+    Poor (<50%)     9    24%
+
+  GOOD FILES (12 files, 16 UI fields):
+    Field                     Filled   Null     Fill%
+    ------------------------  -------  -------  ------
+    internship_title          12       0        100.0%
+    company_name              12       0        100.0%
+    company_logo              0        12       0.0%
+    mode                      12       0        100.0%
+    stipend                   12       0        100.0%
+    posted_date               5        7        41.7%
+    source_badge              0        12       0.0%
+    domain                    12       0        100.0%
+    team_size                 12       0        100.0%
+    about_description         12       0        100.0%
+    eligibility_text          12       0        100.0%
+    duration                  12       0        100.0%
+    responsibilities          12       0        100.0%
+    skills_required           11       1        91.7%
+    how_to_apply              12       0        100.0%
+    application_url           12       0        100.0%
+    ------------------------  -------  -------  ------
+    OVERALL UI                160/192          83.3%
+
+  AVG FILES (17 files):
+    Field                     Filled   Null     Fill%
+    ------------------------  -------  -------  ------
+    internship_title          17       0        100.0%
+    company_name              17       0        100.0%
+    company_logo              0        17       0.0%
+    mode                      15       2        88.2%
+    stipend                   0        17       0.0%
+    posted_date               2        15       11.8%
+    source_badge              0        17       0.0%
+    domain                    17       0        100.0%
+    team_size                 17       0        100.0%
+    about_description         17       0        100.0%
+    eligibility_text          17       0        100.0%
+    duration                  13       4        76.5%
+    responsibilities          14       3        82.4%
+    skills_required           14       3        82.4%
+    how_to_apply              15       2        88.2%
+    application_url           17       0        100.0%
+    ------------------------  -------  -------  ------
+    OVERALL UI                192/272          70.6%
+
+
+================================================================================
+  OVERALL USABLE COUNTS FOR UI
+================================================================================
+
+  Section          Good   Avg   Total Usable   % of Input Usable
+  ---------------  ----   ---   ------------   -----------------
+  Competitions*    43     31    74             72%
+  Summer Schools   46     20    66             82%
+  Volunteering     27     30    57             73%
+  Internships      12     17    29             76%
+  ---------------  ----   ---   ------------   -----------------
+  TOTAL                         226            76%
+
+  * Excludes Devpost (25 at 92.8%) and StudentComp which are additional.
+    Including those: 74 + 25 = 99 usable competitions.
+
+  GRAND TOTAL USABLE RECORDS: 251 (226 + 25 devpost)
+
+
+================================================================================
+  COMMON PATTERNS ACROSS SECTIONS
+================================================================================
+
+  GOOD TIER — Usually ~83-86% overall fill:
+    - Card fields: ~85-90%
+    - Detail fields: ~85-95%
+    - Missing: *_logo (intentional), certificate_provided, some date fields
+
+  AVG TIER — Usually ~67-70% overall fill:
+    - Card fields: ~55-80%
+    - Detail fields: ~60-90%
+    - Missing: Structured fields (stipend, minimum_hours, deadline, cost)
+
+  POOR TIER — Usually ~10-15% overall fill:
+    - Dead URLs or pages requiring login
+    - Pages with info behind inquiry forms
+    - JS-rendered sites that didn't render properly
+
+  COMMON GAPS ACROSS ALL TIERS:
+    *_logo               0%     Intentional (Clearbit API later)
+    certificate_provided Low    Rarely stated on pages
+    deadline             Mixed  Pages often don't publish deadlines
+    posted_date          Low    Not commonly shown
+
+
+================================================================================
+  NEXT STEPS
+================================================================================
+
+  OPTION A: Ship all 251 usable records as-is
+    Overall fill rate ~77%. Acceptable for initial UI launch.
+
+  OPTION B: Run Gemini web search patches on poor files
+    Expected to recover 20-30% of poor files across sections.
+
+  OPTION C: Ship good + avg only (skip poor)
+    Simpler, cleaner data.
+
+
+================================================================================
+  END OF COMBINED REPORT
+================================================================================

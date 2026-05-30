@@ -1,0 +1,275 @@
+================================================================================
+DATA MONITORING DASHBOARD — PHD
+Course Data Verification System
+PhD | Complete Courses Only
+Classified: 2,652 courses | Universities: 302
+================================================================================
+
+
+================================================================================
+1. STATISTICS SECTION
+================================================================================
+
+Card Row (Top)
+┌──────────────┐ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐
+│ Total Courses │ │ Universities │ │   Domains    │ │   Verified   │ │  Avg Courses │
+│    2,652    │ │     302      │ │      9       │ │    1,279    │ │    8.8      │
+│           PhD │ │   worldwide  │ │  broad fields│ │  (48.2%)     │ │  per college  │
+└──────────────┘ └──────────────┘ └──────────────┘ └──────────────┘ └──────────────┘
+Total Courses — complete courses classified (all 3 sections have full crawl data)
+Universities — unique colleges covered in classified set
+Domains — broad academic fields (CS & AI, Engineering, Natural Sciences, Business, Medicine, Social Sciences, Arts, Environment, Other)
+Verified — high_confidence (283) + safe_to_present (564) + mostly_reliable (715)
+Avg Courses — average number of courses per university (2,652 courses / 302 universities)
+  Note: All high_confidence files are included in safe/mostly labels. Unique verified = 1,279
+
+
+
+Official URL Crawls (Progress bars)
+
+Total pages crawled:         ████████████████░░░░░░░░░░░░░░  54.0%  (11,240 / 20,816 URLs)
+Complete courses classified: ████████░░░░░░░░░░░░░░░░░░░░░░  27.1%  (2,652 / 9,797 total courses)
+
+Major Section Coverage (of 2,652 classified courses):
+  Admission Requirements:   ████████████████████████████░░  95.1%  (2,522 have data)
+  Application Deadlines:    ████████████████████████░░░░░░  81.4%  (2,159 have data)
+  Tuition & Fees:           █████████████████████░░░░░░░░░  70.3%  (1,864 have data)
+
+
+
+Important Entity Verification Rates (Horizontal bar chart)
+
+GRE Status    █████████████████████████████████████████████     94.7%  (568/600)
+LOR Count     ████████████████████████████████████████████      93.6%  (673/719)
+IELTS         █████████████████████████████████████████         86.2%  (1,053/1,222)
+Work Exp      █████████████████████████████████████████         85.7%  (24/28)
+Cambridge     ██████████████████████████████████████            81.1%  (180/222)
+GPA           █████████████████████████████████████             79.1%  (455/575)
+TOEFL         █████████████████████████████████████             78.5%  (794/1,012)
+App Fee       ██████████████████████████████████                71.5%  (511/715)
+PTE           ██████████████████████████                        55.3%  (363/657)
+Duolingo      ██████████████████████                            47.4%  (184/388)
+GRE Score     █████████████████                                 36.7%  (105/286)
+Match rate = matched / (matched + mismatched). Only counted where both .md and crawled page had data.
+
+
+University Coverage by Region (vs QS Top Rankings 2026)
+┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐
+│ US       │ │ UK       │ │ Europe   │ │ Asia     │ │ Aus/NZ   │ │ Canada   │
+│ 70/71    │ │ 46/46    │ │ 90/104   │ │ 18/57   │ │ 33/33    │ │ 17/18    │
+│ 98.6%    │ │ 100%     │ │ 86.5%    │ │ 31.6%   │ │ 100%     │ │ 94.4%    │
+└──────────┘ └──────────┘ └──────────┘ └──────────┘ └──────────┘ └──────────┘
+
+Click any region to drill down → shows We Have vs We Don't Have lists
+
+
+================================================================================
+2. ACCURACY SECTION
+================================================================================
+
+Important Section Trust Rates (3 Gauges with data points)
+┌─────────────────────────────────────────────────────────────────┐
+│              Important Section Trust Rates                       │
+│  (verified + partial) / files with data                        │
+│                                                                 │
+│   Tuition & Fees        Deadlines          Admission Req       │
+│   ┌───────────┐        ┌───────────┐      ┌───────────┐       │
+│   │   81.9%   │        │   77.1%   │      │   79.2%   │       │
+│   │  trusted  │        │  trusted  │      │  trusted  │       │
+│   │           │        │           │      │           │       │
+│   │  3,392    │        │  1,028    │      │  4,910    │       │
+│   │ data pts  │        │ data pts  │      │ data pts  │       │
+│   │ verified  │        │ verified  │      │ verified  │       │
+│   └───────────┘        └───────────┘      └───────────┘       │
+│   1,864 files checked   2,159 checked      2,522 checked       │
+└─────────────────────────────────────────────────────────────────┘
+
+Each gauge shows: Trust rate %, Data points verified, Files checked
+
+
+Data Trustworthiness (Pie chart)
+┌─────────────────────────────────────────────────────┐
+│         Data Trustworthiness                        │
+│                                                     │
+│            ┌──────────┐                             │
+│           /  Trustable \    1,279 files (48.2%)     │
+│          │   48.2%      │   Verified + Safe +       │
+│          │              │   Mostly Reliable          │
+│           \            /                            │
+│            \  51.8%   /     1,373 files              │
+│             └────────┘      Needs more verification  │
+│                                                     │
+└─────────────────────────────────────────────────────┘
+
+Trustable = confidence >= 60 (safe_to_present + mostly_reliable)
+Total data points verified against official sources: 9,330
+
+
+================================================================================
+3. EXPLORER SECTION
+================================================================================
+
+Mode 1: Default (No filters) — Drill-Down Browse
+University list → click to expand courses → click course to expand detail
+All on same page, accordion-style. Filters sidebar always on left.
+
+Mode 2: Filter Applied — Flat Table With All Columns + Values
+When any filter checkbox is ticked, right side shows flat table:
+  Columns: Uni, Course, Conf Score, Tuition (amount+status), Deadlines
+  (date+status), TOEFL, IELTS, GRE, GPA, LOR, Fee — all with ✓/~/✗/- symbols
+
+Detail panel expands on row click showing:
+  - Per-section source URLs + match details
+  - Entity comparison table (.md value vs official value)
+  - Tuition amounts with ✓/✗
+  - Deadline dates with ✓/✗
+
+Actions: [View .md file] [View All Details] [Open Official URL]
+
+"View All Details" shows complete structured .md content with verification
+symbols inline for every verifiable data point across ALL sections.
+
+
+================================================================================
+4. FILTERS SECTION (Integrated in Explorer left sidebar)
+================================================================================
+
+Primary Filters:
+  Confidence: [>=75] [>=60] [>=50] [<40]
+  University: [Search/Select]
+  Domain: [All] [CS & AI] [Engineering] [Sciences] [...]
+  Program: [Search course name...]
+
+Section Verification Filters (Checkboxes):
+  Tuition & Fees:
+    ☐ Verified (708)  ☐ Partial (819)  ☐ Flagged (337)  ☐ No Data (788)
+  Application Deadlines:
+    ☐ Verified (833)  ☐ Partial (831)  ☐ Flagged (495)  ☐ No Data (493)
+  Admission Requirements:
+    ☐ Verified (914)  ☐ Partial (1,083)  ☐ Flagged (525)  ☐ No Data (130)
+
+Entity-Level Filters (Checkboxes):
+  TOEFL:      ☐ Matched (794)  ☐ Mismatched (218)   ☐ Not on page  ☐ N/A
+  IELTS:      ☐ Matched (1,053)  ☐ Mismatched (169)   ☐ Not on page  ☐ N/A
+  GRE Status: ☐ Matched (568)  ☐ Mismatched (32)   ☐ Not on page  ☐ N/A
+  GPA:        ☐ Matched (455)  ☐ Mismatched (120)   ☐ Not on page  ☐ N/A
+  App Fee:    ☐ Matched (511)  ☐ Mismatched (204)   ☐ Not on page  ☐ N/A
+  LOR Count:  ☐ Matched (673)  ☐ Mismatched (46)   ☐ Not on page  ☐ N/A
+  PTE:        ☐ Matched (363)  ☐ Mismatched (294)   ☐ Not on page  ☐ N/A
+  Duolingo:   ☐ Matched (184)  ☐ Mismatched (204)   ☐ Not on page  ☐ N/A
+  GRE Score:  ☐ Matched (105)  ☐ Mismatched (181)   ☐ Not on page  ☐ N/A
+
+Quick Filter Presets:
+  [All Verified Courses]        → all 3 sections verified
+  [Needs Attention]             → score < 40
+  [Stale Deadlines]             → deadlines flagged as past
+  [Missing Tuition Data]        → tuition = no_data
+  [TOEFL/IELTS Mismatches]      → either test score doesn't match
+  [Fully Crawled But Low Score] → all 3 sections have data, score < 50
+
+Results List: Dynamic table with [Export CSV] and pagination
+
+
+================================================================================
+5. COMPARISON SECTION
+================================================================================
+
+Side-by-side view of .md file data vs official crawled page data.
+Course Selector → Section Tabs (Tuition | Deadlines | Admission)
+Each tab shows source URL, side-by-side text, matched/mismatched highlights.
+Entity comparison table for admission requirements.
+Action Bar: [View .md file] [View All Details] [Open Official URL]
+            [Mark as Reviewed] [← Prev Course] [Next Course →]
+
+
+================================================================================
+6. COVERAGE SECTION
+================================================================================
+
+Overview Cards:
+┌──────────────┐ ┌──────────────┐ ┌──────────────┐
+│  Classified  │ │  Remaining   │ │ Universities │
+│    2,652    │ │    7,145    │ │     302      │
+│  of  9,797  │ │   courses    │ │  of   806    │
+│  (27.1%)     │ │  (72.9%)     │ │  (37.5%)     │
+└──────────────┘ └──────────────┘ └──────────────┘
+
+Section Data Coverage (of 2,652 classified):
+  Admission Requirements:  95.1%  (2,522 covered | 130 missing)
+  Application Deadlines:   81.4%  (2,159 covered | 493 missing)
+  Tuition & Fees:          70.3%  (1,864 covered | 788 missing)
+
+Domain Coverage:
+  Other (897)
+  ██████████████                  47% reliable
+
+  Natural Sciences (628)
+  ██████████████                  47% reliable
+
+  Engineering (321)
+  ██████████████                  49% reliable
+
+  Social Sciences & Humanities (282)
+  ██████████████                  49% reliable
+
+  Business & Economics (189)
+  ███████████████                 51% reliable
+
+  CS & AI (171)
+  ██████████████                  48% reliable
+
+  Medicine & Health (164)
+  ███████████████                 50% reliable
+
+
+
+================================================================================
+7. ALERTS SECTION
+================================================================================
+
+Alert Priority Banner:
+  CRITICAL | WARNING | INFO
+
+Critical Alerts:
+  - Tuition Amounts Wrong: 337 courses with flagged tuition
+  - TOEFL/IELTS Mismatches: 387 combined (218 TOEFL + 169 IELTS)
+  - Prestigious University Data Issues: courses at top unis with confidence < 40
+
+Warning Alerts:
+  - Reliable Files With Flagged Sections: 188 files scoring >= 60 with 1 flagged section
+  - Multiple Admission Mismatches: 137 files with 3+ entities mismatched
+  - Stale Deadlines: 56 courses where website updated with newer dates
+
+Info Alerts:
+  - Past Deadlines: 143 courses with dates matched but in the past
+  - Uncrawled Courses: 7,145 courses awaiting crawl data
+  - Zero Confidence Files: 7 files where nothing could be verified
+
+Each alert clickable → shows full list with sort and [Export CSV]
+
+
+================================================================================
+SUMMARY METRICS
+================================================================================
+
+Confidence Labels:
+  high_confidence (all 3 verified):        283  (10.7%)
+  safe_to_present_as_official (>=75):     564  (21.3%)
+  mostly_reliable (60-74):                715  (27.0%)
+  --- Verified (high + safe + mostly)    1,279  (48.2%)
+  use_with_caveat (40-59):              1,028  (38.8%)
+  needs_review (<40):                     345  (13.0%)
+
+Section Trust Rates:
+  Tuition & Fees:          81.9% trusted  (1,864 checked)
+  Application Deadlines:   77.1% trusted  (2,159 checked)
+  Admission Requirements:  79.2% trusted  (2,522 checked)
+
+Total Data Points Verified: 9,330
+  Tuition amounts:    3,392
+  Deadline dates:      1,028
+  Admission entities: 4,910
+
+Trustable Files (confidence >= 60): 1,279 (48.2%)
+
+================================================================================
