@@ -1,0 +1,1206 @@
+{
+  "total_files_processed": 26378,
+  "files_with_seed": 26181,
+  "files_without_seed": 197,
+  "total_official_urls_extracted": 367591,
+  "failure_count": 200,
+  "failures": [
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Aston_University\\Aston_University_Master_of_Science_Supply_Chain_Management.md",
+      "college": "Aston_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Aston_University\\Aston_University_MSc_Artificial_Intelligence.md",
+      "college": "Aston_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Australian_National_University\\Australian_National_University_Masters_Environmental_Management_and_Development.md",
+      "college": "Australian_National_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Bangor_University\\Bangor_University_MPhil_Health_Economics.md",
+      "college": "Bangor_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Bangor_University\\Bangor_University_MScRes_Clinical_Science.md",
+      "college": "Bangor_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Birkbeck_University_of_London\\Birkbeck_University_of_London_Master_of_Arts_Digital_Media_Management.md",
+      "college": "Birkbeck_University_of_London",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Boston_University\\Boston_University_Master_s_Mathematics.md",
+      "college": "Boston_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Canterbury_Christ_Church_University\\Canterbury_Christ_Church_University_Master_of_Science_Psychology_Conversion_Course.md",
+      "college": "Canterbury_Christ_Church_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Cardiff_University\\Cardiff_University_Master_of_Science_Physics.md",
+      "college": "Cardiff_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Carleton_University_Ottawa\\Carleton_University_Ottawa_Master_s_Information_Technology_Digital_Media.md",
+      "college": "Carleton_University_Ottawa",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Carnegie_Mellon_University\\Carnegie_Mellon_University_MBA_Master_of_Business_Administration_-_Full-Time.md",
+      "college": "Carnegie_Mellon_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Carnegie_Mellon_University\\Carnegie_Mellon_University_MBA_Master_of_Business_Administration_-_Online_Hybrid.md",
+      "college": "Carnegie_Mellon_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Carnegie_Mellon_University\\Carnegie_Mellon_University_MS_Master_of_Science_in_Computer_Science.md",
+      "college": "Carnegie_Mellon_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Chalmers_University_of_Technology\\Chalmers_University_of_Technology_MSc_Sustainable_Energy_Systems.md",
+      "college": "Chalmers_University_of_Technology",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\City_University_of_London\\City_University_of_London_MSc_Cyber_Security.md",
+      "college": "City_University_of_London",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\City_University_of_New_York\\City_University_of_New_York_M.A_Forensic_Psychology.md",
+      "college": "City_University_of_New_York",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\College_of_William_Mary\\College_of_William_Mary_Ms_Business_Analytics.md",
+      "college": "College_of_William_Mary",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Cornell_University\\Cornell_University_Masters_Landscape_Architecture_24_Months.md",
+      "college": "Cornell_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Dalhousie_University\\Dalhousie_University_Bachelors_Development_Economics.md",
+      "college": "Dalhousie_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Dartmouth_College\\Dartmouth_College_Master_s_Applied_Economics.md",
+      "college": "Dartmouth_College",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\De_Montfort_University\\De_Montfort_University_Master_of_Science_Mechatronics.md",
+      "college": "De_Montfort_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\De_Paul_University\\De_Paul_University_Masters_Biological_Sciences_MA.md",
+      "college": "De_Paul_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Deakin_University_Melbourne\\Deakin_University_Melbourne_Master_s_Business_Administration_-_Marketing.md",
+      "college": "Deakin_University_Melbourne",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Ecole_Polytechnique\\Ecole_Polytechnique_MSc_AI_for_Markets_and_Quantitative_Investment_MaQI.md",
+      "college": "Ecole_Polytechnique",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Embry_Riddle_Aeronautical_University\\Embry_Riddle_Aeronautical_University_Master_of_Science_Mechanical_Engineering.md",
+      "college": "Embry_Riddle_Aeronautical_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Flinders_University_Adelaide\\Flinders_University_Adelaide_Master_s_International_Development.md",
+      "college": "Flinders_University_Adelaide",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Florida_Atlantic_University\\Florida_Atlantic_University_Master_of_Science_Data_Science_and_Analytics.md",
+      "college": "Florida_Atlantic_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Florida_Institute_of_Technology\\Florida_Institute_of_Technology_Master_of_Science_Biomedical_Engineering.md",
+      "college": "Florida_Institute_of_Technology",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Florida_Institute_of_Technology\\Florida_Institute_of_Technology_Master_of_Science_Information_Assurance_and_Cybersecurity.md",
+      "college": "Florida_Institute_of_Technology",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Freie_University_of_Berlin\\Freie_University_of_Berlin_Master_of_Science_Finance_Accounting_Taxation_Supplements.md",
+      "college": "Freie_University_of_Berlin",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Freie_University_of_Berlin\\Freie_University_of_Berlin_Master_s_Economics.md",
+      "college": "Freie_University_of_Berlin",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Harvard_University\\Harvard_University_Master_s_Data_Science.md",
+      "college": "Harvard_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Heidelberg_University\\Heidelberg_University_MSc_Computational_Science_and_Engineering.md",
+      "college": "Heidelberg_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\HeriotWatt_University\\HeriotWatt_University_MSc_Digital_Marketing.md",
+      "college": "HeriotWatt_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Indiana_University_Purdue_University_Indianapolis\\Indiana_University_Purdue_University_Indianapolis_Masters_Physical_Therapy.md",
+      "college": "Indiana_University_Purdue_University_Indianapolis",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Iowa_State_University\\Iowa_State_University_Master_of_Science_Agricultural_Biosystems_Engineering.md",
+      "college": "Iowa_State_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Iowa_State_University\\Iowa_State_University_Master_of_Science_Astrophysics.md",
+      "college": "Iowa_State_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Iowa_State_University\\Iowa_State_University_Masters_Landscape_Architecture.md",
+      "college": "Iowa_State_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\IU_International_University_of_Applied_Sciences\\IU_International_University_of_Applied_Sciences_Master_of_Arts_Infomation_Technology_Management.md",
+      "college": "IU_International_University_of_Applied_Sciences",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Johns_Hopkins_University\\Johns_Hopkins_University_Master_of_Science_Civil_Engineering.md",
+      "college": "Johns_Hopkins_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Johns_Hopkins_University\\Johns_Hopkins_University_Masters_Systems_Engineering.md",
+      "college": "Johns_Hopkins_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Kent_State_University\\Kent_State_University_Master_s_Chemical_Physics.md",
+      "college": "Kent_State_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Kingston_University_London\\Kingston_University_London_Master_of_Arts_Criminology_with_Forensic_Psychology.md",
+      "college": "Kingston_University_London",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Kingston_University_London\\Kingston_University_London_Master_of_Science_International_Business_Management_with_Entrepreneurship.md",
+      "college": "Kingston_University_London",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\KTH_Royal_Institute_of_Technology\\KTH_Royal_Institute_of_Technology_Master_of_Science_Engineering_Materials_Science.md",
+      "college": "KTH_Royal_Institute_of_Technology",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Linkping_University\\Linkping_University_Master_of_Science_Outdoor_and_Sustainability_Education.md",
+      "college": "Linkping_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Liverpool_John_Moores_University\\Liverpool_John_Moores_University_MSc_Health_Psychology.md",
+      "college": "Liverpool_John_Moores_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Liverpool_John_Moores_University\\Liverpool_John_Moores_University_MSc_Management.md",
+      "college": "Liverpool_John_Moores_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Loughborough_University\\Loughborough_University_MSc_Polymer_Science_and_Engineering.md",
+      "college": "Loughborough_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Massey_University\\Massey_University_MSc_Chemistry.md",
+      "college": "Massey_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Mc_Gill_University_Montreal\\Mc_Gill_University_Montreal_Master_of_Arts_Education_and_Society.md",
+      "college": "Mc_Gill_University_Montreal",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Mc_Gill_University_Montreal\\Mc_Gill_University_Montreal_Master_s_Business_Administration_Japan_Management_Non-Thesis.md",
+      "college": "Mc_Gill_University_Montreal",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Memorial_University_of_Newfoundland\\Memorial_University_of_Newfoundland_MMS_FRM_Fisheries_Resource_Management.md",
+      "college": "Memorial_University_of_Newfoundland",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Michigan_State_University\\Michigan_State_University_Master_of_Science_Biomedical_Laboratory_Operations.md",
+      "college": "Michigan_State_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Mississippi_State_University\\Mississippi_State_University_Master_of_Science_Sustainable_Bioproducts.md",
+      "college": "Mississippi_State_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\New_York_University\\New_York_University_Master_of_Science_Transportation_Management.md",
+      "college": "New_York_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\North_Carolina_AT_State_University\\North_Carolina_AT_State_University_Master_s_Health_and_Physical_Education.md",
+      "college": "North_Carolina_AT_State_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Oklahoma_State_UniversityStillwater\\Oklahoma_State_UniversityStillwater_Master_of_Science_Integrative_Biology.md",
+      "college": "Oklahoma_State_UniversityStillwater",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Oxford_Brookes_University\\Oxford_Brookes_University_Master_s_International_Law.md",
+      "college": "Oxford_Brookes_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Oxford_Brookes_University\\Oxford_Brookes_University_MSc_Nursing_Mental_Health.md",
+      "college": "Oxford_Brookes_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Pace_University\\Pace_University_Master_of_Science_Marketing_Analytics.md",
+      "college": "Pace_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Pennsylvania_State_University\\Pennsylvania_State_University_MEd_Earth_Science.md",
+      "college": "Pennsylvania_State_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Polytechnic_University_of_Catalonia\\Polytechnic_University_of_Catalonia_Master_of_Science_Artificial_Intelligence.md",
+      "college": "Polytechnic_University_of_Catalonia",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Purdue_University_West_Lafayette\\Purdue_University_West_Lafayette_Master_of_Science_Data_Science.md",
+      "college": "Purdue_University_West_Lafayette",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Purdue_University_West_Lafayette\\Purdue_University_West_Lafayette_Master_of_Science_Information_and_Cybersecurity.md",
+      "college": "Purdue_University_West_Lafayette",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Queens_University_Kingston\\Queens_University_Kingston_Master_s_Management_Analytics.md",
+      "college": "Queens_University_Kingston",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Queens_University_Kingston\\Queens_University_Kingston_MPA_Public_Administration.md",
+      "college": "Queens_University_Kingston",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Radboud_University\\Radboud_University_MA_Philosophy.md",
+      "college": "Radboud_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Royal_Holloway_University_of_London\\Royal_Holloway_University_of_London_MSc_Digital_Marketing.md",
+      "college": "Royal_Holloway_University_of_London",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Saarland_University\\Saarland_University_Master_s_Philosophy.md",
+      "college": "Saarland_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\San_Francisco_State_University\\San_Francisco_State_University_Master_of_Science_Electrical_and_Computer_Engineering.md",
+      "college": "San_Francisco_State_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\San_Jose_State_University\\San_Jose_State_University_Master_of_Science_Statistics.md",
+      "college": "San_Jose_State_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Santa_Clara_University\\Santa_Clara_University_Master_of_Science_Aerospace_Engineering.md",
+      "college": "Santa_Clara_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Sheffield_Hallam_University\\Sheffield_Hallam_University_MSc_Developmental_Psychology.md",
+      "college": "Sheffield_Hallam_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Stevens_Institute_of_Technology\\Stevens_Institute_of_Technology_Master_of_Science_Chemistry.md",
+      "college": "Stevens_Institute_of_Technology",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Swansea_University\\Swansea_University_LLM_International_Commercial_and_Maritime_Law.md",
+      "college": "Swansea_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Technical_University_of_Berlin\\Technical_University_of_Berlin_MSc_Reduced_Order_Modelling_Simulation_and_Optimization_of_Coupled_Systems.md",
+      "college": "Technical_University_of_Berlin",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Technical_University_of_Berlin\\Technical_University_of_Berlin_MSc_Space_Engineering.md",
+      "college": "Technical_University_of_Berlin",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Temple_University\\Temple_University_Masters_Public_Health_in_Epidemiology.md",
+      "college": "Temple_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\The_Chinese_University_of_Hong_Kong\\The_Chinese_University_of_Hong_Kong_MSc_Economics.md",
+      "college": "The_Chinese_University_of_Hong_Kong",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\The_University_of_British_Columbia_Vancouver\\The_University_of_British_Columbia_Vancouver_Master_s_Food_Science.md",
+      "college": "The_University_of_British_Columbia_Vancouver",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\The_University_of_Queensland\\The_University_of_Queensland_Masters_Software_Engineering_Professional.md",
+      "college": "The_University_of_Queensland",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Tokyo_Institute_of_Technology\\Tokyo_Institute_of_Technology_Masters_Chemistry.md",
+      "college": "Tokyo_Institute_of_Technology",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Tokyo_University_of_Science\\Tokyo_University_of_Science_Master_s_Chemistry.md",
+      "college": "Tokyo_University_of_Science",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Torrens_University_Australia_Adelaide\\Torrens_University_Australia_Adelaide_Masters_Information_Technology_Advanced.md",
+      "college": "Torrens_University_Australia_Adelaide",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\TU_Clausthal\\TU_Clausthal_MS_Business_Informatics.md",
+      "college": "TU_Clausthal",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Universit_della_Svizzera_italiana\\Universit_della_Svizzera_italiana_MAsters_Public_Management_and_Policy.md",
+      "college": "Universit_della_Svizzera_italiana",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Universit_Grenoble_Alpes\\Universit_Grenoble_Alpes_Master_of_Science_Civil_Engineering.md",
+      "college": "Universit_Grenoble_Alpes",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_College_London\\University_College_London_MSc_Integrated_Machine_Learning_Systems_MSc.md",
+      "college": "University_College_London",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_in_Lincoln_New_Zealand\\University_in_Lincoln_New_Zealand_Master_s_Sport_and_Recreation_Management.md",
+      "college": "University_in_Lincoln_New_Zealand",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Aberdeen\\University_of_Aberdeen_Master_of_Science_Real_Estate_Commercial_Option.md",
+      "college": "University_of_Aberdeen",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Alaska_Fairbanks\\University_of_Alaska_Fairbanks_Master_of_Science_Electrical_Engineering.md",
+      "college": "University_of_Alaska_Fairbanks",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Bradford\\University_of_Bradford_Master_of_Science_Natural_Resources_and_Environmental_Law_and_Policy.md",
+      "college": "University_of_Bradford",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_British_Columbia\\University_of_British_Columbia_MSc_Master_of_Science_in_Computer_Science.md",
+      "college": "University_of_British_Columbia",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_California_Davis\\University_of_California_Davis_Master_of_Science_Biostatistics.md",
+      "college": "University_of_California_Davis",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_California_Riverside\\University_of_California_Riverside_Master_of_Science_Biomedical_Sciences.md",
+      "college": "University_of_California_Riverside",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Canterbury\\University_of_Canterbury_MA_Thesis_Sociology.md",
+      "college": "University_of_Canterbury",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Central_Lancashire\\University_of_Central_Lancashire_Master_of_Science_Performance_Analysis_and_Talent_Management.md",
+      "college": "University_of_Central_Lancashire",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Central_Lancashire\\University_of_Central_Lancashire_MSc_Cybercrime_Investigation.md",
+      "college": "University_of_Central_Lancashire",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Central_Oklahoma\\University_of_Central_Oklahoma_MEd._School_and_Professional_Counseling.md",
+      "college": "University_of_Central_Oklahoma",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Cincinnati\\University_of_Cincinnati_Masters_Business_Administration.md",
+      "college": "University_of_Cincinnati",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Colorado_Boulder\\University_of_Colorado_Boulder_Masters_Economics.md",
+      "college": "University_of_Colorado_Boulder",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Copenhagen\\University_of_Copenhagen_MSc_Biochemistry.md",
+      "college": "University_of_Copenhagen",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Dayton\\University_of_Dayton_Master_of_Science_Engineering.md",
+      "college": "University_of_Dayton",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Delaware\\University_of_Delaware_Master_of_Science_Microbiology.md",
+      "college": "University_of_Delaware",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_East_London\\University_of_East_London_Master_of_Science_Oil_and_Gas_Management.md",
+      "college": "University_of_East_London",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Essex\\University_of_Essex_Master_s_International_Trade_Law.md",
+      "college": "University_of_Essex",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Hawaii_at_Manoa\\University_of_Hawaii_at_Manoa_MA_Philosophy.md",
+      "college": "University_of_Hawaii_at_Manoa",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Hawaii_at_Manoa\\University_of_Hawaii_at_Manoa_Masters_Molecular_Biosciences_and_Bioengineering.md",
+      "college": "University_of_Hawaii_at_Manoa",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Hertfordshire\\University_of_Hertfordshire_MSc_Strategic_Marketing_with_Digital_Media_Management.md",
+      "college": "University_of_Hertfordshire",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Huddersfield\\University_of_Huddersfield_MSc_Business_Intelligence_and_Analytics_Professional_Practice.md",
+      "college": "University_of_Huddersfield",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Illinois_at_Chicago\\University_of_Illinois_at_Chicago_Master_of_Science_Medical_Biotechnology.md",
+      "college": "University_of_Illinois_at_Chicago",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Iowa\\University_of_Iowa_Masters_Physics.md",
+      "college": "University_of_Iowa",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Kent\\University_of_Kent_Master_of_Science_Biotechnology_and_Business.md",
+      "college": "University_of_Kent",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Liverpool\\University_of_Liverpool_Master_of_Science_Mechanical_Engineering_with_Management.md",
+      "college": "University_of_Liverpool",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Liverpool\\University_of_Liverpool_MSc_Accounting_And_Finance.md",
+      "college": "University_of_Liverpool",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Massachusetts_Amherst\\University_of_Massachusetts_Amherst_Master_of_Science_Physics.md",
+      "college": "University_of_Massachusetts_Amherst",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Massachusetts_Lowell\\University_of_Massachusetts_Lowell_Master_of_Science_Industrial_Engineering.md",
+      "college": "University_of_Massachusetts_Lowell",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_MissouriSt_Louis\\University_of_MissouriSt_Louis_M.A_Psychology_Science.md",
+      "college": "University_of_MissouriSt_Louis",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Mnster\\University_of_Mnster_Masters_Business_Administration.md",
+      "college": "University_of_Mnster",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_North_Texas\\University_of_North_Texas_MBA_Information_Technology_Decision_Sciences.md",
+      "college": "University_of_North_Texas",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Oxford\\University_of_Oxford_MSc_Mathematical_and_Theoretical_Physics.md",
+      "college": "University_of_Oxford",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_San_Francisco\\University_of_San_Francisco_Master_of_Science_Business_Analytics.md",
+      "college": "University_of_San_Francisco",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_South_Australia_Adelaide\\University_of_South_Australia_Adelaide_Master_s_Design_Contemporary_Art.md",
+      "college": "University_of_South_Australia_Adelaide",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_South_Carolina\\University_of_South_Carolina_Master_s_International_Hospitality_and_Tourism_Management.md",
+      "college": "University_of_South_Carolina",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_South_Carolina\\University_of_South_Carolina_MEng_Biomedical_Engineering.md",
+      "college": "University_of_South_Carolina",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_South_Wales\\University_of_South_Wales_Master_of_Science_Strategic_Procurement_Management.md",
+      "college": "University_of_South_Wales",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Southern_California\\University_of_Southern_California_Master_of_Science_Industrial_and_Systems_Engineering.md",
+      "college": "University_of_Southern_California",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Tasmania\\University_of_Tasmania_Master_s_Professional_Psychology.md",
+      "college": "University_of_Tasmania",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_the_Sunshine_Coast\\University_of_the_Sunshine_Coast_Master_s_Climate_Change_Adaptation.md",
+      "college": "University_of_the_Sunshine_Coast",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Toronto\\University_of_Toronto_MSc_Mathematics.md",
+      "college": "University_of_Toronto",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Tulsa\\University_of_Tulsa_MA_Clinical_Psychology.md",
+      "college": "University_of_Tulsa",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Washington_Seattle\\University_of_Washington_Seattle_Master_of_Science_Electrical_and_Computer_Engineering.md",
+      "college": "University_of_Washington_Seattle",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Washington_Seattle\\University_of_Washington_Seattle_Master_of_Science_Technology_Innovation.md",
+      "college": "University_of_Washington_Seattle",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Washington_Tacoma\\University_of_Washington_Tacoma_Master_of_Science_Computer_Science_and_Systems.md",
+      "college": "University_of_Washington_Tacoma",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Westminster\\University_of_Westminster_Master_of_Science_Software_Engineering_Conversion.md",
+      "college": "University_of_Westminster",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_WisconsinMadison\\University_of_WisconsinMadison_Master_of_Science_Computer_Science.md",
+      "college": "University_of_WisconsinMadison",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Wollongong\\University_of_Wollongong_Masters_Mathematical_Sciences_Applied_Statistics.md",
+      "college": "University_of_Wollongong",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\University_of_Wolverhampton\\University_of_Wolverhampton_MBA_International_Masters_of_Business_Administration_with_Professional_Practice.md",
+      "college": "University_of_Wolverhampton",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Vanderbilt_University\\Vanderbilt_University_Master_of_Science_Civil_Engineering.md",
+      "college": "Vanderbilt_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Vanderbilt_University\\Vanderbilt_University_Master_of_Science_Finance.md",
+      "college": "Vanderbilt_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Virginia_Commonwealth_University\\Virginia_Commonwealth_University_Master_of_Science_Business_Concentration_in_Marketing_Management.md",
+      "college": "Virginia_Commonwealth_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Wichita_State_University\\Wichita_State_University_Master_s_Accountancy_-_Accounting_Information_Systems.md",
+      "college": "Wichita_State_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\masters_data\\masters\\Yale_University\\Yale_University_Master_s_Environmental_management.md",
+      "college": "Yale_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Aalto_University\\Aalto_University_PhD_Architecture.md",
+      "college": "Aalto_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Delft_University_of_Technology\\Delft_University_of_Technology_PhD_Cryogenic_Electronics.md",
+      "college": "Delft_University_of_Technology",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Delft_University_of_Technology\\Delft_University_of_Technology_PhD_Polymer_Science.md",
+      "college": "Delft_University_of_Technology",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Durham_University\\Durham_University_PhD_History.md",
+      "college": "Durham_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\FindAPhD\\FindAPhD_PhD_Lookism.md",
+      "college": "FindAPhD",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Ghent_University\\Ghent_University_PhD_M._Sc._In_Pharmaceutical_Sciences.md",
+      "college": "Ghent_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\HeriotWatt_University\\HeriotWatt_University_PhD_School_Of_Energy_Geoscience_Infrastructure_And_Society.md",
+      "college": "HeriotWatt_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Imperial_College_London\\Imperial_College_London_PhD_Ethics_And_Law.md",
+      "college": "Imperial_College_London",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Jagiellonian_University\\Jagiellonian_University_PhD_Biological_Sciences_Biology.md",
+      "college": "Jagiellonian_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Jagiellonian_University\\Jagiellonian_University_PhD_Criminal_Law.md",
+      "college": "Jagiellonian_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Karlsruhe_Institute_of_Technology\\Karlsruhe_Institute_of_Technology_PhD_Geophysics.md",
+      "college": "Karlsruhe_Institute_of_Technology",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Karlsruhe_Institute_of_Technology\\Karlsruhe_Institute_of_Technology_PhD_Robotics.md",
+      "college": "Karlsruhe_Institute_of_Technology",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Karolinska_Institutet\\Karolinska_Institutet_PhD_Clinical_Epidemiology.md",
+      "college": "Karolinska_Institutet",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Karolinska_Institutet\\Karolinska_Institutet_PhD_Global_Public_Health.md",
+      "college": "Karolinska_Institutet",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\KTH_Royal_Institute_of_Technology\\KTH_Royal_Institute_of_Technology_PhD_Optimal_Transport.md",
+      "college": "KTH_Royal_Institute_of_Technology",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Loughborough_University\\Loughborough_University_PhD_Business_And_Economics.md",
+      "college": "Loughborough_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Loughborough_University\\Loughborough_University_PhD_Public_Health.md",
+      "college": "Loughborough_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Loughborough_University\\Loughborough_University_PhD_Social_Justice.md",
+      "college": "Loughborough_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Loughborough_University\\Loughborough_University_PhD_Sports_Engineering_And_Human_Factors.md",
+      "college": "Loughborough_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Manchester_Metropolitan_University\\Manchester_Metropolitan_University_PhD_Environmental_Science.md",
+      "college": "Manchester_Metropolitan_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Monash_University_Melbourne\\Monash_University_Melbourne_PhD_Designing_Dignity_Civic_equity_through_public_bathroom_architecture.md",
+      "college": "Monash_University_Melbourne",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\MRC_Laboratory_of_Medical_Sciences\\MRC_Laboratory_of_Medical_Sciences_PhD_Biomedical_Research.md",
+      "college": "MRC_Laboratory_of_Medical_Sciences",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Newcastle_University\\Newcastle_University_PhD_Translational_Cancer_Research.md",
+      "college": "Newcastle_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Norwegian_University_of_Science_and_Technology\\Norwegian_University_of_Science_and_Technology_PhD_Aerospace_Engineering.md",
+      "college": "Norwegian_University_of_Science_and_Technology",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Norwegian_University_of_Science_and_Technology\\Norwegian_University_of_Science_and_Technology_PhD_Applied_Statistics.md",
+      "college": "Norwegian_University_of_Science_and_Technology",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Norwegian_University_of_Science_and_Technology\\Norwegian_University_of_Science_and_Technology_PhD_Epidemiologi.md",
+      "college": "Norwegian_University_of_Science_and_Technology",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Norwegian_University_of_Science_and_Technology\\Norwegian_University_of_Science_and_Technology_PhD_materials_science.md",
+      "college": "Norwegian_University_of_Science_and_Technology",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Norwegian_University_of_Science_and_Technology\\Norwegian_University_of_Science_and_Technology_PhD_Nano_Materials_Science_And_Technology.md",
+      "college": "Norwegian_University_of_Science_and_Technology",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Norwegian_University_of_Science_and_Technology\\Norwegian_University_of_Science_and_Technology_PhD_Technology_Biotechnology.md",
+      "college": "Norwegian_University_of_Science_and_Technology",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Norwegian_University_of_Science_and_Technology\\Norwegian_University_of_Science_and_Technology_PhD_Technology_Materials_Technology.md",
+      "college": "Norwegian_University_of_Science_and_Technology",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Queens_University_of_Belfast\\Queens_University_of_Belfast_PhD_Artificial_Intelligence_In_Games_Machine_Learning_For_Adaptive_Gameplay_Intelligent_Agents_Procedural_Content_Generation_And_Player_Modelling..md",
+      "college": "Queens_University_of_Belfast",
+      "reason": "read_error: [Errno 2] No such file or directory: 'c:\\\\Users\\\\HP\\\\OneDrive\\\\Desktop\\\\course_data\\\\phd_data\\\\phd\\\\Queens_University_of_Belfast\\\\Queens_University_of_Belfast_PhD_Artificial_Intelligence_In_Games_Machine_Learning_For_Adaptive_Gameplay_Intelligent_Agents_Procedural_Content_Generation_And_Player_Modelling..md'"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Queens_University_of_Belfast\\Queens_University_of_Belfast_PhD_Digital_Twins_And_Simulation_Use_Of_Game_Engines_And_Real-Time_Rendering_For_Urban_Planning_Engineering_Simulations_And_Digital_Twin_Environments..md",
+      "college": "Queens_University_of_Belfast",
+      "reason": "read_error: [Errno 2] No such file or directory: 'c:\\\\Users\\\\HP\\\\OneDrive\\\\Desktop\\\\course_data\\\\phd_data\\\\phd\\\\Queens_University_of_Belfast\\\\Queens_University_of_Belfast_PhD_Digital_Twins_And_Simulation_Use_Of_Game_Engines_And_Real-Time_Rendering_For_Urban_Planning_Engineering_Simulations_And_Digital_Twin_Environments..md'"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Technical_University_of_Denmark\\Technical_University_of_Denmark_PhD_Supply_Chain_Management.md",
+      "college": "Technical_University_of_Denmark",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Texas_Tech_University\\Texas_Tech_University_PhD_English_Literature.md",
+      "college": "Texas_Tech_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\University_College_Dublin\\University_College_Dublin_PhD_Political_Theory.md",
+      "college": "University_College_Dublin",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\University_Medical_Center_Groningen\\University_Medical_Center_Groningen_PhD_Molecular_and_Immune_Radiation_Oncology.md",
+      "college": "University_Medical_Center_Groningen",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\University_of_Amsterdam\\University_of_Amsterdam_PhD_Urban_Design.md",
+      "college": "University_of_Amsterdam",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\University_of_Antwerp\\University_of_Antwerp_PhD_Medical_Degree.md",
+      "college": "University_of_Antwerp",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\University_of_Bayreuth\\University_of_Bayreuth_PhD_Computer_Science.md",
+      "college": "University_of_Bayreuth",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\University_of_Birmingham\\University_of_Birmingham_PhD_Engineering_Mechanical_Engineering.md",
+      "college": "University_of_Birmingham",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\University_of_Bristol\\University_of_Bristol_PhD_Computer_Science.md",
+      "college": "University_of_Bristol",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\University_of_California_Santa_Barbara\\University_of_California_Santa_Barbara_PhD_PhD_in_Mathematics.md",
+      "college": "University_of_California_Santa_Barbara",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\University_of_Cambridge\\University_of_Cambridge_PhD_Astronomy.md",
+      "college": "University_of_Cambridge",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\University_of_Copenhagen\\University_of_Copenhagen_PhD_Research.md",
+      "college": "University_of_Copenhagen",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\University_of_Liverpool\\University_of_Liverpool_PhD_Physics.md",
+      "college": "University_of_Liverpool",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\University_of_Maryland\\University_of_Maryland_PhD_Doctor_of_Philosophy_in_Chemical_Engineering.md",
+      "college": "University_of_Maryland",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\University_of_Maryland\\University_of_Maryland_PhD_Doctor_of_Philosophy_in_Mathematics.md",
+      "college": "University_of_Maryland",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\University_of_Maryland_College_Park\\University_of_Maryland_College_Park_PhD_Chemistry.md",
+      "college": "University_of_Maryland_College_Park",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\University_of_Michigan-Dearborn\\University_of_Michigan-Dearborn_PhD_Public_Health.md",
+      "college": "University_of_Michigan-Dearborn",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\University_of_Oslo\\University_of_Oslo_PhD_Experimental_Neurobiology.md",
+      "college": "University_of_Oslo",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\University_of_Reading\\University_of_Reading_PhD_Bioinformatics_Analyses_Of_Microbial_Communities_And_Their_Genetic_Contents_To_Understand_The_Transmission_Dynamics_And_Selection_Of_Antimicrobial_Resistance.md",
+      "college": "University_of_Reading",
+      "reason": "read_error: [Errno 2] No such file or directory: 'c:\\\\Users\\\\HP\\\\OneDrive\\\\Desktop\\\\course_data\\\\phd_data\\\\phd\\\\University_of_Reading\\\\University_of_Reading_PhD_Bioinformatics_Analyses_Of_Microbial_Communities_And_Their_Genetic_Contents_To_Understand_The_Transmission_Dynamics_And_Selection_Of_Antimicrobial_Resistance.md'"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\University_of_Sussex\\University_of_Sussex_PhD_Political_Economy.md",
+      "college": "University_of_Sussex",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\University_of_Twente\\University_of_Twente_PhD_Communication_Science.md",
+      "college": "University_of_Twente",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Utrecht_University\\Utrecht_University_PhD_Biophysics.md",
+      "college": "Utrecht_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Utrecht_University\\Utrecht_University_PhD_Pharmacy.md",
+      "college": "Utrecht_University",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    },
+    {
+      "file": "c:\\Users\\HP\\OneDrive\\Desktop\\course_data\\phd_data\\phd\\Warsaw_University_of_Technology\\Warsaw_University_of_Technology_PhD_Engineering_Mechanical_Engineering.md",
+      "college": "Warsaw_University_of_Technology",
+      "reason": "no_seed_found",
+      "seed_method": "none"
+    }
+  ]
+}
