@@ -1,0 +1,33 @@
+{
+  "_comment": "Config for professor_extract_runner.py. Input rows now carry a list of grounding chunks (URLs Google Search returned for the uni+dept), NOT a single faculty_directory_url. Claude picks the best URL itself; if nothing usable, the pair is logged as skipped.",
+
+  "input_jsonl": "Professors_info/output_final/faculty_urls_master.jsonl",
+
+  "_input_jsonl_note": "One JSON object per line. Required fields: university, department, grounding_chunks. grounding_chunks is a list of either (a) plain URL strings or (b) {\"url\": \"...\", \"title\": \"...\"} objects. Optional: pair_id, country, tier, source. Built by consolidate_faculty_urls.py (Phase 1, not in this batch).",
+
+  "id_field": "pair_id",
+  "_id_field_note": "If pair_id is missing, the runner derives <uni_slug>__<dept_slug>.",
+
+  "university_field": "university",
+  "department_field": "department",
+  "grounding_chunks_field": "grounding_chunks",
+  "tier_field": "tier",
+  "country_field": "country",
+  "source_field": "source",
+
+  "output_dir": "Professors_info/output_professors",
+  "_output_layout": "Per-(uni, dept) JSON written to output_professors/universities/<uni_slug>/<dept_slug>.json. State log at output_professors/state.jsonl. A flat skipped index at output_professors/skipped.jsonl.",
+
+  "skipped_log": "skipped.jsonl",
+
+  "prompt_file": "Professors_info/scripts/professor_extract_prompt.txt",
+
+  "max_professors_per_directory": 100,
+  "_max_professors_note": "Cap to keep cost/time bounded. Most departments have 20-50 profs. Med schools and giant CS depts may exceed this — overflow is acknowledged in extraction_notes.",
+
+  "fetch_personal_websites": true,
+  "_fetch_personal_websites_note": "If true, the runner asks Claude to web_fetch each professor's personal_website_url. The runner stores the cleaned page text to a sibling .md file (NOT inline in the per-pair JSON, which keeps the JSON small). Set false to skip the personal-site fetch entirely.",
+
+  "max_personal_site_chars": 50000,
+  "_max_personal_site_chars_note": "Hard cap on the per-prof .md file size. AgentCore Browser already truncates web_fetch output to ~15KB cleaned, so this is a safety net for unusually large pages. Set to 0 for no runner-side cap (still bounded by AgentCore)."
+}

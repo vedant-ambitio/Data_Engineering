@@ -1,0 +1,152 @@
+rank_in_region,region,university_name,country,city,official_website,qs_rank_2025,the_rank_2025,arwu_rank_2024
+4,Europe,ETH Zurich,Switzerland,Zurich,https://ethz.ch,7,11,21
+6,Europe,EPFL,Switzerland,Lausanne,https://www.epfl.ch,26,32,76
+9,Europe,Technical University of Munich,Germany,Munich,https://www.tum.de,28,26,47
+10,Europe,PSL University,France,Paris,https://psl.eu,24,36,38
+11,Europe,LMU Munich,Germany,Munich,https://www.lmu.de,59,38,43
+13,Europe,Heidelberg University,Germany,Heidelberg,https://www.uni-heidelberg.de,84,47,50
+15,Europe,Sorbonne University,France,Paris,https://www.sorbonne-universite.fr,41,87,41
+16,Europe,KU Leuven,Belgium,Leuven,https://www.kuleuven.be,60,46,86
+17,Europe,University of Amsterdam,Netherlands,Amsterdam,https://www.uva.nl,53,60,101
+18,Europe,Delft University of Technology,Netherlands,Delft,https://www.tudelft.nl,47,53,151
+19,Europe,Karolinska Institute,Sweden,Stockholm,https://ki.se,138,36,47
+20,Europe,Paris-Saclay University,France,Saclay,https://www.universite-paris-saclay.fr,73,117,12
+21,Europe,University of Copenhagen,Denmark,Copenhagen,https://www.ku.dk,100,109,39
+23,Europe,Utrecht University,Netherlands,Utrecht,https://www.uu.nl,107,80,50
+24,Europe,University of Helsinki,Finland,Helsinki,https://www.helsinki.fi,115,109,99
+30,Europe,Lund University,Sweden,Lund,https://www.lunduniversity.lu.se,75,116,101
+31,Europe,University of Zurich,Switzerland,Zurich,https://www.uzh.ch,91,80,73
+37,Europe,Uppsala University,Sweden,Uppsala,https://www.uu.se,105,116,65
+38,Europe,Leiden University,Netherlands,Leiden,https://www.universiteitleiden.nl,122,77,101
+39,Europe,University of Groningen,Netherlands,Groningen,https://www.rug.nl,139,80,101
+40,Europe,Erasmus University Rotterdam,Netherlands,Rotterdam,https://www.eur.nl,179,84,101
+41,Europe,Wageningen University,Netherlands,Wageningen,https://www.wur.nl,122,76,151
+42,Europe,Ghent University,Belgium,Ghent,https://www.ugent.be,169,89,81
+43,Europe,University of Geneva,Switzerland,Geneva,https://www.unige.ch,175,91,75
+44,Europe,Free University of Berlin,Germany,Berlin,https://www.fu-berlin.de,98,91,151
+45,Europe,Humboldt University of Berlin,Germany,Berlin,https://www.hu-berlin.de,120,87,101
+46,Europe,Aarhus University,Denmark,Aarhus,https://www.au.dk,167,138,81
+48,Europe,KTH Royal Institute of Technology,Sweden,Stockholm,https://www.kth.se,73,167,201
+49,Europe,University of Bonn,Germany,Bonn,https://www.uni-bonn.de,226,91,61
+50,Europe,Politecnico di Milano,Italy,Milan,https://www.polimi.it,116,251,401
+51,Europe,RWTH Aachen University,Germany,Aachen,https://www.rwth-aachen.de,99,105,201
+52,Europe,University of Tübingen,Germany,Tübingen,https://uni-tuebingen.de,213,95,151
+53,Europe,Karlsruhe Institute of Technology,Germany,Karlsruhe,https://www.kit.edu,119,142,201
+54,Europe,University of Freiburg,Germany,Freiburg,https://www.uni-freiburg.de,199,110,101
+55,Europe,University of Göttingen,Germany,Göttingen,https://www.uni-goettingen.de,174,134,101
+56,Europe,University of Hamburg,Germany,Hamburg,https://www.uni-hamburg.de,209,134,151
+57,Europe,École Polytechnique,France,Palaiseau,https://www.polytechnique.edu,38,71,151
+58,Europe,École Normale Supérieure de Lyon,France,Lyon,https://www.ens-lyon.fr,328,201,201
+59,Europe,University Paris Cité,France,Paris,https://u-paris.fr,281,132,76
+60,Europe,University of Strasbourg,France,Strasbourg,https://en.unistra.fr,425,251,101
+61,Europe,Sapienza University of Rome,Italy,Rome,https://www.uniroma1.it,132,167,151
+62,Europe,University of Bologna,Italy,Bologna,https://www.unibo.it,133,154,201
+63,Europe,University of Padua,Italy,Padua,https://www.unipd.it,219,201,151
+64,Europe,University of Milan,Italy,Milan,https://www.unimi.it,285,167,151
+65,Europe,Scuola Normale Superiore di Pisa,Italy,Pisa,https://www.sns.it,165,201,201
+66,Europe,University of Pisa,Italy,Pisa,https://www.unipi.it,349,251,201
+67,Europe,Bocconi University,Italy,Milan,https://www.unibocconi.eu,128,201,701
+68,Europe,University of Barcelona,Spain,Barcelona,https://www.ub.edu,173,161,151
+69,Europe,Autonomous University of Barcelona,Spain,Barcelona,https://www.uab.cat,188,167,301
+70,Europe,Autonomous University of Madrid,Spain,Madrid,https://www.uam.es,191,201,201
+71,Europe,Complutense University of Madrid,Spain,Madrid,https://www.ucm.es,209,351,301
+72,Europe,Pompeu Fabra University,Spain,Barcelona,https://www.upf.edu,313,161,301
+73,Europe,University of Vienna,Austria,Vienna,https://www.univie.ac.at,137,119,151
+74,Europe,Vienna University of Technology,Austria,Vienna,https://www.tuwien.at,167,168,401
+75,Europe,Aalto University,Finland,Espoo,https://www.aalto.fi,116,110,301
+76,Europe,Maastricht University,Netherlands,Maastricht,https://www.maastrichtuniversity.nl,169,139,201
+77,Europe,Eindhoven University of Technology,Netherlands,Eindhoven,https://www.tue.nl,124,198,301
+78,Europe,Radboud University,Netherlands,Nijmegen,https://www.ru.nl,180,124,151
+79,Europe,Vrije Universiteit Amsterdam,Netherlands,Amsterdam,https://vu.nl,257,117,101
+80,Europe,University of Twente,Netherlands,Enschede,https://www.utwente.nl,210,199,401
+81,Europe,Tilburg University,Netherlands,Tilburg,https://www.tilburguniversity.edu,308,251,601
+82,Europe,UCLouvain,Belgium,Louvain-la-Neuve,https://uclouvain.be,187,124,151
+83,Europe,Université Libre de Bruxelles,Belgium,Brussels,https://www.ulb.be,286,198,201
+84,Europe,University of Antwerp,Belgium,Antwerp,https://www.uantwerpen.be,250,201,201
+85,Europe,University of Oslo,Norway,Oslo,https://www.uio.no,117,117,73
+86,Europe,Norwegian University of Science and Technology,Norway,Trondheim,https://www.ntnu.edu,232,251,101
+87,Europe,University of Bergen,Norway,Bergen,https://www.uib.no,230,251,151
+88,Europe,Stockholm University,Sweden,Stockholm,https://www.su.se,153,159,81
+89,Europe,Chalmers University of Technology,Sweden,Gothenburg,https://www.chalmers.se,142,251,401
+90,Europe,University of Gothenburg,Sweden,Gothenburg,https://www.gu.se,187,191,201
+91,Europe,Linköping University,Sweden,Linköping,https://liu.se,268,251,301
+92,Europe,Technical University of Denmark,Denmark,Kongens Lyngby,https://www.dtu.dk,130,201,151
+93,Europe,University of Southern Denmark,Denmark,Odense,https://www.sdu.dk,358,401,401
+94,Europe,Aalborg University,Denmark,Aalborg,https://www.en.aau.dk,358,351,401
+96,Europe,University of Basel,Switzerland,Basel,https://www.unibas.ch,124,109,101
+97,Europe,Charles University,Czech Republic,Prague,https://cuni.cz,246,401,301
+99,Europe,University of Warsaw,Poland,Warsaw,https://en.uw.edu.pl,273,1001,801
+100,Europe,University of Lisbon,Portugal,Lisbon,https://www.ulisboa.pt,271,401,201
+102,Europe,University of Bern,Switzerland,Bern,https://www.unibe.ch,138,121,101
+104,Europe,Technical University of Berlin,Germany,Berlin,https://www.tu.berlin,154,134,301
+110,Europe,Vrije Universiteit Brussel,Belgium,Brussels,https://www.vub.be,199,188,201
+114,Europe,University of Lausanne,Switzerland,Lausanne,https://www.unil.ch,220,201,151
+119,Europe,TU Dresden,Germany,Dresden,https://tu-dresden.de,247,174,301
+122,Europe,University of Navarra,Spain,Pamplona,https://www.unav.edu,263,401,601
+127,Europe,University of Innsbruck,Austria,Innsbruck,https://www.uibk.ac.at,280,351,401
+128,Europe,Polytechnic University of Catalonia,Spain,Barcelona,https://www.upc.edu,290,351,401
+129,Europe,University of Porto,Portugal,Porto,https://www.up.pt,295,401,301
+130,Europe,University of Tartu,Estonia,Tartu,https://ut.ee,296,351,401
+131,Europe,Polytechnic University of Turin,Italy,Turin,https://www.polito.it,285,401,801
+132,Europe,Friedrich-Alexander University Erlangen-Nürnberg,Germany,Erlangen,https://www.fau.eu,305,201,301
+133,Europe,Jagiellonian University,Poland,Krakow,https://en.uj.edu.pl,304,601,401
+135,Europe,University of Stuttgart,Germany,Stuttgart,https://www.uni-stuttgart.de,312,251,401
+136,Europe,University of Turin,Italy,Turin,https://www.unito.it,343,351,401
+137,Europe,Sciences Po,France,Paris,https://www.sciencespo.fr,348,401,901
+138,Europe,CentraleSupélec,France,Gif-sur-Yvette,https://www.centralesupelec.fr,350,401,901
+139,Europe,Claude Bernard University Lyon 1,France,Lyon,https://www.univ-lyon1.fr,351,251,201
+140,Europe,National and Kapodistrian University of Athens,Greece,Athens,https://en.uoa.gr,351,601,301
+141,Europe,Middle East Technical University,Turkey,Ankara,https://www.metu.edu.tr,360,601,801
+143,Europe,University of Münster,Germany,Münster,https://www.uni-muenster.de,360,201,301
+144,Europe,NOVA University Lisbon,Portugal,Lisbon,https://www.unl.pt,363,351,801
+145,Europe,Polytechnic University of Madrid,Spain,Madrid,https://www.upm.es,364,601,901
+146,Europe,University of Jyväskylä,Finland,Jyväskylä,https://www.jyu.fi,380,351,801
+147,Europe,University of Coimbra,Portugal,Coimbra,https://www.uc.pt,386,601,401
+148,Europe,University of Mannheim,Germany,Mannheim,https://www.uni-mannheim.de,388,251,801
+149,Europe,University of Liège,Belgium,Liège,https://www.uliege.be,388,401,401
+150,Europe,Goethe University Frankfurt,Germany,Frankfurt,https://www.goethe-university-frankfurt.de,460,167,151
+151,Europe,University of Cologne,Germany,Cologne,https://www.uni-koeln.de,460,167,151
+152,Europe,Umeå University,Sweden,Umeå,https://www.umu.se,408,351,401
+153,Europe,UiT The Arctic University of Norway,Norway,Tromsø,https://en.uit.no,410,401,601
+154,Europe,University of Naples Federico II,Italy,Naples,https://www.unina.it,415,401,401
+155,Europe,University of Trento,Italy,Trento,https://www.unitn.it,411,251,401
+156,Europe,University of Granada,Spain,Granada,https://www.ugr.es,414,401,301
+157,Europe,University of Oulu,Finland,Oulu,https://www.oulu.fi,420,401,801
+160,Europe,National Technical University of Athens,Greece,Athens,https://www.ntua.gr,422,801,901
+161,Europe,Sabancı University,Turkey,Istanbul,https://www.sabanciuniv.edu,451,401,801
+162,Europe,Koç University,Turkey,Istanbul,https://www.ku.edu.tr,421,401,801
+163,Europe,Ruhr University Bochum,Germany,Bochum,https://www.ruhr-uni-bochum.de,449,251,301
+164,Europe,University of Florence,Italy,Florence,https://www.unifi.it,451,401,401
+165,Europe,Masaryk University,Czech Republic,Brno,https://www.muni.cz,451,601,901
+166,Europe,Aristotle University of Thessaloniki,Greece,Thessaloniki,https://www.auth.gr,471,601,801
+167,Europe,University of Pavia,Italy,Pavia,https://web.unipv.it,401,401,601
+168,Europe,Bilkent University,Turkey,Ankara,https://www.bilkent.edu.tr,511,401,801
+169,Europe,University of Bordeaux,France,Bordeaux,https://www.u-bordeaux.fr,521,201,201
+170,Europe,Aix-Marseille University,France,Marseille,https://www.univ-amu.fr,542,251,151
+171,Europe,University of Würzburg,Germany,Würzburg,https://www.uni-wuerzburg.de,521,201,301
+172,Europe,University of Konstanz,Germany,Konstanz,https://www.uni-konstanz.de,522,201,401
+173,Europe,ENS Paris-Saclay,France,Gif-sur-Yvette,https://ens-paris-saclay.fr,401,401,901
+176,Europe,University of St. Gallen,Switzerland,St. Gallen,https://www.unisg.ch,437,401,901
+177,Europe,WU Vienna University of Economics and Business,Austria,Vienna,https://www.wu.ac.at,547,1001,901
+178,Europe,University of Düsseldorf,Germany,Düsseldorf,https://www.hhu.de,540,251,401
+179,Europe,University of Valencia,Spain,Valencia,https://www.uv.es,540,351,401
+180,Europe,University of Leipzig,Germany,Leipzig,https://www.uni-leipzig.de,540,401,301
+181,Europe,Czech Technical University in Prague,Czech Republic,Prague,https://www.cvut.cz,555,801,901
+182,Europe,University of Bremen,Germany,Bremen,https://www.uni-bremen.de,481,401,901
+183,Europe,Johannes Gutenberg University Mainz,Germany,Mainz,https://www.uni-mainz.de,521,401,301
+184,Europe,University of Seville,Spain,Seville,https://www.us.es,591,601,401
+185,Europe,University of Genoa,Italy,Genoa,https://unige.it,591,601,801
+186,Europe,Boğaziçi University,Turkey,Istanbul,https://www.bogazici.edu.tr,614,801,1001
+187,Europe,Istanbul Technical University,Turkey,Istanbul,https://www.itu.edu.tr,614,801,901
+188,Europe,University of Ljubljana,Slovenia,Ljubljana,https://www.uni-lj.si,591,801,901
+189,Europe,Eötvös Loránd University,Hungary,Budapest,https://www.elte.hu,605,1001,801
+190,Europe,Semmelweis University,Hungary,Budapest,https://semmelweis.hu,281,251,901
+191,Europe,Warsaw University of Technology,Poland,Warsaw,https://www.pw.edu.pl,581,1001,901
+196,Europe,AGH University of Krakow,Poland,Krakow,https://www.agh.edu.pl,801,1001,901
+197,Europe,INSEAD,France,Fontainebleau,https://www.insead.edu,,,
+198,Europe,HEC Paris,France,Jouy-en-Josas,https://www.hec.edu,,,
+199,Europe,University of Eastern Finland,Finland,Joensuu,https://www.uef.fi,471,401,401
+200,Europe,University of Trieste,Italy,Trieste,https://www.units.it,651,801,901
+36,Others,University of São Paulo,Brazil,São Paulo,https://www5.usp.br,85,199,101
+48,Others,Pontifical Catholic University of Chile,Chile,Santiago,https://www.uc.cl,93,401,501
+50,Others,Universidad Nacional Autónoma de México,Mexico,Mexico City,https://www.unam.mx,94,601,301

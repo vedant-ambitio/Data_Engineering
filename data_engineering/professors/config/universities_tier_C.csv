@@ -1,0 +1,24 @@
+rank_in_region,region,university_name,country,city,official_website,qs_rank_2025,the_rank_2025,arwu_rank_2024
+98,Europe,Lomonosov Moscow State University,Russia,Moscow,https://www.msu.ru,94,95,101
+117,Europe,St. Petersburg State University,Russia,Saint Petersburg,https://english.spbu.ru,240,401,301
+125,Europe,Higher School of Economics,Russia,Moscow,https://www.hse.ru,281,401,801
+142,Europe,ITMO University,Russia,Saint Petersburg,https://en.itmo.ru,360,801,901
+192,Europe,Novosibirsk State University,Russia,Novosibirsk,https://english.nsu.ru,230,1001,901
+193,Europe,Bauman Moscow State Technical University,Russia,Moscow,https://bmstu.ru,304,1001,901
+194,Europe,Moscow Institute of Physics and Technology,Russia,Dolgoprudny,https://mipt.ru,295,1001,901
+195,Europe,Tomsk State University,Russia,Tomsk,https://en.tsu.ru,401,1001,901
+3,Others,University of Tokyo,Japan,Tokyo,https://www.u-tokyo.ac.jp,32,28,28
+4,Others,Tsinghua University,China,Beijing,https://www.tsinghua.edu.cn,20,12,22
+5,Others,Peking University,China,Beijing,https://www.pku.edu.cn,14,13,24
+14,Others,Seoul National University,South Korea,Seoul,https://www.snu.ac.kr,31,62,101
+18,Others,Fudan University,China,Shanghai,https://www.fudan.edu.cn,39,36,51
+19,Others,Shanghai Jiao Tong University,China,Shanghai,https://www.sjtu.edu.cn,45,52,51
+20,Others,Zhejiang University,China,Hangzhou,https://www.zju.edu.cn,47,47,27
+21,Others,Kyoto University,Japan,Kyoto,https://www.kyoto-u.ac.jp,46,55,47
+23,Others,KAIST,South Korea,Daejeon,https://www.kaist.ac.kr,53,82,201
+25,Others,National Taiwan University,Taiwan,Taipei,https://www.ntu.edu.tw,68,172,101
+26,Others,Yonsei University,South Korea,Seoul,https://www.yonsei.ac.kr,56,251,201
+27,Others,Korea University,South Korea,Seoul,https://www.korea.ac.kr,74,201,201
+29,Others,University of Science and Technology of China,China,Hefei,https://en.ustc.edu.cn,133,53,51
+32,Others,Osaka University,Japan,Osaka,https://www.osaka-u.ac.jp,86,175,101
+34,Others,Tohoku University,Japan,Sendai,https://www.tohoku.ac.jp,107,124,201

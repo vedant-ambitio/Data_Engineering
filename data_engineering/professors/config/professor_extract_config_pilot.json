@@ -1,0 +1,23 @@
+{
+  "_comment": "PILOT config — points at _index_pilot.jsonl (5 hand-picked pairs spanning Tier A/B/C) and writes outputs to a separate output_professors_pilot/ folder so the production run isn't polluted.",
+
+  "input_jsonl": "Professors_info/final_grounding_input/_index_pilot.jsonl",
+
+  "id_field": "pair_id",
+
+  "university_field": "university",
+  "department_field": "department",
+  "grounding_chunks_field": "grounding_chunks",
+  "tier_field": "tier",
+  "country_field": "country",
+  "source_field": "source",
+
+  "output_dir": "Professors_info/output_professors_pilot",
+  "skipped_log": "skipped.jsonl",
+
+  "prompt_file": "Professors_info/scripts/professor_extract_prompt.txt",
+
+  "max_professors_per_directory": 100,
+  "fetch_personal_websites": true,
+  "max_personal_site_chars": 50000
+}
