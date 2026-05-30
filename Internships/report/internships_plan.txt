@@ -1,0 +1,365 @@
+================================================================================
+  INTERNSHIPS — ACTIVITY FINDER DATA PLAN
+  Section 3 of Activity Finder (PDF Spec)
+  Generated: April 2026
+================================================================================
+
+  Data source: Ambitio partner organisations + vetted internet listings
+  Target: Class 9-12 students (age 14-18)
+  Refresh: Monthly (internships are more stable than competitions)
+
+
+================================================================================
+  1) ALL FIELDS REQUIRED (from UI screenshots)
+================================================================================
+
+--------------------------------------------------------------------------------
+  A) CARD VIEW (visible on listing page)
+--------------------------------------------------------------------------------
+
+  #  | Field              | Type           | UI location (from screenshots)
+  ---|--------------------| ---------------|-------------------------------
+  1  | internship_title   | string         | Card title: "Product Management Internship - EdTech"
+  2  | company_name       | string         | Card subtitle: "Ambitio Partner"
+  3  | company_logo       | image URL      | Card top-left icon (Google, Microsoft logos)
+  4  | mode               | enum           | Card: "Hybrid" / "Online" / "Offline"
+  5  | stipend            | string         | Card: "Unpaid" / "Paid" / amount
+  6  | posted_date        | date           | Card: "Posted on 10 April 2026"
+  7  | source_badge       | enum           | "Ambitio Partner" / "Verified listing"
+  8  | domain             | enum           | Filter: Technology, Business & Marketing,
+     |                    |                | Design & Creative, Research & Science,
+     |                    |                | Writing & Journalism, Social Impact & NGO
+  9  | team_size          | enum           | Filter: Solo (not shown in SS but in filter)
+
+  NOTE from screenshots:
+    - Cards show: title, company, logo, mode, stipend, posted date
+    - No "What to know" chips like competitions
+    - No deadline shown on card (uses "Posted on" instead)
+    - Source badge distinguishes Ambitio Partner vs external
+
+
+--------------------------------------------------------------------------------
+  B) DETAIL VIEW (when card is clicked)
+--------------------------------------------------------------------------------
+
+  #  | Field                 | Type          | UI section
+  ---|---------------------- |---------------|-----------------------------------
+  10 | about_description     | text          | About this internship
+  11 | eligibility_text      | text          | Who can apply (class, age, skills)
+  12 | duration_weeks        | integer       | Duration in weeks
+  13 | responsibilities      | text          | What the intern will do
+  14 | skills_required       | array[string] | Required/preferred skills
+  15 | how_to_apply          | text          | Application steps
+  16 | application_url       | URL           | "Apply via Ambitio" or "Apply on website"
+
+
+--------------------------------------------------------------------------------
+  C) FILTER FIELDS (from UI dropdown screenshots)
+--------------------------------------------------------------------------------
+
+  Filter          Options (from Screenshot 2 & 3)
+  --------------- --------------------------------------------------
+  Domain          Technology
+                  Business & Marketing
+                  Design & Creative
+                  Research & Science
+                  Writing & Journalism
+                  Social Impact & NGO
+                  (Multi-select up to 3)
+
+  Mode            Remote
+                  On-site
+                  Hybrid
+                  (Single select)
+
+  Search box      Search for Internship (top-right)
+  Saved toggle    Show saved only (top-right)
+
+
+--------------------------------------------------------------------------------
+  D) BACKEND FIELDS
+--------------------------------------------------------------------------------
+
+  #  | Field                    | Type          | Purpose
+  ---|--------------------------|---------------|-----------------------------------
+  17 | internship_id            | string        | Unique ID (auto-generated)
+  18 | industry                 | string        | "EdTech" / "Finance" / "Healthcare"
+  19 | stipend_amount           | number        | Numeric stipend (for sorting)
+  20 | stipend_currency         | string        | "INR" / "USD"
+  21 | stipend_type             | enum          | "Paid" / "Unpaid" / "Stipend"
+  22 | deadline                 | date          | Application deadline (if any)
+  23 | start_date               | date          | When internship starts
+  24 | location                 | string        | City or "Remote"
+  25 | source_type              | enum          | "ambitio_partner" / "internet_verified"
+  26 | official_url             | URL           | Company/program page
+
+  Auto-generated (not scraped):
+    - internship_id           (UUID, auto)
+    - last_updated            (timestamp, auto)
+
+
+================================================================================
+  COMPLETE FIELD LIST (TOTAL: 26 fields)
+================================================================================
+
+  Card view (9 fields):
+    internship_title, company_name, company_logo, mode, stipend,
+    posted_date, source_badge, domain, team_size
+
+  Detail view (7 fields):
+    about_description, eligibility_text, duration_weeks,
+    responsibilities, skills_required, how_to_apply, application_url
+
+  Backend (10 fields):
+    internship_id*, industry, stipend_amount, stipend_currency,
+    stipend_type, deadline, start_date, location,
+    source_type, official_url
+
+  * = auto-generated
+
+  UI verification:
+    - Every card field from screenshots: covered (9/9)
+    - Every filter from screenshots: covered (domain, mode, search)
+    - Detail view sections: covered (about, eligibility, duration,
+      responsibilities, skills, apply)
+
+
+================================================================================
+  2) THE INTERNSHIP REALITY FOR CLASS 9-12 STUDENTS
+================================================================================
+
+  The internship market for high school students (class 9-12, age 14-18)
+  is VERY DIFFERENT from college internships. Here's the honest picture:
+
+  THE HARSH TRUTH:
+  ----------------
+  - Most real internships (Google, Amazon, TCS, Infosys) require you to be
+    in college — they don't accept high school students
+  - ISRO, IIT, DRDO internships are for B.Tech/M.Tech students, not school
+  - Internshala has 7,600+ internships but 95% are for college students
+  - A 15-year-old searching "internship" will find mostly irrelevant results
+
+  WHAT ACTUALLY EXISTS FOR CLASS 9-12:
+  ------------------------------------
+
+  TYPE 1: STRUCTURED PROGRAMS (best quality, limited spots)
+    These are real programs designed specifically for school students.
+    - ISRO YUVIKA — space science exposure for class 9 students
+    - Plaksha Young Technology Scholars — engineering challenges
+    - IISER Summer Outreach Camp — science research exposure
+    - Ashoka Young Scholars — liberal arts exposure
+    - Some IIT summer camps (not internships, but exposure programs)
+    Count: ~10-15 programs nationally
+    Mode: In-person (residential), 1-4 weeks
+    Cost: Free to INR 5,000
+    Availability: Summer only (May-June), competitive admission
+
+  TYPE 2: VIRTUAL/REMOTE INTERNSHIPS (growing, mixed quality)
+    Online platforms offering project-based work for school students.
+    - Medicine Encompassed — writing/editing in biology/medicine
+    - Building-U — multidisciplinary (R&D, marketing, coding)
+    - Ladder Internships — curated internships for school students
+    - LetsIntern — startup internships (some accept school students)
+    - Virtual internship platforms (Forage, Bright Network)
+    Count: ~20-40 at any time
+    Mode: Remote, flexible hours
+    Stipend: Mostly unpaid, some INR 2K-5K/month
+    Quality: VARIES WIDELY — many are glorified certificate programs
+
+  TYPE 3: AMBITIO PARTNER INTERNSHIPS (curated, vetted)
+    Ambitio's own partnerships with companies/organizations.
+    - Direct partnerships with EdTech, Finance, Marketing companies
+    - Structured projects, real mentorship
+    - Application via Ambitio internal form
+    Count: Depends on Ambitio's partnerships team
+    Mode: Remote/Hybrid
+    Quality: High (Ambitio vets them)
+
+  TYPE 4: PAID CERTIFICATE PROGRAMS (avoid these)
+    "Internships" that charge INR 5,000-20,000 for a certificate.
+    - No real work, no mentorship
+    - Just watch videos + get a PDF certificate
+    - The PDF spec explicitly says to EXCLUDE these
+    - These are the ones the value-for-money filter catches
+
+  REALISTIC NUMBERS:
+  ------------------
+    Internet listings (Internshala + curated):  50-65 listings
+    Ambitio partner listings:                   TBD (from colleague)
+    Certificate mills (excluded):               100+ exist, ALL filtered out
+    ──────────────────────────────────────────────────────
+    TOTAL for Activity Finder:                  50-65 internet + partner TBD
+
+  This is MUCH smaller than competitions (250-300) because:
+    - Most companies legally can't hire under-18 for real work
+    - Labour laws restrict what school students can do
+    - The market is genuinely thin — not a scraping problem
+    - No platform specializes in class 9-12 internships at scale
+
+  WHY 50-65 INTERNET LISTINGS IS GOOD COVERAGE:
+    - It's nearly ALL real high school internships available online
+    - Internshala alone has 39 (the largest pool) — we capture all of them
+    - Curated articles add 15-25 unique programs platforms miss
+    - The PDF says "Content team reviews and approves each listing"
+    - Quality > Quantity for internships
+    - A student seeing 50 vetted internships is better than 500 spam ones
+    - Pagination: 50 / 8 cards per page = ~6 pages — enough to browse
+    - Partner listings from Ambitio will add more on top
+
+
+================================================================================
+  3) DATA SOURCES
+================================================================================
+
+  TWO CHANNELS (per PDF spec):
+
+  CHANNEL 1: AMBITIO PARTNER (internal, not scraped)
+    Source: Ambitio partnerships team provides structured data
+    Data: Company name, title, industry, stipend, duration, mode, eligibility
+    CTA: "Apply via Ambitio" (internal form, no external redirect)
+    Quality: Highest (Ambitio vetted)
+    Volume: 10-30 listings
+    Update: As partnerships team adds new ones via CMS
+    >> NEED FROM TEAM: partner listing data (CSV/JSON)
+
+  CHANNEL 2: INTERNET LISTINGS (scraped + manually approved)
+
+    There is NO single "BigFuture" equivalent for high school internships.
+    Most platforms (Internshala, LinkedIn, Unstop) are built for college
+    students — high school is an afterthought. The market is genuinely
+    small: ~50-80 real internships exist for class 9-12 at any time.
+
+    SOURCE RESEARCH (verified April 2026):
+
+      Source                   HS listings  Scrapeable?  Notes
+      ----------------------   -----------  -----------  --------
+      internshala.com          ~39          Yes (Apify   Closest to single source.
+                                            + GitHub     Pre-built scrapers exist.
+                                            scrapers)    India-focused. Structured data.
+      ladderinternships.com    13           Blog only    Editorial list, not a database.
+      internhq.com             10-20        HTML         Mostly international, thin.
+      letsintern.in            Few          JS-rendered  Mostly college-focused.
+      gradsqr.com              Curated      Blog only    Just a list article.
+      Skill India Digital      Gov portal   Unknown      Govt scheme, not listings.
+
+    PRIMARY SOURCE: INTERNSHALA
+      - 39 listings for "high school" keyword (most of any platform)
+      - Pre-built scrapers: Apify scraper, 4+ GitHub repos, Bright Data
+      - Structured data: title, company, stipend, duration, skills, mode
+      - Filters: work-from-home, part-time, stipend range
+      - Covers ~60-70% of what's available online for HS students
+
+    SUPPLEMENTARY: CURATED ARTICLE SCRAPING
+      - ladderinternships.com (13 programs), lumiere-education.com (10),
+        admissionsight.com (15), questforsuccess.in (programs list)
+      - These are blog articles with hand-picked programs — not databases
+      - Scrape article pages, extract program names + URLs + details
+      - Adds ~15-25 unique programs not on Internshala
+
+    SCRAPING PLAN:
+      Internshala (automated, weekly)     → ~35-40 filtered listings
+      Curated articles (monthly scrape)   → ~15-25 unique programs
+      ───────────────────────────────────────────────────
+      Internet listings total             → ~50-65 listings
+      + Ambitio partner listings          → TBD (from colleague)
+
+    CTA: "Apply on official website" (opens program page in new tab)
+    Quality: Medium (needs content team approval before going live)
+    Update: Weekly for Internshala, monthly for curated articles
+
+    IMPORTANT: Internet scraped listings go into a REVIEW QUEUE — they
+    don't go live until content team approves using the value-for-money
+    filter from the PDF spec.
+
+  WHAT WE CAN SCRAPE vs WHAT WE CAN'T:
+
+    Can scrape:                          Can't scrape (need from team):
+    ─────────────────────────────────    ──────────────────────────────
+    Internet listings from platforms     Ambitio partner listings
+    Company names, stipends, modes       Internal application form routing
+    Descriptions, eligibility            Value-for-money approval decision
+    Deadlines, durations                 "Ambitio Partner" badge assignment
+
+  IMPORTANT: Internet scraped listings go into a REVIEW QUEUE — they don't
+  go live until content team approves. This is different from olympiads and
+  competitions where scraped data goes directly to UI.
+
+
+================================================================================
+  4) DOMAIN MAPPING (from UI filter dropdown)
+================================================================================
+
+  UI Domain                    Maps to industries
+  ---------------------------- ----------------------------------------
+  Technology                   software, IT, AI/ML, data science, app dev,
+                               web development, cybersecurity
+  Business & Marketing         marketing, sales, business dev, consulting,
+                               finance, HR, operations
+  Design & Creative            graphic design, UI/UX, content creation,
+                               video editing, photography, animation
+  Research & Science           research assistant, lab work, science writing,
+                               academic research, biotech
+  Writing & Journalism         content writing, blogging, journalism,
+                               social media, copywriting, editing
+  Social Impact & NGO          NGO work, social enterprise, community dev,
+                               education, environment, healthcare outreach
+
+
+================================================================================
+  5) FIELD COVERAGE FROM INTERNSHALA (primary source)
+================================================================================
+
+  Internshala provides structured data per listing. Coverage at each stage:
+
+    Stage                   Fields    Out of 26    Coverage
+    ----------------------  --------  ----------   --------
+    Listing page only       15-17     26           58-65%
+    + Detail page           19-21     26           73-81%
+    + Gemini enrichment     21-23     26           81-88%
+
+  WHAT INTERNSHALA GIVES:
+
+    Card fields:
+      OK  internship_title      (job title)
+      OK  company_name          (company)
+      --  company_logo          (not provided — need separate lookup)
+      OK  mode                  ("Work from home" / city / "Hybrid")
+      OK  stipend               (amount or "Unpaid")
+      OK  posted_date           (posting date)
+      --  source_badge          (we assign this, not scraped)
+      ~   domain                (has profile category — needs mapping to our 6 domains)
+
+    Detail fields:
+      OK  about_description     (job description text)
+      ~   eligibility_text      ("Who can apply" — exists but generic)
+      OK  duration_weeks        (duration shown, e.g. "3 months")
+      OK  responsibilities      (key responsibilities listed)
+      OK  skills_required       (required skills listed)
+      ~   how_to_apply          (apply button exists, steps not always described)
+      OK  application_url       (Internshala apply link)
+
+    Backend fields:
+      OK  industry              (profile/category)
+      OK  stipend_amount        (numeric, extractable)
+      OK  stipend_currency      (always INR on Internshala)
+      OK  stipend_type          (Paid/Unpaid)
+      ~   deadline              (sometimes shown as "Apply by")
+      OK  start_date            (start date shown)
+      OK  location              (city or "Work from home")
+
+  ALWAYS MISSING (3 fields):
+    company_logo    — Internshala doesn't show logos. Can use Clearbit
+                      logo API (free) or Google favicon as fallback.
+    source_badge    — We assign "Verified listing", not scraped.
+    team_size       — Not an internship concept. Hardcode as "Solo".
+
+  EXPECTED UI COVERAGE:
+    Card view (9 fields):     ~7-8 filled (logo missing)     ~85%
+    Detail view (7 fields):   ~6 filled                      ~85%
+    Backend (10 fields):      ~8-9 filled                    ~85%
+    Overall:                  ~22/26 = ~85% with Gemini
+
+
+================================================================================
+  END OF REPORT
+================================================================================

@@ -1,0 +1,821 @@
+================================================================================
+  ACTIVITY FINDER — OLYMPIADS SCRAPE PLAN
+  Generated: April 2026
+  Reference: Activity Finder PDF + UI screenshots
+================================================================================
+
+
+================================================================================
+  1) FIELDS REQUIRED FROM UI ANALYSIS
+================================================================================
+
+Based on PDF spec (Section 1: Olympiads) + UI screenshots:
+
+--------------------------------------------------------------------------------
+  A) CARD FIELDS (visible on listing page)
+--------------------------------------------------------------------------------
+
+  Field                    Type             From PDF / Screenshot       Required
+  -----------------------  ---------------  --------------------------  --------
+  activity_name            string           "Indian National Math..."   Yes
+  organizer                string           "HBCSE • Govt of India"     Yes
+  organizer_logo           image URL        Card top-left logo          Yes
+  subject                  enum             Math/Phys/Chem/Bio/Eco/CS/  Yes
+                                            Astro/History
+  entry_route              enum             "Via School" / "Independent"Yes
+  level                    enum             School / National /          Yes
+                                            International
+  deadline                 date             "10 April 2026"             Yes
+  urgency_chip             enum             Computed from deadline       Yes
+                                            (Closing soon / Open / Past)
+  cost                     string           "Free" (mostly)             Yes
+  cost_chip                enum             Free / Paid                  Yes
+  outcome                  enum             Medal / Certificate          Yes
+  modality                 enum             Online / Offline             Yes
+  format                   enum             Via School / Independent     Yes
+  is_verified              boolean          Green checkmark on card      Yes
+
+
+--------------------------------------------------------------------------------
+  B) DETAIL VIEW FIELDS (when card is opened)
+--------------------------------------------------------------------------------
+
+  Field                    Type             From Screenshot 5 & 6
+  -----------------------  ---------------  --------------------------------
+  about_description        text             "About this opportunity"
+  eligibility              text             "Class 9-12, All streams,
+                                            No age limit, Must be enrolled
+                                            in recognised school"
+  structure_format         text             "Round 1: RMO via school →
+                                            Round 2: INMO (national) →
+                                            Round 3: IMT for IMO selection"
+  how_to_apply             text             "Register through your school
+                                            mathematics teacher..."
+  rewards_outcomes         text             "Gold, silver, bronze medals
+                                            at INMO. Top scorers selected
+                                            for International Math Olympiad"
+
+
+--------------------------------------------------------------------------------
+  C) FILTER FIELDS (from filter dropdowns in screenshots)
+--------------------------------------------------------------------------------
+
+  Filter           Options                              Screenshot
+  ---------------  -----------------------------------  --------------
+  Subject          Mathematics, Physics, Chemistry,     Screenshot 2
+                   Biology, Economics, CS, History,
+                   Astronomy
+                   (Multi-select up to 3)
+  Entry Route      Via School / Independent              Screenshot 3
+  Level            School / National / International     Screenshot 4
+                   (Multi-select)
+  Saved toggle     Show saved only                      Top-right
+  Search box       Search for Olympiad                  Top-right
+
+
+--------------------------------------------------------------------------------
+  D) ADDITIONAL METADATA (not visible but useful for backend)
+--------------------------------------------------------------------------------
+
+  Field                       Purpose
+  --------------------------  --------------------------------------
+  olympiad_id                 Unique ID
+  short_code                  IMO, IPhO, INMO, NSO, etc.
+  parent_olympiad             For multi-stage (e.g. RMO → INMO → IMO)
+  registration_url            Direct apply link
+  official_website            Main olympiad website
+  syllabus_url                PDF/page link to syllabus
+  past_papers_url             Past year question papers
+  exam_date                   When the exam happens
+  result_date                 When results announced
+  registration_open_date      When registration opens
+  registration_close_date     Same as deadline
+  age_limit                   Min/max age
+  grade_levels                Class 8 / 9 / 10 / 11 / 12 (multi)
+  countries_eligible          Indian / Worldwide
+  team_size                   1 (individual), 2-6 (team)
+  rounds                      Number of rounds (1, 2, 3, 4)
+  language                    English / Hindi / Multilingual
+  prize_money                 If any
+  scholarship_offered         If any
+  certificate_type            Participation / Merit / Achievement
+  num_participants_last_year  Popularity indicator
+  international_recognition   IMO/IPhO offer college credits
+  parent_organization         HBCSE, SOF, IOI, etc.
+  source_country              Country hosting / organizing
+
+
+================================================================================
+  COMPLETE FIELD LIST (TOTAL: ~35 fields)
+================================================================================
+
+  Identity (5):
+    olympiad_id, activity_name, short_code, parent_olympiad, organizer
+
+  Classification (4):
+    subject, entry_route, level, modality
+
+  Eligibility (5):
+    eligibility_text, age_limit, grade_levels, countries_eligible, team_size
+
+  Schedule (5):
+    registration_open_date, registration_close_date (deadline),
+    exam_date, result_date, urgency_chip
+
+  Process (4):
+    rounds, structure_format, how_to_apply, parent_organization
+
+  Cost & Outcome (4):
+    cost, cost_chip, outcome, certificate_type
+
+  Description (3):
+    about_description, rewards_outcomes, syllabus_url
+
+  Links (4):
+    registration_url, official_website, past_papers_url, organizer_logo
+
+  Metadata (3):
+    is_verified, num_participants_last_year, international_recognition
+
+
+================================================================================
+  2) LIST OF OLYMPIADS TO SCRAPE
+================================================================================
+
+Total: ~30 olympiads (mix of international + India-specific)
+
+--------------------------------------------------------------------------------
+  A) INTERNATIONAL OLYMPIADS (Top tier — 12)
+--------------------------------------------------------------------------------
+
+  1.  IMO   - International Mathematical Olympiad
+  2.  IPhO  - International Physics Olympiad
+  3.  IChO  - International Chemistry Olympiad
+  4.  IBO   - International Biology Olympiad
+  5.  IOI   - International Olympiad in Informatics
+  6.  IOAA  - International Olympiad on Astronomy and Astrophysics
+  7.  IOL   - International Linguistics Olympiad
+  8.  IPhO  - International Philosophy Olympiad
+  9.  IEO   - International Economics Olympiad
+  10. IOAI  - International Olympiad in AI
+  11. IJSO  - International Junior Science Olympiad (Class 9-10)
+  12. IGEO  - International Geography Olympiad
+
+--------------------------------------------------------------------------------
+  B) INDIA NATIONAL OLYMPIADS (HBCSE — 6)
+--------------------------------------------------------------------------------
+
+  These are the qualifying rounds for Indian students to reach IMO/IPhO/etc.
+
+  13. INMO  - Indian National Mathematical Olympiad
+  14. INPhO - Indian National Physics Olympiad
+  15. INChO - Indian National Chemistry Olympiad
+  16. INBO  - Indian National Biology Olympiad
+  17. INAO  - Indian National Astronomy Olympiad
+  18. INJSO - Indian National Junior Science Olympiad
+
+  Multi-stage structure:
+    NSEP/NSEC/NSEB/NSEA → INPhO/INChO/INBO/INAO → OCSC → International
+
+--------------------------------------------------------------------------------
+  C) SOF OLYMPIADS — Via School (Science Olympiad Foundation, 8)
+--------------------------------------------------------------------------------
+
+  Most popular Indian "Via School" olympiads — 91,000+ schools, millions of students.
+
+  19. NSO   - National Science Olympiad
+  20. IMO   - International Mathematics Olympiad (SOF, different from IMO above)
+  21. IEO   - International English Olympiad
+  22. NCO   - National Cyber Olympiad
+  23. ICO   - International Commerce Olympiad
+  24. ICSO  - International Crypto/Computer Science Olympiad
+  25. ISSO  - International Social Studies Olympiad
+  26. IGKO  - International General Knowledge Olympiad
+
+--------------------------------------------------------------------------------
+  D) OTHER POPULAR OLYMPIADS (4)
+--------------------------------------------------------------------------------
+
+  27. SOF Math Olympiad (different format)
+  28. RMO   - Regional Mathematical Olympiad (HBCSE, gateway to INMO)
+  29. KVPY  - Kishore Vaigyanik Protsahan Yojana (now discontinued, archived)
+  30. NTSE  - National Talent Search Examination (now state-level)
+
+
+================================================================================
+  3) BEST DATA SOURCES TO SCRAPE
+================================================================================
+
+--------------------------------------------------------------------------------
+  TIER 1: OFFICIAL SOURCES (most reliable)
+--------------------------------------------------------------------------------
+
+  Source                        URL                                      Olympiads covered
+  ----------------------------  ---------------------------------------- ---------------------------
+  HBCSE TIFR                    https://olympiads.hbcse.tifr.res.in/      INMO, INPhO, INChO, INBO,
+                                                                         INAO, INJSO, NSEs
+  HBCSE Secure (registration)   https://secure.hbcse.tifr.res.in/ino/     India national olympiads
+  IMO Official                  https://www.imo-official.org/             IMO
+  IPhO Official                 https://www.ipho-new.org/                 IPhO
+  IChO Official                 https://icho-official.org/                IChO
+  IBO Official                  https://www.ibo-info.org/                 IBO
+  IOI Official                  https://ioinformatics.org/                IOI
+  IOI 2026 Uzbekistan           https://ioi2026.uz/                       IOI 2026 details
+  IOAA Wikipedia                https://en.wikipedia.org/wiki/            IOAA
+                                International_Olympiad_on_Astronomy_
+                                and_Astrophysics
+  IOAI Official                 https://ioai-official.org/                IOAI (AI)
+  IOAI Registration             https://ioai-official.org/registration-2026/ IOAI 2026 details
+  IEO Official                  https://ieo-official.org/                 International Economics Olympiad
+  IEO 2026                      https://2026.ieo-official.org/            IEO 2026 dates/host
+  Economics Olympiad            https://economicsolympiad.org/            IEO national rounds
+  SOF World                     https://sofworld.org/                     NSO, IMO, IEO, IGKO,
+                                                                         NCO, ICO, ICSO, ISSO
+
+--------------------------------------------------------------------------------
+  TIER 2: AGGREGATOR SITES (good for cross-reference)
+--------------------------------------------------------------------------------
+
+  Source                        URL                                      Notes
+  ----------------------------  ---------------------------------------- ----------------------
+  Lumiere Education             https://www.lumiere-education.com/post/  "12 Olympiads for HS"
+                                12-olympiads-for-high-school-students    curated list
+  Veritas AI                    https://www.veritasai.com/veritasaiblog/ "10 International
+                                international-olympiads-for-high-school- Olympiads" guide
+                                students
+  Aralia Education              https://www.aralia.com/helpful-          Physics-specific list
+                                information/physics-competitions-high-
+                                school/
+  Allen Overseas                https://www.allenoverseas.com/exam/      All olympiads dates,
+                                olympiads/                                eligibility, syllabus
+  Aakash (Allen)                https://www.aakash.ac.in/olympiad/       India national olympiads
+                                ino-exam                                  guide
+  Careers360                    https://school.careers360.com/articles/  SOF olympiad schedules
+                                sof-olympiad-exams
+  PW Live                       https://www.pw.live/olympiad/             Multiple olympiad guides
+  Vedantu                       https://www.vedantu.com/olympiad/         SOF + others
+  Rishab Academy                https://rishabacademy.com/the-ultimate-  Comprehensive guide
+                                guide-to-science-olympiads-for-high-
+                                schoolers/
+  Wikipedia                     https://en.wikipedia.org/wiki/            Authoritative for
+                                International_Science_Olympiad            historical data
+
+--------------------------------------------------------------------------------
+  TIER 3: ADDITIONAL REFERENCES
+--------------------------------------------------------------------------------
+
+  - Hodu Academy: https://hoduacademy.com/ (Olympiad coaching info)
+  - Science Fair: https://www.sciencefair.io/blog/international-science-olympiads-complete-guide-for-high-schoolers
+  - Admissions Angle: https://www.admissionsangle.com/blog/what-are-the-olympiads
+  - SOF Olympiad Trainer: https://www.sofolympiadtrainer.com/ (SOF dates)
+
+
+================================================================================
+  4) RECOMMENDED SCRAPING STRATEGY (REVISED — GENERIC GEMINI-BASED SCRAPER)
+================================================================================
+
+  PHILOSOPHY:
+  -----------
+  Reuse the proven architecture from the university pipeline:
+    Script 1 (structured_data_extraction.py)  → Gemini extraction from text
+    Script 2 (merge_course_data.py)            → Merging multiple sources
+
+  Apply the SAME pattern to olympiads:
+    olympiad_scraper.py  → Fetch HTML from multiple sources (Tier 1 → 2 → 3)
+                            → Strip to text → Send to Gemini with 35-field schema
+                            → Output markdown + JSON with inline citations
+
+  Why this is better than 30 hardcoded scrapers:
+    - One generic scraper handles all olympiads
+    - Gemini handles unstructured/varying HTML layouts naturally
+    - Reuses 80% of existing code (auth, rate limiting, retry logic, prompt patterns)
+    - Adding a new olympiad = 1 line in URL config, not new code
+    - Same pattern as university extraction (proven on 8,000+ files)
+
+--------------------------------------------------------------------------------
+  PHASE 0: URL CONFIG (one-time setup)
+--------------------------------------------------------------------------------
+
+  Build a single config file: olympiads_urls.json
+
+  Format:
+    {
+      "IMO": {
+        "name": "International Mathematical Olympiad",
+        "tier1_urls": ["https://www.imo-official.org/", "https://www.imo-official.org/year_info.aspx?year=2026"],
+        "tier2_urls": ["https://en.wikipedia.org/wiki/International_Mathematical_Olympiad"],
+        "tier3_urls": ["https://www.lumiere-education.com/post/12-olympiads-for-high-school-students"],
+        "search_query": "International Mathematical Olympiad 2026 deadline registration"
+      },
+      "INMO": { ... },
+      ...
+    }
+
+  Effort: ~2 hours to compile URLs for all 30 olympiads
+
+--------------------------------------------------------------------------------
+  PHASE 1: GENERIC SCRAPER (olympiad_scraper.py)
+--------------------------------------------------------------------------------
+
+  For each olympiad in olympiads_urls.json:
+
+    STEP 1 — Discover (optional, smart updates)
+      - WebSearch query → find newer URLs missed by config
+      - Append discovered URLs to fetch list
+
+    STEP 2 — Fetch (Tier 1 first, fall back to Tier 2/3)
+      - Try requests + BeautifulSoup (fast, ~80% of sites work)
+      - On failure (timeout, JS-rendered, blocked):
+          → Fall back to Puppeteer MCP (browser-rendered)
+      - Strip HTML to plain text
+      - Tag each page with source URL for citation tracking
+      - Concatenate all sources into one context
+
+    STEP 3 — Extract via Gemini
+      - Same auth/calling logic as structured_data_extraction.py
+      - Strict prompt with 35-field schema
+      - Rules: only extract what's in the text, null for missing,
+        cite source URL per field, no hallucination
+      - Output: structured JSON
+
+    STEP 4 — Save outputs
+      - olympiads/raw/IMO.json       (structured 35 fields)
+      - olympiads/markdown/IMO.md    (human-readable with inline citations)
+      - olympiads/qa/IMO_qa.json     (per-field source tracking)
+
+    STEP 5 — Quality check
+      - Required fields filled? (name, deadline, official URL, eligibility)
+      - Mark missing required fields for manual review
+      - Flag suspicious values (deadline in past, cost > Rs 10,000)
+
+--------------------------------------------------------------------------------
+  PHASE 2: PUPPETEER FALLBACK (only when needed)
+--------------------------------------------------------------------------------
+
+  Most olympiad sites are static HTML — plain HTTP works:
+    - HBCSE TIFR              → static
+    - IMO Official            → static
+    - SOF World               → static
+    - Wikipedia               → static
+    - Aggregator sites        → static
+
+  Puppeteer needed only for:
+    - IOAI registration form  (JS-rendered)
+    - IEO interactive pages   (dynamic content)
+    - Sites with anti-bot     (need real browser headers)
+
+  Use Puppeteer MCP only as fallback after HTTP fails.
+
+--------------------------------------------------------------------------------
+  PHASE 3: GEMINI EXTRACTION PROMPT (key design)
+--------------------------------------------------------------------------------
+
+  Prompt structure (similar to structured_data_extraction.py):
+
+    SECTION 1 — Critical rules
+      - Extract ONLY what's in the source text
+      - Null for missing fields, never guess
+      - For each field, capture which source URL it came from
+      - For dates, use YYYY-MM-DD; if year missing, use upcoming cycle
+      - Multi-stage olympiads: capture parent_olympiad field
+
+    SECTION 2 — 35-field schema (same as Section 1 of this report)
+
+    SECTION 3 — Sources (concatenated text from all fetched URLs)
+      [SOURCE 1: https://imo-official.org/]
+      ... text ...
+      [SOURCE 2: https://en.wikipedia.org/wiki/IMO]
+      ... text ...
+
+  Gemini returns structured JSON with citations:
+    {
+      "activity_name": {"value": "International Math Olympiad", "source": "SOURCE 1"},
+      "deadline": {"value": "2026-04-10", "source": "SOURCE 1"},
+      "eligibility": {"value": "...", "source": "SOURCE 2"},
+      ...
+    }
+
+--------------------------------------------------------------------------------
+  PHASE 4: MARKDOWN OUTPUT FORMAT
+--------------------------------------------------------------------------------
+
+  Same pattern as university markdowns — sections + inline citations.
+  Example olympiads/markdown/IMO.md:
+
+    # International Mathematical Olympiad (IMO)
+
+    ## Overview
+    The IMO is the most prestigious mathematics competition for high school
+    students worldwide, established in 1959.
+
+    <citation>
+    status: verified
+    urls:
+    - https://en.wikipedia.org/wiki/International_Mathematical_Olympiad
+    </citation>
+
+    ## Eligibility
+    Open to high school students under 20 years of age...
+
+    <citation>
+    status: verified
+    urls:
+    - https://www.imo-official.org/general_regulations.aspx
+    </citation>
+
+    ## Deadline
+    April 10, 2026 (Indian national qualification deadline)
+    July 10-21, 2026 (international competition in China)
+
+    <citation>
+    status: verified
+    urls:
+    - https://secure.hbcse.tifr.res.in/ino/
+    - https://www.imo-official.org/
+    </citation>
+
+    ... and so on for all sections
+
+--------------------------------------------------------------------------------
+  PHASE 5: ANNUAL REFRESH
+--------------------------------------------------------------------------------
+
+  Just rerun olympiad_scraper.py:
+    - Same script, same URLs
+    - Gemini re-extracts with current page content
+    - Updates dates, deadlines automatically
+    - Diff old vs new JSON to flag what changed
+
+  Schedule: November (before next academic cycle starts)
+  Time: ~30 minutes for all 30 olympiads
+  Manual review: ~2 hours by content team
+
+--------------------------------------------------------------------------------
+  PHASE 6: DAILY DEADLINE TRACKER (separate, lightweight)
+--------------------------------------------------------------------------------
+
+  No scraping needed — just compute urgency chip from stored deadline:
+    - More than 30 days away → "Open"
+    - 7-30 days away → "Closing soon"
+    - 0-7 days → "Last chance"
+    - Past → "Closed"
+
+  Cron job runs daily, updates the urgency_chip field in DB.
+
+
+================================================================================
+  5) FIELD-TO-SOURCE MAPPING (which fields come from where)
+================================================================================
+
+  Field                       Best source(s)
+  --------------------------  -----------------------------------------
+  activity_name               Official site, Wikipedia
+  short_code                  Official site, Wikipedia
+  subject                     Official site (always known)
+  organizer                   Official site, Wikipedia
+  entry_route                 PDF spec — Via School (SOF, NSO) /
+                              Independent (IMO, INMO, IPhO direct registrants)
+  level                       Computed from rounds
+  modality                    Official site (online vs offline exam)
+  registration deadline       Aggregator sites (Allen, Aakash) +
+                              official site
+  exam_date                   Official site
+  about_description           Wikipedia / official "about" page
+  eligibility                 Official site eligibility section
+  structure_format            Official site rules / Wikipedia
+  how_to_apply                Official site registration page
+  cost                        Official site (mostly Free for HBCSE/IMO,
+                              ~INR 125 for SOF)
+  outcome                     Official site (Medals/Certificates)
+  rewards_outcomes            Official site / Wikipedia
+  registration_url            Official site direct link
+  official_website            Manual entry (Tier 1 list)
+  syllabus_url                Official site
+  past_papers_url             Official site / HBCSE archives
+  age_limit                   Official rules
+  grade_levels                Eligibility section
+  team_size                   Official rules (mostly individual = 1)
+  rounds                      Official structure section
+  parent_organization         Manual entry / official site
+
+
+================================================================================
+  6) ESTIMATED EFFORT (REVISED — GENERIC SCRAPER APPROACH)
+================================================================================
+
+  Total olympiads to scrape:        30
+  Avg time per olympiad (Gemini):   ~20-30 seconds per olympiad
+
+  REVISED EFFORT BREAKDOWN:
+    Phase 0 (URL config setup):      ~2 hours (compile URLs from Tier 1/2/3)
+    Phase 1 (build generic scraper): ~3-4 hours (reuse 80% from Script 1)
+    Phase 2 (Puppeteer fallback):    ~1 hour (only if HTTP fails for some)
+    Phase 3 (run + verify outputs):  ~30 minutes for all 30 olympiads
+    Phase 4 (manual QA review):      ~2-3 hours (spot-check, fix gaps)
+    Phase 5 (annual refresh):        ~30 minutes/year + 2 hours review
+    Phase 6 (daily deadline cron):   ~1 hour setup, runs forever
+
+  TOTAL FIRST RUN: ~10-12 hours (vs 40 hours manual)
+  ANNUAL MAINTENANCE: ~3 hours/year (vs 10 hours manual)
+
+  Why so much faster than original manual approach:
+    - Gemini handles HTML parsing automatically (no per-site scraping logic)
+    - One scraper for all 30 olympiads (not 30 separate scripts)
+    - Reuses existing auth/retry/rate limit code from Script 1
+    - Citations auto-generated by Gemini per field
+    - Adding new olympiad = add 1 entry to URL config (1 minute)
+
+
+================================================================================
+  7) RISKS & MITIGATIONS
+================================================================================
+
+  Risk                                Mitigation
+  ----------------------------------- -------------------------------------------
+  Gemini hallucinations               Strict prompt: "extract only from text,
+                                      null for missing, never guess"
+                                      Same approach proven on 8,000+ universities
+  Rate limits                         30 olympiads is well within Vertex limits
+                                      (~12 req/sec safe at 60 workers)
+  Site layout changes                 Gemini handles layout variations naturally
+                                      Re-run scraper picks up new format
+  Multi-stage olympiads               Add parent_olympiad field to schema
+  (RMO → INMO → IMO)                  Link records via short_code reference
+  Year confusion (2026 vs 2027)       Prompt rule: "use most recent upcoming cycle"
+  Anti-bot blocking                   Puppeteer fallback with real browser headers
+  Aggregator data outdated            Tier 1 (official) takes priority
+                                      Tier 2/3 only fill gaps
+  Cost (Gemini API calls)             ~30 calls/year × ~$0.01 each = $0.30/year
+                                      Negligible
+
+
+================================================================================
+  8) PIPELINE ARCHITECTURE
+================================================================================
+
+  Input:
+    olympiads_urls.json  (config: 30 olympiads × Tier 1/2/3 URLs)
+
+         ↓
+
+  olympiad_scraper.py  (generic scraper)
+
+    Per olympiad:
+      ├─ Fetch all Tier 1/2/3 URLs (HTTP, Puppeteer fallback)
+      ├─ Strip HTML to text, tag with source URL
+      ├─ Concatenate sources
+      ├─ Send to Gemini with 35-field schema prompt
+      └─ Receive structured JSON with citations
+
+         ↓
+
+  Output:
+    olympiads/
+      raw/IMO.json              (structured 35 fields + citations)
+      raw/INMO.json
+      raw/NSO.json
+      ...
+      markdown/IMO.md           (human-readable with inline citations)
+      markdown/INMO.md
+      ...
+      qa/IMO_qa.json            (per-field source tracking, gaps flagged)
+      qa/INMO_qa.json
+      ...
+      _summary.json             (run stats: success/fail count, avg fields)
+
+         ↓
+
+  Backend ingestion:
+    Push olympiads/raw/*.json to Activity Finder DB
+    UI displays cards from this data
+
+
+================================================================================
+  9) BUILT & TESTED — WITH 5 IMPROVEMENTS (April 2026)
+================================================================================
+
+  Status: Script implemented, tested on IMO + INMO, improved with 5 upgrades.
+  Target: 62 olympiads (see report/olympiad_62_coverage_plan.txt for full list)
+
+--------------------------------------------------------------------------------
+  IMPLEMENTATION STATUS
+--------------------------------------------------------------------------------
+
+  All files inside: course_data/Olympiad/
+
+  Files:
+    - olympiad_scraper.py        (~800 lines, standalone, no deps on existing code)
+    - olympiads_urls.json        (config — currently has IMO + INMO, expandable to 62)
+    - olympiad_data/             (output folder)
+        raw/IMO.json             (clean UI-ready JSON — 35 fields, no internal metadata)
+        raw/INMO.json
+        markdown/IMO.md          (human-readable with inline <citation> blocks)
+        markdown/INMO.md
+        qa/IMO_qa.json           (internal: field_sources, warnings, gaps, fetch status)
+        qa/INMO_qa.json
+        sources/IMO_sources.txt  (raw scraped text — what Gemini saw, audit trail)
+        sources/INMO_sources.txt
+        _summary_TIMESTAMP.json  (batch run stats)
+
+  Test files (not part of main pipeline):
+    - test_allen_pw_quality.py          (Allen+PW vs Official comparison test)
+    - test_allen_pw_quality_result.txt  (results: Official wins, Allen+PW is Tier 3 only)
+
+  Reports:
+    - report/olympiad_62_coverage_plan.txt  (full 62-olympiad list with justification)
+
+  Script uses relative paths — works from any directory.
+  Script does NOT modify any existing course/college pipeline files.
+
+--------------------------------------------------------------------------------
+  5 IMPROVEMENTS IMPLEMENTED
+--------------------------------------------------------------------------------
+
+  Improvement 1: SMART HTML EXTRACTION
+    What:   Extract <main> / <article> content only, strip <nav>, <header>,
+            <footer>, <aside>, cookie/popup/sidebar divs by class/id.
+    Why:    Reduces ~60% noise in source text. Gemini sees cleaner input.
+    Where:  _extract_main_content() + html_to_text()
+
+  Improvement 2: SOURCE PRIORITY LABELS
+    What:   Each source tagged in prompt as:
+            [SOURCE 1 — OFFICIAL — HIGHEST PRIORITY: url]
+            [SOURCE 2 — REFERENCE — TRUSTED: url]
+            [SOURCE 3 — AGGREGATOR — USE ONLY TO FILL GAPS: url]
+    Why:    Gemini explicitly knows which source to trust for conflicts.
+    Where:  process_olympiad() prompt builder
+
+  Improvement 3: POST-EXTRACTION VALIDATION
+    What:   After Gemini returns JSON, automatically check:
+            - Dates not in past (flags wrong year/cycle)
+            - Age limit math correct (birth year → age check)
+            - Rounds reasonable (1-10, not 50)
+            - Cost reasonable (< 10K for an olympiad)
+            - Required fields present (name, subject, level, deadline)
+    Why:    Catches errors Gemini makes. Warnings go to QA sidecar only.
+    Where:  validation block after JSON parse, before save
+
+  Improvement 4: STRONGER PROMPT RULES (12 rules, up from 10)
+    What:   Added rules:
+            - Rule 4: Explicit trust hierarchy with examples
+            - Rule 5: Date cycle extrapolation (past dates → next cycle)
+            - Rule 6: parent_olympiad = short code only (not full name)
+            - Rule 10: Student-facing cost (not school/delegation cost)
+            - Rule 11: rounds = THIS exam only (not multi-stage chain)
+            - Rule 12: structure_format = both exam format AND broader chain
+    Why:    Fixed IMO rounds=6 bug, INMO parent="IMO" not full name,
+            cost shows student fee not delegation fee.
+    Where:  EXTRACTION_PROMPT rules section
+
+  Improvement 5: URL CAP (reduce noise)
+    What:   Max 6 URLs total per olympiad.
+            All Tier 1 (official) + all Tier 2 (reference) always included.
+            Tier 3 (aggregator) fills remaining slots only.
+    Why:    8-9 URLs = too much conflicting info. 6 is the sweet spot.
+    Where:  process_olympiad() URL collection
+
+--------------------------------------------------------------------------------
+  EXECUTION SEQUENCE (per olympiad, with improvements)
+--------------------------------------------------------------------------------
+
+  Step 1: Load config
+    - Read olympiads_urls.json
+    - Get olympiad name + Tier 1/2/3 URL lists
+
+  Step 2: Collect URLs [IMPROVEMENT 5]
+    - All Tier 1 + All Tier 2 kept
+    - Tier 3 fills remaining slots up to max 6 total
+    - Prevents noise overload
+
+  Step 3: Fetch URLs via HTTP
+    - urllib.request with browser User-Agent
+    - 30-second timeout per URL
+    - Detect encoding: HTTP header → meta charset → UTF-8 fallback
+
+  Step 4: Clean HTML [IMPROVEMENT 1]
+    - Extract <main> or <article> content (skip nav/footer/sidebar)
+    - Strip cookie/popup/ad divs by class/id pattern
+    - Remove <script>, <style>, remaining tags
+    - Decode HTML entities via html.unescape()
+    - Fix mojibake (UTF-8 → Latin-1 artifacts)
+    - Truncate to 8KB per source
+
+  Step 5: Tag sources [IMPROVEMENT 2]
+    - Source 1 → "OFFICIAL — HIGHEST PRIORITY"
+    - Source 2 → "REFERENCE — TRUSTED"
+    - Source 3 → "AGGREGATOR — USE ONLY TO FILL GAPS"
+
+  Step 6: Build Gemini prompt [IMPROVEMENT 4]
+    - Today's date + olympiad name
+    - 12 strict rules (trust hierarchy, rounds = this exam, student cost,
+      date extrapolation, short codes for parent_olympiad)
+    - 35-field JSON schema
+    - Tagged source texts
+
+  Step 7: Call Gemini (Vertex AI, gemini-2.5-flash)
+    - Auth: JWT from dashboard/gcp-key.json
+    - Payload via temp file (Windows workaround)
+    - temperature=0.1, responseMimeType=application/json
+    - 429/5xx retry with backoff
+    - ~30 seconds response time
+
+  Step 8: Parse JSON response
+
+  Step 9: Validate [IMPROVEMENT 3]
+    - Check dates not in past
+    - Check age limit math
+    - Check rounds reasonable (1-10)
+    - Check cost reasonable (< 10K)
+    - Check required fields present
+    - Warnings go to QA sidecar only (not in raw JSON)
+
+  Step 10: Save 4 outputs
+    - raw/X.json         (CLEAN 35 fields — no _sources, no _notes → for UI)
+    - markdown/X.md      (human-readable with inline <citation> blocks)
+    - qa/X_qa.json       (field_sources, extraction_notes, validation_warnings)
+    - sources/X_sources.txt (raw scraped text — audit trail of what Gemini saw)
+
+  Step 11: Summary
+    - Print success/fail counts, total time
+    - Save _summary_TIMESTAMP.json
+
+--------------------------------------------------------------------------------
+  TEST RESULTS — IMO + INMO (April 2026, after 5 improvements)
+--------------------------------------------------------------------------------
+
+  IMO (International Mathematical Olympiad):
+    URLs fetched:        4-6/6 (some official URLs intermittently timeout)
+    Fields filled:       28/35 (80%)
+    Required fields:     5/5
+    Key fix:             rounds=2 (was 6 before improvements — Rule 11 fixed it)
+    Key fix:             cost=Free, entry_route=Independent (were missing before)
+    Validation:          0 warnings
+    Time:                ~58s
+
+  INMO (Indian National Mathematical Olympiad):
+    URLs fetched:        6/6 (100%)
+    Fields filled:       31/35 (89%)
+    Required fields:     5/5
+    Key data:            parent_olympiad=IMO, cost=INR 300, rounds=1
+    Validation:          3 warnings (dates in past — correct, INMO 2026 already happened)
+    Key fix:             Gemini says "Used Source 1 (OFFICIAL)" for conflicts
+    Time:                ~68s
+
+  BEFORE vs AFTER improvements:
+    IMO rounds:          6 (WRONG) → 2 (CORRECT)
+    IMO cost:            null → Free
+    IMO entry_route:     null → Independent
+    INMO conflict log:   silent → "Used Source 1 (OFFICIAL)" visible
+    Date validation:     none → past dates flagged
+    Raw JSON:            had _sources/_notes → clean 35 fields only
+
+--------------------------------------------------------------------------------
+  QUALITY COMPARISON: OFFICIAL vs ALLEN+PW+MYARK (tested)
+--------------------------------------------------------------------------------
+
+  We tested whether Allen.in + PW Live + Myark.in could replace official
+  sources (like BigFuture did for colleges). Result: NO.
+
+  IMO:  Official 27/35 (77%)  vs  Allen+PW 20/35 (57%)  → Official wins
+  INMO: Official 33/35 (94%)  vs  Allen+PW 27/35 (77%)  → Official wins
+
+  Allen+PW got INMO cost WRONG (said Free, actual is INR 300).
+  37-48% of overlapping fields had conflicts.
+  Allen+PW contributed only 1 unique field (grade_levels for IMO).
+
+  Verdict: Keep official + Wikipedia as Tier 1/2.
+           Use Allen+PW as Tier 3 gap-fillers ONLY.
+  Full results: test_allen_pw_quality_result.txt
+
+--------------------------------------------------------------------------------
+  WHAT'S NEXT
+--------------------------------------------------------------------------------
+
+  - Expand olympiads_urls.json to 62 olympiads (web search + compile URLs)
+  - Run full batch (~31 min for 62 olympiads)
+  - Manual QA review of outputs (~4-5 hours for content team)
+  - Push to backend Activity Finder DB
+  - Set up annual refresh (November 2026 — rerun same script)
+
+
+================================================================================
+  10) KEY OBSERVATIONS FROM SCREENSHOTS
+================================================================================
+
+  - UI shows 4 cards per row (responsive grid)
+  - Each card has: logo, name, organizer, verified checkmark, save button,
+    subject, deadline, "What to know" chips (Online/Free/Via School)
+  - Pagination at bottom (1, 2, 3, ..., 10) — implies ~40-100 olympiads total
+  - Filter by Subject (multi-select up to 3)
+  - Filter by Entry route (Via School / Independent)
+  - Filter by Level (School / National / International)
+  - Search box for olympiad name
+  - "Saved" toggle for bookmarked olympiads
+  - Detail view (Screenshots 5 & 6) shows: About, Eligibility, Structure & Format,
+    How to Apply, Rewards & Outcomes
+  - "Save for Later" CTA at bottom of detail view
+
+
+================================================================================
+  END OF REPORT
+================================================================================

@@ -1,0 +1,43 @@
+{
+  "_metadata": {},
+  "ASHOKA": {
+    "name": "Ashoka University",
+    "country": "India",
+    "region": "India",
+    "tier": 3,
+    "category": "Private",
+    "known_url": "https://www.ashoka.edu.in/ysp/"
+  },
+  "PLAKSHA": {
+    "name": "Plaksha University",
+    "country": "India",
+    "region": "India",
+    "tier": 3,
+    "category": "Private",
+    "known_url": "https://plaksha.edu.in/"
+  },
+  "ISRO_YUVIKA": {
+    "name": "ISRO (YUVIKA Programme)",
+    "country": "India",
+    "region": "India",
+    "tier": 1,
+    "category": "Research",
+    "known_url": "https://www.isro.gov.in/YUVIKA.html"
+  },
+  "IISER_BHOPAL": {
+    "name": "IISER Bhopal",
+    "country": "India",
+    "region": "India",
+    "tier": 3,
+    "category": "IISER",
+    "known_url": "https://www.iiserb.ac.in/"
+  },
+  "HARVARD": {
+    "name": "Harvard University",
+    "country": "USA",
+    "region": "Online",
+    "tier": 2,
+    "category": "Ivy League",
+    "known_url": "https://summer.harvard.edu/high-school-programs/"
+  }
+}

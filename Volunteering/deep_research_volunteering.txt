@@ -1,0 +1,204 @@
+# DEEP RESEARCH TASK — Volunteering Opportunities (Class 8–12, India / Online Only)
+
+## YOUR ROLE
+You are a research agent. Your job is to find real, verified, currently active
+or upcoming volunteering opportunities for high school students
+(Class 8–12 / ages 13–18) that are either:
+- Fully online / remote volunteering, OR
+- Held physically inside India only (no international travel required)
+
+Do NOT include volunteering programs that require students to travel abroad.
+International organizations are ONLY included if they offer online/remote volunteering.
+
+---
+
+## PHASE 1 — MARKET RESEARCH
+
+Before finding individual opportunities, perform deep research to answer:
+
+1. How many volunteering opportunities exist for Indian high school students
+   across all causes? (India in-person + Online/remote)
+2. What are the main CAUSE AREAS?
+   (Education, Environment, Health, Animal Welfare, Community Development,
+   Arts & Culture, Technology, Disability & Inclusion, etc.)
+3. What are the TOP volunteering platforms for Indian high school students?
+   Research: iVolunteer.in, VolunteerMatch.org, Idealist.org, Catchafire.org,
+   youth4seva.org, bhumi.ngo, connectfor.org, unitedway.org.in,
+   volunteer.gov.in
+4. How many opportunities currently have active registration RIGHT NOW?
+
+Write a brief summary to: Volunteering/volunteering_data/MARKET_RESEARCH.md
+
+---
+
+## PHASE 2 — FIND ALL VOLUNTEERING OPPORTUNITIES (Deep web search)
+
+TARGET: Find EVERY volunteering opportunity that a class 8-12 Indian student
+could apply to RIGHT NOW or in the coming months. Do NOT limit to any fixed
+number. Give me ALL that exist — whether that's 50 or 200.
+
+Search deeply and exhaustively across ALL of these sources:
+
+### Platform searches:
+- iVolunteer.in (India's largest — 17K+ volunteers/year, cause-based)
+- VolunteerMatch.org (world's largest, has teen/virtual filter)
+- Idealist.org (international, strong India listings)
+- Catchafire.org (skills-based online — design, writing, social media)
+- connectfor.org (Indian volunteer matching platform)
+- volunteer.gov.in (government volunteering portal)
+- youth4seva.org (youth volunteering India)
+- bhumi.ngo (education volunteering for youth)
+- MyGov.in (government volunteer campaigns)
+
+### Well-known NGOs with student volunteer programs:
+- Teach For India (TFI) — classroom volunteering
+- Goonj — disaster relief, rural development
+- Pratham — education in underserved communities
+- Robin Hood Army — food distribution
+- CRY (Child Rights and You) — child welfare
+- Akshaya Patra — mid-day meals volunteering
+- Make A Wish Foundation India
+- Habitat for Humanity India
+- ISPIICE — community development
+- Kaya Responsible Travel — conservation
+- Smile Foundation — education and health
+- HelpAge India — elderly care
+- WWF India — wildlife conservation
+- PETA India — animal welfare
+- Greenpeace India — environmental activism
+- Feeding India (Zomato) — food waste reduction
+- iVolunteer — platform + own programs
+- United Way India — community programs
+- NSS (National Service Scheme) — school/college programs
+
+### Cause-wise Google searches (search ALL of these):
+- Google: "volunteering for school students India 2026"
+- Google: "volunteer opportunities high school students India"
+- Google: "online volunteering for teenagers India 2026"
+- Google: "education volunteering school students India"
+- Google: "environment volunteering high school India 2026"
+- Google: "animal welfare volunteering students India"
+- Google: "health volunteering school students India"
+- Google: "community service opportunities class 10 12 India"
+- Google: "NGO volunteer program teenagers India 2026"
+- Google: "free volunteering opportunities students India"
+- Google: "virtual volunteering high school students 2026"
+- Google: "social work volunteering school students India"
+- Google: "teach children volunteering India students"
+- Google: "tree planting volunteering students India 2026"
+- Google: "disaster relief volunteering students India"
+
+### Broad discovery searches (find opportunities we DON'T already know about):
+- Google: "volunteering opportunities available for school students India 2026"
+- Google: "list of all NGOs accepting student volunteers India"
+- Google: "best volunteering programs for teenagers India"
+- Google: "volunteering for class 9 10 11 12 students India"
+- Google: "top 50 volunteering opportunities school students India"
+- Google: "student volunteer programs India list 2026"
+- Google: "weekend volunteering for school students India"
+- Google: "summer volunteering for teenagers India 2026"
+- Google: "certificate volunteering programs school students India"
+These searches may surface opportunities from smaller NGOs, local
+organizations, or platforms not in the lists above.
+
+### Broad discovery for Online/Remote volunteering:
+- Google: "online volunteering for international high school students 2026"
+- Google: "virtual volunteer opportunities for teenagers worldwide"
+- Google: "remote volunteering programs students globally 2026"
+- Google: "online teaching volunteering for school students"
+- Google: "skills-based online volunteering teenagers 2026"
+- Google: "UN online volunteering for high school students"
+- Google: "digital volunteering opportunities students India 2026"
+These searches find remote volunteering from international organizations
+that Indian students can do from home.
+
+### Well-known recurring programs (check if active for 2026):
+- Teach For India campus ambassador / volunteer program
+- Goonj student volunteer program
+- Robin Hood Army volunteer drives
+- CRY volunteer internships
+- Pratham Read India volunteer
+- NSS special camp programs
+- iVolunteer seasonal campaigns
+- WWF India Panda Ambassador
+- Greenpeace India volunteer
+- UN Online Volunteering (if open to under 18)
+- Catchafire skills-based projects
+
+For each opportunity found, verify:
+[ ] Open to class 8–12 / ages 13–18? (many require 18+, verify carefully)
+[ ] Online OR held fully within India (no international travel)?
+[ ] Official page reachable and active?
+[ ] Currently accepting volunteers (not closed/past)?
+[ ] It is a genuine volunteering opportunity, not a paid internship?
+
+IMPORTANT — URL RULE:
+For each opportunity name you find, perform a targeted web search to
+locate its exact official URL. Do not guess or construct URLs from memory.
+
+Search like: "[NGO Name] volunteer program students 2026 official site"
+Then verify the URL loads and is the correct page.
+
+IMPORTANT — AGE FILTER:
+Many volunteering platforms require 18+ for most opportunities.
+Only include opportunities that explicitly allow under-18 OR have a
+youth/teen volunteer program. If the page says "18+ only", skip it.
+
+---
+
+## PHASE 3 — STORE EACH OPPORTUNITY AS JSON
+
+Create folder: Volunteering/volunteering_data/input_deepresearch/
+
+For each verified opportunity, create ONE JSON file named:
+{opportunity-slug}.json
+
+Each file must follow this exact schema — no other fields:
+
+{
+  "opportunity_id": "short-slug-name",
+  "opportunity_name": "Full Official Opportunity Name",
+  "organization": "NGO / Organization Name",
+  "source_url": "https://verified-platform-or-official-url",
+  "official_url": "https://verified-official-url"
+}
+
+If an NGO has multiple volunteer programs, save each as a SEPARATE file:
+  Teach For India → Classroom Volunteer, Campus Ambassador = 2 files
+  Goonj → Rahat (disaster), Vaapsi (rural) = 2 files
+
+---
+
+## PHASE 4 — FINAL REPORT
+
+After saving all JSONs, write:
+Volunteering/volunteering_data/VOLUNTEERING_REPORT.md
+
+Include:
+- Total opportunities found and saved (ALL active ones)
+- Breakdown by cause:
+    Education | Environment & Sustainability | Health & Wellbeing |
+    Animal Welfare | Community Development | Arts & Culture |
+    Technology & Digital | Disability & Inclusion | Disaster Relief |
+    Food & Hunger | Child Welfare | Elderly Care
+- Breakdown by mode:
+    In-person (India) | Online/Remote | Hybrid
+- Breakdown by source:
+    iVolunteer | VolunteerMatch | Catchafire | Individual NGOs |
+    Google search | Government portals
+- Full list: opportunity name + organization + URL + slug filename
+- Any causes with very few results (gaps to fill later)
+
+---
+
+## HARD CONSTRAINTS
+- Only save opportunities with a verified, reachable official URL
+- No opportunities requiring international travel
+- International orgs ONLY if they offer online/remote volunteering
+- No duplicates — one JSON per opportunity even if listed on multiple platforms
+- Must accept volunteers aged 13-18 (or have a youth program)
+- Must be VOLUNTEERING (unpaid) — not paid internships or fellowships
+- If unsure about age eligibility or URL, skip and note it in the report
+- Do a fresh web search to confirm every URL — never construct from memory
+
+Start with Phase 1, then proceed phase by phase. Show progress as you go.

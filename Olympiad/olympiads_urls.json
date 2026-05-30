@@ -1,0 +1,816 @@
+{
+  "IMO": {
+    "name": "International Mathematical Olympiad",
+    "subject": "Mathematics",
+    "level": "International",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://www.imo-official.org/",
+      "https://www.imo2026.com/",
+      "https://imo2024.org/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/International_Mathematical_Olympiad"
+    ],
+    "tier3_urls": [
+      "https://www.pw.live/olympiad/exams/imo"
+    ]
+  },
+  "IPhO": {
+    "name": "International Physics Olympiad",
+    "subject": "Physics",
+    "level": "International",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://www.ipho-new.org/",
+      "https://ipho-new.org/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/International_Physics_Olympiad"
+    ],
+    "tier3_urls": [
+      "https://allen.in/olympiad/international-physics-olympiad"
+    ]
+  },
+  "IChO": {
+    "name": "International Chemistry Olympiad",
+    "subject": "Chemistry",
+    "level": "International",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://icho-official.org/",
+      "https://www.icho.sk/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/International_Chemistry_Olympiad"
+    ],
+    "tier3_urls": [
+      "https://allen.in/olympiad/international-chemistry-olympiad"
+    ]
+  },
+  "IBO": {
+    "name": "International Biology Olympiad",
+    "subject": "Biology",
+    "level": "International",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://www.ibo-info.org/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/International_Biology_Olympiad"
+    ],
+    "tier3_urls": [
+      "https://allen.in/olympiad/international-biology-olympiad"
+    ]
+  },
+  "IOI": {
+    "name": "International Olympiad in Informatics",
+    "subject": "Computer Science",
+    "level": "International",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://ioinformatics.org/",
+      "https://ioi2026.uz/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/International_Olympiad_in_Informatics"
+    ],
+    "tier3_urls": [
+      "https://allen.in/olympiad/international-olympiad-in-informatics"
+    ]
+  },
+  "IOAA": {
+    "name": "International Olympiad on Astronomy and Astrophysics",
+    "subject": "Astronomy",
+    "level": "International",
+    "entry_route": "Independent",
+    "tier1_urls": [],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/International_Olympiad_on_Astronomy_and_Astrophysics"
+    ],
+    "tier3_urls": []
+  },
+  "IJSO": {
+    "name": "International Junior Science Olympiad",
+    "subject": "Science",
+    "level": "International",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://www.ijso-official.org/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/International_Junior_Science_Olympiad"
+    ],
+    "tier3_urls": [
+      "https://allen.in/olympiad/international-junior-science-olympiad"
+    ]
+  },
+  "IJMO": {
+    "name": "International Junior Math Olympiad",
+    "subject": "Mathematics",
+    "level": "International",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://ijmo.org/",
+      "https://simcc.org/ijmo/"
+    ],
+    "tier2_urls": [],
+    "tier3_urls": []
+  },
+  "IEO_INTL": {
+    "name": "International Economics Olympiad",
+    "subject": "Economics",
+    "level": "International",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://ieo-official.org/",
+      "https://2026.ieo-official.org/",
+      "https://ecolymp.org/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/International_Economics_Olympiad"
+    ],
+    "tier3_urls": []
+  },
+  "IOAI": {
+    "name": "International Olympiad on Artificial Intelligence",
+    "subject": "Computer Science",
+    "level": "International",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://ioai-official.org/",
+      "https://ioai.ai/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/International_Olympiad_in_Artificial_Intelligence"
+    ],
+    "tier3_urls": []
+  },
+  "IOL": {
+    "name": "International Linguistics Olympiad",
+    "subject": "Linguistics",
+    "level": "International",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://ioling.org/",
+      "https://www.ioling.org/",
+      "https://iol2024.org/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/International_Linguistics_Olympiad"
+    ],
+    "tier3_urls": []
+  },
+  "IGeO": {
+    "name": "International Geography Olympiad",
+    "subject": "Geography",
+    "level": "International",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://www.geoolympiad.org/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/International_Geography_Olympiad"
+    ],
+    "tier3_urls": []
+  },
+  "IPO": {
+    "name": "International Philosophy Olympiad",
+    "subject": "Philosophy",
+    "level": "International",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://www.philosophy-olympiad.org/",
+      "https://philosophy-olympiad.org/",
+      "https://ipo2024.org/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/International_Philosophy_Olympiad"
+    ],
+    "tier3_urls": []
+  },
+  "IHO": {
+    "name": "International History Olympiad",
+    "subject": "History",
+    "level": "International",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://www.historyolympiad.com/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/International_History_Olympiad"
+    ],
+    "tier3_urls": []
+  },
+  "IEarthSO": {
+    "name": "International Earth Science Olympiad",
+    "subject": "Earth Science",
+    "level": "International",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://www.ieso-info.org/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/International_Earth_Science_Olympiad"
+    ],
+    "tier3_urls": [
+      "https://allen.in/olympiad/international-earth-science-olympiad"
+    ]
+  },
+  "IAAO": {
+    "name": "International Astronomy Olympiad",
+    "subject": "Astronomy",
+    "level": "International",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "http://www.issp.ac.ru/iao/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/International_Astronomy_Olympiad"
+    ],
+    "tier3_urls": []
+  },
+  "ICAS": {
+    "name": "International Competitions and Assessments for Schools",
+    "subject": "Science",
+    "level": "International",
+    "entry_route": "Via School",
+    "tier1_urls": [
+      "https://www.icasassessments.com/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/International_Competitions_and_Assessments_for_Schools"
+    ],
+    "tier3_urls": []
+  },
+  "IOQM": {
+    "name": "Indian Olympiad Qualifier in Mathematics",
+    "subject": "Mathematics",
+    "level": "National",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://olympiads.hbcse.tifr.res.in/mathematical-olympiad-2025-2026/",
+      "https://olympiads.hbcse.tifr.res.in/how-to-participate/mathematics/ioqm/"
+    ],
+    "tier2_urls": [],
+    "tier3_urls": [
+      "https://www.pw.live/olympiad/exams/ioqm",
+      "https://www.aakash.ac.in/olympiad/ioqm-indian-olympiad-qualifier-in-mathematics"
+    ]
+  },
+  "RMO": {
+    "name": "Regional Mathematical Olympiad",
+    "subject": "Mathematics",
+    "level": "National",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://olympiads.hbcse.tifr.res.in/mathematical-olympiad-2025-2026/",
+      "https://olympiads.hbcse.tifr.res.in/how-to-participate/mathematics/rmo/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/Regional_Mathematical_Olympiad"
+    ],
+    "tier3_urls": [
+      "https://www.pw.live/olympiad/exams/rmo",
+      "https://www.aakash.ac.in/olympiad/rmo-regional-mathematical-olympiad"
+    ]
+  },
+  "INMO": {
+    "name": "Indian National Mathematical Olympiad",
+    "subject": "Mathematics",
+    "level": "National",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://olympiads.hbcse.tifr.res.in/mathematical-olympiad-2025-2026/",
+      "https://secure.hbcse.tifr.res.in/ino/",
+      "https://olympiads.hbcse.tifr.res.in/how-to-participate/mathematics/inmo/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/Indian_National_Mathematical_Olympiad"
+    ],
+    "tier3_urls": [
+      "https://www.pw.live/olympiad/exams/inmo",
+      "https://www.aakash.ac.in/olympiad/inmo-indian-national-mathematical-olympiad"
+    ]
+  },
+  "NSEP": {
+    "name": "National Standard Examination in Physics",
+    "subject": "Physics",
+    "level": "National",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://olympiads.hbcse.tifr.res.in/science-olympiad-2025-2026/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/Indian_National_Physics_Olympiad"
+    ],
+    "tier3_urls": [
+      "https://www.pw.live/olympiad/exams/nsep"
+    ]
+  },
+  "INPhO": {
+    "name": "Indian National Physics Olympiad",
+    "subject": "Physics",
+    "level": "National",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://olympiads.hbcse.tifr.res.in/science-olympiad-2025-2026/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/Indian_National_Physics_Olympiad"
+    ],
+    "tier3_urls": []
+  },
+  "NSEC": {
+    "name": "National Standard Examination in Chemistry",
+    "subject": "Chemistry",
+    "level": "National",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://olympiads.hbcse.tifr.res.in/science-olympiad-2025-2026/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/Indian_National_Chemistry_Olympiad"
+    ],
+    "tier3_urls": [
+      "https://www.pw.live/olympiad/exams/nsec"
+    ]
+  },
+  "INChO": {
+    "name": "Indian National Chemistry Olympiad",
+    "subject": "Chemistry",
+    "level": "National",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://olympiads.hbcse.tifr.res.in/science-olympiad-2025-2026/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/Indian_National_Chemistry_Olympiad"
+    ],
+    "tier3_urls": []
+  },
+  "NSEB": {
+    "name": "National Standard Examination in Biology",
+    "subject": "Biology",
+    "level": "National",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://olympiads.hbcse.tifr.res.in/science-olympiad-2025-2026/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/Indian_National_Biology_Olympiad"
+    ],
+    "tier3_urls": [
+      "https://www.pw.live/olympiad/exams/nseb"
+    ]
+  },
+  "INBO": {
+    "name": "Indian National Biology Olympiad",
+    "subject": "Biology",
+    "level": "National",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://olympiads.hbcse.tifr.res.in/science-olympiad-2025-2026/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/Indian_National_Biology_Olympiad"
+    ],
+    "tier3_urls": []
+  },
+  "NSEA": {
+    "name": "National Standard Examination in Astronomy",
+    "subject": "Astronomy",
+    "level": "National",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://olympiads.hbcse.tifr.res.in/science-olympiad-2025-2026/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/Indian_National_Astronomy_Olympiad"
+    ],
+    "tier3_urls": [
+      "https://www.pw.live/olympiad/exams/nsea"
+    ]
+  },
+  "INAO": {
+    "name": "Indian National Astronomy Olympiad",
+    "subject": "Astronomy",
+    "level": "National",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://olympiads.hbcse.tifr.res.in/science-olympiad-2025-2026/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/Indian_National_Astronomy_Olympiad"
+    ],
+    "tier3_urls": []
+  },
+  "NSEJS": {
+    "name": "National Standard Examination in Junior Science",
+    "subject": "Science",
+    "level": "National",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://olympiads.hbcse.tifr.res.in/science-olympiad-2025-2026/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/Indian_National_Junior_Science_Olympiad"
+    ],
+    "tier3_urls": [
+      "https://www.pw.live/olympiad/exams/nsejs",
+      "https://www.aakash.ac.in/olympiad/nsejs-national-standard-examination-in-junior-science"
+    ]
+  },
+  "INJSO": {
+    "name": "Indian National Junior Science Olympiad",
+    "subject": "Science",
+    "level": "National",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://olympiads.hbcse.tifr.res.in/science-olympiad-2025-2026/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/Indian_National_Junior_Science_Olympiad"
+    ],
+    "tier3_urls": []
+  },
+  "PaIO": {
+    "name": "Panini Linguistics Olympiad",
+    "subject": "Linguistics",
+    "level": "National",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://ltrc.iiit.ac.in/nlpmt/plo/"
+    ],
+    "tier2_urls": [],
+    "tier3_urls": []
+  },
+  "IAPT": {
+    "name": "Indian Association of Physics Teachers National Exam",
+    "subject": "Physics",
+    "level": "National",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://www.iapt.org.in/",
+      "https://iapt.org.in/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/Indian_Association_of_Physics_Teachers"
+    ],
+    "tier3_urls": [
+      "https://www.pw.live/olympiad/exams/nsep"
+    ]
+  },
+  "SOF_NSO": {
+    "name": "National Science Olympiad (SOF)",
+    "subject": "Science",
+    "level": "School",
+    "entry_route": "Via School",
+    "tier1_urls": [
+      "https://sofworld.org/nso"
+    ],
+    "tier2_urls": [],
+    "tier3_urls": []
+  },
+  "SOF_IMO": {
+    "name": "International Mathematics Olympiad (SOF)",
+    "subject": "Mathematics",
+    "level": "School",
+    "entry_route": "Via School",
+    "tier1_urls": [
+      "https://sofworld.org/imo"
+    ],
+    "tier2_urls": [],
+    "tier3_urls": []
+  },
+  "SOF_IEO": {
+    "name": "International English Olympiad (SOF)",
+    "subject": "English",
+    "level": "School",
+    "entry_route": "Via School",
+    "tier1_urls": [
+      "https://sofworld.org/ieo"
+    ],
+    "tier2_urls": [],
+    "tier3_urls": []
+  },
+  "SOF_NCO": {
+    "name": "National Cyber Olympiad (SOF)",
+    "subject": "Computer Science",
+    "level": "School",
+    "entry_route": "Via School",
+    "tier1_urls": [
+      "https://sofworld.org/nco"
+    ],
+    "tier2_urls": [],
+    "tier3_urls": []
+  },
+  "SOF_ICO": {
+    "name": "International Commerce Olympiad (SOF)",
+    "subject": "Economics",
+    "level": "School",
+    "entry_route": "Via School",
+    "tier1_urls": [
+      "https://sofworld.org/ico"
+    ],
+    "tier2_urls": [],
+    "tier3_urls": []
+  },
+  "SOF_ICSO": {
+    "name": "International Computer Science Olympiad (SOF)",
+    "subject": "Computer Science",
+    "level": "School",
+    "entry_route": "Via School",
+    "tier1_urls": [
+      "https://sofworld.org/icso"
+    ],
+    "tier2_urls": [],
+    "tier3_urls": []
+  },
+  "SOF_IGKO": {
+    "name": "International General Knowledge Olympiad (SOF)",
+    "subject": "General Knowledge",
+    "level": "School",
+    "entry_route": "Via School",
+    "tier1_urls": [
+      "https://sofworld.org/igko"
+    ],
+    "tier2_urls": [],
+    "tier3_urls": [
+      "https://www.pw.live/olympiad/exams/igko"
+    ]
+  },
+  "SOF_ISSO": {
+    "name": "International Social Studies Olympiad (SOF)",
+    "subject": "History",
+    "level": "School",
+    "entry_route": "Via School",
+    "tier1_urls": [
+      "https://sofworld.org/isso"
+    ],
+    "tier2_urls": [],
+    "tier3_urls": []
+  },
+  "SZ_iOM": {
+    "name": "Silverzone International Olympiad of Mathematics",
+    "subject": "Mathematics",
+    "level": "School",
+    "entry_route": "Via School",
+    "tier1_urls": [
+      "https://www.silverzone.org/",
+      "https://www.silverzone.org/iom"
+    ],
+    "tier2_urls": [],
+    "tier3_urls": []
+  },
+  "SZ_iOS": {
+    "name": "Silverzone International Olympiad of Science",
+    "subject": "Science",
+    "level": "School",
+    "entry_route": "Via School",
+    "tier1_urls": [
+      "https://www.silverzone.org/",
+      "https://www.silverzone.org/ios"
+    ],
+    "tier2_urls": [],
+    "tier3_urls": []
+  },
+  "SZ_iIO": {
+    "name": "Silverzone International Informatics Olympiad",
+    "subject": "Computer Science",
+    "level": "School",
+    "entry_route": "Via School",
+    "tier1_urls": [
+      "https://www.silverzone.org/",
+      "https://www.silverzone.org/iio"
+    ],
+    "tier2_urls": [],
+    "tier3_urls": []
+  },
+  "SZ_iOEL": {
+    "name": "Silverzone International Olympiad of English Language",
+    "subject": "English",
+    "level": "School",
+    "entry_route": "Via School",
+    "tier1_urls": [
+      "https://www.silverzone.org/",
+      "https://www.silverzone.org/ioel"
+    ],
+    "tier2_urls": [],
+    "tier3_urls": []
+  },
+  "SZ_SKGKO": {
+    "name": "Silverzone Smart Kid General Knowledge Olympiad",
+    "subject": "General Knowledge",
+    "level": "School",
+    "entry_route": "Via School",
+    "tier1_urls": [
+      "https://www.silverzone.org/",
+      "https://www.silverzone.org/skgko"
+    ],
+    "tier2_urls": [],
+    "tier3_urls": []
+  },
+  "UC_NSTSE": {
+    "name": "National Science Talent Search Examination",
+    "subject": "Science",
+    "level": "School",
+    "entry_route": "Via School",
+    "tier1_urls": [
+      "https://www.unifiedcouncil.com/"
+    ],
+    "tier2_urls": [],
+    "tier3_urls": [
+      "https://www.pw.live/olympiad/exams/nstse"
+    ]
+  },
+  "UC_UCO": {
+    "name": "Unified Cyber Olympiad",
+    "subject": "Computer Science",
+    "level": "School",
+    "entry_route": "Via School",
+    "tier1_urls": [
+      "https://www.unifiedcouncil.com/"
+    ],
+    "tier2_urls": [],
+    "tier3_urls": []
+  },
+  "UC_UIEO": {
+    "name": "Unified International English Olympiad",
+    "subject": "English",
+    "level": "School",
+    "entry_route": "Via School",
+    "tier1_urls": [
+      "https://www.unifiedcouncil.com/"
+    ],
+    "tier2_urls": [],
+    "tier3_urls": []
+  },
+  "UC_UIMO": {
+    "name": "Unified International Mathematics Olympiad",
+    "subject": "Mathematics",
+    "level": "School",
+    "entry_route": "Via School",
+    "tier1_urls": [
+      "https://www.unifiedcouncil.com/"
+    ],
+    "tier2_urls": [],
+    "tier3_urls": []
+  },
+  "NMTC_JR": {
+    "name": "National Math Talent Contest Junior",
+    "subject": "Mathematics",
+    "level": "School",
+    "entry_route": "Via School",
+    "tier1_urls": [
+      "https://www.mtai.org.in/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/National_Mathematics_Talent_Contest"
+    ],
+    "tier3_urls": [
+      "https://www.pw.live/olympiad/exams/nmtc"
+    ]
+  },
+  "NMTC_INTER": {
+    "name": "National Math Talent Contest Inter",
+    "subject": "Mathematics",
+    "level": "School",
+    "entry_route": "Via School",
+    "tier1_urls": [
+      "https://www.mtai.org.in/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/National_Mathematics_Talent_Contest"
+    ],
+    "tier3_urls": [
+      "https://www.pw.live/olympiad/exams/nmtc"
+    ]
+  },
+  "NMTC_SR": {
+    "name": "National Math Talent Contest Senior",
+    "subject": "Mathematics",
+    "level": "School",
+    "entry_route": "Via School",
+    "tier1_urls": [
+      "https://www.mtai.org.in/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/National_Mathematics_Talent_Contest"
+    ],
+    "tier3_urls": [
+      "https://www.pw.live/olympiad/exams/nmtc"
+    ]
+  },
+  "CREST_CMO": {
+    "name": "CREST Mathematics Olympiad",
+    "subject": "Mathematics",
+    "level": "School",
+    "entry_route": "Via School",
+    "tier1_urls": [
+      "https://www.crestolympiads.com/"
+    ],
+    "tier2_urls": [],
+    "tier3_urls": []
+  },
+  "CREST_CSO": {
+    "name": "CREST Science Olympiad",
+    "subject": "Science",
+    "level": "School",
+    "entry_route": "Via School",
+    "tier1_urls": [
+      "https://www.crestolympiads.com/"
+    ],
+    "tier2_urls": [],
+    "tier3_urls": []
+  },
+  "CREST_CEO": {
+    "name": "CREST English Olympiad",
+    "subject": "English",
+    "level": "School",
+    "entry_route": "Via School",
+    "tier1_urls": [
+      "https://www.crestolympiads.com/"
+    ],
+    "tier2_urls": [],
+    "tier3_urls": []
+  },
+  "CREST_CCO": {
+    "name": "CREST Cyber Olympiad",
+    "subject": "Computer Science",
+    "level": "School",
+    "entry_route": "Via School",
+    "tier1_urls": [
+      "https://www.crestolympiads.com/"
+    ],
+    "tier2_urls": [],
+    "tier3_urls": []
+  },
+  "CBSE_SC": {
+    "name": "CBSE Science Challenge",
+    "subject": "Science",
+    "level": "School",
+    "entry_route": "Via School",
+    "tier1_urls": [
+      "https://www.cbse.gov.in/"
+    ],
+    "tier2_urls": [],
+    "tier3_urls": []
+  },
+  "CBSE_HC": {
+    "name": "CBSE Heritage Challenge",
+    "subject": "History",
+    "level": "School",
+    "entry_route": "Via School",
+    "tier1_urls": [
+      "https://www.cbse.gov.in/"
+    ],
+    "tier2_urls": [],
+    "tier3_urls": []
+  },
+  "INOI": {
+    "name": "Indian National Olympiad in Informatics",
+    "subject": "Computer Science",
+    "level": "National",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://www.iarcs.org.in/inoi/",
+      "https://olympiads.hbcse.tifr.res.in/"
+    ],
+    "tier2_urls": [
+      "https://en.wikipedia.org/wiki/Indian_National_Olympiad_in_Informatics"
+    ],
+    "tier3_urls": []
+  },
+  "GOOGLE_CCE": {
+    "name": "Google Code Challenge for Education",
+    "subject": "Computer Science",
+    "level": "School",
+    "entry_route": "Independent",
+    "tier1_urls": [],
+    "tier2_urls": [],
+    "tier3_urls": []
+  },
+  "AI4ALL": {
+    "name": "AI for All Student Challenge",
+    "subject": "Computer Science",
+    "level": "School",
+    "entry_route": "Independent",
+    "tier1_urls": [
+      "https://ai4all.org/programs/ai-for-all-student-challenge/"
+    ],
+    "tier2_urls": [],
+    "tier3_urls": []
+  },
+  "HBCSE_NSO": {
+    "name": "HBCSE Science Olympiad",
+    "subject": "Science",
+    "level": "School",
+    "entry_route": "Via School",
+    "tier1_urls": [
+      "https://olympiads.hbcse.tifr.res.in/"
+    ],
+    "tier2_urls": [],
+    "tier3_urls": []
+  }
+}

@@ -1,0 +1,351 @@
+================================================================================
+  COMPETITION EXTRACTION SUMMARY
+  Generated: April 2026
+================================================================================
+
+
+================================================================================
+  1) OVERVIEW
+================================================================================
+
+  Source                     Input    Extracted    Success rate (Good+Avg)
+  ------------------------   ------   ----------   -----------------------
+  Devpost (HS hackathons)       26          26          ~100%
+  StudentCompetitions.com       26          26          ~96%
+  Deep Research (103 URLs)     103         103           72%
+  ------------------------   ------   ----------   -----------------------
+  TOTAL                        155         155           ~79%
+
+
+================================================================================
+  2) DEEP RESEARCH RESULTS (103 competitions)
+================================================================================
+
+  QUALITY DISTRIBUTION:
+
+    Tier             Count    %      Description
+    ---------------  -------  -----  -----------------------------------
+    Good (>=80%)     43       42%    Ready for UI — all key fields filled
+    Avg (50-79%)     31       30%    Usable — some detail fields missing
+    Poor (<50%)      29       28%    Unusable — need manual fix or drop
+    ---------------  -------  -----  -----------------------------------
+    TOTAL            103      100%
+
+    Success rate (Good + Avg): 72%
+    Usable competitions:       74 out of 103
+
+
+================================================================================
+  3) FIELD-WISE FILL RATE (103 deep research files, 20 UI fields)
+================================================================================
+
+  CARD VIEW (10 fields):
+
+    Field                     Filled   Fill%    Status
+    -------------------------  ------  -------  -------
+    activity_name              75      72.8%    OK
+    organizer                  77      74.8%    OK
+    organizer_logo              0       0.0%    Intentionally null
+    mode                       72      69.9%    OK
+    deadline                   38      36.9%    WEAK — many pages don't show
+    cost_chip                  72      69.9%    OK
+    cost                       69      67.0%    OK
+    domain                     74      71.8%    OK
+    team_size                  55      53.4%    Moderate
+    is_verified                90      87.4%    Good
+
+  DETAIL VIEW (10 fields):
+
+    Field                     Filled   Fill%    Status
+    -------------------------  ------  -------  -------
+    about_description          77      74.8%    OK
+    eligibility_text           72      69.9%    OK
+    how_to_apply               66      64.1%    OK
+    prizes_detail              48      46.6%    Moderate
+    prize_amount               17      16.5%    WEAK — many non-cash prizes
+    structure_format           68      66.0%    OK
+    judging_criteria           14      13.6%    WEAK — rarely published
+    submission_format          58      56.3%    Moderate
+    official_website           89      86.4%    Good
+    registration_url           88      85.4%    Good
+
+
+================================================================================
+  4) POOR QUALITY FILES (29 — need action)
+================================================================================
+
+  DEAD URLs / REDIRECTS (13 files — 0% fill):
+
+    cbse-expression-series
+    ecollectual-lsr
+    india-as-i-see-fairgaze
+    india-genius-challenge
+    john-locke-essay-prize
+    nasa-space-apps
+    national-library-logo-design
+    our-planet-our-stories
+    save-the-frogs-art
+    trai-dnd-reel-challenge
+    upu-letter-writing
+    winner-stories-unstop
+    world-mahabharatha-championship
+
+  THIN CONTENT / LANDING PAGES (14 files — 15-25% fill):
+
+    ambedkar-article-writing        (15%)
+    anthology-short-story           (20%)
+    anthology-travel-writing        (25%)
+    arteffect-student-art           (15%)
+    ayn-rand-essay-contest          (15%)
+    behes-debate                    (15%)
+    bharatiya-vidya-bhavan-quiz     (15%)
+    design-bioe3-challenge          (15%)
+    edujunior-short-story           (5%)
+    green-olympiad-teri             (15%)
+    robofest-india                  (15%)
+    teen-indie-film-awards          (15%)
+    think-essay-prize               (10%)
+    unesco-capture-the-future       (20%)
+
+  PARTIAL EXTRACTION (2 files — 45% fill):
+
+    edujunior-public-speaking       (45%)
+    ikcc-world-game-coding          (45%)
+
+
+================================================================================
+  5) IMPROVEMENTS APPLIED (Tier 1)
+================================================================================
+
+  Before Tier 1 improvements:
+    Success rate:       56% (45% poor)
+    Overall fill:       48.4%
+
+  After Tier 1 improvements (applied during run):
+    Success rate:       72% (28% poor)
+    Overall fill:       ~60%
+
+  Changes made:
+    - Wait time: 3s -> 8s after navigation (JS rendering time)
+    - Proactive subpage crawling (always, not just for thin content)
+    - Expanded subpage keywords: 25 (was 10)
+    - 404/DNS error detection: triggers fallback immediately
+    - Load-status polling (isLoading check)
+    - Smarter subpage selection: avoid duplicates, skip short paths
+
+
+================================================================================
+  6) KEY OBSERVATIONS
+================================================================================
+
+  WHAT WORKED WELL:
+    - Devpost pages: standard template, 93%+ success
+    - StudentCompetitions: structured site, 96%+ success
+    - Official competition sites with /about, /rules, /prizes subpages
+
+  WHAT FAILED:
+    - Dead URLs in input_deepresearch/ (13 — 12.6% of input)
+    - Blog-style pages (Scholastic World, Anthology) — thin landing pages
+    - Pages where info is in PDF brochures, not HTML
+    - Popup-heavy sites that block content extraction
+
+  COMMON FIELDS MISSING ACROSS ALL SOURCES:
+    - organizer_logo (0%): intentionally null, fetch via Clearbit API later
+    - prize_amount (16.5%): many competitions have non-cash prizes only
+    - judging_criteria (13.6%): competitions rarely publish rubrics
+    - deadline (36.9%): many pages announce dates elsewhere (social media, emails)
+
+
+================================================================================
+  7) NEXT STEPS
+================================================================================
+
+  Option A: DROP the 29 poor files
+    - Accept 74 usable deepresearch + 26 devpost + 26 studentcomp = 126 competitions
+    - Run filter_hs_only.py to filter out college-only ones
+    - Ship ~100-120 final competitions to UI
+
+  Option B: FIX the 29 poor files manually
+    - Find correct URLs via Google search (1 hour work)
+    - Re-run extraction with corrected URLs
+    - Expected yield: +15-20 usable competitions
+
+  Option C: GEMINI WEB SEARCH fallback for the 29
+    - Use Gemini with Google Search grounding to extract directly
+    - No scraping — Gemini searches and answers
+    - Same pattern as olympiad cost patch earlier
+    - Expected yield: +20-25 usable competitions
+
+
+================================================================================
+  8) FIELD-WISE FILL PERCENTAGE PER TIER (20 UI fields)
+================================================================================
+
+  === DEVPOST FILES After Patch (25 files) ===
+  Field                     Filled   Null     Fill%
+  --------------------------------------------------
+  activity_name             25       0        100.0%
+  organizer                 24       1        96.0%
+  organizer_logo            0        25       0.0%
+  mode                      25       0        100.0%
+  deadline                  25       0        100.0%
+  cost_chip                 25       0        100.0%
+  cost                      25       0        100.0%
+  domain                    25       0        100.0%
+  team_size                 24       1        96.0%   (was 88.0%)
+  is_verified               25       0        100.0%
+  about_description         25       0        100.0%
+  eligibility_text          25       0        100.0%
+  how_to_apply              25       0        100.0%
+  prizes_detail             25       0        100.0%
+  prize_amount              24       1        96.0%   (was 64.0%)
+  structure_format          25       0        100.0%
+  judging_criteria          20       5        80.0%   (was 72.0%)
+  submission_format         22       3        88.0%
+  official_website          25       0        100.0%
+  registration_url          25       0        100.0%
+  --------------------------------------------------
+  View            Before Patch   After Patch
+  Card view       ~88%           89.2%
+  Detail view     ~92%           96.4%
+  OVERALL UI      90.4%          92.8%   (+2.4%)
+
+
+  === GOOD FILES (deep research >=80%) (43 files) ===
+  Field                     Filled   Null     Fill%
+  --------------------------------------------------
+  activity_name             43       0        100.0%
+  organizer                 43       0        100.0%
+  organizer_logo            0        43       0.0%
+  mode                      43       0        100.0%
+  deadline                  32       11       74.4%
+  cost_chip                 43       0        100.0%
+  cost                      42       1        97.7%
+  domain                    42       1        97.7%
+  team_size                 39       4        90.7%
+  is_verified               43       0        100.0%
+  about_description         43       0        100.0%
+  eligibility_text          41       2        95.3%
+  how_to_apply              42       1        97.7%
+  prizes_detail             37       6        86.0%
+  prize_amount              15       28       34.9%
+  structure_format          43       0        100.0%
+  judging_criteria          12       31       27.9%
+  submission_format         40       3        93.0%
+  official_website          43       0        100.0%
+  registration_url          43       0        100.0%
+  --------------------------------------------------
+  OVERALL UI:               729/860 = 84.8%
+
+
+  === AVG FILES (deep research 50-79%) (31 files) ===
+  Field                     Filled   Null     Fill%
+  --------------------------------------------------
+  activity_name             30       1        96.8%
+  organizer                 31       0        100.0%
+  organizer_logo            0        31       0.0%
+  mode                      28       3        90.3%
+  deadline                  6        25       19.4%
+  cost_chip                 28       3        90.3%
+  cost                      26       5        83.9%
+  domain                    30       1        96.8%
+  team_size                 16       15       51.6%
+  is_verified               31       0        100.0%
+  about_description         31       0        100.0%
+  eligibility_text          29       2        93.5%
+  how_to_apply              23       8        74.2%
+  prizes_detail             11       20       35.5%
+  prize_amount              2        29       6.5%
+  structure_format          25       6        80.6%
+  judging_criteria          2        29       6.5%
+  submission_format         18       13       58.1%
+  official_website          31       0        100.0%
+  registration_url          31       0        100.0%
+  --------------------------------------------------
+  OVERALL UI:               429/620 = 69.2%
+
+
+  === AVG FILES — AFTER GEMINI 3 PATCH MERGE (31 files) ===
+  Patched fields filled via Gemini 3 Flash web search; merged into the
+  31 AVG records via merge_avg_patch.py (replaces 6 weak fields only,
+  preserves original schema). Output folder: extracted/avg_patched/
+  Field                     Filled   Null     Fill%    Δ vs Orig AVG
+  ----------------------------------------------------------------------
+  activity_name             30       1        96.8%        0
+  organizer                 31       0        100.0%       0
+  organizer_logo            0        31       0.0%         0
+  mode                      28       3        90.3%        0
+  deadline *                24       7        77.4%      +18  (+58.0 pp)
+  cost_chip                 28       3        90.3%        0
+  cost                      26       5        83.9%        0
+  domain                    30       1        96.8%        0
+  team_size *               31       0        100.0%     +15  (+48.4 pp)
+  is_verified               31       0        100.0%       0
+  about_description         31       0        100.0%       0
+  eligibility_text          29       2        93.5%        0
+  how_to_apply *            31       0        100.0%      +8  (+25.8 pp)
+  prizes_detail *           31       0        100.0%     +20  (+64.5 pp)
+  prize_amount *            31       0        100.0%     +29  (+93.5 pp)
+  structure_format          25       6        80.6%        0
+  judging_criteria          2        29       6.5%         0
+  submission_format *       31       0        100.0%     +13  (+41.9 pp)
+  official_website          31       0        100.0%       0
+  registration_url          31       0        100.0%       0
+  ----------------------------------------------------------------------
+  OVERALL UI:               532/620 = 85.8%   (+103 cells, +16.6 pp)
+
+  * = field replaced by Gemini 3 Flash web-search patch.
+
+  Notes:
+  - Merged AVG tier (85.8%) now exceeds the original GOOD tier fill (84.8%).
+  - 6 patched fields use Gemini 3 Flash with Google Search grounding;
+    full prompt + guardrails in patch_avg_weak_gemini.py.
+  - Remaining gaps: organizer_logo (intentional null, fetch via Clearbit
+    later), judging_criteria (rarely published), 7 deadlines where the
+    2026-27 cycle hasn't been announced yet.
+
+
+  === POOR FILES (deep research <50%) (29 files) ===
+  Field                     Filled   Null     Fill%
+  --------------------------------------------------
+  activity_name             2        27       6.9%
+  organizer                 3        26       10.3%
+  organizer_logo            0        29       0.0%
+  mode                      1        28       3.4%
+  deadline                  0        29       0.0%
+  cost_chip                 1        28       3.4%
+  cost                      1        28       3.4%
+  domain                    2        27       6.9%
+  team_size                 0        29       0.0%
+  is_verified               16       13       55.2%
+  about_description         3        26       10.3%
+  eligibility_text          2        27       6.9%
+  how_to_apply              1        28       3.4%
+  prizes_detail             0        29       0.0%
+  prize_amount              0        29       0.0%
+  structure_format          0        29       0.0%
+  judging_criteria          0        29       0.0%
+  submission_format         0        29       0.0%
+  official_website          15       14       51.7%
+  registration_url          14       15       48.3%
+  --------------------------------------------------
+  OVERALL UI:               61/580 = 10.5%
+
+
+  === SUMMARY COMPARISON ===
+
+  Tier       Files   Overall Fill%    Card View    Detail View
+  --------   -----   -------------    ---------    -----------
+  DEVPOST    25      90.4%            ~98%         ~92%
+  GOOD       43      84.8%            ~96%         ~83%
+  AVG        31      69.2%            ~83%         ~65%
+  POOR       29      10.5%            ~10%         ~11%
+  --------   -----   -------------    ---------    -----------
+  All 4      128     ~65%             ~80%         ~63%
+
+  Usable (Devpost + Good + Avg): 99 competitions at ~82% overall fill
+
+
+================================================================================
+  END OF REPORT
+================================================================================

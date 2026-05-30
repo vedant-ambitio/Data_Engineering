@@ -1,0 +1,703 @@
+================================================================================
+  COMPETITIONS — ACTIVITY FINDER DATA PLAN
+  Section 2 of Activity Finder (PDF Spec)
+  Generated: April 2026
+================================================================================
+
+  Data source: studentcompetitions.com/competitions + other public sources
+  Refresh: Weekly (deadlines change frequently)
+  Target: High school students (grades 8-12)
+
+
+================================================================================
+  1) ALL FIELDS REQUIRED (26 fields — revised April 2026)
+================================================================================
+
+  Based on PDF spec (Section 2: Competitions) + UI screenshots analysis.
+  Reduced from 33 to 26 fields. Dropped: urgency_chip (auto-computed),
+  tags (redundant), prize_headline (covered by prizes_detail),
+  prize_currency (included in prize_amount string),
+  registration_close_date (same as deadline), event_date, result_date.
+
+--------------------------------------------------------------------------------
+  A) CARD FIELDS (visible on listing page — 4 cards per row)
+--------------------------------------------------------------------------------
+
+  #  | Field              | Type           | UI location
+  ---|--------------------| ---------------|--------------------------------
+  1  | activity_name      | string         | Card title: "Conrad Challenge"
+  2  | organizer          | string         | Subtitle: "Conrad Foundation - USA"
+  3  | organizer_logo     | image URL      | Card top-left icon
+  4  | mode               | enum           | "Hybrid" / "Online" / "Offline"
+  5  | deadline           | date           | "10 April 2026"
+  6  | cost_chip          | enum           | "Free" / "Paid"
+  7  | cost               | string         | "Free" / "INR 500" / "$25"
+  8  | domain             | enum           | "STEM Research" / "STEM / Entrepreneurship"
+  9  | team_size          | string         | "Individual" / "2-5 members"
+  10 | is_verified        | boolean        | Green checkmark on card
+
+
+--------------------------------------------------------------------------------
+  B) DETAIL VIEW FIELDS (when card is clicked)
+--------------------------------------------------------------------------------
+
+  #  | Field                 | Type          | UI section
+  ---|---------------------- |---------------|-----------------------------------
+  11 | about_description     | text          | About this competition
+  12 | eligibility_text      | text          | Eligibility section
+  13 | how_to_apply          | text          | How to Apply
+  14 | prizes_detail         | text          | Full prize breakdown
+  15 | prize_amount          | string        | "Rs 1 Lakh" / "$10,000" (for sorting)
+  16 | structure_format      | text          | Structure & Format
+  17 | judging_criteria      | text          | Judging criteria
+  18 | submission_format     | string        | What to submit (video/report/prototype)
+  19 | official_website      | URL           | "Visit official website" link
+  20 | registration_url      | URL           | "Apply / Register" button
+
+
+--------------------------------------------------------------------------------
+  C) FILTER FIELDS (from UI dropdown screenshots)
+--------------------------------------------------------------------------------
+
+  Filter          Options (from Screenshot 2 & 3)
+  --------------- --------------------------------------------------
+  Domain          STEM, Business & Entrepreneurship, Coding & Technology,
+                  Writing & Literature, Arts & Design,
+                  Environment & Sustainability, Social Impact
+                  (Multi-select up to 3)
+
+  Team Size       Solo / Team (2-4) / Open team (5+)
+                  (Single select)
+
+  Search box      Search for Competition (top-right)
+  Saved toggle    Show saved only (top-right, per-user state)
+
+
+--------------------------------------------------------------------------------
+  D) BACKEND FIELDS (not shown in UI, needed for data/linking)
+--------------------------------------------------------------------------------
+
+  #  | Field                    | Type          | Purpose
+  ---|--------------------------|---------------|-----------------------------------
+  21 | competition_id           | string        | Unique ID (auto-generated)
+  22 | source_url               | URL           | Where we found it (devpost/dublieu)
+  23 | registration_open_date   | date          | When registration opens
+  24 | country                  | string        | "USA" / "India" / "Global"
+  25 | grade_levels             | array[int]    | [8, 9, 10, 11, 12]
+  26 | age_limit                | string        | "14-18" or "No age limit"
+
+  Auto-generated (not scraped):
+    - competition_id          (UUID, auto)
+    - urgency_chip            (computed from deadline vs today)
+    - last_scraped            (timestamp, auto)
+    - source_platform         (which source it came from, auto)
+
+
+================================================================================
+  COMPLETE FIELD LIST (TOTAL: 26 fields)
+================================================================================
+
+  Card view (10 fields):
+    activity_name, organizer, organizer_logo, mode, deadline,
+    cost_chip, cost, domain, team_size, is_verified
+
+  Detail view (10 fields):
+    about_description, eligibility_text, how_to_apply,
+    prizes_detail, prize_amount, structure_format,
+    judging_criteria, submission_format,
+    official_website, registration_url
+
+  Backend (6 fields):
+    competition_id*, source_url, registration_open_date,
+    country, grade_levels, age_limit
+
+  * = auto-generated, not scraped
+  Fields to actually extract: 23 (26 minus 3 auto-generated)
+
+  UI verification:
+    - Every card element from screenshots: covered
+      (title, organizer+country, logo, mode, deadline,
+       cost chip, domain chip, team size chip, verified badge)
+    - Every filter: covered (domain, team_size, search)
+    - Every detail section: covered (about, eligibility,
+      how to apply, prizes, structure, judging, submission,
+      official website link, apply/register button)
+
+
+================================================================================
+  2) UI FIELD MAPPING — WHAT POWERS WHAT
+================================================================================
+
+  CARD VIEW (listing page):
+    Top-left:       organizer_logo
+    Title:          activity_name + verified checkmark
+    Subtitle:       organizer + country
+    Left column:    Mode (Hybrid/Online/Offline) label
+    Right column:   Deadline with date
+    Bottom:         "What to know" tags = [cost_chip, domain tags, team_size]
+
+  FILTER BAR:
+    Domain dropdown:   domain field (multi-select up to 3)
+    Team Size dropdown: team_size field (single select)
+    Search:            searches activity_name + organizer
+    Saved:             is_saved per-user toggle
+
+  DETAIL VIEW (when clicked):
+    About:             about_description
+    Eligibility:       eligibility_text + age_limit + grade_levels
+    Structure:         structure_format
+    How to Apply:      how_to_apply + registration_url
+    Prizes:            prize_headline + prizes_detail
+    Judging:           judging_criteria
+    Submission:        submission_format
+
+
+================================================================================
+  3) DOMAIN MAPPING (from screenshot filter dropdown)
+================================================================================
+
+  UI Domain                        Maps to tags from source
+  -------------------------------- ----------------------------------------
+  STEM                             science, technology, engineering, math,
+                                   robotics, research, innovation
+  Business & Entrepreneurship      business, entrepreneurship, startup,
+                                   finance, marketing, social enterprise
+  Coding & Technology              coding, programming, hackathon, app dev,
+                                   AI, machine learning, cybersecurity
+  Writing & Literature             writing, essay, poetry, journalism,
+                                   creative writing, blogging
+  Arts & Design                    art, design, photography, filmmaking,
+                                   animation, graphic design, music
+  Environment & Sustainability     environment, climate, sustainability,
+                                   green energy, conservation, ecology
+  Social Impact                    social impact, community service,
+                                   human rights, education, health
+
+
+================================================================================
+  4) TEAM SIZE MAPPING (from screenshot filter dropdown)
+================================================================================
+
+  UI Team Size         Means
+  -------------------- -------------------------------------------
+  Solo                 Individual participation (team_size = 1)
+  Team (2-4)           Small team (team_size = 2, 3, or 4)
+  Open team (5+)       Large team or flexible (team_size >= 5)
+
+
+================================================================================
+  5) TAGS / "WHAT TO KNOW" CHIPS
+================================================================================
+
+  The "What to know" section on each card shows 2-3 chips from:
+
+  Chip                  Source field         Example
+  --------------------- -------------------- --------
+  "Free"                cost_chip = Free     Always shown if free
+  "Paid"                cost_chip = Paid     Always shown if paid
+  "STEM"                domain               Domain tag
+  "STEM / Entrep."      domain (combined)    When competition spans domains
+  "STEM Research"       domain + format      When it's research-based
+  "Individual"          team_size = Solo     When solo participation
+  "2-5 members"         team_size            When team-based
+  "Online"              mode                 Sometimes shown as chip
+
+
+================================================================================
+  6) DATA SOURCES — RESEARCHED & VERIFIED (REVISED April 2026)
+================================================================================
+
+  KEY FINDING: No single platform aggregates high school competitions well.
+  Unlike college students (who have unstop.com with 500+ listings), school
+  students (class 8-12) have NO dedicated competition aggregator.
+
+  THREE VIABLE SCRAPED SOURCES:
+
+    Source                     Total    HS eligible  Domains
+    -------------------------  -------  -----------  -------
+    devpost.com                200-300  26           Coding/hackathons ONLY
+    studentcompetitions.com    23       ~5           All domains (but tiny)
+    dublieu.com                7        ~3-4         Mixed (art, writing, essay)
+
+  Combined scraping yield: ~35 HS competitions.
+  35 is not enough. And 26 of those are coding-only from devpost.
+  For STEM, Writing, Art, Business, Environment, Social Impact —
+  these platforms give almost nothing.
+
+  SOLUTION: TWO-LAYER APPROACH (Scrape + Gemini Discovery)
+  ─────────────────────────────────────────────────────────
+
+  LAYER 1 — AUTOMATED SCRAPING (3 sources, weekly refresh)
+
+    Source                  Method                   HS Yield   Refresh   Domains
+    ----------------------  -----------------------  ---------  --------  -------
+    devpost.com             GitHub scraper            ~26       Weekly    Coding only
+                            (Metruption/hackathon-
+                            scraper) + search filter
+                            "high school"
+    studentcompetitions.com Static HTML, 3 pages      ~5        Weekly    All (tiny)
+                            Filter: education=HS
+    dublieu.com             Static HTML               ~4        Weekly    Mixed
+                            Filter: School Students
+    ----------------------  -----------------------  ---------  --------  -------
+    SUBTOTAL (Layer 1)                                ~35       Weekly
+
+    devpost data quality is excellent (28-30/33 fields per hackathon):
+      - name, organizer, deadline, prizes, eligibility, judging criteria,
+        submission format, themes — all on one page
+      - All free (no paid registration issue)
+      - Pre-built GitHub scrapers exist
+      - Each hackathon has its own subdomain (hackamerica.devpost.com)
+
+    studentcompetitions & dublieu are thin but give non-coding competitions
+    (art, writing, essay, business) that devpost doesn't have.
+
+
+  LAYER 2 — GEMINI DISCOVERY (per domain, monthly refresh)
+
+    Same pattern as Summer Schools discover_programs.py:
+    Ask Gemini (web-grounded) for each of the 7 UI domains.
+
+    Prompt per domain:
+      "List all currently open or upcoming competitions in 2026
+       for Indian high school students (class 8-12) in the domain:
+       [STEM / Business / Coding / Writing / Arts / Environment / Social Impact].
+       Include: competition name, organizer, deadline, official URL,
+       eligibility, mode (online/offline), cost (free/paid).
+       Only list competitions you are confident exist — no fabrication."
+
+    Expected yield per domain:
+
+      Domain                         Gemini yield   Examples
+      ----------------------------   ------------   --------
+      STEM                           20-30          IRIS, ISEF, DST Inspire Awards,
+                                                    CSIR Innovation, Techfest IIT,
+                                                    Science Olympiad Foundation,
+                                                    Google Science Fair
+      Business & Entrepreneurship    10-15          TiE Young, Diamond Challenge,
+                                                    Conrad Challenge, DECA,
+                                                    NFTE, Young Enterprise
+      Coding & Technology            15-25          (overlaps with devpost Layer 1)
+                                                    InCTF Junior, HackerEarth,
+                                                    CodeChef, NASA Space Apps
+      Writing & Literature           10-20          Tata Essay, Queen's Commonwealth,
+                                                    Scholastic Writing, Lumiere,
+                                                    Heartfulness Essay
+      Arts & Design                  10-15          Shankar's Art, All India Drawing,
+                                                    FairGaze Paint India, NSI Art,
+                                                    ConnectHER Film Festival
+      Environment & Sustainability   8-12           Eco-Schools, Green Olympiad,
+                                                    Stockholm Jr Water Prize,
+                                                    National Climate Innovation
+      Social Impact                  8-12           Veer Gatha, Bharat Innovation,
+                                                    UN75 Dialog, Peace First
+      ----------------------------   ------------   --------
+      SUBTOTAL (Layer 2)             81-129
+
+    After Gemini discovery:
+      a) Validate URLs (HTTP HEAD — alive or dead?)
+      b) Deduplicate against Layer 1 (remove overlaps)
+      c) Scrape each official URL
+      d) Gemini extract 33 fields from scraped content
+      e) Filter: HS eligible, cost < INR 2000, deadline not passed
+
+
+  COMBINED YIELD:
+
+    Layer                 Yield     Refresh    Coverage
+    --------------------  --------  ---------  --------
+    Layer 1 (scrapers)    ~35       Weekly     Coding heavy (devpost)
+    Layer 2 (Gemini)      ~100-130  Monthly    All 7 domains
+    Dedup overlap         -10-15    —          Coding overlaps
+    --------------------  --------  ---------  --------
+    TOTAL                 ~120-150  Rolling    All domains covered
+
+  DOMAIN COVERAGE (combined):
+
+    Domain                       Layer 1   Layer 2   Total
+    ---------------------------  --------  --------  -----
+    STEM                          2-3      20-30     22-33
+    Business & Entrepreneurship   1-2      10-15     11-17
+    Coding & Technology          26        15-25     30-40*
+    Writing & Literature          2-3      10-20     12-23
+    Arts & Design                 1-2      10-15     11-17
+    Environment & Sustainability  0-1       8-12      8-13
+    Social Impact                 0-1       8-12      8-13
+    ---------------------------  --------  --------  -----
+    TOTAL                        ~35       ~100      ~120-150
+
+    * After dedup (devpost + Gemini coding overlap)
+
+    No domain filter returns empty — every domain has 8+ results.
+
+
+  FILTERING RULES (both layers):
+    - High school eligible only (age 14-18 or "open to all" with no min age)
+    - Exclude paid registration above INR 2,000 / USD 25
+    - Exclude university-specific events not open to HS students
+    - Deduplicate across layers (same competition from scraper + Gemini)
+    - Local cache to avoid rate limiting
+    - Deadline must be in the future
+
+
+
+================================================================================
+  7) TARGET: 120-150 COMPETITIONS
+================================================================================
+
+  REVISED from original 250-300 target. Why the change:
+
+    Reality check (April 2026):
+      - devpost: 26 HS hackathons (coding only)
+      - dublieu: 7 total listings, ~4 HS
+      - studentcompetitions: 23 total, ~5 HS
+      Combined scraping yield: ~35
+
+  WHY 120-150 IS THE RIGHT TARGET:
+
+    Number      What happens
+    ---------   -------------------------------------------------
+    35          Only coding hackathons. Other domains empty.
+    120-150     Every domain has 8-30 results. Viable filter UX.
+                Mix of prestigious + accessible. Monthly refresh
+                keeps it fresh (competitions have longer cycles
+                than originally assumed — many run annually).
+    250+        Would require including low-quality/spam competitions,
+                certificate mills, or college-only events relabeled.
+                Not achievable with verified HS-only data.
+
+  PER-DOMAIN BREAKDOWN:
+
+    Domain                        Prestigious  Mid-tier  Accessible  Total
+    ----------------------------  -----------  --------  ----------  -----
+    STEM                           5-8         8-12      8-12       21-32
+    Business & Entrepreneurship    3-5         4-6       4-6        11-17
+    Coding & Technology            8-12        10-15     10-15      28-42
+    Writing & Literature           3-5         4-8       5-10       12-23
+    Arts & Design                  3-5         4-6       4-6        11-17
+    Environment & Sustainability   2-3         3-5       3-5         8-13
+    Social Impact                  2-3         3-5       3-5         8-13
+    ----------------------------  -----------  --------  ----------  -----
+    TOTAL                         26-41       36-57     37-59      99-157
+
+  FILTER COVERAGE:
+    Every domain: 8+ results (no empty filters)
+    Every team size: 10+ results (most competitions allow both solo + team)
+    Pagination: 120 / 8 cards per page = 15 pages — good for browsing
+
+  REFRESH CYCLE:
+    Unlike the original plan (weekly refresh for 300 competitions),
+    the revised approach is more practical:
+      - Layer 1 (scrapers): Weekly — devpost/dublieu/studentcompetitions
+      - Layer 2 (Gemini): Monthly — re-discover, diff against existing
+      - Many competitions are annual (ISEF, Conrad, Tata Essay) — they
+        don't expire weekly, they have fixed annual deadlines
+      - Monthly refresh catches ~10-20 new competitions, ~10-15 expire
+
+
+
+================================================================================
+  9) FIELD COVERAGE ESTIMATE PER SOURCE
+================================================================================
+
+  Two data paths feed into the system. Each has different field coverage:
+
+  PATH A — SCRAPED SOURCES (Layer 1)
+
+    Source               Listing page  Detail page   + Gemini      Coverage
+    -------------------  ------------  ------------  -----------   --------
+    devpost.com          24-26 / 33    same page     27-29 / 33    82-88%
+                                       (all details  (+3 fields)   (richest)
+                                        on one page)
+    studentcompetitions  10-12 / 33    16-18 / 33    20-22 / 33    61-67%
+                                       (+6 fields)   (+4 fields)
+    dublieu.com          10-12 / 33    14-16 / 33    18-20 / 33    55-61%
+                                       (+4 fields)   (+4 fields)
+
+    devpost is the star — each hackathon page includes name, organizer,
+    dates, prizes, eligibility, judging criteria, submission format, themes,
+    and participant count. All on one page. 28-30 fields without Gemini.
+
+  PATH B — GEMINI DISCOVERY (Layer 2)
+
+    Gemini discovers competitions and provides basic fields:
+      name, organizer, deadline, URL, eligibility, mode, cost = 7 fields
+
+    Then we scrape each official URL and send to Gemini for full extraction:
+
+    Stage                Fields    Coverage
+    -------------------  --------  --------
+    Gemini discovery     7 / 33    21%
+    + Official page      20-24     61-73%
+    + Gemini extraction  25-28     76-85%
+
+    Official competition pages (ISEF, Conrad, Tata Essay) are detailed —
+    they show eligibility, prizes, judging, submission format, deadlines.
+    Similar coverage to university pages in Summer Schools.
+
+  EXPECTED FINAL COVERAGE FOR UI:
+
+    View                 Layer 1 (scraped)  Layer 2 (Gemini+scrape)  Blended
+    -------------------  -----------------  -----------------------  -------
+    Card (12 fields)     ~90-95%            ~85-90%                  ~88%
+    Detail (8 fields)    ~75-85%            ~65-75%                  ~72%
+    Backend (13 fields)  ~65-75%            ~55-65%                  ~62%
+    Overall              ~78%               ~70%                     ~74%
+
+  KEY GAPS:
+    judging_criteria    — only devpost consistently provides this
+    submission_format   — only devpost consistently provides this
+    prize_amount        — often in text ("win Rs 1L") not structured
+    registration dates  — many competitions don't publish open dates
+
+
+================================================================================
+  10) SCRAPING APPROACH & FLOW (REVISED)
+================================================================================
+
+  TWO-LAYER ARCHITECTURE — Scrape + Discover.
+
+  Unlike the olympiad scraper (fixed 62 olympiads, one script), competitions
+  need two separate scripts that feed into a shared merge pipeline.
+
+--------------------------------------------------------------------------------
+  FLOW DIAGRAM
+--------------------------------------------------------------------------------
+
+  LAYER 1: AUTOMATED SCRAPING (weekly)
+  ─────────────────────────────────────
+
+    ┌──────────────────────────┐
+    │  devpost.com             │ → search "high school" filter
+    │  (~26 HS hackathons)     │   scrape each hackathon subdomain page
+    │                          │   (hackamerica.devpost.com, etc.)
+    │  GitHub scraper:         │   → raw text per hackathon
+    │  Metruption/hackathon-   │
+    │  scraper (Python, JSON)  │
+    └──────────────────────────┘
+              │
+    ┌──────────────────────────┐
+    │  studentcompetitions.com │ → scrape 3 pages (23 listings)
+    │  (~5 HS eligible)        │   filter: education = High School
+    │                          │   fetch each detail page
+    │  Static HTML scraping    │   → raw text per competition
+    └──────────────────────────┘
+              │
+    ┌──────────────────────────┐
+    │  dublieu.com             │ → scrape listing page
+    │  (~4 HS eligible)        │   filter: School Students
+    │                          │   fetch each detail page
+    │  Static HTML scraping    │   → raw text per competition
+    └──────────────────────────┘
+
+              ↓ ~35 competitions raw text
+
+  LAYER 2: GEMINI DISCOVERY (monthly)
+  ────────────────────────────────────
+
+    Same pattern as Summer Schools discover_programs.py:
+
+    ┌──────────────────────────┐
+    │  For each of 7 domains:  │
+    │                          │
+    │  STEM                    │  Gemini prompt (web-grounded):
+    │  Business & Entrep.      │  "List all currently open or upcoming
+    │  Coding & Technology     │   competitions in 2026 for Indian high
+    │  Writing & Literature    │   school students (class 8-12) in the
+    │  Arts & Design           │   domain: [DOMAIN]. Include: name,
+    │  Environment & Sustain.  │   organizer, deadline, official URL,
+    │  Social Impact           │   eligibility, mode, cost."
+    │                          │
+    └──────────────────────────┘
+              │
+              ↓ ~100-130 competitions discovered
+              │
+    ┌──────────────────────────┐
+    │  URL Validation          │  HTTP HEAD check — alive or dead?
+    │                          │  Homepage detection (strip generic URLs)
+    └──────────────────────────┘
+              │
+    ┌──────────────────────────┐
+    │  Scrape official pages   │  Fetch each competition's official site
+    │                          │  (same as olympiad approach)
+    └──────────────────────────┘
+              │
+              ↓ raw text per competition
+
+
+  SHARED PIPELINE (both layers feed into this)
+  ─────────────────────────────────────────────
+
+  STEP A: GEMINI EXTRACTION
+    For each competition's raw text:
+      → Send to Gemini with 33-field schema prompt
+      → Get structured JSON back
+      → Tag with source (devpost / studentcompetitions / dublieu / gemini_discovery)
+
+  STEP B: DEDUPLICATE
+    Same competition may appear in both layers:
+      "Conrad Challenge" on dublieu (Layer 1) + Gemini discovery (Layer 2)
+
+    Dedup logic:
+      → Match by competition name (fuzzy) + organizer
+      → If duplicate, MERGE: keep version with more fields filled
+      → Priority: Official page > devpost > Layer 1 scraped > Gemini basic
+      → Result: one record per competition with best data
+
+  STEP C: VALIDATE & FILTER
+    → Remove competitions with deadline in the past
+    → Remove paid registration > INR 2,000 / USD 25
+    → Remove college-only (not open to class 8-12)
+    → Check required fields (name, domain, deadline)
+    → Map domain to UI enum (STEM / Business / Coding / Writing / Arts /
+      Environment / Social Impact) — Gemini does this from tags
+
+  STEP D: SAVE OUTPUT
+    competition_data/
+      raw/                    ← one JSON per competition (UI-ready)
+        conrad-challenge.json
+        isef-2026.json
+        hackamerica.json
+        ...
+      qa/                     ← QA sidecar per competition
+      _summary.json           ← batch stats (total, per-source, coverage)
+      _duplicates.json        ← log of merged duplicates
+
+
+  REFRESH SCHEDULE:
+  ─────────────────
+
+    Weekly (Layer 1):
+      1. Re-scrape devpost / studentcompetitions / dublieu
+      2. Compare with existing:
+         New → add, Updated deadline → update, Expired → mark "closed"
+      3. Gemini extract only for new/changed competitions
+      4. ~15 min automated
+
+    Monthly (Layer 2):
+      1. Re-run Gemini discovery for all 7 domains
+      2. Diff against existing data:
+         New competitions → add (scrape + extract)
+         Removed → flag for removal
+         Same → no action
+      3. Content team reviews ONLY the diff (~10-20 changes)
+      4. ~1-2 hours (automated + review)
+
+
+--------------------------------------------------------------------------------
+  SCRIPT STRUCTURE
+--------------------------------------------------------------------------------
+
+  TWO SCRIPTS (not one unified scraper):
+
+  1) competition_scraper.py (Layer 1 — weekly)
+     │
+     ├── fetch_devpost()        → GitHub scraper + "high school" search
+     │                            scrape each subdomain page
+     │                            returns list of raw competition dicts
+     │
+     ├── fetch_studentcomp()    → static HTML, 3 pages, HS filter
+     │                            returns list of raw competition dicts
+     │
+     ├── fetch_dublieu()        → static HTML, School Students filter
+     │                            returns list of raw competition dicts
+     │
+     ├── gemini_extract()       → 33-field schema extraction
+     │
+     ├── deduplicate()          → fuzzy name match, merge best fields
+     │
+     ├── validate_and_filter()  → remove expired, paid, college-only
+     │
+     └── save_output()          → write raw/ + qa/ + summary
+
+  2) discover_competitions.py (Layer 2 — monthly)
+     │
+     ├── discover_by_domain()   → Gemini web-grounded per domain
+     │                            (same pattern as discover_programs.py)
+     │
+     ├── validate_urls()        → HTTP HEAD check, homepage detection
+     │
+     ├── scrape_official()      → fetch each competition's official page
+     │
+     ├── gemini_extract()       → 33-field schema extraction
+     │
+     ├── merge_with_existing()  → diff against current competition_data/
+     │
+     └── save_output()          → write raw/ + qa/ + summary
+
+  CLI usage:
+    python competition_scraper.py                  # Layer 1 weekly scrape
+    python competition_scraper.py --source devpost # one source only
+    python discover_competitions.py                # Layer 2 full discovery
+    python discover_competitions.py --domain STEM  # one domain only
+
+
+--------------------------------------------------------------------------------
+  HOW THIS COMPARES TO OTHER SECTIONS
+--------------------------------------------------------------------------------
+
+  Section         Approach              Scripts   Refresh   Target
+  ----------      --------------------  --------  --------  ------
+  Olympiads       Fixed list + scrape   1         Annual    56
+  Competitions    Scrape + Discover     2         Wk + Mo   120-150
+  Summer Schools  Discover + scrape     2         Annual    150-200
+  Internships     Internshala scrape    1         Weekly    50-65
+  Volunteering    iVolunteer + scrape   1         Weekly    100-130
+
+  Competitions is the most complex section because:
+    - No single good source exists (unlike Internshala for internships)
+    - Need two layers (scrape + discover) to reach viable count
+    - Weekly + monthly refresh (competitions expire faster than others)
+    - 7 distinct domains to cover (vs olympiads: just "olympiads")
+
+
+================================================================================
+  11) EXTRACTION RESULTS — DEVPOST (26 files, April 2026)
+================================================================================
+
+  Source: devpost.com (26 HS hackathons via BrowserOS + Gemini extraction)
+
+  FIELD-WISE FILL PERCENTAGE (20 UI fields):
+
+    Field                     Filled   Null     Fill%
+    ------------------------  -------  -------  ------
+    CARD VIEW (85.0%):
+    activity_name             25       1        96.2%
+    organizer                 24       2        92.3%
+    organizer_logo             0       26        0.0%  (intentionally null)
+    mode                      25       1        96.2%
+    deadline                  25       1        96.2%
+    cost_chip                 25       1        96.2%
+    cost                      25       1        96.2%
+    domain                    25       1        96.2%
+    team_size                 22       4        84.6%
+    is_verified               25       1        96.2%
+
+    DETAIL VIEW (88.8%):
+    about_description         25       1        96.2%
+    eligibility_text          25       1        96.2%
+    how_to_apply              25       1        96.2%
+    prizes_detail             25       1        96.2%
+    prize_amount              16       10       61.5%
+    structure_format          25       1        96.2%
+    judging_criteria          18       8        69.2%
+    submission_format         22       4        84.6%
+    official_website          25       1        96.2%
+    registration_url          25       1        96.2%
+
+    OVERALL UI:               452/520 = 86.9%
+    Excluding organizer_logo: 452/494 = 91.5%
+
+  NOTES:
+    - 1 file has all nulls (likely broken extraction — re-run needed)
+    - prize_amount (61.5%): many hackathons have non-cash prizes only
+    - judging_criteria (69.2%): some hackathons don't publish criteria
+    - organizer_logo (0%): intentionally set to null, logos fetched separately
+    - studentcompetitions.com extraction pending (26 more files)
+
+
+================================================================================
+  END OF REPORT
+================================================================================
+python browser_extract.py --config prompts/competition_studentcomp_config.json --skip-existing
+python browser_extract.py --config  prompts/competition_studentcomp_config.json

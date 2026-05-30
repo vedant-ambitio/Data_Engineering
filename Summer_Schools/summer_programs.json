@@ -1,0 +1,197 @@
+{
+  "_metadata": {
+    "generated": "2026-04-14T19:37:51.038180",
+    "total_universities": 12,
+    "total_programs": 47,
+    "verified_urls": 14,
+    "dead_urls": 30,
+    "india_programs": 7,
+    "online_programs": 7
+  },
+  "universities": {
+    "IIT_BOMBAY": {
+      "university": "IIT Bombay",
+      "region": "India",
+      "programs": [
+        {
+          "program_name": "Young Innovator Program (YIP)",
+          "program_url": "https://ecell.in/yip/",
+          "mode": "In-person",
+          "duration": "10 days",
+          "cost_estimate": "INR 15,000",
+          "url_verified": true
+        }
+      ]
+    },
+    "IIT_MADRAS": {
+      "university": "IIT Madras",
+      "region": "India",
+      "programs": [
+        {
+          "program_name": "CFI Summer Camp",
+          "program_url": "https://cfi.iitm.ac.in/summer-camp/",
+          "mode": "In-person",
+          "duration": "1 week",
+          "cost_estimate": "INR 10,000",
+          "url_verified": true
+        }
+      ]
+    },
+    "ASHOKA": {
+      "university": "Ashoka University",
+      "region": "India",
+      "programs": [
+        {
+          "program_name": "Young Scholars Program",
+          "program_url": "https://www.ashoka.edu.in/ysp/",
+          "mode": "In-person",
+          "duration": "2 weeks",
+          "cost_estimate": "INR 1,25,000",
+          "url_verified": true
+        }
+      ]
+    },
+    "FLAME": {
+      "university": "FLAME University",
+      "region": "India",
+      "programs": [
+        {
+          "program_name": "FLAME Summer Immersion Program",
+          "program_url": "https://www.flame.edu.in/academics/summer-immersion-program",
+          "mode": "In-person",
+          "duration": "2 weeks",
+          "cost_estimate": "INR 1,25,000",
+          "url_verified": true
+        }
+      ]
+    },
+    "JINDAL": {
+      "university": "O.P. Jindal Global University",
+      "region": "India",
+      "programs": [
+        {
+          "program_name": "Jindal Global Summer School",
+          "program_url": "https://jgu.edu.in/jindal-global-summer-school/",
+          "mode": "In-person",
+          "duration": "2 weeks",
+          "cost_estimate": "INR 1,20,000 - 1,50,000",
+          "url_verified": true
+        }
+      ]
+    },
+    "BENNETT": {
+      "university": "Bennett University",
+      "region": "India",
+      "programs": [
+        {
+          "program_name": "Bennett University Summer School",
+          "program_url": "https://www.bennett.edu.in/admissions/summer-school/",
+          "mode": "In-person",
+          "duration": "2 weeks",
+          "cost_estimate": "INR 70,000 - 90,000",
+          "url_verified": true
+        }
+      ]
+    },
+    "ISRO_YUVIKA": {
+      "university": "ISRO (YUVIKA Programme)",
+      "region": "India",
+      "programs": [
+        {
+          "program_name": "YUVIKA (Young Scientist Programme)",
+          "program_url": "https://www.isro.gov.in/YUVIKA.html",
+          "mode": "In-person",
+          "duration": "2 weeks",
+          "cost_estimate": "Free",
+          "url_verified": true
+        }
+      ]
+    },
+    "HARVARD": {
+      "university": "Harvard University",
+      "region": "Online",
+      "programs": [
+        {
+          "program_name": "Secondary School Program (Online)",
+          "program_url": "https://summer.harvard.edu/high-school-programs/secondary-school-program/",
+          "mode": "Online",
+          "duration": "3 or 7 weeks",
+          "cost_estimate": "$3,600 - $7,200",
+          "url_verified": true
+        },
+        {
+          "program_name": "Pre-College Program (Online)",
+          "program_url": "https://summer.harvard.edu/high-school-programs/pre-college-program/",
+          "mode": "Online",
+          "duration": "2 weeks",
+          "cost_estimate": "$5,000",
+          "url_verified": true
+        }
+      ]
+    },
+    "BU": {
+      "university": "Boston University",
+      "region": "Online",
+      "programs": [
+        {
+          "program_name": "Summer Term for High School Students (Online Courses)",
+          "program_url": "https://www.bu.edu/summer/high-school-programs/online-courses/",
+          "mode": "Online",
+          "duration": "6 weeks",
+          "cost_estimate": "$3,500 - $4,000 per course",
+          "url_verified": true
+        }
+      ]
+    },
+    "NYU": {
+      "university": "New York University",
+      "region": "Online",
+      "programs": [
+        {
+          "program_name": "NYU Precollege (Online Courses)",
+          "program_url": "https://www.nyu.edu/admissions/undergraduate-admissions/precollege/online-courses.html",
+          "mode": "Online",
+          "duration": "6 weeks",
+          "cost_estimate": "$6,000 - $8,000 per course",
+          "url_verified": true
+        }
+      ]
+    },
+    "CAMBRIDGE": {
+      "university": "University of Cambridge",
+      "region": "Online",
+      "programs": [
+        {
+          "program_name": "Pre-University Online Programme: Arts and Humanities",
+          "program_url": "https://www.ice.cam.ac.uk/courses/pre-university-online-programme-arts-and-humanities",
+          "mode": "Online",
+          "duration": "2 weeks",
+          "cost_estimate": "Â£2,500",
+          "url_verified": true
+        },
+        {
+          "program_name": "Pre-University Online Programme: Sciences",
+          "program_url": "https://www.ice.cam.ac.uk/courses/pre-university-online-programme-sciences",
+          "mode": "Online",
+          "duration": "2 weeks",
+          "cost_estimate": "Â£2,500",
+          "url_verified": true
+        }
+      ]
+    },
+    "UCL": {
+      "university": "University College London",
+      "region": "Online",
+      "programs": [
+        {
+          "program_name": "UCL Pre-University Online Course",
+          "program_url": "https://www.ucl.ac.uk/languages-international-education/short-summer-courses/pre-university-online-course",
+          "mode": "Online",
+          "duration": "2 weeks",
+          "cost_estimate": "Â£2,500",
+          "url_verified": true
+        }
+      ]
+    }
+  }
+}

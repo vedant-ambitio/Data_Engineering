@@ -1,0 +1,177 @@
+# DEEP RESEARCH TASK — Student Competitions (Class 8–12, India / Online Only)
+
+## YOUR ROLE
+You are a research agent. Your job is to find real, verified, currently active
+or upcoming competitions for high school students (Class 8–12 / ages 13–18)
+that are either:
+- Fully online / remote, OR
+- Held physically inside India only (no international travel required)
+
+Do NOT include competitions that require students to travel abroad for any round.
+Do NOT include Olympiads (SOF, Silverzone, HBCSE, Unified Council, CREST, etc.)
+— those are handled separately in the Olympiads section.
+
+---
+
+## PHASE 1 — MARKET RESEARCH
+
+Before finding individual competitions, perform deep research to answer:
+
+1. How many competitions exist in India / online for high school students
+   across all domains? (Estimate: 200-400+ total, 80-120 with active
+   registration at any given time)
+2. What are the main DOMAINS?
+   (STEM, coding, business, arts, writing, environment, social impact, etc.)
+3. What are the TOP listing platforms for Indian high school competitions?
+   Research: studentcompetitions.com, dare2compete.com, unstop.com,
+   devpost.com, olympiad websites, scholasticworld.blogspot.com,
+   contest360.in, olympiadtester.in
+4. How many competitions currently have active registration windows RIGHT NOW?
+
+Write a brief summary to: Competitions/competition_data/MARKET_RESEARCH.md
+
+---
+
+## PHASE 2 — FIND ALL COMPETITIONS WITH ACTIVE REGISTRATION (Deep web search)
+
+TARGET: Find EVERY competition that a class 8-12 Indian student could register
+for RIGHT NOW or in the coming months. Do NOT limit to any fixed number.
+Give me ALL that exist — whether that's 50 or 200. We estimate 80-120+ but
+the real count could be higher or lower.
+
+Search deeply and exhaustively across ALL of these sources:
+
+### Platform searches:
+- studentcompetitions.com/competitions (all pages)
+- dare2compete.com / unstop.com (filter for school students)
+- devpost.com/hackathons (search: high school, use order_by=prize-amount to load all)
+- scholasticworld.blogspot.com (school-level competitions)
+- contest360.in (Indian school/college competitions)
+- scholarshipsinindia.com (awards and competitions)
+- NOTE: Skip olympiad-related listings (SOF, Silverzone, HBCSE, UC, CREST,
+  Indian Talent Olympiad, etc.) — those are in a separate Olympiads section.
+
+### Domain-wise Google searches (search ALL of these):
+- Google: "competitions for class 10 12 students India 2026"
+- Google: "online hackathons high school students India 2026"
+- Google: "writing competition class 12 India 2026"
+- Google: "business plan competition high school India 2026"
+- Google: "coding competition school students India 2026"
+- Google: "art competition school students India 2026"
+- Google: "science fair high school India 2026"
+- Google: "essay contest high school India 2026"
+- Google: "photography competition students India 2026"
+- Google: "quiz competition school students India 2026"
+- Google: "robotics competition school students India 2026"
+- Google: "environment sustainability competition students 2026"
+- Google: "social impact competition high school India 2026"
+- Google: "math competition high school India 2026"
+- Google: "innovation challenge school students India 2026"
+
+### Broad discovery searches (find competitions we DON'T already know about):
+- Google: "competitions available for school students in India 2026"
+- Google: "list of all competitions for high school students India"
+- Google: "best competitions for class 9 10 11 12 students India"
+- Google: "online competitions for Indian school students 2026"
+- Google: "top 50 competitions high school India 2026"
+- Google: "student competition opportunities India 2026 list"
+These searches may surface competitions from smaller organizations,
+government bodies, or platforms not in the lists above.
+
+### Broad discovery searches for International Online competitions:
+- Google: "international online competitions for high school students 2026"
+- Google: "global competitions open to school students worldwide 2026"
+- Google: "online hackathon for teenagers international 2026"
+- Google: "international essay writing competition high school 2026"
+- Google: "international science competition for school students online 2026"
+- Google: "international art competition students online 2026"
+- Google: "global innovation challenge high school students 2026"
+- Google: "international business competition high school online 2026"
+These searches find competitions hosted internationally that Indian students
+can participate in remotely — no travel required.
+
+### Well-known recurring competitions (check if active for 2026):
+- ISEF, Conrad Challenge, Diamond Challenge, Google Science Fair
+- Tata Building India Essay, Queen's Commonwealth Essay
+- IRIS National Science Fair, Smart India Hackathon Junior
+- TiE Young Entrepreneurs, NFTE, DECA
+- InCTF Junior, NASA Space Apps, CodeChef for Schools
+- Shankar's International Art Competition, FairGaze Paint India
+- Green Olympiad, Stockholm Junior Water Prize
+- Veer Gatha, Bharat Innovation Challenge, National Climate Innovation Prize
+
+For each competition found, verify:
+[ ] Open to class 8–12 / ages 13–18? (or "Open to everyone" with student-appropriate topic)
+[ ] Online OR held fully within India (no international travel)?
+[ ] Official page reachable and active?
+[ ] Deadline is upcoming (not already expired)?
+[ ] Not a duplicate of one already found?
+
+IMPORTANT — URL RULE:
+For each competition name you find, perform a targeted web search to
+locate its exact official URL. Do not guess or construct URLs from memory.
+
+Search like: "[Competition Name] official registration 2025 site"
+Then verify the URL loads and is the correct page.
+
+If a competition is listed on Devpost (devpost.com), the source_url
+will be (e.g. https://devpost.com/hackathons/xyz).
+Also do a websearch to find its official_url.
+
+For websites like : are2compete.com, unstop.com, olympiad.in -  get the competiton name 
+and web search their official_urls. 
+
+---
+
+## PHASE 3 — STORE EACH COMPETITION AS JSON
+
+Create folder: Competitions/competition_data/input_deepresearch/
+
+For each verified competition, create ONE JSON file named:
+{competition-slug}.json
+
+Each file must follow this exact schema — no other fields:
+
+{
+  "competition_id": "short-slug-name",
+  "competition_name": "Full Official Competition Name",
+  "source_url": "https://verified-official-or-devpost-url",
+  "official_url": "https://verfied-official-url"
+}
+
+If a platform like Unstop or Dare2Compete lists multiple competitions,
+save each one as a separate JSON file.
+
+---
+
+## PHASE 4 — FINAL REPORT
+
+After saving all JSONs, write:
+Competitions/competition_data/COMPETITION_REPORT.md
+
+Include:
+- Total competitions found and saved (target: 80-120+)
+- Breakdown by domain:
+    STEM / Science | Coding / Hackathons | Writing / Essay |
+    Business / Entrepreneurship | Arts / Creative |
+    Environment / Sustainability | Social Impact / Innovation |
+    Robotics / Hardware | Commerce / Economics | Quiz / GK |
+    Cybersecurity | Language / Linguistics
+- Breakdown by source platform:
+    Devpost | StudentCompetitions | Unstop | Scholastic World |
+    Official sites | Google search
+- Full list: competition name + URL + slug filename
+- Any domains with very few results (gaps to fill later)
+
+---
+
+## HARD CONSTRAINTS
+- Only save competitions with a verified, reachable official URL
+- No competitions requiring international travel for any round
+- No Olympiads — they are handled in a separate section (Olympiad/)
+- No duplicates — one JSON per competition even if listed on multiple sites
+- Devpost-listed competitions always use the Devpost URL as source_url
+- If unsure about eligibility or URL, skip and note it in the report
+- Do a fresh web search to confirm every URL — never construct from memory
+
+Start with Phase 1, then proceed phase by phase. Show progress as you go.

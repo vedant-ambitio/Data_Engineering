@@ -1,0 +1,202 @@
+# DEEP RESEARCH TASK — Internships for High School Students (Class 8–12, India / Online Only)
+
+## YOUR ROLE
+You are a research agent. Your job is to find real, verified, currently active
+or upcoming internships for high school students (Class 8–12 / ages 13–18)
+that are either:
+- Fully online / remote (work from home), OR
+- Held physically inside India only (no international travel required)
+
+Do NOT include internships that require students to travel abroad.
+International companies are ONLY included if they offer remote internships.
+
+Do NOT include full-time jobs or fellowships meant for college graduates.
+Only include genuine internship programs that accept high school students.
+
+---
+
+## PHASE 1 — MARKET RESEARCH
+
+Before finding individual internships, perform deep research to answer:
+
+1. How many internships exist for Indian high school students (class 8-12)?
+   NOTE: This market is genuinely small — most internship platforms (Internshala,
+   LinkedIn, Unstop) are built for college students. Estimate: ~50-100 real
+   internships at any given time.
+2. What are the main DOMAINS?
+   (Technology, Business & Marketing, Design & Creative, Research & Science,
+   Writing & Journalism, Social Impact & NGO)
+3. What are the TOP internship platforms for Indian high school students?
+   Research: internshala.com, letsintern.in, internhq.com, unstop.com,
+   linkedin.com, ladderinternships.com, gradsqr.com
+4. How many internships currently have active applications RIGHT NOW?
+
+Write a brief summary to: Internships/internship_data/MARKET_RESEARCH.md
+
+---
+
+## PHASE 2 — FIND ALL INTERNSHIPS WITH ACTIVE APPLICATIONS (Deep web search)
+
+TARGET: Find EVERY internship that a class 8-12 Indian student could apply to
+RIGHT NOW or in the coming months. Do NOT limit to any fixed number.
+Give me ALL that exist — whether that's 30 or 150. The market is genuinely
+small for high school, so even 40-60 real listings is a good result.
+
+Search deeply and exhaustively across ALL of these sources:
+
+### Platform searches:
+- internshala.com (search: "high school" / filter: school students)
+  NOTE: Internshala is the PRIMARY source — 39+ HS listings found previously.
+  Pre-built scrapers exist (Apify, GitHub repos). India-focused, structured data.
+- letsintern.in (school student internships)
+- unstop.com (filter for school students, skip college-only)
+- internhq.com (international, some India listings)
+- linkedin.com (search: "high school internship India")
+- angel.co / Wellfound (startup internships)
+
+### Domain-wise Google searches (search ALL of these):
+- Google: "internship for high school students India 2026"
+- Google: "internship for class 10 11 12 students India"
+- Google: "work from home internship school students India 2026"
+- Google: "technology internship high school students India"
+- Google: "marketing internship school students India 2026"
+- Google: "content writing internship high school India"
+- Google: "graphic design internship school students India"
+- Google: "research internship high school students India"
+- Google: "NGO internship school students India 2026"
+- Google: "data science internship high school students India"
+- Google: "social media internship school students India"
+- Google: "coding internship for teenagers India 2026"
+- Google: "summer internship high school students India 2026"
+- Google: "virtual internship for school students India"
+- Google: "paid internship high school students India 2026"
+
+### Well-known companies/orgs with HS internship programs:
+- Google (CSSI, other student programs)
+- Microsoft (student programs)
+- Amazon (future engineer)
+- ISRO (student trainee programs)
+- DRDO (student projects)
+- TCS (Ignite / student programs)
+- Infosys (InStep for students)
+- Wipro (Earthian / student programs)
+- Startup incubators (T-Hub, NSRCEL, Atal Innovation Mission)
+- Research labs (IISc, TIFR, IUCAA — summer research for students)
+- Media companies (newspaper/magazine internships)
+- NGOs with structured internship programs (CRY, Pratham, TFI)
+
+### Curated article scraping (blog articles listing HS internships):
+- ladderinternships.com (13 programs listed)
+- lumiere-education.com (10 programs)
+- admissionsight.com (15 programs)
+- questforsuccess.in (programs list)
+- Google: "best internships for high school students India list"
+- Google: "top 20 internships for school students India 2026"
+
+### Broad discovery searches (find internships we DON'T already know about):
+- Google: "internships available for school students in India 2026"
+- Google: "list of all internships for high school students India"
+- Google: "best internships for class 9 10 11 12 students India"
+- Google: "online internship for Indian school students 2026"
+- Google: "top internship programs for teenagers India"
+- Google: "student internship opportunities India 2026 list"
+- Google: "weekend internship for school students India"
+- Google: "micro internship for high school students India"
+These searches may surface internships from smaller companies, startups,
+or platforms not in the lists above.
+
+### Broad discovery for Remote/International internships:
+- Google: "remote internship for international high school students 2026"
+- Google: "virtual internship for teenagers worldwide 2026"
+- Google: "online internship programs for school students globally"
+- Google: "remote research internship high school international"
+- Google: "work from home internship open to Indian school students"
+These find remote internships from international companies that Indian
+students can do from home.
+
+For each internship found, verify:
+[ ] Open to class 8–12 / ages 13–18? (CRITICAL — most internships are 18+)
+[ ] Online OR held fully within India (no international travel)?
+[ ] Official page reachable and active?
+[ ] Currently accepting applications (not closed/past)?
+[ ] It is a genuine internship (learning + work experience), not a full-time job?
+[ ] Not a paid course disguised as "internship" (many scams exist)?
+
+IMPORTANT — URL RULE:
+For each internship you find, perform a targeted web search to
+locate its exact official URL. Do not guess or construct URLs from memory.
+
+Search like: "[Company Name] internship high school 2026 apply official"
+Then verify the URL loads and is the correct page.
+
+IMPORTANT — AGE FILTER:
+Most internship platforms are 18+. Only include internships that explicitly
+accept under-18 OR have a "school student" / "high school" tag. If the
+listing says "currently pursuing graduation" or "18+ only", skip it.
+
+IMPORTANT — SCAM FILTER:
+Skip "internships" that are actually:
+- Paid courses with a certificate (₹2000-5000 "internship programs")
+- Certificate mills ("complete 3 tasks, get certificate")
+- MLM / marketing schemes disguised as internships
+Real internships involve actual work for a real company/organization.
+
+---
+
+## PHASE 3 — STORE EACH INTERNSHIP AS JSON
+
+Create folder: Internships/internship_data/input_deepresearch/
+
+For each verified internship, create ONE JSON file named:
+{internship-slug}.json
+
+Each file must follow this exact schema — no other fields:
+
+{
+  "internship_id": "short-slug-name",
+  "internship_title": "Full Official Internship Title",
+  "company": "Company / Organization Name",
+  "source_url": "https://verified-platform-or-official-url",
+  "official_url": "https://verified-official-url"
+}
+
+If a company has multiple internship roles, save each as a SEPARATE file:
+  Google → CSSI Intern, Research Intern = 2 files
+  TCS → Ignite Intern, Marketing Intern = 2 files
+
+---
+
+## PHASE 4 — FINAL REPORT
+
+After saving all JSONs, write:
+Internships/internship_data/INTERNSHIP_REPORT.md
+
+Include:
+- Total internships found and saved (ALL active ones)
+- Breakdown by domain:
+    Technology | Business & Marketing | Design & Creative |
+    Research & Science | Writing & Journalism | Social Impact & NGO
+- Breakdown by mode:
+    Work from Home / Remote | In-office (India) | Hybrid
+- Breakdown by compensation:
+    Paid (with stipend) | Unpaid | Certificate only
+- Breakdown by source:
+    Internshala | Curated articles | Google search |
+    Company official sites | Other platforms
+- Full list: internship title + company + URL + slug filename
+- Any domains with very few results (gaps to fill later)
+- Note any "internships" skipped as scams/certificate mills
+
+---
+
+## HARD CONSTRAINTS
+- Only save internships with a verified, reachable official URL
+- No internships requiring international travel
+- International companies ONLY if they offer remote/virtual roles
+- No duplicates — one JSON per internship even if listed on multiple platforms
+- Must accept applicants aged 13-18 (or explicitly say "school students")
+- Must be genuine internship (real work) — not paid courses or certificate mills
+- If unsure about age eligibility or legitimacy, skip and note in report
+- Do a fresh web search to confirm every URL — never construct from memory
+
+Start with Phase 1, then proceed phase by phase. Show progress as you go.

@@ -1,0 +1,311 @@
+================================================================================
+  VOLUNTEERING — ACTIVITY FINDER DATA PLAN
+  Section 5 of Activity Finder (PDF Spec)
+  Generated: April 2026
+================================================================================
+
+  Data source: Ambitio NGO partnerships + vetted internet listings
+  Target: Students aged 14-18 (Class 9-12)
+  Refresh: Quarterly (listings are relatively stable)
+
+
+================================================================================
+  1) ALL FIELDS REQUIRED (from UI screenshots + PDF spec)
+================================================================================
+
+--------------------------------------------------------------------------------
+  A) CARD VIEW (visible on listing page)
+--------------------------------------------------------------------------------
+
+  #  | Field              | Type           | UI location (from screenshots)
+  ---|--------------------| ---------------|-------------------------------
+  1  | program_name       | string         | Card title: "Teach For India - Summer Fellowship"
+  2  | organization_name  | string         | Card subtitle: "Teach For India - NGO"
+  3  | organization_logo  | image URL      | Card top-left icon (TFI, UN, GJ logos)
+  4  | mode               | enum           | Features chip: "Offline" / "Online"
+  5  | cause_area         | enum           | Features chip: "Education", "Disaster Relief /
+     |                    |                | Community", "Environment / Global Development"
+  6  | is_verified        | boolean        | Green checkmark on card
+  7  | is_saved           | boolean        | Bookmark icon (per-user state, not scraped)
+
+  NOTE from screenshots:
+    - Cards show: title, org name, org logo, verified checkmark, save icon
+    - "Features" section shows 2 chips: mode + cause area
+    - No deadline shown on card
+    - No stipend/cost shown (volunteering is free)
+    - No "Posted on" date like internships
+
+
+--------------------------------------------------------------------------------
+  B) DETAIL VIEW (when card is clicked)
+--------------------------------------------------------------------------------
+
+  #  | Field                 | Type          | UI section
+  ---|---------------------- |---------------|-----------------------------------
+  8  | about_description     | text          | About this opportunity
+  9  | eligibility_text      | text          | Who can volunteer (age, location)
+  10 | minimum_hours         | string        | Minimum hours required (e.g. "40 hours")
+  11 | commitment_type       | enum          | One-time / Ongoing / Weekend only
+  12 | certificate_provided  | enum          | Yes / No
+  13 | responsibilities      | text          | What the volunteer will do
+  14 | how_to_apply          | text          | Application steps
+  15 | application_url       | URL           | "Apply on official website" link
+
+
+--------------------------------------------------------------------------------
+  C) FILTER FIELDS (from UI dropdown screenshots)
+--------------------------------------------------------------------------------
+
+  Filter          Options (from Screenshot 2)
+  --------------- --------------------------------------------------
+  Cause           Education
+                  Environment & Sustainability
+                  Health & Wellbeing
+                  Disaster Relief & Community
+                  Animals & Wildlife
+                  Arts & Culture
+                  Social Impact
+                  (Multi-select up to 3)
+
+  Mode            Remote
+                  On-site
+                  Hybrid
+                  (Single select, from Screenshot 3)
+
+  Search box      Search for Volunteering (top-right)
+  Saved toggle    Show saved only (top-right)
+
+
+--------------------------------------------------------------------------------
+  D) BACKEND FIELDS
+--------------------------------------------------------------------------------
+
+  #  | Field                    | Type          | Purpose
+  ---|--------------------------|---------------|-----------------------------------
+  16 | volunteering_id          | string        | Unique ID (auto-generated)
+  17 | source_url               | URL           | Original listing URL
+  18 | official_website         | URL           | NGO's own website
+  19 | location                 | string        | City or "Remote" or "Pan-India"
+  20 | country                  | string        | "India" / "International"
+  21 | age_limit                | string        | "14-18" or "No age limit"
+  22 | duration                 | string        | "2 weeks" / "3 months" / "Ongoing"
+  23 | source_type              | enum          | "ambitio_partner" / "internet_verified"
+
+  Auto-generated (not scraped):
+    - volunteering_id         (UUID, auto)
+    - last_updated            (timestamp, auto)
+
+
+================================================================================
+  COMPLETE FIELD LIST (TOTAL: 23 fields)
+================================================================================
+
+  Card view (7 fields):
+    program_name, organization_name, organization_logo, mode,
+    cause_area, is_verified, is_saved*
+
+  Detail view (8 fields):
+    about_description, eligibility_text, minimum_hours,
+    commitment_type, certificate_provided, responsibilities,
+    how_to_apply, application_url
+
+  Backend (8 fields):
+    volunteering_id*, source_url, official_website, location,
+    country, age_limit, duration, source_type
+
+  * = auto-generated or per-user state, not scraped
+
+  Fields to actually scrape: 21 (23 minus 2 auto-generated)
+
+  UI verification:
+    - Every card element from screenshots: covered
+      (title, org name, logo, verified badge, features chips)
+    - Every filter from screenshots: covered
+      (cause area with 7 options, mode with 3 options, search)
+    - Detail view sections: covered
+      (about, eligibility, hours, commitment, certificate, apply)
+
+
+================================================================================
+  2) VOLUNTEERING MARKET FOR CLASS 9-12 STUDENTS
+================================================================================
+
+  Unlike internships (companies hire you) or competitions (you compete for
+  prizes), volunteering is donating time for free to help a cause. Students
+  do it for college applications, skill building, and certificates.
+
+  DISTRIBUTION BY CAUSE AREA (matching our 7 UI filters):
+
+    Cause area                   % of market   Available opportunities
+    --------------------------   -----------   ----------------------
+    Education                    ~40%          30-45 (tutoring, mentoring, teaching)
+    Social Impact                ~15%          13-20 (women empowerment, child welfare)
+    Environment & Sustainability ~15%          13-20 (conservation, climate action)
+    Health & Wellbeing           ~10%           8-13 (hospitals, mental health, accessibility)
+    Disaster Relief & Community  ~10%           7-11 (relief drives, rural development)
+    Animals & Wildlife            ~5%           6-10 (shelters, wildlife conservation)
+    Arts & Culture                ~5%           6-10 (writing, museums, cultural projects)
+    --------------------------   -----------   ----------------------
+    TOTAL                        100%          83-129
+
+  KEY NGOS & PROGRAMS (India):
+    - Teach For India — Summer Fellowship, mentoring in low-income schools
+    - Pratham — playful learning for 1M+ kids
+    - Goonj — urban surplus into rural infrastructure
+    - Bhumi — tutoring 500K+ kids across cities
+    - Youth for Seva — multi-focus (education, health, environment)
+    - iVolunteer.in — India's largest volunteer platform, 12 cause areas
+    - ISPIICE — volunteer work for high school students
+    - Kaya — community projects for under-18s
+
+  KEY PROGRAMS (International / Online):
+    - UN Online Volunteers — global tasks (translation, design, research)
+    - Learn to Be — 1-on-1 online tutoring
+    - Zooniverse — citizen science research from home
+    - Smithsonian Transcription — digitize historical documents
+    - Be My Eyes — help blind individuals via video app
+    - Writing Wonders — letters/artwork for communities
+    - Climate Leaders Fellowship — 12-week program with Stanford
+
+
+================================================================================
+  3) TARGET NUMBER: 100-130 VOLUNTEERING OPPORTUNITIES
+================================================================================
+
+  Per-cause breakdown:
+
+    Cause area                   India    International   Total
+    --------------------------   ------   -------------   -----
+    Education                    20-30    10-15           30-45
+    Environment & Sustainability  8-12     5-8            13-20
+    Social Impact                 8-12     5-8            13-20
+    Health & Wellbeing            5-8      3-5             8-13
+    Disaster Relief & Community   5-8      2-3             7-11
+    Animals & Wildlife            3-5      3-5             6-10
+    Arts & Culture                3-5      3-5             6-10
+    --------------------------   ------   -------------   -----
+    TOTAL                        52-80    31-49           83-129
+
+  WHY 100-130:
+    - Every cause filter gets 6-45 results — no empty filters
+    - Pagination: 100 / 8 cards = ~13 pages — good browsing
+    - Mix of India + international covers both audiences
+    - Quarterly refresh (per PDF spec) — low maintenance
+    - Education is largest (35-40%) — matches real distribution
+    - Volunteering programs are long-term, low turnover
+    - Enough variety without including low-quality listings
+
+
+================================================================================
+  4) DATA SOURCES
+================================================================================
+
+  TWO CHANNELS (per PDF spec):
+
+  CHANNEL 1: AMBITIO NGO PARTNERS (internal, not scraped)
+    Source: Ambitio partnerships team maintains NGO relationships
+    Data: Provided via CMS as NGOs update cohort/program info
+    Quality: Highest (Ambitio vetted)
+    Volume: TBD (from colleague)
+    >> NEED FROM TEAM: partner NGO listings
+
+  CHANNEL 2: INTERNET LISTINGS (scraped + content team reviewed)
+
+    4 SOURCES SELECTED (verified April 2026):
+
+      Source                   Listings   Coverage     What it covers
+      ----------------------   ---------  ----------   --------------------------
+      iVolunteer.in            40-50      81-90%       India cause-based volunteering
+      VolunteerMatch/Idealist  20-30      86-95%       International + online
+      Catchafire               10-15      76-86%       Skills-based online (design,
+                                                       writing, social media)
+      Individual NGO sites     15-25      71-86%       Top-tier India (TFI, Goonj,
+                                                       Pratham, ISPIICE, Kaya)
+
+    DROPPED SOURCES (and why):
+      Youth for Seva   — only 3-5 programs, covered by iVolunteer
+      Bhumi.ngo        — single org, 1-2 programs, covered by individual NGOs
+      UNV Online       — 18+ only, most class 9-12 can't apply
+
+    WHY THESE 4:
+      - iVolunteer.in = India's largest volunteer platform (17K+ vol/year)
+      - VolunteerMatch = world's largest, has teen filter, richest data fields
+      - Catchafire = unique skills-based projects (students build portfolio)
+      - Individual NGOs = prestigious names students actually search for
+
+    SCRAPING PLAN:
+      iVolunteer.in (quarterly)             → ~40-50 India listings
+      VolunteerMatch/Idealist (quarterly)   → ~20-30 international listings
+      Catchafire (quarterly)                → ~10-15 skills-based listings
+      Individual NGO sites (quarterly)      → ~15-25 top-tier programs
+      ───────────────────────────────────────────────────
+      Internet listings total               → ~85-120
+      + Ambitio partner NGO listings        → TBD
+
+    NOTE: All 3 platforms (iVolunteer, Idealist, Catchafire) are JS-rendered
+    and need Puppeteer for scraping. Individual NGO sites are a mix.
+
+    Refresh: Quarterly (volunteering programs are stable, not weekly churn)
+    Both sources reviewed by content team before publishing.
+
+
+  FIELD COVERAGE PER SOURCE (out of 21 scraped fields):
+
+    We scrape in 3 stages per source:
+      Stage 1: Listing page (one HTTP/Puppeteer request to list page)
+      Stage 2: Detail page (click into each opportunity)
+      Stage 3: Gemini enrichment (extract structured fields from text)
+
+    Source                   Stage 1    Stage 2    Stage 3    Final
+                             (listing)  (+detail)  (+Gemini)  coverage
+    ----------------------   ---------  ---------  ---------  --------
+    iVolunteer.in            12-14/21   15-17/21   17-19/21   81-90%
+    VolunteerMatch/Idealist  14-16/21   17-19/21   18-20/21   86-95%
+    Catchafire               13-15/21   —          16-18/21   76-86%
+    Individual NGO sites     10-14/21   —          15-18/21   71-86%
+
+    VolunteerMatch has the richest fields (cause, skills, hours, teen
+    filter, age, mode — all structured). iVolunteer.in is close behind.
+    Catchafire is all-online so location is always "Remote".
+    Individual NGOs vary — TFI has hours + certificate, others are sparse.
+
+    WHAT'S FILLED ACROSS ALL SOURCES:
+      Card view (6 fields):     ~85% (logo missing from platforms)
+      Detail view (8 fields):   ~80% (certificate_provided often missing)
+      Backend (7 fields):       ~85% (official_website sometimes missing)
+      Overall average:          ~18/21 = ~83% with Gemini
+
+    ALWAYS MISSING (2-3 fields):
+      organization_logo    — platforms don't show logos. Use Clearbit API.
+      certificate_provided — not tracked on most platforms. Gemini infers
+                             from text when mentioned (e.g. TFI: "certificate
+                             after 50+ hours").
+      official_website     — platform URL vs NGO's own site. Gemini can
+                             sometimes extract from description text.
+
+
+================================================================================
+  5) DOMAIN MAPPING (from UI filter dropdown)
+================================================================================
+
+  UI Cause                       Maps to NGO focus areas
+  ------------------------------ ----------------------------------------
+  Education                      teaching, tutoring, mentoring, literacy,
+                                 after-school programs, skill training
+  Environment & Sustainability   conservation, tree planting, clean-ups,
+                                 climate action, renewable energy, recycling
+  Health & Wellbeing             hospitals, mental health, first aid, blood
+                                 donation, disability support, elderly care
+  Disaster Relief & Community    flood/earthquake relief, rural development,
+                                 community building, infrastructure
+  Animals & Wildlife             animal shelters, wildlife conservation,
+                                 marine life, rescue centers
+  Arts & Culture                 museum volunteering, art workshops, cultural
+                                 preservation, writing, music, theater
+  Social Impact                  women empowerment, child welfare, poverty
+                                 alleviation, human rights, gender equality
+
+
+================================================================================
+  END OF REPORT
+================================================================================

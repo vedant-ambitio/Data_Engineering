@@ -1,0 +1,199 @@
+# DEEP RESEARCH TASK — Summer Schools & Pre-College Programs (Class 8–12, India / Online Only)
+
+## YOUR ROLE
+You are a research agent. Your job is to find real, verified, currently active
+or upcoming summer schools and pre-college programs for high school students
+(Class 8–12 / ages 13–18) that are either:
+- Fully online / remote, OR
+- Held physically inside India only (no international travel required)
+
+Do NOT include programs that require students to travel abroad.
+Programs at foreign universities are ONLY included if they offer an online/remote mode.
+
+---
+
+## PHASE 1 — MARKET RESEARCH
+
+Before finding individual programs, perform deep research to answer:
+
+1. How many summer schools / pre-college programs exist for Indian high school
+   students across all categories?
+2. What are the main CATEGORIES?
+   (STEM, humanities, business, arts, research, leadership, coding, etc.)
+3. What are the TOP listing platforms / sources for Indian HS summer programs?
+   Research: university websites, ashoka.edu.in, plaksha.edu.in, iitb.ac.in,
+   isro.gov.in, summermatchpoint.com, college-transitions articles,
+   lumiere-education articles, collegeaccessprogram.in
+4. How many programs currently have active registration or upcoming sessions
+   for 2026-27? (Estimate: 80-150+ programs across India + International Online)
+
+Write a brief summary to: Summer_Schools/summer_school_data/MARKET_RESEARCH.md
+
+---
+
+## PHASE 2 — FIND ALL PROGRAMS WITH ACTIVE/UPCOMING REGISTRATION (Deep web search)
+
+TARGET: Find EVERY summer school and pre-college program that a class 8-12
+Indian student could apply to RIGHT NOW or in the coming months for 2026-27.
+Do NOT limit to any fixed number. Give me ALL that exist — whether that's
+60 or 200. We estimate 80-150+ but the real count could be higher or lower.
+
+Search deeply and exhaustively across ALL of these sources:
+
+### India In-Person Programs:
+- IIT summer programs (IIT Bombay, Delhi, Madras, Kanpur, Kharagpur, etc.)
+- IISER summer programs (IISER Bhopal, Pune, Mohali, Kolkata, etc.)
+- NIT summer programs (NIT Trichy, Warangal, Surathkal, etc.)
+- Private universities (Ashoka YSP, Plaksha YTS, FLAME, Krea, Jindal, Bennett, SNU)
+- Research institutions (ISRO YUVIKA, IISc, DRDO, CSIR, NISER, CMI, ISI, HRI)
+- Tech/Innovation (Maker's Asylum, ATL, NASSCOM)
+- Government programs (DST Inspire, KVPY camps, Vigyan Jyoti, MyGov challenges)
+
+### Domain-wise Google searches (search ALL of these):
+- Google: "summer school class 10 12 students India 2026"
+- Google: "summer program high school India 2026"
+- Google: "pre-college program India school students 2026"
+- Google: "IIT summer camp school students 2026"
+- Google: "IISER summer program school students 2026"
+- Google: "research program high school students India 2026"
+- Google: "STEM summer camp India high school 2026"
+- Google: "coding bootcamp summer high school India 2026"
+- Google: "free summer program high school students India 2026"
+- Google: "fully funded summer school India school students 2026"
+- Google: "science research internship high school India summer 2026"
+- Google: "ISRO YUVIKA 2026 registration"
+- Google: "Ashoka Young Scholars Programme 2026"
+- Google: "Plaksha Young Technology Scholars 2026"
+
+### International Online-Only Programs:
+- Ivy League: Harvard Pre-College Online, Yale YYGS Online, Columbia,
+  Brown Pre-College Online, UPenn Pre-College, Cornell, Princeton
+- Top US: Stanford Pre-Collegiate Online, MIT MITES Online, Caltech,
+  JHU CTY Online, Duke TIP Online, Northwestern, UChicago, Georgetown,
+  NYU Precollege Online, Boston University Online, Emory, Rice
+- UK: Oxford online pre-university, Cambridge online pre-university,
+  UCL, Imperial, LSE, Edinburgh, King's College London, Warwick
+- Asia/Others: NUS, NTU, HKU, Tokyo, KAIST, Technion
+- Specialized: RSI (online component), PROMYS online, ROSS Math online,
+  AI4ALL, Girls Who Code, CodePath, Inspirit AI
+
+### Google searches for International Online:
+- Google: "online summer program high school students 2026"
+- Google: "virtual pre-college program 2026"
+- Google: "online university summer program for teenagers 2026"
+- Google: "Harvard pre-college online 2026 registration"
+- Google: "Stanford online summer program high school 2026"
+- Google: "Oxford online summer school teenagers 2026"
+- Google: "free online summer program high school 2026"
+
+### Broad discovery searches (find programs we DON'T already know about):
+- Google: "summer schools available for school students in India 2026"
+- Google: "list of all pre-college programs India 2026"
+- Google: "best summer programs for high school students India"
+- Google: "summer school for class 9 10 11 12 students India"
+- Google: "summer program for teenagers India 2026 list"
+- Google: "top 50 summer programs high school India"
+- Google: "summer school opportunities school students India 2026"
+- Google: "online summer courses for Indian school students 2026"
+- Google: "summer workshops for school students India 2026"
+- Google: "residential summer camp school students India 2026"
+These searches may surface programs from smaller institutions, NGOs,
+ed-tech companies, or organizations not in the lists above.
+
+### Broad discovery searches for International Online programs:
+- Google: "online summer programs for international high school students 2026"
+- Google: "virtual pre-college programs open to international students 2026"
+- Google: "best online summer schools for teenagers worldwide 2026"
+- Google: "free online summer program for high school students internationally 2026"
+- Google: "university online summer courses open to Indian students 2026"
+- Google: "remote summer research program high school international 2026"
+- Google: "online summer school UK USA for international school students"
+- Google: "list of virtual summer programs for high schoolers 2026"
+These searches may surface online programs from universities or organizations
+not in the Ivy League / Top US / UK lists above.
+
+### Well-known recurring programs (check if active for 2026):
+- ISRO YUVIKA, IISc Summer School, IUCAA Astronomy Workshop
+- Ashoka Young Scholars Programme, Plaksha Young Technology Scholars
+- FLAME Immersion, Krea Summer Program, Jindal Global Summer School
+- Harvard Pre-College, Stanford Pre-Collegiate, Yale YYGS
+- MIT RSI, PROMYS, ROSS Mathematics, Clark Scholars
+- AI4ALL, Girls Who Code Summer Immersion, Inspirit AI
+- DST Inspire Science Camp, Vigyan Jyoti
+- ATL Tinkering Marathon, Maker's Asylum Summer Bootcamp
+
+For each program found, verify:
+[ ] Open to class 8–12 / ages 13–18?
+[ ] Online OR held fully within India (no international travel)?
+[ ] Official page reachable and active?
+[ ] Program dates are upcoming (not already past)?
+[ ] It is a SHORT program (2-12 weeks), not a full degree course?
+
+IMPORTANT — URL RULE:
+For each program name you find, perform a targeted web search to
+locate its exact official URL. Do not guess or construct URLs from memory.
+
+Search like: "[University Name] summer program high school 2026 official site"
+Then verify the URL loads and is the correct page.
+
+---
+
+## PHASE 3 — STORE EACH PROGRAM AS JSON
+
+Create folder: Summer_Schools/summer_school_data/input_deepresearch/
+
+For each verified program, create ONE JSON file named:
+{program-slug}.json
+
+Each file must follow this exact schema — no other fields:
+
+{
+  "program_id": "short-slug-name",
+  "program_name": "Full Official Program Name",
+  "institution": "University / Organization Name",
+  "source_url": "https://verified-official-program-page-url",
+  "official_url": "https://verified-official-url"
+}
+
+IMPORTANT: Listings are PROGRAM-wise, not university-wise.
+One university can have multiple programs:
+  Harvard → Pre-College Online, Secondary School Program Online = 2 files
+  Stanford → Pre-Collegiate Online, AI4ALL = 2 files
+  IIT Bombay → Young Innovator Program, E-Cell Summer Camp = 2 files
+
+Save each program as a SEPARATE JSON file.
+
+---
+
+## PHASE 4 — FINAL REPORT
+
+After saving all JSONs, write:
+Summer_Schools/summer_school_data/PROGRAM_REPORT.md
+
+Include:
+- Total programs found and saved  (ALL active programs)
+- Breakdown by category:
+    India IITs | India IISERs | India NITs | India Private |
+    India Research | India Tech/Innovation |
+    International Online (Ivy League) | International Online (UK) |
+    International Online (Asia)
+- Breakdown by funding:
+    Fully funded / Free | Partially funded | Self-funded
+- Full list: program name + institution + URL + slug filename
+- Breakdown by source: which programs came from university sites vs
+    Google search vs curated articles
+- Any categories with very few results (gaps to fill later)
+
+---
+
+## HARD CONSTRAINTS
+- Only save programs with a verified, reachable official URL
+- No programs requiring international travel for any round/session
+- International programs ONLY if they offer online/remote mode
+- No duplicates — one JSON per program even if listed on multiple sites
+- Programs must be SHORT (2-12 weeks summer programs), not semester/year-long
+- Must be for high school students (Class 8-12 / ages 13-18)
+- If unsure about eligibility or URL, skip and note it in the report
+- Do a fresh web search to confirm every URL — never construct from memory
+
+Start with Phase 1, then proceed phase by phase. Show progress as you go.

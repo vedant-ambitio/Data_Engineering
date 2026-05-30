@@ -1,0 +1,417 @@
+================================================================================
+  SUMMER SCHOOLS — ACTIVITY FINDER DATA PLAN
+  Section 6 of Activity Finder (PDF Spec)
+  Generated: April 2026
+================================================================================
+
+  Data source: Public sources — curated database, fetched annually
+  Target: Class 9-12 students (age 14-18)
+  Refresh: Annually (January to March, before summer season)
+  Strategy: Do NOT scrape dynamically — manual review is more reliable
+            (university pages change layout frequently)
+
+
+================================================================================
+  1) ALL FIELDS REQUIRED (from UI screenshot + PDF spec)
+================================================================================
+
+--------------------------------------------------------------------------------
+  A) CARD VIEW (visible on listing page)
+--------------------------------------------------------------------------------
+
+  #  | Field              | Type           | UI location (from screenshot)
+  ---|--------------------|----------------|-------------------------------
+  1  | program_name       | string         | Card title: "MIT Primes- Research Program
+     |                    |                | for High Schoolers"
+  2  | institution_name   | string         | Card subtitle: "MIT - United States"
+  3  | institution_logo   | image URL      | Card top-left icon (MIT shield, IIT logo)
+  4  | funding_status     | enum           | Details chip: "Fully funded" / "Partially
+     |                    |                | funded" / "Self-funded" / "Free"
+  5  | mode               | enum           | Details chip: "Online" / "Offline" / "Hybrid"
+  6  | location_tag       | enum           | Details chip: "India" / "Abroad"
+  7  | duration_weeks     | string         | Details chip: "12 weeks" / "6 weeks" / "2 weeks"
+  8  | is_verified        | boolean        | Green checkmark on card
+  9  | is_saved           | boolean        | Bookmark icon (per-user state)
+
+  NOTE from screenshot:
+    - Cards show: title, institution + country, logo, verified badge, save icon
+    - "Details" section shows 4 chips: funding_status + mode + location_tag + duration
+    - No separate deadline shown on card (unlike competitions)
+    - No cost amount on card (funding_status covers it: Fully funded / Self-funded)
+    - Filter bar shows: Location (India/Abroad toggle) + Funding toggle
+
+
+--------------------------------------------------------------------------------
+  B) DETAIL VIEW (when card is clicked)
+--------------------------------------------------------------------------------
+
+  #  | Field                    | Type          | UI section
+  ---|--------------------------|---------------|-----------------------------------
+  10 | about_description        | text          | About this program
+  11 | eligibility_text         | text          | Who can apply (grade, age, country)
+  12 | curriculum               | text          | What students learn / program structure
+  13 | how_to_apply             | text          | Application steps + requirements
+  14 | application_url          | URL           | "Apply on official website" link
+  15 | cost_range               | string        | "Free" / "$3,000-$5,000" / "INR 50,000"
+  16 | college_credit           | enum          | Yes / No
+  17 | residential_or_online    | enum          | Residential / Online / Day program
+  18 | certificate_provided     | enum          | Yes / No
+  19 | deadline                 | date          | Application deadline
+  20 | urgency_chip             | enum          | Computed from deadline
+     |                          |               | (Closing soon / Open / Past)
+
+
+--------------------------------------------------------------------------------
+  C) FILTER FIELDS (from screenshot)
+--------------------------------------------------------------------------------
+
+  Filter          Options (from screenshot top bar)
+  --------------- --------------------------------------------------
+  Location        India / Abroad (toggle buttons visible in screenshot)
+  Funding         Fully funded / Partially funded / Self-funded / Free
+                  (toggle visible in screenshot)
+
+  Search box      Search for Summer School (top-right)
+  Saved toggle    Show saved only (top-right)
+
+  NOTE: Simpler filters than other sections — only 2 filters
+  (location + funding) vs competitions (domain + team size)
+  or volunteering (cause + mode)
+
+
+--------------------------------------------------------------------------------
+  D) BACKEND FIELDS
+--------------------------------------------------------------------------------
+
+  #  | Field                    | Type          | Purpose
+  ---|--------------------------|---------------|-----------------------------------
+  21 | program_id               | string        | Unique ID (auto-generated)
+  22 | institution_website      | URL           | University/institution main site
+  23 | program_page_url         | URL           | Specific summer program page
+  24 | country                  | string        | "USA" / "India" / "UK" / "Singapore"
+  25 | city                     | string        | "Cambridge, MA" / "Mumbai" / "Oxford"
+  26 | age_limit                | string        | "15-18" or "Rising juniors and seniors"
+  27 | grade_levels             | array[int]    | [9, 10, 11, 12]
+  28 | program_dates            | string        | "June 15 - July 28, 2026"
+  29 | application_open_date    | date          | When applications open
+  30 | application_deadline     | date          | Same as deadline field
+  31 | subjects_offered         | array[string] | ["STEM", "Business", "Humanities"]
+  32 | source_type              | enum          | "university_official" / "curated"
+
+  Auto-generated (not scraped):
+    - program_id              (UUID, auto)
+    - urgency_chip            (computed from deadline vs today)
+    - last_updated            (timestamp, auto)
+
+
+================================================================================
+  COMPLETE FIELD LIST (TOTAL: 32 fields)
+================================================================================
+
+  Card view (9 fields):
+    program_name, institution_name, institution_logo, funding_status,
+    mode, location_tag, duration_weeks, is_verified, is_saved*
+
+  Detail view (11 fields):
+    about_description, eligibility_text, curriculum, how_to_apply,
+    application_url, cost_range, college_credit, residential_or_online,
+    certificate_provided, deadline, urgency_chip*
+
+  Backend (12 fields):
+    program_id*, institution_website, program_page_url, country, city,
+    age_limit, grade_levels, program_dates, application_open_date,
+    application_deadline, subjects_offered, source_type
+
+  * = auto-generated or per-user state, not scraped
+
+  Fields to actually scrape: 29 (32 minus 3 auto-generated)
+
+  UI verification:
+    - Every card element from screenshot: covered
+      (title, institution+country, logo, 4 detail chips, verified, save)
+    - Every filter from screenshot: covered
+      (Location toggle: India/Abroad, Funding toggle)
+    - Detail chips match: funding_status + mode + location_tag + duration_weeks
+
+
+================================================================================
+  2) SUMMER SCHOOL MARKET — WHAT EXISTS
+================================================================================
+
+  Summer schools (pre-college programs) are short university programs
+  (2-12 weeks) during summer. Students attend lectures, do projects,
+  live on campus, and sometimes earn college credits.
+
+  IMPORTANT: Listings are PROGRAM-wise, not college-wise.
+  One university can have multiple programs:
+    Harvard alone → Pre-College, Secondary School, Pre-Med, STEM = 4+ programs
+    Stanford     → Pre-Collegiate, Summer College, AI4ALL = 3+ programs
+
+  THREE TIERS:
+
+    Tier 1 — FREE, ultra-prestigious (<5% acceptance)
+      RSI (MIT), MITES (MIT), PROMYS (Boston), ROSS (Ohio State),
+      ISRO YUVIKA, Clark Scholars
+      Count: ~15-20 programs
+
+    Tier 2 — PAID, prestigious ($3,000-$10,000, 15-30% acceptance)
+      Harvard Pre-College ($6,100), Yale YYGS ($7,000),
+      Stanford Pre-Collegiate ($8,000+), Oxford ($5,000+),
+      Columbia, NUS, UCL, JHU, UChicago
+      Count: ~70-100 programs
+
+    Tier 3 — INDIA programs (INR 10K-85K, moderate selection)
+      Ashoka YSP (INR 49,500), Plaksha YTS, IISER Bhopal,
+      IIT Jammu/Delhi summer camps, Maker's Asylum
+      Count: ~30-50 programs
+
+  REALISTIC SCOPE FOR CLASS 9-12 INDIAN STUDENTS:
+
+    A 15-year-old in India will NOT fly abroad for a 2-week program
+    (visa issues, $10K+ cost, parents won't allow). They will:
+      - Attend India programs in-person (affordable, no visa)
+      - Join international programs ONLINE (from home)
+
+    So we list:
+      1. India programs (in-person + online)  → ~50-60 universities
+      2. International ONLINE/REMOTE only     → ~25-35 universities
+      3. DROP all abroad in-person programs
+
+  BY CATEGORY:
+
+    Category                 Universities   Programs   Examples
+    ----------------------   ------------   ---------  --------
+    India — IITs             12-15          15-25      IIT Delhi, Bombay, Madras,
+                                                       Kanpur, Jammu, Kharagpur
+    India — IISERs            5-7            5-10      IISER Bhopal, Pune, Mohali
+    India — NITs              5-8            5-10      NIT Trichy, Warangal, Surathkal
+    India — Central Unis      3-5            3-5       JNU, BHU, DU
+    India — Private          12-15          15-25      Ashoka, Plaksha, FLAME, Krea,
+                                                       SNU, BITS, VIT, SRM, Bennett
+    India — Research          8-12           8-15      ISRO, IISc, DRDO, CSIR, NISER,
+                                                       CMI, ISI, HRI
+    India — Tech/Innovation   5-8            5-10      Maker's Asylum, ATL, NASSCOM
+    Intl — ONLINE only       25-35          30-50      Harvard, MIT, Stanford, Yale
+                                                       online + UK online (Oxford,
+                                                       Cambridge, UCL)
+    ----------------------   ------------   ---------  --------
+    TOTAL                    75-95         86-150
+
+  BY FUNDING (matching Funding filter):
+
+    Status              Count    Cost range          Examples
+    ------------------  -------  ------------------  --------
+    Fully funded        15-25    Free                RSI, MITES, YUVIKA, ROSS
+    Partially funded    30-50    50-70% covered      YYGS (need-blind), Plaksha
+    Self-funded         80-130   $3K-10K / INR 50K+  Harvard, Stanford, Ashoka
+    ------------------  -------  ------------------  --------
+
+
+================================================================================
+  3) TARGET: 150-200 PROGRAM LISTINGS
+================================================================================
+
+  WHY 150-200:
+
+    Number      What happens
+    ---------   -------------------------------------------------
+    80-120      Thin — abroad filter dominates, India filter sparse
+    150-200     Both filters have depth, all 3 tiers represented,
+                manageable for annual manual review
+    250+        Diminishing returns — includes obscure programs
+                students won't apply to, harder to maintain
+
+  BREAKDOWN:
+
+    Category                                Programs   % of total
+    ----------------------------------------  --------   ----------
+    Tier 1 — Free/ultra-prestigious           15-20      ~10%
+    Tier 2 — Paid prestigious (USA)           40-60      ~30%
+    Tier 2 — Paid prestigious (UK/Europe)     15-25      ~13%
+    Tier 2 — Paid prestigious (Asia)           8-15      ~7%
+    Tier 3 — India programs                   30-50      ~25%
+    Online/virtual programs                   10-15      ~8%
+    ----------------------------------------  --------   ----------
+    TOTAL                                    118-185     ~150-200
+
+  FILTER COVERAGE:
+
+    India filter:       30-50 programs (IITs, Ashoka, Plaksha, ISRO, IISER)
+    Abroad filter:      80-130 programs (Harvard, MIT, Oxford, NUS, UCL)
+    Fully funded:       15-25 programs
+    Partially funded:   30-50 programs
+    Self-funded:        80-130 programs
+
+    No filter combination returns empty results.
+
+  PAGINATION: 150 / 8 cards per page = ~19 pages — matches UI pattern.
+  ANNUAL REVIEW: 150 programs to verify each January — manageable.
+
+
+================================================================================
+  4) DATA SOURCES
+================================================================================
+
+  Per PDF spec: "Maintain a curated database. Do not scrape dynamically —
+  these pages change layout frequently. Manual review is more reliable."
+
+  This is the MOST MANUAL section of Activity Finder.
+
+  NO SINGLE SOURCE EXISTS for summer schools (unlike Internshala for
+  internships or unstop for competitions). Closest are:
+    - SummerMatchPoint: 1,600+ programs but AI tool, not scrapeable DB
+    - College Transitions: 200+ but US-only, JS-rendered
+    - No platform covers both India + international
+
+  KEY INSIGHT: Universities are fixed. Programs change.
+  Harvard, MIT, IIT Delhi don't change — but their programs, dates,
+  fees change yearly. So we hardcode universities, auto-discover programs.
+
+
+  SCRAPING APPROACH (5 steps):
+  ────────────────────────────
+
+  Step 1: AUTO-DISCOVER PROGRAMS (replaces manual list building)
+
+    Hardcode a list of 80-100 target universities:
+      USA:   Harvard, MIT, Stanford, Yale, Columbia, JHU, Brown, etc.
+      UK:    Oxford, Cambridge, UCL, Imperial, LSE, Edinburgh
+      Asia:  NUS, HKU, NTU, Tokyo
+      India: IITs, IISERs, Ashoka, Plaksha, ISRO, FLAME, Jindal
+
+    For each university, ask Gemini (web-grounded):
+      "What pre-college summer programs does [Harvard] offer for
+       high school students in 2026? List program names and URLs."
+
+    Gemini returns ~1-4 programs per university with official URLs.
+    Result: ~150-200 programs auto-discovered.
+
+    Why Gemini, not manual scraping:
+      - Catches NEW programs (if Harvard launches a new one, Gemini knows)
+      - Handles 80-100 universities in one batch (~5 min)
+      - No need to manually read 7 curated articles
+
+
+  Step 2: VALIDATE URLs
+
+    For each discovered URL:
+      a) HTTP HEAD check — is URL alive? (dead = discontinued)
+      b) Fetch page content (HTTP first, Puppeteer for JS-heavy)
+      c) Keyword check: does page mention "2026" or "summer"?
+         (catches stale/old pages before sending to Gemini)
+
+
+  Step 3: EXTRACT DATA (same pattern as olympiad scraper)
+
+    For each program, scrape TWO pages:
+      a) University summer landing page (e.g. summer.harvard.edu/)
+         → has cost comparison tables, deadline summaries
+      b) Specific program page (e.g. .../pre-college-program/)
+         → has eligibility, curriculum, application details
+
+    Send both to Gemini with 29-field schema → structured JSON output.
+
+
+  Step 4: CROSS-VALIDATE (safety net)
+
+    Compare extracted data against 2-3 curated articles:
+      - College Transitions (200+ programs with costs/deadlines)
+      - Lumiere Education (35 programs with details)
+      - CollegeAccessProgram.in (16 India programs)
+
+    If extracted cost/deadline differs by >20% from article → flag
+    for manual review. Same pattern as UG course merge (BigFuture
+    vs markdown cross-validation).
+
+
+  Step 5: ANNUAL REFRESH (January each year)
+
+    a) Re-run Step 1 → Gemini rediscovers programs
+       (catches new programs, flags removed ones)
+    b) Re-run Steps 2-4 → re-scrape, re-extract, re-validate
+    c) DIFF against last year's data:
+       New programs       → add (content team reviews)
+       Removed programs   → flag for removal
+       Changed fees/dates → auto-update
+       Same data          → no action
+    d) Content team reviews ONLY the diff (~20-30 changes)
+       NOT all 150 programs — saves significant time
+
+    Timeline:
+      January:  Full refresh (Steps 1-5)
+      March:    Final check before application season opens
+      Rest of year: No updates needed
+
+
+  ESTIMATED EFFORT:
+
+    First run (one-time):
+      Step 1 (university list):      ~2 hours (hardcode 80-100 universities)
+      Step 1 (Gemini discovery):     ~10 min automated
+      Steps 2-4 (scrape + extract):  ~1-2 hours automated
+      Content team review:           ~3-4 hours
+      Total:                         ~7-8 hours
+
+    Annual refresh:
+      Steps 1-4 automated:           ~1-2 hours
+      Content team reviews diff:     ~2-3 hours
+      Total:                         ~4-5 hours/year
+
+
+================================================================================
+  5) FIELD COVERAGE ESTIMATE
+================================================================================
+
+  We scrape directly from university official pages — not aggregator
+  platforms. Universities WANT to show everything to attract applicants,
+  so coverage is the highest of all Activity Finder sections.
+
+  COVERAGE AT EACH STAGE:
+
+    Stage                    Fields    Out of 29    Coverage
+    ----------------------   --------  ----------   --------
+    Landing page only        18-22     29           62-76%
+    + Program detail page    23-26     29           79-90%
+    + Gemini enrichment      25-28     29           86-97%
+
+  WHY SO HIGH:
+
+    University summer program pages are designed to convert applicants.
+    They show cost breakdowns, eligibility criteria, deadlines, curriculum,
+    application steps — all prominently. Unlike aggregator platforms
+    (unstop, Internshala) that lose detail fields, the official page IS
+    the source of truth.
+
+  COMPARISON ACROSS ALL ACTIVITY FINDER SECTIONS:
+
+    Section          Source type        Coverage (with Gemini)
+    ---------------  -----------------  ----------------------
+    Olympiads        Mixed official     ~88%
+    Competitions     Aggregators        ~75%
+    Internships      Internshala        ~85%
+    Volunteering     iVolunteer + NGOs  ~83%
+    Summer Schools   University pages   ~90% (highest)
+
+  WHAT'S ALWAYS FILLED (~25 fields):
+    program_name, institution_name, institution_logo, funding_status,
+    mode, location_tag, duration_weeks, about_description, eligibility,
+    curriculum, how_to_apply, application_url, cost_range, college_credit,
+    residential_or_online, deadline, institution_website, program_page_url,
+    country, city, age_limit, grade_levels, program_dates, subjects_offered
+
+  WHAT'S SOMETIMES MISSING (3-4 fields):
+    certificate_provided  — not always stated (Gemini infers from context)
+    application_open_date — some show only deadline, not open date
+    subjects_offered      — sometimes paragraph not list (Gemini extracts)
+    application_deadline  — rolling admissions have no fixed date
+
+  EXPECTED UI COVERAGE:
+    Card view (9 fields):     ~95% filled (all chips populated)
+    Detail view (11 fields):  ~85-90% filled
+    Backend (12 fields):      ~85% filled
+    Overall:                  ~26/29 = ~90%
+
+
+================================================================================
+  END OF REPORT
+================================================================================

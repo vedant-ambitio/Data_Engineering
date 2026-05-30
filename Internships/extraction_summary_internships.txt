@@ -1,0 +1,235 @@
+================================================================================
+  INTERNSHIPS EXTRACTION SUMMARY
+  Generated: April 2026
+================================================================================
+
+
+================================================================================
+  1) OVERVIEW
+================================================================================
+
+  Total input (deep research):  38 files
+  Total extracted:              38 files
+  Input source:                 Internships/internship_data/input_deepresearch/
+  Output:                       Internships/internship_data/extracted/
+
+  QUALITY DISTRIBUTION:
+
+    Tier             Count    %      Description
+    ---------------  -------  -----  -----------------------------------
+    Good (>=80%)     12       32%    Ready for UI — all key fields filled
+    Avg (50-79%)     17       45%    Usable — some detail fields missing
+    Poor (<50%)      9        24%    Unusable — need manual fix or drop
+    ---------------  -------  -----  -----------------------------------
+    TOTAL            38       100%
+
+    Success rate (Good + Avg): 76%
+    Usable internships:        29 out of 38
+
+
+================================================================================
+  2) FIELD-WISE FILL PERCENTAGE PER TIER (16 UI fields)
+================================================================================
+
+  === GOOD FILES (12 files) ===
+  Field                     Filled   Null     Fill%
+  --------------------------------------------------
+  CARD VIEW:
+  internship_title          12       0        100.0%
+  company_name              12       0        100.0%
+  company_logo              0        12       0.0%
+  mode                      12       0        100.0%
+  stipend                   12       0        100.0%
+  posted_date               5        7        41.7%
+  source_badge              0        12       0.0%
+  domain                    12       0        100.0%
+  team_size                 12       0        100.0%
+
+  DETAIL VIEW:
+  about_description         12       0        100.0%
+  eligibility_text          12       0        100.0%
+  duration                  12       0        100.0%
+  responsibilities          12       0        100.0%
+  skills_required           11       1        91.7%
+  how_to_apply              12       0        100.0%
+  application_url           12       0        100.0%
+  --------------------------------------------------
+  Card view:    77/108 = 71.3%
+  Detail view:  83/84 = 98.8%
+  OVERALL UI:   160/192 = 83.3%
+
+
+  === AVG FILES (17 files) ===
+  Field                     Filled   Null     Fill%
+  --------------------------------------------------
+  CARD VIEW:
+  internship_title          17       0        100.0%
+  company_name              17       0        100.0%
+  company_logo              0        17       0.0%
+  mode                      15       2        88.2%
+  stipend                   0        17       0.0%
+  posted_date               2        15       11.8%
+  source_badge              0        17       0.0%
+  domain                    17       0        100.0%
+  team_size                 17       0        100.0%
+
+  DETAIL VIEW:
+  about_description         17       0        100.0%
+  eligibility_text          17       0        100.0%
+  duration                  13       4        76.5%
+  responsibilities          14       3        82.4%
+  skills_required           14       3        82.4%
+  how_to_apply              15       2        88.2%
+  application_url           17       0        100.0%
+  --------------------------------------------------
+  Card view:    85/153 = 55.6%
+  Detail view:  107/119 = 89.9%
+  OVERALL UI:   192/272 = 70.6%
+
+
+  === AVG FILES — AFTER GEMINI 3 PATCH MERGE (17 files) ===
+  Patched fields filled via Gemini 3 Flash web search; merged into the 17 AVG
+  records via merge_avg_patch.py (replaces 4 weak fields only, preserves
+  original schema). 14 records fully merged; 3 records (cry-youth-change-
+  champions, energymag-internship, seaside-sustainability) had their patches
+  deleted as wrong-program hallucinations and remain unchanged from original.
+  Output folder: extracted/avg_patched/
+
+  Field                     Filled   Null     Fill%    Δ vs Orig AVG
+  ----------------------------------------------------------------------
+  CARD VIEW:
+  internship_title          17       0        100.0%       0
+  company_name              17       0        100.0%       0
+  company_logo              0        17       0.0%         0
+  mode                      15       2        88.2%        0
+  stipend                   0        17       0.0%         0
+  posted_date *             13       4        76.5%       +11  (+64.7 pp)
+  source_badge              0        17       0.0%         0
+  domain                    17       0        100.0%       0
+  team_size                 17       0        100.0%       0
+
+  DETAIL VIEW:
+  about_description         17       0        100.0%       0
+  eligibility_text          17       0        100.0%       0
+  duration *                17       0        100.0%       +4  (+23.5 pp)
+  responsibilities *        16       1        94.1%        +2  (+11.7 pp)
+  skills_required *         16       1        94.1%        +2  (+11.7 pp)
+  how_to_apply              15       2        88.2%        0
+  application_url           17       0        100.0%       0
+  ----------------------------------------------------------------------
+  OVERALL UI:               211/272 = 77.6%   (+19 cells, +7.0 pp)
+
+  * = field replaced by Gemini 3 Flash web-search patch.
+
+  Notes:
+  - Merged AVG tier (77.6%) closes the gap toward GOOD tier fill (83.3%).
+  - 3 patches deleted as hallucinated (wrong-program content pulled from
+    aggregator pages) — full audit in patch_avg_weak_gemini.py history.
+  - The remaining 1 null in responsibilities + skills_required is from one
+    of the 3 unchanged hallucinated records where the original was already
+    sparse.
+  - Persistent gaps: company_logo / stipend / source_badge intentionally
+    null at extraction time; posted_date 4 nulls correspond to 3 unchanged
+    records + 1 record where the listing has no public posting date.
+
+
+  === POOR FILES (9 files) ===
+  Field                     Filled   Null     Fill%
+  --------------------------------------------------
+  CARD VIEW:
+  internship_title          2        7        22.2%
+  company_name              2        7        22.2%
+  company_logo              0        9        0.0%
+  mode                      1        8        11.1%
+  stipend                   0        9        0.0%
+  posted_date               0        9        0.0%
+  source_badge              0        9        0.0%
+  domain                    2        7        22.2%
+  team_size                 4        5        44.4%
+
+  DETAIL VIEW:
+  about_description         0        9        0.0%
+  eligibility_text          0        9        0.0%
+  duration                  0        9        0.0%
+  responsibilities          0        9        0.0%
+  skills_required           0        9        0.0%
+  how_to_apply              0        9        0.0%
+  application_url           4        5        44.4%
+  --------------------------------------------------
+  Card view:    11/81 = 13.6%
+  Detail view:  4/63 = 6.3%
+  OVERALL UI:   15/144 = 10.4%
+
+
+================================================================================
+  3) SUMMARY COMPARISON
+================================================================================
+
+  Tier     Files   Card View    Detail View   Overall UI
+  ------   -----   ---------    -----------   ----------
+  GOOD     12      71.3%        98.8%         83.3%
+  AVG      17      55.6%        89.9%         70.6%
+  POOR     9       13.6%        6.3%          10.4%
+  ------   -----   ---------    -----------   ----------
+  All 3    38      ~50%         ~70%          ~60%
+
+  Usable (Good + Avg): 29 internships at ~77% overall fill
+
+
+================================================================================
+  4) POOR QUALITY FILES (9 — need action)
+================================================================================
+
+  Pattern: Most poor files are pages requiring login, JS-rendered content,
+  or pages that redirect to platform listings without specific internship
+  details.
+
+  delve-delta-institute             (0%)
+  gvi-virtual-internship            (12%)
+  isro-yuvika                       (31%)
+  kpmg-career-catalyst-forage       (0%)
+  plan-india-internship             (0%)
+  smithsonian-virtual-internship    (19%)
+  teach-for-india-volunteer         (0%)
+  virtual-internships-foundations   (0%)
+  wwf-india-internship              (31%)
+
+
+================================================================================
+  5) FIELD-WISE COMMON GAPS
+================================================================================
+
+  Across GOOD and AVG tiers, these fields have notable gaps:
+
+    Field              Good    Avg    Reason
+    --------------     ----    ----   -------
+    company_logo       0%      0%     Intentionally null (fetch via Clearbit API later)
+    source_badge       0%      0%     Intentionally null (set for Ambitio partners)
+    posted_date        41.7%   11.8%  Most pages don't publish posting date
+    stipend (avg)      100%    0%     Good tier explicit about pay; avg pages don't say
+    duration (avg)     100%    76.5%  Some avg pages don't state duration
+
+  Fields with excellent coverage across all usable programs:
+
+    internship_title, company_name, domain, team_size, application_url,
+    about_description, eligibility_text — all >= 95%
+
+
+================================================================================
+  6) NEXT STEPS
+================================================================================
+
+  Option A: Use the 29 usable internships (Good + Avg) as-is
+    - Ship to UI with ~77% overall fill
+    - Missing fields (stipend, posted_date) can be filled manually
+
+  Option B: Run Gemini web search patch for the 9 poor files
+    - Similar pattern to competitions / summer schools
+
+  Option C: Drop the 9 poor files, ship 29
+    - Simpler, move on
+
+
+================================================================================
+  END OF REPORT
+================================================================================

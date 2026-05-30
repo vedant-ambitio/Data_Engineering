@@ -1,0 +1,143 @@
+--- Fill Percentage (14 key fields, 56 files) ---
+
+activity_name            : 100.00% (56/56)
+organizer                : 100.00% (56/56)
+level                    : 100.00% (56/56)
+subject                  : 100.00% (56/56)
+registration_close_date  :  69.64% (39/56)
+modality                 :  94.64% (53/56)
+cost_chip                :  94.64% (53/56)
+entry_route              :  94.64% (53/56)
+about_description        : 100.00% (56/56)
+eligibility_text         :  94.64% (53/56)
+structure_format         :  98.21% (55/56)
+how_to_apply             :  89.29% (50/56)
+rewards_outcomes         :  75.00% (42/56)
+official_website         : 100.00% (56/56)
+
+
+--- 39 Unique Official URLs ---
+
+https://IJSOWeb.org  -->  (IJSO)
+https://amtionline.com  -->  (NMTC_INTER, NMTC_JR, NMTC_SR)
+https://iapt.org  -->  (NSEA)
+https://iapt.org.in  -->  (NSEP)
+https://icho-official.org/  -->  (IChO)
+https://ieo-official.org/  -->  (IEO_INTL)
+https://ioai-official.org/  -->  (IOAI)
+https://ioi2026.uz/  -->  (IOI)
+https://ioling.org/  -->  (IOL)
+https://ipho2026.com/  -->  (IPhO)
+https://ltrc.iiit.ac.in/nlpmt/plo/  -->  (PaIO)
+https://olympiads.hbcse.tifr.res.in/  -->  (HBCSE_NSO, INAO, INBO, INPhO, NSEB)
+https://olympiads.hbcse.tifr.res.in/mathematical-olympiad-2025-2026/  -->  (INMO, IOQM, RMO)
+https://olympiads.hbcse.tifr.res.in/science-olympiad-2025-2026  -->  (NSEC)
+https://olympiads.hbcse.tifr.res.in/science-olympiad-2025-2026/  -->  (INChO, INJSO)
+https://sofworld.org/ico  -->  (SOF_ICO)
+https://sofworld.org/icso  -->  (SOF_ICSO)
+https://sofworld.org/ieo  -->  (SOF_IEO)
+https://sofworld.org/igko  -->  (SOF_IGKO)
+https://sofworld.org/imo  -->  (SOF_IMO)
+https://sofworld.org/isso  -->  (SOF_ISSO)
+https://sofworld.org/nco  -->  (SOF_NCO)
+https://sofworld.org/nso  -->  (SOF_NSO)
+https://www.crestolympiads.com/  -->  (CREST_CCO, CREST_CEO, CREST_CMO, CREST_CSO)
+https://www.geoolympiad.org/  -->  (IGeO)
+https://www.historyolympiad.com/  -->  (IHO)
+https://www.iapt.org.in  -->  (NSEJS)
+https://www.iapt.org.in/  -->  (IAPT)
+https://www.iarcs.org.in/inoi/  -->  (INOI)
+https://www.ibo-info.org/  -->  (IBO)
+https://www.icasassessments.com/  -->  (ICAS)
+https://www.ieso-info.org/  -->  (IEarthSO)
+https://www.imo-official.org/  -->  (IMO)
+https://www.ioaastrophysics.org/  -->  (IOAA)
+https://www.philosophy-olympiad.org/  -->  (IPO)
+https://www.silverzone.org/  -->  (SZ_SKGKO, SZ_iIO, SZ_iOM)
+https://www.silverzone.org/ioel  -->  (SZ_iOEL)
+https://www.silverzone.org/ios  -->  (SZ_iOS)
+https://www.unifiedcouncil.com/  -->  (UC_NSTSE, UC_UCO, UC_UIEO, UC_UIMO)
+
+
+--- registration_close_date: 20 FILLED, 36 YET TO BE ANNOUNCED ---
+
+FILLED (20/56):
+  IAPT                 2026-10-31
+  IBO                  2026-05-25
+  ICAS                 2026-07-27
+  IMO                  2026-04-29
+  INAO                 2026-01-17
+  INBO                 2026-01-17
+  INChO                2026-01-17
+  INJSO                2026-01-17
+  INMO                 2026-01-14
+  INPhO                2026-01-17
+  IOAI                 2026-06-01
+  IOI                  2026-06-15
+  IOQM                 2026-07-25
+  NMTC_INTER           2026-07-01
+  NMTC_JR              2026-07-01
+  NMTC_SR              2026-07-01
+  NSEJS                2026-09-14
+  PaIO                 2026-02-04
+  SOF_ICO              2026-10-31
+  UC_NSTSE             2027-01-25
+
+YET TO BE ANNOUNCED (36/56):
+  CREST_CCO, CREST_CEO, CREST_CMO, CREST_CSO
+  HBCSE_NSO
+  IChO, IEO_INTL, IEarthSO, IGeO, IHO, IJSO, IOAA, IOL, IPO, IPhO
+  INOI
+  NSEA, NSEB, NSEC, NSEP, RMO
+  SOF_ICSO, SOF_IEO, SOF_IGKO, SOF_IMO, SOF_ISSO, SOF_NCO, SOF_NSO
+  SZ_SKGKO, SZ_iIO, SZ_iOEL, SZ_iOM, SZ_iOS
+  UC_UCO, UC_UIEO, UC_UIMO
+
+
+--- Registration Status Classification (36 patches) ---
+
+[Actual YYYY-MM-DD Dates - Total: 12]
+  - CREST_CCO (2026-11-30)
+  - CREST_CEO (2026-10-31)
+  - CREST_CMO (2026-10-31)
+  - CREST_CSO (2026-10-31)
+  - IEarthSO (2026-01-12)
+  - NSEA (2026-09-14)
+  - NSEB (2026-09-14)
+  - NSEC (2026-09-14)
+  - NSEP (2026-09-14)
+  - SZ_iIO (2026-08-31)
+  - SZ_iOEL (2026-10-21)
+  - SZ_iOS (2026-08-31)
+
+[30 Days Before Exam Date - Total: 7]
+  - SOF_ICSO
+  - SOF_IEO
+  - SOF_IGKO
+  - SOF_IMO
+  - SOF_ISSO
+  - SOF_NCO
+  - SOF_NSO
+
+[Rolling Registrations - Total: 1]
+  - IOL
+
+[Not Yet Announced - Total: 8]
+  - IHO
+  - INOI
+  - RMO
+  - SZ_SKGKO
+  - SZ_iOM
+  - UC_UCO
+  - UC_UIEO
+  - UC_UIMO
+
+[Handled via National Qualifier - Total: 8]
+  - HBCSE_NSO
+  - IChO
+  - IEO_INTL
+  - IGeO
+  - IJSO
+  - IOAA
+  - IPO
+  - IPhO
