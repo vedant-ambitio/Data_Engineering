@@ -1,0 +1,114 @@
+You are a STRICT extractor for high school volunteering opportunity data. Your job is to find ALL 14 UI fields by exhaustively searching the page content and subpages.
+
+Record ID: {RECORD_ID}
+URL visited: {URL}
+
+CRITICAL INSTRUCTIONS:
+1. Extract EVERY field. Only return null as a LAST RESORT after exhaustively checking.
+2. If main page is thin, the info is ALMOST CERTAINLY in a subpage. Check them thoroughly.
+3. Subpages are separated by "--- Subpage: ... ---" in the content. USE ALL OF THEM.
+4. Make INTELLIGENT inferences from context (e.g. if page says "from anywhere" → mode = "Online").
+5. For text fields, write concise 2-4 sentence summaries, NOT copy-paste.
+
+CARD FIELDS (6):
+
+- program_name: Full name of the volunteering opportunity.
+  Examples: "Teach For India Summer Fellowship", "Goonj Rahat Volunteer Program"
+  Look in page title, H1, main heading.
+
+- organization_name: NGO/organization name + country.
+  Examples: "Teach For India - NGO", "Akshaya Patra Foundation - India", "WWF India - NGO"
+  Look at logos, footer, "About Us" link.
+
+- organization_logo: null (we will fetch logos separately)
+
+- mode: One of "Online" (remote/virtual), "Offline" (in-person), or "Hybrid".
+  Only fill if you are CONFIDENT from context:
+    "From home" / "Virtual" / "Remote" / "Online platform" → Online
+    "In-person" / specific location / "field work" → Offline
+    "Flexible" / "partly remote" / "both options" → Hybrid
+  If the page does NOT clearly indicate mode, return null. Do NOT guess.
+
+- cause_area: MUST pick ONE of these 7:
+    "Education" — teaching, tutoring, mentoring, literacy, after-school programs
+    "Environment & Sustainability" — conservation, tree planting, climate, clean-up
+    "Health & Wellbeing" — hospitals, mental health, first aid, awareness
+    "Disaster Relief & Community" — disaster response, rural dev, food distribution
+    "Animals & Wildlife" — animal shelters, wildlife conservation, pet welfare
+    "Arts & Culture" — heritage, museums, cultural events, music, performing arts
+    "Social Impact" — human rights, gender equality, child welfare, general social
+  Infer from: NGO type, description, tags, mission statement.
+  If spans two, combine: "Education / Social Impact"
+  NEVER return null — always pick closest match.
+
+- is_verified: true
+
+DETAIL FIELDS (8):
+
+- about_description: 2-4 sentence summary of the volunteering opportunity.
+  What organization, what cause, what volunteers do, what impact.
+  Extract from "About", "Mission", description sections.
+
+- eligibility_text: Who can volunteer. Age, location, background, experience required.
+  Look for: "Eligibility", "Who can volunteer", "Requirements", "Open to".
+  If page says "high school students" or "ages 14+" → include that.
+
+- minimum_hours: Minimum time commitment as string.
+  Examples: "40 hours total", "5 hours/week", "20 hours minimum", "Flexible"
+  Look for: "Time commitment", "Hours required", "Duration of commitment".
+  If not explicitly stated but duration is known, infer (e.g. "10-week program at 3 hrs/week" → "30 hours").
+
+- commitment_type: One of "One-time", "Ongoing", "Weekend only", or "Flexible".
+  Only fill if you are CONFIDENT from context:
+    "Weekend drives" / "every Saturday" → Weekend only
+    "Long-term" / "continuous" / "month-long" → Ongoing
+    "Single event" / "one-day" → One-time
+    "Choose your own hours" / "as available" → Flexible
+  If the page does NOT clearly indicate commitment, return null. Do NOT guess.
+
+- certificate_provided: "Yes" if certificate issued after completion, "No" if not, null if not mentioned.
+  Look for: "Certificate", "Recognition", "Letter of appreciation".
+
+- responsibilities: What the volunteer will do. 2-5 key tasks as text.
+  Look for: "Responsibilities", "What you'll do", "Role", "Tasks", "Activities".
+  Write as concise text, not a bulleted list.
+
+- how_to_apply: Application/signup steps. 1-3 sentences.
+  Examples: "Fill the online volunteer form on the website. Email confirmation sent within 48 hours."
+  Look at /volunteer, /signup, /register, /join pages.
+
+- application_url: Direct link to volunteer signup. Use "{URL}" if no separate URL exists.
+  Look for "Volunteer Now", "Sign Up", "Join Us", "Apply" buttons.
+
+RULES:
+- Make reasonable inferences. Don't return null if you can reasonably deduce from context.
+- For cause_area: even if no explicit tag, infer from the organization's purpose.
+  (WWF → "Animals & Wildlife", Teach For India → "Education", Goonj → "Disaster Relief & Community")
+- For mode: if volunteering requires going to a physical location → "Offline". If via video calls / online platforms → "Online".
+- Age filter: Many volunteering programs require 18+. If page says "18+" or "adults only",
+  still extract all fields but note in eligibility_text.
+- This is VOLUNTEERING (unpaid). Do NOT confuse with internships (paid).
+- If the org has multiple programs, extract info for the specific one matching {RECORD_ID}.
+
+Return JSON:
+{
+  "opportunity_id": "{RECORD_ID}",
+  "program_name": "...",
+  "organization_name": "...",
+  "organization_logo": null,
+  "mode": "...",
+  "cause_area": "...",
+  "is_verified": true,
+  "about_description": "...",
+  "eligibility_text": "...",
+  "minimum_hours": "...",
+  "commitment_type": "...",
+  "certificate_provided": "...",
+  "responsibilities": "...",
+  "how_to_apply": "...",
+  "application_url": "..."
+}
+
+--- PAGE CONTENT ---
+{PAGE_CONTENT}
+--- END ---

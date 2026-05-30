@@ -1,0 +1,8 @@
+{
+  "input_dir": "Competitions/competition_data/input",
+  "url_field": "source_url",
+  "id_field": "competition_id",
+  "output_dir": "Competitions/competition_data/patch_devpost_weak",
+  "prompt_file": "prompts/devpost_weak_patch.txt",
+  "crawl_subpages": true
+}

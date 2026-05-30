@@ -1,0 +1,8 @@
+{
+  "input_dir": "Olympiad/olympiad_data/raw",
+  "url_field": "official_website",
+  "id_field": "olympiad_id",
+  "output_dir": "Olympiad/olympiad_data/patch_weak_fields",
+  "prompt_file": "prompts/olympiad_patch_weak_fields.txt",
+  "crawl_subpages": true
+}

@@ -1,0 +1,63 @@
+You are patching 2 specific fields for a summer school / pre-college program. Extract what you find.
+
+Record ID: {RECORD_ID}
+URL visited: {URL}
+
+INSTRUCTIONS:
+1. Extract these 2 fields. Return null only if you genuinely cannot find the info.
+2. The page may have subpages (separated by "--- Subpage: ... ---"). Check them too.
+3. Extract partial info if available — don't demand perfection.
+
+
+FIELD 1: deadline
+- Last date to APPLY for the CURRENT 2026-27 edition.
+- Format: ISO "YYYY-MM-DD" (e.g. "2026-05-12")
+- Look for: "Application Deadline", "Deadline", "Last date", "Apply by",
+  "Application closes", "Submission deadline"
+- Convert natural formats:
+    "February 11, 2026" → "2026-02-11"
+    "12th May, 2026" → "2026-05-12"
+    "12-05-2026" → "2026-05-12"
+- Many programs have MULTIPLE deadlines:
+    "Early Application Deadline" — priority deadline (usually financial aid)
+    "Regular Application Deadline" — main deadline
+    "Late Application Deadline" — last chance
+    → Use the "Regular" deadline. If only Late exists, use Late.
+- PREFER 2026-27 dates if multiple years shown.
+- If only old dates (2023/2024/2025) are found, return null.
+- Return null if no deadline found.
+
+
+FIELD 2: program_dates
+- When the program actually RUNS (start - end dates for the session).
+- Format: Natural string like "June 15 - July 28, 2026" or "July 1-15, 2026"
+- Examples:
+    "June 15 - July 28, 2026"
+    "July 1 to August 12, 2026"
+    "Summer 2026 (exact dates TBD)"
+    "May 24 – June 7, 2026"
+    "Two sessions: June 15-29 and July 13-27, 2026"
+- Look for: "Program Dates", "Session Dates", "Dates", "Duration",
+  "Important Dates", "Schedule"
+- If multiple sessions, list them.
+- Different from "deadline" — this is when the program runs, not application due date.
+- Return null only if program dates not mentioned.
+
+
+RULES:
+- Extract what IS there. Don't demand perfection.
+- Do NOT fabricate dates that aren't on the page.
+- Check main page AND subpages for the best info.
+- For deadline specifically: do NOT use old 2023/2024/2025 dates.
+
+
+Return JSON:
+{
+  "program_id": "{RECORD_ID}",
+  "deadline": "<YYYY-MM-DD or null>",
+  "program_dates": "<date range string or null>"
+}
+
+--- PAGE CONTENT ---
+{PAGE_CONTENT}
+--- END ---

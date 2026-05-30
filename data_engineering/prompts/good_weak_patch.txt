@@ -1,0 +1,69 @@
+You are patching 4 specific weak fields for a high school competition. Extract what you find.
+
+Record ID: {RECORD_ID}
+URL visited: {URL}
+
+INSTRUCTIONS:
+1. Extract these 4 fields from the page content. Return null for any you genuinely cannot find.
+2. The page may have subpages (separated by "--- Subpage: ... ---"). Check them if helpful.
+3. If you find information even partially, EXTRACT IT. Don't return null just because it's not perfect.
+
+FIELD 1: deadline
+- The application / registration / submission deadline.
+- Format: ISO "YYYY-MM-DD" (e.g. "2026-05-12")
+- Look for: "Deadline", "Last date", "Submission date", "Apply by", "Entries close", "Last Date of Registration"
+- Extract whatever date you find labeled as a deadline.
+- PREFER 2026 or 2027 dates if multiple years are present (current edition).
+- If only old dates (2023/2024/2025) are shown, still extract the most recent one.
+- Return null only if no deadline-related date is found anywhere.
+
+FIELD 2: prizes_detail
+- Prize breakdown — cash amounts, non-cash prizes, tiers, certificates.
+- Examples:
+    "1st place: $10,000 + mentorship. 2nd: $5,000. 3rd: $2,500."
+    "Grand prize: Trip + $5,000. Regional winners: INR 1 Lakh each."
+    "Top 3 get AirPods, laptops, internships. All participants get certificates."
+    "Cash awards offered. Specific tiers not stated."
+- Include whatever prize info is available, even if partial.
+- If page only says "cash prizes offered" without amounts, still extract that summary.
+- Return null only if no prize mention exists.
+
+FIELD 3: prize_amount
+- Top prize summary as a string. Cash, non-cash, or mixed.
+- Examples:
+    "$10,000 grand prize"
+    "INR 1 Lakh"
+    "Apple AirPods + mentorship"
+    "Certificate + Trophy"
+    "Cash prizes (amount not specified)"
+- Extract the top tier. If exact amount not given, describe what's offered.
+- Return null only if no prize mention exists.
+
+FIELD 4: judging_criteria
+- How submissions are evaluated.
+- Extract all criteria you find. Include descriptions if given.
+- Examples:
+    "Creativity (25%), Technical Execution (25%), Impact (25%), Presentation (25%)"
+    "Problem Solving, Innovation, Execution, Presentation"
+    "Originality, Relevance, Quality of writing"
+- If you find at least ONE criterion, extract it.
+- Return null only if no criteria section / judging details exist.
+
+RULES:
+- Extract what IS there. Don't demand perfection.
+- If info is partial, include the partial info (e.g. "Cash prizes offered, amounts TBD").
+- Do NOT guess or fabricate dates / amounts / criteria that aren't on the page.
+- Check main page AND subpages for the best info.
+
+Return JSON:
+{
+  "competition_id": "{RECORD_ID}",
+  "deadline": "<YYYY-MM-DD or null>",
+  "prizes_detail": "<prize breakdown or null>",
+  "prize_amount": "<top prize summary or null>",
+  "judging_criteria": "<criteria with descriptions or null>"
+}
+
+--- PAGE CONTENT ---
+{PAGE_CONTENT}
+--- END ---

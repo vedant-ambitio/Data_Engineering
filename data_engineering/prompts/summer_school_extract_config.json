@@ -1,0 +1,9 @@
+{
+  "input_dir": "Summer_Schools/summer_school_data/input_deepresearch",
+  "url_field": "official_url",
+  "fallback_url_field": "source_url",
+  "id_field": "program_id",
+  "output_dir": "Summer_Schools/summer_school_data/extracted",
+  "prompt_file": "prompts/summer_school_extract.txt",
+  "crawl_subpages": true
+}

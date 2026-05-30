@@ -1,0 +1,9 @@
+{
+  "input_dir": "Volunteering/volunteering_data/input_deepresearch",
+  "url_field": "official_url",
+  "fallback_url_field": "source_url",
+  "id_field": "opportunity_id",
+  "output_dir": "Volunteering/volunteering_data/extracted",
+  "prompt_file": "prompts/volunteering_extract.txt",
+  "crawl_subpages": true
+}

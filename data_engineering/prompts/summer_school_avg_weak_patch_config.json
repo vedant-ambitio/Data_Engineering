@@ -1,0 +1,9 @@
+{
+  "input_dir": "Summer_Schools/summer_school_data/input_avg_patch",
+  "url_field": "official_url",
+  "fallback_url_field": "source_url",
+  "id_field": "program_id",
+  "output_dir": "Summer_Schools/summer_school_data/patch_avg_weak",
+  "prompt_file": "prompts/summer_school_avg_weak_patch.txt",
+  "crawl_subpages": true
+}

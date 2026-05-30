@@ -1,0 +1,9 @@
+{
+  "input_dir": "Competitions/competition_data/input_good_patch",
+  "url_field": "official_url",
+  "fallback_url_field": "source_url",
+  "id_field": "competition_id",
+  "output_dir": "Competitions/competition_data/patch_good_weak",
+  "prompt_file": "prompts/good_weak_patch.txt",
+  "crawl_subpages": true
+}

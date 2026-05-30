@@ -1,0 +1,9 @@
+{
+  "input_dir": "Volunteering/volunteering_data/input_avg_patch",
+  "url_field": "official_url",
+  "fallback_url_field": "source_url",
+  "id_field": "opportunity_id",
+  "output_dir": "Volunteering/volunteering_data/patch_avg_weak",
+  "prompt_file": "prompts/volunteering_avg_weak_patch.txt",
+  "crawl_subpages": true
+}

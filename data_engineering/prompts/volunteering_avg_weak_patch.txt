@@ -1,0 +1,68 @@
+You are patching 3 specific fields for a volunteering opportunity. Extract what you find.
+
+Record ID: {RECORD_ID}
+URL visited: {URL}
+
+INSTRUCTIONS:
+1. Extract these 3 fields. Return null only if you genuinely cannot find the info.
+2. The page may have subpages (separated by "--- Subpage: ... ---"). Check them too.
+3. Extract partial info if available — don't demand perfection.
+
+
+FIELD 1: commitment_type
+- One of: "One-time", "Ongoing", "Weekend only", "Flexible"
+- Only fill if you are CONFIDENT from context:
+    "Weekend drives" / "every Saturday" / "weekend-only" → "Weekend only"
+    "Long-term" / "continuous" / "month-long" / "year-round" → "Ongoing"
+    "Single event" / "one-day" / "one-time campaign" → "One-time"
+    "Choose your own hours" / "as available" / "your convenience" → "Flexible"
+- Look for: "Time Commitment", "Frequency", "Duration", "Schedule"
+- If the page does NOT clearly indicate commitment type, return null. Do NOT guess.
+
+
+FIELD 2: mode
+- One of: "Online", "Offline", "Hybrid"
+- Only fill if you are CONFIDENT from context:
+    "From home" / "Virtual" / "Remote" / "Online platform" / "digital" → "Online"
+    "In-person" / specific location (city/country) / "field work" / "on-site" → "Offline"
+    "Flexible" / "partly remote" / "both options" / "online or in-person" → "Hybrid"
+- Check if page mentions:
+    A physical address / city / country → likely "Offline"
+    A Zoom / Google Meet / virtual platform → likely "Online"
+    Both options offered → "Hybrid"
+- If the page does NOT clearly indicate mode, return null. Do NOT guess.
+
+
+FIELD 3: eligibility_text
+- Who can volunteer. Include: age, location, background, experience, language.
+- Examples:
+    "Open to students ages 14-18 worldwide. No prior experience needed."
+    "Volunteers must be 16+ and based in India."
+    "High school students from any country. English proficiency required."
+    "Ages 13+. Must commit to at least 5 hours per week."
+    "Open to all Indian residents aged 15 and above."
+- Look for: "Eligibility", "Who can volunteer", "Requirements", "Open to",
+  "Age", "Qualifications"
+- Write as a concise sentence or two covering age, location, and any other criteria.
+- Include whatever info is available, even if partial.
+- Return null only if eligibility info is truly not mentioned anywhere.
+
+
+RULES:
+- Extract what IS there. Don't demand perfection.
+- Do NOT fabricate details that aren't on the page.
+- Check main page AND subpages for the best info.
+- For commitment_type and mode: null is better than a wrong guess.
+
+
+Return JSON:
+{
+  "opportunity_id": "{RECORD_ID}",
+  "commitment_type": "<One-time / Ongoing / Weekend only / Flexible or null>",
+  "mode": "<Online / Offline / Hybrid or null>",
+  "eligibility_text": "<text or null>"
+}
+
+--- PAGE CONTENT ---
+{PAGE_CONTENT}
+--- END ---

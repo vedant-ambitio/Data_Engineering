@@ -1,0 +1,9 @@
+{
+  "input_dir": "Internships/internship_data/input_deepresearch",
+  "url_field": "official_url",
+  "fallback_url_field": "source_url",
+  "id_field": "internship_id",
+  "output_dir": "Internships/internship_data/extracted",
+  "prompt_file": "prompts/internship_extract.txt",
+  "crawl_subpages": true
+}

@@ -1,0 +1,82 @@
+You are extracting structured data for a high school competition from a webpage.
+
+Record ID: {RECORD_ID}
+Source URL: {URL}
+
+From the page content below, extract ALL of the following 23 fields.
+Return a single JSON object. Use null for any field you cannot find.
+
+CARD FIELDS:
+- activity_name: Full competition name (e.g. "Conrad Challenge - Innovation Competition")
+- organizer: Organization running it + country (e.g. "Conrad Foundation - USA")
+- organizer_logo: URL of the organizer's logo image. null if not found.
+- mode: One of "Online", "Offline", or "Hybrid"
+- deadline: Last date to register/submit in ISO format "YYYY-MM-DD". null if not found.
+- cost_chip: "Free" if no registration fee, "Paid" if there is a fee.
+- cost: Exact cost string. "Free" or "INR 500" or "$25" or "$50 per team". null if not stated.
+- domain: Map to ONE of these 7 categories based on the competition topic:
+    "STEM" | "Business & Entrepreneurship" | "Coding & Technology" |
+    "Writing & Literature" | "Arts & Design" |
+    "Environment & Sustainability" | "Social Impact"
+    If it spans two, combine: "STEM / Entrepreneurship"
+- team_size: "Individual" or "2-4 members" or "2-5 members" or "5+ members" or "Individual or Team". Describe what the page says.
+- is_verified: true (always true for scraped data, manual review later)
+
+DETAIL FIELDS:
+- about_description: 2-4 sentence summary of what this competition is about.
+- eligibility_text: Who can participate — age, grade, country, school type restrictions.
+- how_to_apply: Steps to register and participate.
+- prizes_detail: Full prize breakdown — all prize tiers, amounts, and non-cash prizes.
+- prize_amount: The top/grand prize as a string: "Rs 1 Lakh" or "$10,000". null if no cash prize.
+- structure_format: How the competition works — rounds, stages, timeline, format.
+- judging_criteria: How submissions are evaluated. null if not stated.
+- submission_format: What to submit — essay, video, prototype, code repo, etc. null if not stated.
+- official_website: The competition's own official website URL. Use the page URL if it IS the official site.
+- registration_url: Direct link to the registration/apply page. null if not found.
+
+BACKEND FIELDS:
+- source_url: "{URL}" (the URL we scraped this from)
+- registration_open_date: When registration opens in "YYYY-MM-DD". null if not stated.
+- country: Where the competition is based — "USA", "India", "UK", "Global", etc.
+- grade_levels: Array of eligible grade levels like [8, 9, 10, 11, 12]. Use [8,9,10,11,12] if it says "high school" or "school students". null if unclear.
+- age_limit: Age range as string like "13-18" or "14-18". "No age limit" if open to all. null if not stated.
+
+RULES:
+- Only extract information explicitly stated on the page. Do NOT guess or fabricate.
+- For about_description, write a concise 2-4 sentence summary, not a copy-paste of the full page.
+- For domain, pick the CLOSEST match from the 7 options. Do not invent new categories.
+- If the competition is clearly not for high school students (e.g. "PhD only", "working professionals only"), set grade_levels to null and age_limit to the stated requirement.
+
+Return JSON:
+{
+  "competition_id": "{RECORD_ID}",
+  "activity_name": "...",
+  "organizer": "...",
+  "organizer_logo": null,
+  "mode": "...",
+  "deadline": "...",
+  "cost_chip": "...",
+  "cost": "...",
+  "domain": "...",
+  "team_size": "...",
+  "is_verified": true,
+  "about_description": "...",
+  "eligibility_text": "...",
+  "how_to_apply": "...",
+  "prizes_detail": "...",
+  "prize_amount": "...",
+  "structure_format": "...",
+  "judging_criteria": "...",
+  "submission_format": "...",
+  "official_website": "...",
+  "registration_url": "...",
+  "source_url": "{URL}",
+  "registration_open_date": "...",
+  "country": "...",
+  "grade_levels": [...],
+  "age_limit": "..."
+}
+
+--- PAGE CONTENT ---
+{PAGE_CONTENT}
+--- END ---

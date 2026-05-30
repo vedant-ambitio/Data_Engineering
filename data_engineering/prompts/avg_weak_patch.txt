@@ -1,0 +1,92 @@
+You are patching 5 specific fields for a high school competition. Extract what you find.
+
+Record ID: {RECORD_ID}
+URL visited: {URL}
+
+INSTRUCTIONS:
+1. Extract these 5 fields. Return null only if you genuinely cannot find the info.
+2. The page may have subpages (separated by "--- Subpage: ... ---"). Check them too.
+3. Extract partial info if available — don't demand perfection.
+
+
+FIELD 1: deadline
+- Last date to register/submit for the CURRENT 2026-27 edition.
+- Format: ISO "YYYY-MM-DD" (e.g. "2026-05-12")
+- Look for: "Deadline", "Last date", "Submission date", "Apply by", "Last Date of Registration"
+- Convert natural formats: "12th May, 2026" → "2026-05-12", "12-05-2026" → "2026-05-12"
+- PREFER 2026-27 dates if multiple years shown.
+- If only old dates (2023/2024) are found, return null (do NOT use old dates).
+- Return null if no deadline found.
+
+
+FIELD 2: team_size
+- How many participants allowed: individual, team, or both.
+- Examples:
+    "Individual" — only solo allowed
+    "1-4 members" — solo or team of up to 4
+    "2-4 members" — teams only, no solo
+    "Individual or Team" — when exact limit not stated
+    "Team of 2-5 members"
+- Return null only if truly not stated anywhere.
+
+
+FIELD 3: prize_amount
+- TOP prize summary as string. Can be cash, non-cash, or mixed.
+- IMPORTANT: Include non-cash prizes. "₹1 Crore Internship Opportunity" IS a valid
+  prize_amount — extract it. Don't return null just because it's not cash.
+- Cash examples: "$10,000 grand prize", "₹1 Lakh", "INR 50,000"
+- Non-cash examples:
+    "₹1 Crore Internship Opportunity"
+    "Apple AirPods + mentorship"
+    "Interview with Google + SWAG kit"
+    "Trophy + Certificate"
+    "Cloud credits worth $500"
+    "Mentorship program + scholarship"
+- Mixed: "$5,000 + internship at Meta", "Rs 1 Lakh + training program"
+- Extract the TOP/most valuable prize. Pick ONE representative summary.
+- Return null only if no prize info anywhere on the page.
+
+
+FIELD 4: prizes_detail
+- Full prize breakdown — ALL prize tiers and types (cash, non-cash, mentorship,
+  internships, trophies, certificates, trips, scholarships, opportunities).
+- Examples:
+    "1st place: $10,000 + mentorship. 2nd: $5,000. 3rd: $2,500. Top 10 get internship."
+    "Top performer: ₹1 Crore Internship Opportunity. Mentorship from industry experts. Hands-on experience with AI."
+    "Winner: Trophy + Certificate + Cash Prize. Runner up: Certificate + Cash Prize."
+    "Cash awards offered. Specific tiers not stated."
+- Include whatever prize info is available, even if partial.
+- Return null only if no prize mention exists.
+
+
+FIELD 5: submission_format
+- What participants need to submit.
+- Examples:
+    "Project description (100+ words), demo video (3 min max), GitHub repo link"
+    "Essay (500-1000 words) in PDF format"
+    "Business plan (max 20 pages) + 5-minute pitch video"
+    "Art work (digital file, PNG or JPG, max 5MB)"
+- Look for "Submission Requirements", "What to Submit", "Deliverables".
+- Return null only if not stated.
+
+
+RULES:
+- Extract what IS there. Don't demand perfection.
+- If info is partial, include the partial info (e.g. "Cash prizes offered, amounts TBD").
+- Do NOT fabricate dates / amounts / criteria that aren't on the page.
+- Check main page AND subpages for the best info.
+
+
+Return JSON:
+{
+  "competition_id": "{RECORD_ID}",
+  "deadline": "<YYYY-MM-DD or null>",
+  "team_size": "<team size string or null>",
+  "prize_amount": "<top prize summary or null>",
+  "prizes_detail": "<full prize breakdown or null>",
+  "submission_format": "<what to submit or null>"
+}
+
+--- PAGE CONTENT ---
+{PAGE_CONTENT}
+--- END ---

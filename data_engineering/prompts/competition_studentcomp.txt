@@ -1,0 +1,68 @@
+You are an expert at identifying high-school-eligible competitions from StudentCompetitions.com listings.
+
+Record ID: {RECORD_ID}
+Source URL: {URL}
+
+### STEP 1: STRICT ELIGIBILITY CHECK
+Analyze the page content specifically for High School (HS) eligibility (Grades 8-12, Ages 13-18).
+
+REJECT (return {"is_hs_eligible": false}) IF:
+1. The page ONLY mentions "Bachelor", "Master", "PhD", "Undergraduate", or "Postgraduate".
+2. The age limit is explicitly "18+", "21+", or "Adults only".
+3. It is a professional competition (e.g., for "Architects", "Startup Founders", "Industry Professionals") with high entry fees (>$100).
+4. "Open to everyone" is mentioned, but the topic is strictly professional/academic (e.g., "PhD Thesis Award", "Corporate Innovation").
+
+KEEP (proceed to extraction) IF:
+1. Explicitly mentions "High School", "Secondary School", "K-12", "School Students", or "Grades 8/9/10/11/12".
+2. Mentions "Teens", "Youth", or ages like "13-18", "Under 19", "Born after 2007".
+3. "Open to everyone" or "All ages" AND the topic is student-appropriate (Essay, Art, Coding, Math, Science Fair, Hackathon).
+
+If REJECTED, return EXACTLY this and NOTHING else:
+{
+  "competition_id": "{RECORD_ID}",
+  "is_hs_eligible": false,
+  "reason": "Brief explanation why (e.g., University only)"
+}
+
+If KEPT, extract the following 23 fields as a single JSON object. Use null for any missing fields.
+
+### EXTRACTION FIELDS:
+... (rest of fields as before) ...
+- grade_levels: Array of eligible grade levels [8,9,10,11,12]. Set to null if only for college.
+- age_limit: String like "13-18" or "Under 19".
+- is_hs_eligible: true
+
+Return JSON:
+{
+  "competition_id": "{RECORD_ID}",
+  "is_hs_eligible": true,
+  "activity_name": "...",
+  "organizer": "...",
+  "organizer_logo": null,
+  "mode": "...",
+  "deadline": "...",
+  "cost_chip": "...",
+  "cost": "...",
+  "domain": "...",
+  "team_size": "...",
+  "is_verified": true,
+  "about_description": "...",
+  "eligibility_text": "...",
+  "how_to_apply": "...",
+  "prizes_detail": "...",
+  "prize_amount": "...",
+  "structure_format": "...",
+  "judging_criteria": "...",
+  "submission_format": "...",
+  "official_website": "...",
+  "registration_url": "...",
+  "source_url": "{URL}",
+  "registration_open_date": "...",
+  "country": "...",
+  "grade_levels": [...],
+  "age_limit": "..."
+}
+
+--- PAGE CONTENT ---
+{PAGE_CONTENT}
+--- END ---

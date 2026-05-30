@@ -1,0 +1,8 @@
+{
+  "input_dir": "Olympiad/olympiad_data/raw",
+  "url_field": "official_website",
+  "id_field": "olympiad_id",
+  "output_dir": "Olympiad/olympiad_data/registration_patch",
+  "prompt_file": "prompts/registration_dates.txt",
+  "crawl_subpages": true
+}

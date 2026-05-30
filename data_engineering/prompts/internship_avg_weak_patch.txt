@@ -1,0 +1,44 @@
+You are patching 1 specific field for a high school internship. Extract what you find.
+
+Record ID: {RECORD_ID}
+URL visited: {URL}
+
+INSTRUCTIONS:
+1. Extract this 1 field. Return null only if you genuinely cannot find the info.
+2. The page may have subpages (separated by "--- Subpage: ... ---"). Check them too.
+3. Extract partial info if available — don't demand perfection.
+
+
+FIELD: posted_date
+- When the internship was posted/listed on the page.
+- Format: ISO "YYYY-MM-DD" (e.g. "2026-04-15")
+- Look for:
+    "Posted on", "Listed on", "Published on", "Last updated"
+    Date stamps in header or sidebar
+    Footer info like "Last updated October 2025"
+    "Applications open since X" or "Open since X"
+- Convert natural formats:
+    "October 15, 2025" → "2025-10-15"
+    "15-10-2025" → "2025-10-15"
+    "15th Oct 2025" → "2025-10-15"
+- For internship platforms (Internshala, LinkedIn, Unstop):
+    Look at job listing metadata — posting date is usually shown prominently
+- If no posting date anywhere, return null. Do NOT fabricate or use today's date.
+
+
+RULES:
+- Extract what IS there. Don't demand perfection.
+- Do NOT fabricate dates that aren't on the page.
+- Do NOT use today's date as a fallback — return null if no date is stated.
+- Check main page AND subpages for the best info.
+
+
+Return JSON:
+{
+  "internship_id": "{RECORD_ID}",
+  "posted_date": "<YYYY-MM-DD or null>"
+}
+
+--- PAGE CONTENT ---
+{PAGE_CONTENT}
+--- END ---

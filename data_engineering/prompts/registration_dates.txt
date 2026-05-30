@@ -1,0 +1,35 @@
+You are extracting registration and exam date information for an olympiad competition.
+
+Record ID: {RECORD_ID}
+Source URL: {URL}
+
+From the page content below, extract these fields:
+
+1. registration_close_date — The last date schools/students can register.
+   Format: "YYYY-MM-DD" (e.g. "2026-09-15")
+   If rolling/year-round, return "rolling".
+   If not found or not announced, return null.
+
+2. exam_date — The first exam date (Option A / Level 1).
+   Format: "YYYY-MM-DD"
+   If not found, return null.
+
+3. source_text — The exact sentence or phrase where you found the dates.
+
+RULES:
+- Only extract dates explicitly stated in the content.
+- Do NOT guess or fabricate dates.
+- If the page shows a table with multiple olympiads, find the row matching {RECORD_ID}.
+- If it says "forms must reach 30 days before exam", calculate from the exam date.
+
+Return JSON:
+{
+  "olympiad_id": "{RECORD_ID}",
+  "registration_close_date": "<date or null or rolling>",
+  "exam_date": "<date or null>",
+  "source_text": "<exact text from page>"
+}
+
+--- PAGE CONTENT ---
+{PAGE_CONTENT}
+--- END ---

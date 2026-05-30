@@ -1,0 +1,82 @@
+You are extracting structured data for a high school competition from a Devpost hackathon page.
+
+Record ID: {RECORD_ID}
+Devpost URL: {URL}
+
+From the page content below, extract ALL of the following 23 fields.
+Return a single JSON object. Use null for any field you cannot find.
+
+CARD FIELDS:
+- activity_name: Full hackathon/competition name (e.g. "HackAmerica 2026")
+- organizer: Organization or person hosting it (e.g. "HackAmerica - USA")
+- organizer_logo: null (we will get logos separately)
+- mode: One of "Online", "Offline", or "Hybrid". Check if the page says "Online", "In-Person", or both.
+- deadline: Submission deadline in ISO format "YYYY-MM-DD". This is the END date of the hackathon. null if not found.
+- cost_chip: "Free" (all devpost hackathons are free)
+- cost: "Free"
+- domain: Map to ONE of these 7 categories based on the hackathon themes/tracks:
+    "STEM" | "Business & Entrepreneurship" | "Coding & Technology" |
+    "Writing & Literature" | "Arts & Design" |
+    "Environment & Sustainability" | "Social Impact"
+    Most devpost hackathons are "Coding & Technology". If it has social good / education themes, use "Social Impact". If it spans two, combine: "Coding & Technology / Social Impact"
+- team_size: "Individual" or "2-4 members" or "1-5 members" or "Individual or Team". Check the Rules section for team size limits.
+- is_verified: true
+
+DETAIL FIELDS:
+- about_description: 2-4 sentence summary of what this hackathon is about. Write concisely.
+- eligibility_text: Who can participate — age range, school level, country, any restrictions. Look for "Rules" or "Eligibility" section. If it says "high school students only" or "ages 13-18", include that.
+- how_to_apply: Steps to participate — register on devpost, form a team, build a project, submit.
+- prizes_detail: Full prize breakdown — all tiers and amounts. Devpost always lists prizes prominently.
+- prize_amount: The top/grand prize as a string: "$500" or "$10,000". null if only non-cash prizes.
+- structure_format: How the hackathon works — duration, phases, workshops, demos, judging day.
+- judging_criteria: How submissions are judged. Devpost usually lists specific criteria with weights or descriptions.
+- submission_format: What to submit — project description, demo video, code repo link, etc. Look for "Submission Requirements" section.
+- official_website: The hackathon's own website (NOT the devpost URL). Look for links to an external site. If devpost IS the only site, use the devpost URL.
+- registration_url: The devpost URL itself: "{URL}"
+
+BACKEND FIELDS:
+- source_url: "{URL}"
+- registration_open_date: When the hackathon started accepting registrations in "YYYY-MM-DD". This is the START date. null if not stated.
+- country: Where the hackathon is based — "USA", "India", "Canada", "Global", etc. "Online" hackathons are "Global". In-person ones use the city/country mentioned.
+- grade_levels: [8, 9, 10, 11, 12] if it says "high school". [9, 10, 11, 12] if "grades 9-12". null if eligibility is unclear.
+- age_limit: Age range like "13-18" or "13-19". null if not stated.
+
+RULES:
+- Only extract information explicitly on the page. Do NOT guess or fabricate.
+- For about_description, write a concise summary, not a copy-paste.
+- Devpost pages have sections: About, Prizes, Rules, Judges, Submission Requirements — check all of them.
+- If the page says "Invite only" or restricted to a specific school, still extract all fields but note the restriction in eligibility_text.
+
+Return JSON:
+{
+  "competition_id": "{RECORD_ID}",
+  "activity_name": "...",
+  "organizer": "...",
+  "organizer_logo": null,
+  "mode": "...",
+  "deadline": "...",
+  "cost_chip": "Free",
+  "cost": "Free",
+  "domain": "...",
+  "team_size": "...",
+  "is_verified": true,
+  "about_description": "...",
+  "eligibility_text": "...",
+  "how_to_apply": "...",
+  "prizes_detail": "...",
+  "prize_amount": "...",
+  "structure_format": "...",
+  "judging_criteria": "...",
+  "submission_format": "...",
+  "official_website": "...",
+  "registration_url": "{URL}",
+  "source_url": "{URL}",
+  "registration_open_date": "...",
+  "country": "...",
+  "grade_levels": [...],
+  "age_limit": "..."
+}
+
+--- PAGE CONTENT ---
+{PAGE_CONTENT}
+--- END ---

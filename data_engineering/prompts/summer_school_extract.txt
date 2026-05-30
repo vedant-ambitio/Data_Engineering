@@ -1,0 +1,81 @@
+You are extracting structured data for a summer school / pre-college program by visiting its official website.
+
+Record ID: {RECORD_ID}
+URL visited: {URL}
+
+From the page content below (main page + any relevant subpages), extract ALL 20 UI fields.
+Return a single JSON object. Use null for any field you cannot find on the page.
+
+CARD FIELDS (8):
+- program_name: Full program name (e.g. "Young Scholars Programme (YSP)", "Pre-College Program Online")
+- institution_name: University/organization name + country (e.g. "Ashoka University - India", "Harvard University - USA")
+- institution_logo: null (we will fetch logos separately)
+- funding_status: One of:
+    "Free" — no cost, fully funded / scholarship covers all
+    "Fully funded" — free for accepted students
+    "Partially funded" — some scholarships / financial aid available
+    "Self-funded" — students pay the full fee
+- mode: One of "Online", "Offline", or "Hybrid"
+- location_tag: "India" if held in India, "Abroad" if outside India, "Online" if fully remote
+- duration: Duration as string in natural format: "2 weeks", "12 days", "6 weeks", "3-4 weeks", "1 month". Use whatever unit the page uses.
+- is_verified: true
+
+DETAIL FIELDS (12):
+- about_description: 2-4 sentence summary of what this program is about. Concise, not copy-paste.
+- eligibility_text: Who can apply — grade, age, country, school type, GPA. Be specific.
+- curriculum: What students learn — subjects, modules, projects, topics covered.
+- how_to_apply: Application steps and requirements (essays, recommendations, transcripts, interviews).
+- application_url: Direct link to the application/registration page. Use "{URL}" if no separate URL.
+- cost_range: IMPORTANT — Look CAREFULLY for program fees/cost. Check ALL subpages including /fees, /tuition, /apply, /admissions, /program-details, /faq. The cost is usually on a different page than the main program page.
+    Examples of what to look for:
+      * "Program fee: INR 50,000"
+      * "Tuition: $3,000"
+      * "Cost: $8,500 + $500 application fee"
+      * "Fee: INR 1,20,000 - 1,50,000"
+    Extract the exact cost string. Use "Free" if explicitly stated as free/no cost.
+    Use "Fully funded" if the program pays for accepted students.
+    Return null ONLY if no fee info is found anywhere on the page or subpages.
+- college_credit: "Yes" if academic credit is given, "No" if not. null if not mentioned.
+- residential_or_online: "Residential" (live on campus), "Online" (virtual), or "Day program" (commute).
+- certificate_provided: "Yes" if certificate issued, "No" if not. null if not mentioned.
+- deadline: Application deadline in ISO format "YYYY-MM-DD". null if not found.
+- program_dates: When the program runs, as string like "June 15 - July 28, 2026" or "July 2026".
+- subjects_offered: Array of subjects/tracks like ["STEM", "Humanities", "Business"].
+  Or ["AI", "Data Science", "Robotics"] if technical tracks.
+
+RULES:
+- Only extract information explicitly stated on the page. Do NOT guess or fabricate.
+- For about_description, write a concise 2-4 sentence summary, not a copy-paste.
+- For funding_status: if fees are mentioned but no aid, use "Self-funded". If mentioned scholarships, use "Partially funded". If explicitly free, use "Free".
+- For location_tag: "India" for IITs/Ashoka/Plaksha etc. "Online" for Harvard/Stanford online programs. "Abroad" only for physical campuses outside India (but we exclude those — most should be Online or India).
+- If the page content contains subpages (separated by "--- Subpage: ..."), use info from ALL of them.
+- If the program is clearly for college students or adults (not class 8-12), still extract fields but note in eligibility_text.
+
+Return JSON:
+{
+  "program_id": "{RECORD_ID}",
+  "program_name": "...",
+  "institution_name": "...",
+  "institution_logo": null,
+  "funding_status": "...",
+  "mode": "...",
+  "location_tag": "...",
+  "duration": "...",
+  "is_verified": true,
+  "about_description": "...",
+  "eligibility_text": "...",
+  "curriculum": "...",
+  "how_to_apply": "...",
+  "application_url": "...",
+  "cost_range": "...",
+  "college_credit": "...",
+  "residential_or_online": "...",
+  "certificate_provided": "...",
+  "deadline": "...",
+  "program_dates": "...",
+  "subjects_offered": [...]
+}
+
+--- PAGE CONTENT ---
+{PAGE_CONTENT}
+--- END ---

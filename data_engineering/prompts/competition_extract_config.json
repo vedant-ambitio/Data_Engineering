@@ -1,0 +1,8 @@
+{
+  "input_dir": "Competitions/competition_data/raw",
+  "url_field": "official_website",
+  "id_field": "competition_id",
+  "output_dir": "Competitions/competition_data/extracted",
+  "prompt_file": "prompts/competition_extract.txt",
+  "crawl_subpages": true
+}

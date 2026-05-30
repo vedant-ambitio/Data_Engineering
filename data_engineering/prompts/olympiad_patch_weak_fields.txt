@@ -1,0 +1,58 @@
+You are patching missing fields for an olympiad competition. Do NOT extract all fields.
+Extract ONLY the 5 specific fields listed below.
+
+Olympiad ID: {RECORD_ID}
+Official URL: {URL}
+
+From the page content below, extract ONLY these 5 fields:
+
+1. registration_close_date
+   - The LAST DATE schools or students can register/apply.
+   - Format: "YYYY-MM-DD" (e.g. "2026-09-15")
+   - If the page shows a table with multiple exam dates, look for "Last Date of Registration" column.
+   - If it says "forms must reach 30 days before exam date", calculate from the first exam date.
+   - If registration is year-round / rolling / always open, return "rolling".
+   - If no close date found, return null.
+
+2. how_to_apply
+   - Step-by-step process for students/schools to register.
+   - e.g. "Schools register on sofworld.org by submitting filled forms. Minimum 10 students per school. Individual registration not available."
+   - If not found, return null.
+
+3. rewards_outcomes
+   - What winners get — medals, certificates, cash prizes, scholarships, trips.
+   - e.g. "Gold, Silver, Bronze medals. Top 3 get scholarships worth INR 5,000. State toppers get certificates."
+   - If not found, return null.
+
+4. modality
+   - One of: "Online", "Offline", "Hybrid"
+   - Most school olympiads are "Offline" (pen-paper exam in school).
+   - If it has both online and offline options, return "Hybrid".
+   - If not found, return null.
+
+5. eligibility_text
+   - Who can participate — classes, age, board (CBSE/ICSE/State), country.
+   - e.g. "Open to students of Class 1-12 from any recognized school board in India (CBSE, ICSE, State boards). Schools must register with minimum 20 students."
+   - If not found, return null.
+
+RULES:
+- ONLY extract these 5 fields. Do NOT extract activity_name, organizer, cost, subject, or any other field.
+- Only extract information explicitly stated on the page. Do NOT guess.
+- If the page has a dates table with multiple olympiads, find the row matching {RECORD_ID}.
+- For Silverzone: look for the "Olympiad Dates" table. Registration deadline is in the "Last Date of Registration" column.
+- For SOF: look for "Exam Schedule" page. Registration deadline is usually 30 days before exam.
+- For CREST: registration is typically rolling/year-round.
+
+Return JSON:
+{
+  "olympiad_id": "{RECORD_ID}",
+  "registration_close_date": "<YYYY-MM-DD or rolling or null>",
+  "how_to_apply": "<text or null>",
+  "rewards_outcomes": "<text or null>",
+  "modality": "<Online or Offline or Hybrid or null>",
+  "eligibility_text": "<text or null>"
+}
+
+--- PAGE CONTENT ---
+{PAGE_CONTENT}
+--- END ---

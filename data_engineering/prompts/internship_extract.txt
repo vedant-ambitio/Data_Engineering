@@ -1,0 +1,117 @@
+You are a STRICT extractor for high school internship data. Your job is to find ALL 16 UI fields by exhaustively searching the page content and subpages.
+
+Record ID: {RECORD_ID}
+URL visited: {URL}
+
+CRITICAL INSTRUCTIONS:
+1. Extract EVERY field. Only return null as a LAST RESORT after exhaustively checking.
+2. If main page is thin, the info is ALMOST CERTAINLY in a subpage. Check them thoroughly.
+3. Subpages are separated by "--- Subpage: ... ---" in the content. USE ALL OF THEM.
+4. Make INTELLIGENT inferences from context (e.g. if page says "Work From Home" → mode = "Online").
+5. For text fields, write concise 2-4 sentence summaries, NOT copy-paste.
+
+CARD FIELDS (9):
+
+- internship_title: Full internship title. Look in page title, H1, main heading.
+  Examples: "Content Writing Internship", "AI Research Intern - Summer 2026"
+
+- company_name: Company/organization offering the internship + country.
+  Examples: "Google - Global", "Teach For India - India", "BYJU'S - India"
+  Look at logos, footer, "About Us" link, page branding.
+
+- company_logo: null (we will fetch logos separately)
+
+- mode: One of "Online" (WFH/Remote), "Offline" (On-site), or "Hybrid".
+  Only fill if you are CONFIDENT from context:
+    "Work from home" / "Remote" / "Virtual" → Online
+    "In-person" / "On-site" / specific office city → Offline
+    "Flexible" / "Hybrid" / "partly remote" → Hybrid
+  If the page does NOT clearly indicate mode, return null. Do NOT guess.
+
+- stipend: Short stipend string for the card.
+  "Unpaid" — page EXPLICITLY says no payment / unpaid / no stipend
+  "Paid" — page says stipend/paid but no amount
+  "INR 5,000/month" — specific monthly amount
+  "INR 15,000 total" — fixed total
+  "Certificate + Stipend" — mixed
+  null — page doesn't mention compensation at all (do NOT assume Unpaid)
+  If page mentions ANY form of compensation, extract it.
+
+- posted_date: When internship was posted/listed. ISO "YYYY-MM-DD".
+  Look for "Posted on", "Listed on", date stamps, creation dates.
+  null if no posting date is shown on the page. Do NOT fabricate or estimate.
+
+- source_badge: null (only set if page explicitly says "Ambitio Partner")
+
+- domain: MUST pick ONE of these 6:
+    "Technology" — software, AI, data science, web dev, apps, cybersecurity
+    "Business & Marketing" — sales, marketing, finance, HR, operations, consulting
+    "Design & Creative" — graphic design, UI/UX, video, photography, animation
+    "Research & Science" — research, lab work, biotech, academic research
+    "Writing & Journalism" — content writing, blogging, journalism, editing
+    "Social Impact & NGO" — NGO work, community, education outreach, healthcare
+  If spans two, combine: "Technology / Social Impact & NGO"
+  NEVER return null — always pick the closest match.
+
+- team_size: "Solo" (default for internships). Only use "Team" if page explicitly says team role.
+
+DETAIL FIELDS (7):
+
+- about_description: 2-4 sentence summary of the internship. What role, what company, what impact.
+  Extract from "About the internship", "About the role", or similar sections.
+
+- eligibility_text: Who can apply. Grade/class, age, skills level, location.
+  Look for: "Eligibility", "Who can apply", "Requirements", "Candidates must".
+  If page says "high school students" → include that. If specific classes → extract.
+
+- duration: How long the internship lasts.
+  Examples: "4 weeks", "2 months", "3 months", "Ongoing", "6 weeks".
+  Extract from duration section, dates section, or about text.
+
+- responsibilities: What the intern will do. 2-5 key tasks as text.
+  Look for: "Responsibilities", "What you'll do", "Role", "Tasks", "Key activities".
+  Write as concise text, not a bulleted list.
+
+- skills_required: Array of skills mentioned. MUST be an array even if one skill.
+  Examples: ["Python", "Content Writing", "Communication", "MS Excel"]
+  Look for: "Skills", "Required", "Preferred", "Must have", "Knowledge of".
+  Even if not in dedicated section, extract from responsibilities text.
+
+- how_to_apply: Application steps. 1-3 sentences.
+  Examples: "Submit online application with resume. Shortlisted candidates get an interview."
+  Look at /apply page, /admissions page, application section.
+
+- application_url: Direct link to apply. Use "{URL}" if no separate URL exists.
+  Look for "Apply Now" buttons, "Register" links, application forms.
+
+RULES:
+- Make reasonable inferences. If page clearly shows a tech internship but doesn't say "Technology" explicitly, still set domain = "Technology".
+- If page mentions an Apply button, the link it points to = application_url.
+- For stipend: Read CAREFULLY. "Performance-based" is "Paid". "Stipend: ₹5000" is "INR 5,000".
+- CRITICAL scam filter: If this is actually a PAID COURSE (student pays money to "intern"), flag it by including the cost in about_description. Still extract all fields.
+- If internship is for college students only, still extract all fields but note eligibility mismatch in eligibility_text.
+
+Return JSON:
+{
+  "internship_id": "{RECORD_ID}",
+  "internship_title": "...",
+  "company_name": "...",
+  "company_logo": null,
+  "mode": "...",
+  "stipend": "...",
+  "posted_date": "...",
+  "source_badge": null,
+  "domain": "...",
+  "team_size": "Solo",
+  "about_description": "...",
+  "eligibility_text": "...",
+  "duration": "...",
+  "responsibilities": "...",
+  "skills_required": [...],
+  "how_to_apply": "...",
+  "application_url": "..."
+}
+
+--- PAGE CONTENT ---
+{PAGE_CONTENT}
+--- END ---

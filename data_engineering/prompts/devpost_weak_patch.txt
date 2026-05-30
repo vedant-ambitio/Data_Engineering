@@ -1,0 +1,79 @@
+You are patching 4 specific weak fields for a Devpost hackathon. Do NOT extract other fields.
+
+Record ID: {RECORD_ID}
+Devpost URL: {URL}
+
+CRITICAL INSTRUCTIONS:
+1. Extract ONLY these 4 fields. Return null for any you cannot find.
+2. Devpost has subpages (separated by "--- Subpage: ... ---" in content). The info is USUALLY on the /rules or /details subpage, NOT on the main page.
+3. Check ALL subpages thoroughly — this is a patch for fields that were missed in the first extraction.
+
+FIELD 1: team_size
+- Look for team size rules in "Rules" section or subpage.
+- Examples of what to extract:
+    "Individual" — only solo allowed
+    "1-4 members" — solo or team of up to 4
+    "2-4 members" — teams only, no solo
+    "1-5 members" — solo or team of up to 5
+    "Individual or Team" — when exact limit not stated
+- Look for phrases like:
+    "Students may participate individually or in teams of up to four members"
+    "Teams can consist of 1-5 members"
+    "Solo or team of 2-4"
+- Return null if truly not stated anywhere.
+
+FIELD 2: prize_amount
+- Summary of ALL prizes. Can be cash, non-cash, or mixed.
+- Give a concise SUMMARY of the prize pool, not just the top prize.
+- Examples of what to extract:
+    "$90+ total ($50 + $25 + $15 gift cards + ElevenLabs subscriptions)"
+    "$10,000 grand prize + $5,000 runner-up + mentorship"
+    "Interview with Google + SWAG for top 3"
+    "Cloud credits worth $500 + Cert of Achievement"
+    "₹1,00,000 cash + Internship opportunity + Mentorship"
+    "Trip to San Francisco + $1,000 + Mentorship program"
+- Look in "Prizes" section. Check total prize pool AND individual prizes.
+- Include non-cash prizes — SWAG, mentorship, credits, interviews, subscriptions, trips.
+- If there's a stated total like "$90+ in prizes", include that number.
+- Return null ONLY if no prize info exists.
+
+FIELD 3: judging_criteria
+- How submissions are evaluated. Look for a "Judging Criteria" section on the main page OR /rules subpage.
+- Extract ALL criteria names you find in that section. If descriptions are given, include them too.
+- If the page shows multiple criteria (usually 3-5), list EVERY one. Do NOT return null just because you're unsure if more exist.
+- Format: "Name1 (description), Name2 (description), Name3 (description)"
+- Real examples:
+    "Problem Solving (how well it solves a real problem), Innovation (creativity of approach), Execution (functionality of prototype), Presentation (clarity of explanation)"
+    "Creativity (25%), Technical Execution (25%), Impact (25%), Presentation (25%)"
+    "Innovation, Feasibility, Market Potential, Team Collaboration"
+    "Design & UX, Technical Complexity, Use Case"
+- Separate criteria with commas.
+- Return null ONLY if there is no "Judging Criteria" section anywhere on the main page or subpages.
+- If you find at least ONE criterion, extract it even if you're unsure there are more.
+
+FIELD 4: submission_format
+- What to submit. Look in "Submission Requirements" section (main page or /rules subpage).
+- Examples:
+    "GitHub repo link, demo video (3 min max), project description (100+ words)"
+    "Devpost submission with tech stack, screenshots, and live demo URL"
+    "Code repository, presentation slides, 2-minute demo video"
+- Return null only if no submission details are stated.
+
+RULES:
+- Only extract what is explicitly on the page or subpages.
+- Do NOT guess or fabricate.
+- For team_size: if /rules page says "up to 4 members", use "1-4 members" (assume solo allowed unless said otherwise).
+- For prize_amount: pick ONE top prize. Don't list all tiers.
+
+Return JSON:
+{
+  "competition_id": "{RECORD_ID}",
+  "team_size": "<value or null>",
+  "prize_amount": "<value or null>",
+  "judging_criteria": "<value or null>",
+  "submission_format": "<value or null>"
+}
+
+--- PAGE CONTENT ---
+{PAGE_CONTENT}
+--- END ---
